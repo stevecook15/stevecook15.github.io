@@ -39,30 +39,30 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Steve
-var oppfatbastards = [ 131.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Steve
+var fatbastards    = [ 124.05 ];  // Steve
+var oppfatbastards = [ 131.45 ];  // Steve
 
-var belicheck    = [ 131.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Harrsion
-var oppbelicheck = [ 124.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Harrsion
+var belicheck    = [ 131.45 ];  // Harrsion
+var oppbelicheck = [ 124.05 ];  // Harrsion
 
-var predators    = [ 150.80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Joe
-var opppredators = [ 141.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Joe
+var predators    = [ 150.80 ];  // Joe
+var opppredators = [ 141.00 ];  // Joe
 
-var cookiemon    = [ 141.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Noah
-var oppcookiemon = [ 150.80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Noah
+var cookiemon    = [ 141.00 ];  // Noah
+var oppcookiemon = [ 150.80 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // John
-var oppiceotopes = [ 131.65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // John
+var iceotopes    = [ 117.95 ];  // John
+var oppiceotopes = [ 131.65 ];  // John
 
-var tenanus    = [ 131.65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Jake
-var opptenanus = [ 117.95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];  // Jake
+var tenanus    = [ 131.65 ];  // Jake
+var opptenanus = [ 117.95 ];  // Jake
 
-var rolltide    = [ 111.40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];   // Daniel
-var opprolltide = [ 154.50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];   // Daniel
+var rolltide    = [ 111.40 ];   // Daniel
+var opprolltide = [ 154.50 ];   // Daniel
 
-var krusty    = [ 154.50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];   // Hunter
-var oppkrusty = [ 111.40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];   // Hunter
+var krusty    = [ 154.50 ];   // Hunter
+var oppkrusty = [ 111.40 ];   // Hunter
 
 
 var pfl_owners = [
