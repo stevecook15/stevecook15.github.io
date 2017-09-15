@@ -29,7 +29,7 @@ var pfl_labels = [
       "Cookie Monsters",
       "Fat Bastards",
 
-      "Krusty Krushers"
+      "Krusty Krushers",
       "Tenacious Anus",
       "Iceotopes",
       "Roll Tide"
