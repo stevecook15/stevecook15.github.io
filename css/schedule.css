@@ -1,0 +1,12 @@
+
+div.schedule {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 4px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+

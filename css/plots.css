@@ -1,0 +1,66 @@
+
+div.controlsDiv {
+   position: absolute;
+   top: 10px;
+   left: 4px;
+   width: 174px;
+   border-width: 1px;
+   border-color: #000000;
+   border-style: solid;
+   background-color: #cccccc;
+   overflow: auto;
+}
+
+div.detailsDiv {
+   position: absolute;
+   font-size: 15px;
+   top: 262px;
+   left: 4px;
+   width: 174px;
+   border-width: 1px;
+   border-color: #000000;
+   border-style: solid;
+   background-color: #eeeeee;
+   overflow: auto;
+}
+
+div.plotsDiv {
+   position: absolute;
+   top: 10px;
+   left: 190px;
+   border-width: 1px;
+   border-color: #000000;
+   border-style: solid;
+   background-color: #ffffff;
+   overflow: auto;
+}
+
+div.legendDiv {
+   position: absolute;
+   top: 10px;
+   left: 800px;
+   border-width: 1px;
+   border-color: #000000;
+   border-style: solid;
+   background-color: #ffffff;
+   overflow: auto;
+}
+
+div.poptionsDiv {
+   position: absolute;
+   font-size: 13px;
+   top: 210px;
+   left: 800px;
+   width: 150px;
+   border-width: 1px;
+   border-color: #000000;
+   border-style: solid;
+   background-color: #ffffff;
+   overflow: auto;
+} 
+
+.plotBtn {
+   font-size: 4px;
+   width: 166px;
+}
+

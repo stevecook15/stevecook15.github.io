@@ -1,0 +1,166 @@
+
+div.linfo {
+   z-index: 1;
+   position: absolute;
+   left: 4px;
+   top: 4px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lseason {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 54px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek1 {
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+   top: 54px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek2 {
+   z-index: 1;
+   position: absolute;
+   left: 580px;
+   top: 54px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek3 {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 444px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek4 {
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+   top: 444px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek5 {
+   z-index: 1;
+   position: absolute;
+   left: 580px;
+   top: 444px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek6 {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 834px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek7 {
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+   top: 834px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek8 {
+   z-index: 1;
+   position: absolute;
+   left: 580px;
+   top: 834px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek9 {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 1224px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek10 {
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+   top: 1224px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek11 {
+   z-index: 1;
+   position: absolute;
+   left: 580px;
+   top: 1224px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek12 {
+   z-index: 1;
+   position: absolute;
+   left: 20px;
+   top: 1614px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+
+div.lweek13 {
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+   top: 1614px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+   overflow: auto;
+}
+

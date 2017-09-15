@@ -1,0 +1,41 @@
+
+div.low_scores1 {
+   z-index: 1;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+}
+
+div.low_scores2 {
+   z-index: 1;
+   position: absolute;
+   top: 10px;
+   left: 300px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+}
+
+div.high_scores1 {
+   z-index: 1;
+   position: absolute;
+   top: 210px;
+   left: 10px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+}
+
+div.high_scores2 {
+   z-index: 1;
+   position: absolute;
+   top: 210px;
+   left: 300px;
+   border-width: 0px;
+   border-color: #000000;
+   border-style: none;
+}
+
