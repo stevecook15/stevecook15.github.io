@@ -122,7 +122,7 @@ var week1_txt = "Welcome to the 2017 PFL season. For one brief moment we all had
 
 var week2_txt = "It seems we're quickly setting up the haves vs have-nots as half the league is undefeated and half winless. At the very least the top 4 have a meaningful advantage for the 4 playoff spots. Some bad luck can make it worse too - the Fat would have beat anyother team other than the one they played.";
 
-var week3_txt = "";
+var week3_txt = "The Cookie Mons go from lowest score to highest score in one week! Just in time to face the Bastards, who for the second week in a row faced the highest scoring team, although that had nothing to do with their blowout loss.  Three of the four matchups were lobsided as only the Krushed Anus matchup kept us watching into Monday night.  Nicely balanced standings though, not that the Tide and Fat appreciate it!";
 
 var week4_txt = "";
 
