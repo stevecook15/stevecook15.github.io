@@ -1,104 +1,104 @@
 
 //                  Record, Division Record
 
-var belicheckRec   = [ 2, 0,  2, 0 ];   // Harrison
-var predatorsRec   = [ 2, 0,  2, 0 ];   // Joe
-var cookiemonRec   = [ 0, 2,  0, 2 ];   // Noah
-var fatbastardsRec = [ 0, 2,  0, 2 ];   // Steve
+var belicheckRec   = [ 3, 0,  3, 0 ];   // Harrison
+var predatorsRec   = [ 2, 1,  2, 1 ];   // Joe
+var cookiemonRec   = [ 1, 2,  1, 2 ];   // Noah
+var fatbastardsRec = [ 0, 3,  0, 3 ];   // Steve
 
-var krustyRec      = [ 2, 0,  2, 0 ];   // Hunter
-var tenanusRec     = [ 2, 0,  2, 0 ];   // Jake
-var rolltideRec    = [ 0, 2,  0, 2 ];   // Daniel
-var iceotopesRec   = [ 0, 2,  0, 2 ];   // John
+var krustyRec      = [ 3, 0,  3, 0 ];   // Hunter
+var tenanusRec     = [ 2, 1,  2, 1 ];   // Jake
+var iceotopesRec   = [ 1, 2,  1, 2 ];   // John
+var rolltideRec    = [ 0, 3,  0, 3 ];   // Daniel
 
 var pfl_records=[
-      predatorsRec,
       belicheckRec,
-      fatbastardsRec,
+      predatorsRec,
       cookiemonRec,
+      fatbastardsRec,
 
       krustyRec,
       tenanusRec,
-      rolltideRec,
-      iceotopesRec
+      iceotopesRec,
+      rolltideRec
       ];
 
 var pfl_labels = [
-      "Predators",
       "Discount Belicheck",
-      "Fat Bastards",
+      "Predators",
       "Cookie Monsters",
+      "Fat Bastards",
 
       "Krusty Krushers",
       "Tenacious Anus",
-      "Roll Tide",
-      "Iceotopes"
+      "Iceotopes",
+      "Roll Tide"
       ];
 
 
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70 ];  // Harrsion
 
-var predators    = [ 150.80, 168.85 ];  // Joe
-var opppredators = [ 141.00, 157.85 ];  // Joe
+var predators    = [ 150.80, 168.8, 142.705 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15 ];  // John
-var oppiceotopes = [ 131.65, 123.65 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85 ];  // John
 
-var tenanus    = [ 131.65, 143.45 ];  // Jake
-var opptenanus = [ 117.95, 118.75 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75 ];   // Daniel
-var opprolltide = [ 154.50, 143.45 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65 ];   // Hunter
-var oppkrusty = [ 111.40, 113.15 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40 ];   // Hunter
+var oppkrusty = [ 111.40, 113.15, 148.45 ];   // Hunter
 
 
 var pfl_owners = [
-      "Joe",        // Predators
       "Harrison",   // Belicheck
-      "Steve",      // Fat Bastards
+      "Joe",        // Predators
       "Noah",       // Cookie Monsters
+      "Steve",      // Fat Bastards
 
       "Hunter",     // Krusty Krushers
       "Jake",       // Tenacious Anus
-      "Daniel",     // Roll Tide
-      "John"        // Iceaholics
+      "John",       // Iceaholics
+      "Daniel"      // Roll Tide
       ];
 
 var pfl_scores=[
-        predators,
         belicheck,
-        fatbastards,
+        predators,
         cookiemon,
+        fatbastards,
 
         krusty,
         tenanus,
-        rolltide,
-        iceotopes
+        iceotopes,
+        rolltide
      ];
 
 var opp_scores=[
-        opppredators,
         oppbelicheck,
-        oppfatbastards,
+        opppredators,
         oppcookiemon,
+        oppfatbastards,
 
         oppkrusty,
         opptenanus,
-        opprolltide,
-        oppiceotopes
+        oppiceotopes,
+        opprolltide
      ];
 
 // 0 - not in playoffs yet
@@ -107,15 +107,15 @@ var opp_scores=[
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs=[
-              0,   // predators
               0,   // belicheck
-              0,   // bastards
+              0,   // predators
               0,   // cookiemon
+              0,   // bastards
 
               0,   // krusty
               0,   // tenanus
-              0,   // rolltide
-              0    // iceotopes
+              0,   // iceotopes
+              0    // rolltide
              ];
 
 var week1_txt = "Welcome to the 2017 PFL season. For one brief moment we all had the same chance to reach the pinnacle of PFL football, but then the games are played.  Some are sitting on the top of the world while others are beginning to suspect the cause is lost!  Or maybe it was just one week...";
