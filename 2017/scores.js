@@ -124,7 +124,7 @@ var week2_txt = "It seems we're quickly setting up the haves vs have-nots as hal
 
 var week3_txt = "The Cookie Mons go from lowest score to highest score in one week! Just in time to face the Bastards, who for the second week in a row faced the highest scoring team, although that had nothing to do with their blowout loss.  Three of the four matchups were lobsided as only the Krushed Anus matchup kept us watching into Monday night.  Nicely balanced standings though, not that the Tide and Fat appreciate it!";
 
-var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don't like to be krushed and the tide is still out. The fat squeaked out their first win despite losing two RBs, guess the anuses were tenacious enough.  And the bellys remain the only undefeated team despite the 3rd lowest score of the weeek thanks to the topes being ice cold.";
+var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don't like to be krushed and the tide is still out. The fat squeaked out their first win despite losing two RBs, guess the anuses weren't tenacious enough.  And the bellys remain the only undefeated team despite the 3rd lowest score of the weeek thanks to the topes being ice cold.";
 
 var week5_txt = "";
 
