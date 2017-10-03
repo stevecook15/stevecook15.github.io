@@ -1,15 +1,15 @@
 
 //                  Record, Division Record
 
-var belicheckRec   = [ 3, 0,  3, 0 ];   // Harrison
-var predatorsRec   = [ 2, 1,  2, 1 ];   // Joe
-var cookiemonRec   = [ 1, 2,  1, 2 ];   // Noah
-var fatbastardsRec = [ 0, 3,  0, 3 ];   // Steve
+var belicheckRec   = [ 4, 0,  3, 0 ];   // Harrison
+var predatorsRec   = [ 3, 1,  2, 1 ];   // Joe
+var cookiemonRec   = [ 2, 2,  1, 2 ];   // Noah
+var fatbastardsRec = [ 1, 3,  0, 3 ];   // Steve
 
-var krustyRec      = [ 3, 0,  3, 0 ];   // Hunter
-var tenanusRec     = [ 2, 1,  2, 1 ];   // Jake
-var iceotopesRec   = [ 1, 2,  1, 2 ];   // John
-var rolltideRec    = [ 0, 3,  0, 3 ];   // Daniel
+var krustyRec      = [ 3, 1,  3, 0 ];   // Hunter
+var tenanusRec     = [ 2, 2,  2, 1 ];   // Jake
+var iceotopesRec   = [ 1, 3,  1, 2 ];   // John
+var rolltideRec    = [ 0, 4,  0, 3 ];   // Daniel
 
 var pfl_records=[
       belicheckRec,
@@ -39,30 +39,30 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85, 114.80 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85, 187.80 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80, 164.65 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05, 166.35 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50, 142.70 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35, 131.80 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85 ];  // Harrsion
 
-var predators    = [ 150.80, 168.8, 142.705 ];  // Joe
-var opppredators = [ 141.00, 157.85, 166.35 ];  // Joe
+var predators    = [ 150.80, 168.8, 142.70, 154.55 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35, 129.60 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50, 187.80 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05, 114.80 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80, 162.80 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15, 148.45 ];  // John
-var oppiceotopes = [ 131.65, 123.65, 106.85 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45, 105.85 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80 ];  // John
 
-var tenanus    = [ 131.65, 143.45, 148.45 ];  // Jake
-var opptenanus = [ 117.95, 118.75, 151.40 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45, 157.05 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40, 164.65 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75, 106.85 ];   // Daniel
-var opprolltide = [ 154.50, 143.45, 148.45 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85, 129.60 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45, 154.55 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65, 151.40 ];   // Hunter
-var oppkrusty = [ 111.40, 113.15, 148.45 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40, 135.65 ];   // Hunter
+var oppkrusty = [ 111.40, 113.15, 148.45, 162.80 ];   // Hunter
 
 
 var pfl_owners = [
@@ -124,7 +124,7 @@ var week2_txt = "It seems we're quickly setting up the haves vs have-nots as hal
 
 var week3_txt = "The Cookie Mons go from lowest score to highest score in one week! Just in time to face the Bastards, who for the second week in a row faced the highest scoring team, although that had nothing to do with their blowout loss.  Three of the four matchups were lobsided as only the Krushed Anus matchup kept us watching into Monday night.  Nicely balanced standings though, not that the Tide and Fat appreciate it!";
 
-var week4_txt = "";
+var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don't like to be krushed and the tide is still out. The fat squeaked out their first win despite losing two RBs, guess the anuses were tenacious enough.  And the bellys remain the only undefeated team despite the 3rd lowest score of the weeek thanks to the topes being ice cold.";
 
 var week5_txt = "";
 
