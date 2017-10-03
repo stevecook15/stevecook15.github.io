@@ -12,7 +12,7 @@ function showStandings()
    {
       clearTable(table1Body);
 
-      addRow(table1Hdr, "Team", "Owner", "W/L", "Div W/L", 4);
+      addRow(table1Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
       for ( var indx=0; indx<4; indx++ )
       {
          rec = pfl_records[indx];
@@ -31,7 +31,7 @@ function showStandings()
    {
       clearTable(table2Body);
 
-      addRow(table2Hdr, "Team", "Owner", "W/L", "Div W/L", 4);
+      addRow(table2Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
       for ( var indx=4; indx<8; indx++ )
       {
          rec = pfl_records[indx];
