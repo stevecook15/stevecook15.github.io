@@ -1,15 +1,15 @@
 
 //                  Record, Division Record
 
-var belicheckRec   = [ 4, 0,  3, 0 ];   // Harrison
-var predatorsRec   = [ 3, 1,  2, 1 ];   // Joe
-var cookiemonRec   = [ 2, 2,  1, 2 ];   // Noah
-var fatbastardsRec = [ 1, 3,  0, 3 ];   // Steve
+var belicheckRec   = [ 4, 1,  3, 0 ];   // Harrison
+var predatorsRec   = [ 4, 1,  2, 1 ];   // Joe
+var cookiemonRec   = [ 3, 2,  1, 2 ];   // Noah
+var fatbastardsRec = [ 1, 4,  0, 3 ];   // Steve
 
-var krustyRec      = [ 3, 1,  3, 0 ];   // Hunter
-var tenanusRec     = [ 2, 2,  2, 1 ];   // Jake
-var iceotopesRec   = [ 1, 3,  1, 2 ];   // John
-var rolltideRec    = [ 0, 4,  0, 3 ];   // Daniel
+var krustyRec      = [ 4, 1,  3, 0 ];   // Hunter
+var tenanusRec     = [ 3, 2,  2, 1 ];   // Jake
+var iceotopesRec   = [ 1, 4,  1, 2 ];   // John
+var rolltideRec    = [ 0, 5,  0, 3 ];   // Daniel
 
 var pfl_records=[
       belicheckRec,
@@ -39,30 +39,30 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85, 114.80, 164.65 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05, 166.35, 131.80 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45 ];  // Harrsion
 
-var predators    = [ 150.80, 168.8, 142.70, 154.55 ];  // Joe
-var opppredators = [ 141.00, 157.85, 166.35, 129.60 ];  // Joe
+var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50, 187.80, 162.80 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15, 148.45, 105.85 ];  // John
-var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25 ];  // John
 
-var tenanus    = [ 131.65, 143.45, 148.45, 157.05 ];  // Jake
-var opptenanus = [ 117.95, 118.75, 151.40, 164.65 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75, 106.85, 129.60 ];   // Daniel
-var opprolltide = [ 154.50, 143.45, 148.45, 154.55 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65, 151.40, 135.65 ];   // Hunter
-var oppkrusty = [ 111.40, 113.15, 148.45, 162.80 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60 ];   // Hunter
+var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65 ];   // Hunter
 
 
 var pfl_owners = [
@@ -126,7 +126,7 @@ var week3_txt = "The Cookie Mons go from lowest score to highest score in one we
 
 var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don't like to be krushed and the tide is still out. The fat squeaked out their first win despite losing two RBs, guess the anuses weren't tenacious enough.  And the bellys remain the only undefeated team despite the 3rd lowest score of the weeek thanks to the topes being ice cold.";
 
-var week5_txt = "";
+var week5_txt = "Well, the last undefeated team went belly up but the tide is still rolling over getting doughed by the monsters.  The fats boiling though as DeAndre Hopkins gets 3 TDs on just 4 receptions to krush the bastards.  What kind of defense is that? The Predators play some D though, beating the topes with the lowest winning score of the year - the two lowest winning scores of the year have been against the ice - are the topes unlucky or just bad?";
 
 var week6_txt = "";
 
