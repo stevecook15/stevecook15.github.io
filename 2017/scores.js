@@ -128,7 +128,7 @@ var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don'
 
 var week5_txt = "Well, the last undefeated team went belly up but the tide is still rolling over getting doughed by the monsters.  The fats boiling though as DeAndre Hopkins gets 3 TDs on just 4 receptions to krush the bastards.  What kind of defense is that? The Predators play some D though, beating the topes with the lowest winning score of the year - the two lowest winning scores of the year have been against the ice - are the topes unlucky or just bad?";
 
-var week6_txt = "OK, who hemorrhoided the Anus? Topes must feel like an a-- bomb went off! Whew!  At the other end (pun intended) the Tide hardly rolled to their first victory (thanks Aaron) but they'll take it. Things got a little closer in the PMFB division as the Bastards inexplicibly won and everyone else is tied for for the leagues best record."
+var week6_txt = "OK, who hemorrhoided the Anus? Topes must feel like an a-- bomb went off! Whew!  At the other end (pun intended) the Tide hardly rolled to their first victory (thanks Aaron) but they'll take it. Things got a little closer in the PMFB division as the Bastards inexplicibly won and everyone else is tied. Now there's five of the eight teams tied with the leagues best record."
 
 var week7_txt = "";
 
