@@ -1,15 +1,15 @@
 
 //                  Record, Division Record
 
-var belicheckRec   = [ 4, 1,  3, 0 ];   // Harrison
-var predatorsRec   = [ 4, 1,  2, 1 ];   // Joe
-var cookiemonRec   = [ 3, 2,  1, 2 ];   // Noah
-var fatbastardsRec = [ 1, 4,  0, 3 ];   // Steve
+var belicheckRec   = [ 4, 2,  3, 1 ];   // Harrison
+var predatorsRec   = [ 4, 2,  2, 2 ];   // Joe
+var cookiemonRec   = [ 4, 2,  2, 2 ];   // Noah
+var fatbastardsRec = [ 2, 4,  1, 3 ];   // Steve
 
-var krustyRec      = [ 4, 1,  3, 0 ];   // Hunter
-var tenanusRec     = [ 3, 2,  2, 1 ];   // Jake
-var iceotopesRec   = [ 1, 4,  1, 2 ];   // John
-var rolltideRec    = [ 0, 5,  0, 3 ];   // Daniel
+var krustyRec      = [ 4, 2,  3, 1 ];   // Hunter - Screwed By Rodgers
+var tenanusRec     = [ 4, 2,  3, 1 ];   // Jake
+var iceotopesRec   = [ 1, 5,  1, 3 ];   // John
+var rolltideRec    = [ 1, 5,  1, 3 ];   // Daniel
 
 var pfl_records=[
       belicheckRec,
@@ -29,7 +29,7 @@ var pfl_labels = [
       "Cookie Monsters",
       "Fat Bastards",
 
-      "Krusty Krushers",
+      "Screwed By Rodgers",
       "Tenacious Anus",
       "Iceotopes",
       "Roll Tide"
@@ -39,30 +39,30 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65, 154.70 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60, 135.90 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60, 135.90 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45, 154.70 ];  // Harrsion
 
-var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25 ];  // Joe
-var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90 ];  // Joe
+var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25, 130.65 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90, 149.20 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85, 149.20 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55, 130.65 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90 ];  // John
-var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90, 122.30 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25, 201.85 ];  // John
 
-var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45 ];  // Jake
-var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45, 201.85 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60, 122.30 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55 ];   // Daniel
-var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55, 114.55 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85, 112.15 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60 ];   // Hunter
-var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60, 112.15 ];   // Hunter
+var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65, 114.55 ];   // Hunter
 
 
 var pfl_owners = [
@@ -128,7 +128,7 @@ var week4_txt = "Down to 1 undeafted and 1 defeated. Apparently the cookies don'
 
 var week5_txt = "Well, the last undefeated team went belly up but the tide is still rolling over getting doughed by the monsters.  The fats boiling though as DeAndre Hopkins gets 3 TDs on just 4 receptions to krush the bastards.  What kind of defense is that? The Predators play some D though, beating the topes with the lowest winning score of the year - the two lowest winning scores of the year have been against the ice - are the topes unlucky or just bad?";
 
-var week6_txt = "";
+var week6_txt = "OK, who hemorrhoided the Anus? Topes must feel like an a-- bomb went off! Whew!  At the other end (pun intended) the Tide hardly rolled to their first victory but they'll take it. Things got a little closer in the PMFB division as the Bastards inexplicibly won and everyone else is tied for for the leagues best record."
 
 var week7_txt = "";
 
