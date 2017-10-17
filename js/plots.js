@@ -298,8 +298,7 @@ function MarginVictory()
    if ( detailsTxt != null )
    {
       var txt = "Are you squeaking out wins or kicking butt?  Are you " +
-                "snakebitten and just barely losing (like the Bastards), or getting your butt " +
-                "kicked (like Krusty and the Bellis)?";
+                "snakebitten and just barely losing, or getting your butt kicked?";
 
       detailsTxt.innerText = txt;     // IE
       detailsTxt.textContent = txt;   // Real browsers
