@@ -156,7 +156,7 @@ var com = "Cookie Monsters";     var dcom = com + " *";
 var ice = "Iceaholics";          var dice = ice + " *";
 var ten = "Tenacious Anus";      var dten = ten + " *";
 var rol = "Roll Tide";           var drol = rol + " *";
-var kru = "Krusty Krushers";     var dkru = kru + " *";
+var kru = "Screwed by Rodgers";  var dkru = kru + " *";  // Krusty Krushers
 
 var sfat = fatbastards;
 var sbel = belicheck;
@@ -184,7 +184,7 @@ var week05Teams = new Array(fat, kru, ice, pre, com, rol, bel, ten);
 var week05Scores = new Array(sfat[4], skru[4], sice[4], spre[4], scom[4], srol[4], sbel[4], sten[4]);
 
 var week06Teams = new Array(dfat, dbel, dice, dten, dcom, dpre, drol, dkru);
-var week06Scores = new Array(sfat[5], skru[5], sice[5], sbel[5], srol[5], spre[5], scom[5], sten[5]);
+var week06Scores = new Array(sfat[5], sbel[5], sice[5], sten[5], scom[5], spre[5], srol[5], skru[5]);
 
 var week07Teams = new Array(dfat, dpre, dice, dkru, dcom, dbel, drol, dten);
 var week07Scores = new Array(sfat[6], spre[6], sice[6], skru[6], scom[6], sbel[6], srol[6], sten[6]);
