@@ -1,36 +1,36 @@
 
 //                  Record, Division Record
 
-var belicheckRec   = [ 4, 2,  3, 1 ];   // Harrison
-var predatorsRec   = [ 4, 2,  2, 2 ];   // Joe
-var cookiemonRec   = [ 4, 2,  2, 2 ];   // Noah
-var fatbastardsRec = [ 2, 4,  1, 3 ];   // Steve
+var cookiemonRec   = [ 6, 2,  4, 2 ];   // Noah
+var predatorsRec   = [ 6, 2,  4, 2 ];   // Joe
+var belicheckRec   = [ 4, 4,  3, 3 ];   // Harrison
+var fatbastardsRec = [ 2, 6,  1, 5 ];   // Steve
 
-var krustyRec      = [ 4, 2,  3, 1 ];   // Hunter - Screwed By Rodgers
-var tenanusRec     = [ 4, 2,  3, 1 ];   // Jake
-var iceotopesRec   = [ 1, 5,  1, 3 ];   // John
-var rolltideRec    = [ 1, 5,  1, 3 ];   // Daniel
+var tenanusRec     = [ 6, 2,  5, 1 ];   // Jake
+var krustyRec      = [ 4, 4,  3, 3 ];   // Hunter - Screwed By Rodgers
+var iceotopesRec   = [ 3, 5,  3, 3 ];   // John
+var rolltideRec    = [ 1, 7,  1, 5 ];   // Daniel
 
 var pfl_records=[
-      belicheckRec,
-      predatorsRec,
       cookiemonRec,
+      predatorsRec,
+      belicheckRec,
       fatbastardsRec,
 
-      krustyRec,
       tenanusRec,
+      krustyRec,
       iceotopesRec,
       rolltideRec
       ];
 
 var pfl_labels = [
-      "Discount Belicheck",
-      "Predators",
       "Cookie Monsters",
+      "Predators",
+      "Discount Belicheck",
       "Fat Bastards",
 
-      "Screwed By Rodgers",
       "Tenacious Anus",
+      "Screwed By Rodgers",
       "Iceotopes",
       "Roll Tide"
       ];
@@ -39,64 +39,64 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65, 154.70 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60, 135.90 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65, 154.70, 139.65, 130.85 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60, 135.90, 154.60, 188.20 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60, 135.90 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45, 154.70 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60, 135.90, 126.80, 144.10 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45, 154.70, 161.90, 174.85 ];  // Harrsion
 
-var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25, 130.65 ];  // Joe
-var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90, 149.20 ];  // Joe
+var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25, 130.65, 154.60, 174.85 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90, 149.20, 139.65, 144.10 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85, 149.20 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55, 130.65 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85, 149.20, 161.90, 188.20 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55, 130.65, 126.80, 130.85 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90, 122.30 ];  // John
-var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25, 201.85 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90, 122.30, 135.20, 123.95 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25, 201.85, 100.10, 115.80 ];  // John
 
-var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45, 201.85 ];  // Jake
-var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60, 122.30 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45, 201.85, 181.30, 157.75 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60, 122.30, 130.95, 146.55 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55, 114.55 ];   // Daniel
-var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85, 112.15 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55, 114.55, 130.95, 115.80 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85, 112.15, 181.30, 123.95 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60, 112.15 ];   // Hunter
-var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65, 114.55 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60, 112.15, 100.10, 146.55 ];   // Hunter Screwed
+var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65, 114.55, 135.20, 157.75 ];   // Hunter
 
 
 var pfl_owners = [
-      "Harrison",   // Belicheck
-      "Joe",        // Predators
       "Noah",       // Cookie Monsters
+      "Joe",        // Predators
+      "Harrison",   // Belicheck
       "Steve",      // Fat Bastards
 
-      "Hunter",     // Krusty Krushers
       "Jake",       // Tenacious Anus
+      "Hunter",     // Krusty Krushers
       "John",       // Iceaholics
       "Daniel"      // Roll Tide
       ];
 
 var pfl_scores=[
-        belicheck,
-        predators,
         cookiemon,
+        predators,
+        belicheck,
         fatbastards,
 
-        krusty,
         tenanus,
+        krusty,
         iceotopes,
         rolltide
      ];
 
 var opp_scores=[
-        oppbelicheck,
-        opppredators,
         oppcookiemon,
+        opppredators,
+        oppbelicheck,
         oppfatbastards,
 
-        oppkrusty,
         opptenanus,
+        oppkrusty,
         oppiceotopes,
         opprolltide
      ];
@@ -107,13 +107,13 @@ var opp_scores=[
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs=[
-              0,   // belicheck
-              0,   // predators
               0,   // cookiemon
+              0,   // predators
+              0,   // belicheck
               0,   // bastards
 
-              0,   // krusty
               0,   // tenanus
+              0,   // krusty
               0,   // iceotopes
               0    // rolltide
              ];
@@ -130,9 +130,9 @@ var week5_txt = "Well, the last undefeated team went belly up but the tide is st
 
 var week6_txt = "OK, who hemorrhoided the Anus? Topes must feel like an a-- bomb went off! Whew!  At the other end (pun intended) the Tide hardly rolled to their first victory (thanks Aaron) but they'll take it. Things got a little closer in the PMFB division as the Bastards inexplicibly won and everyone else is tied. Now there's five of the eight teams tied with the leagues best record."
 
-var week7_txt = "";
+var week7_txt = "Another week where the good teams won and the bad teams lost, no suspense, no upsets, sigh...";
 
-var week8_txt = "";
+var week8_txt = "At this point there's virtually 3 spots locked up for the playoffs as all 3 have a 2 game lead and no sign that any of the rest of us can challenge them.  Two teams are basically out of it already as even if they won out they still probably couldn't catch the top 3, leaving just 1 spot between the remaining 5 teams! Good battle among the middle 3 for the last spot though as they're all within 1 win of that4th spot.";
 
 var week9_txt = "";
 
