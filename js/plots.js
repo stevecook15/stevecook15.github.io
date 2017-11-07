@@ -161,9 +161,9 @@ function OppAverages()
    chart.setXLabels(plabels);
 
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(200.0);
-   chart.setYMin(80.0);
+   chart.setNumTics(8);
+   chart.setYMax(180.0);
+   chart.setYMin(100.0);
 
    chart.setThreeD(true);
    chart.setThreeDAxes(true);
