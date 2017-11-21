@@ -1,15 +1,15 @@
 
 //                  Record, Division Record
 
-var predatorsRec   = [ 8, 2,  4, 2 ];   // Joe
-var cookiemonRec   = [ 6, 4,  4, 2 ];   // Noah
-var belicheckRec   = [ 5, 5,  3, 3 ];   // Harrison
-var fatbastardsRec = [ 4, 6,  1, 5 ];   // Steve
+var predatorsRec   = [ 8, 3,  4, 3 ];   // Joe
+var cookiemonRec   = [ 7, 4,  5, 2 ];   // Noah
+var belicheckRec   = [ 6, 5,  4, 3 ];   // Harrison
+var fatbastardsRec = [ 4, 7,  1, 6 ];   // Steve
 
-var tenanusRec     = [ 7, 3,  5, 1 ];   // Jake
-var krustyRec      = [ 5, 5,  3, 3 ];   // Hunter - Screwed By Rodgers
-var iceotopesRec   = [ 4, 6,  3, 3 ];   // John
-var rolltideRec    = [ 1, 9,  1, 5 ];   // Daniel
+var tenanusRec     = [ 7, 4,  5, 2 ];   // Jake
+var krustyRec      = [ 6, 5,  4, 3 ];   // Hunter - Screwed By Rodgers
+var iceotopesRec   = [ 5, 6,  4, 3 ];   // John
+var rolltideRec    = [ 1, 10,  1, 6 ];   // Daniel
 
 var pfl_records=[
       predatorsRec,
@@ -39,30 +39,30 @@ var pfl_labels = [
 // Scoring
 
 //Div 1
-var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65, 154.70, 139.65, 130.85, 119.10, 138.80 ];  // Steve
-var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60, 135.90, 154.60, 188.20, 117.60, 125.30 ];  // Steve
+var fatbastards    = [ 124.05, 157.85, 114.80, 164.65, 142.65, 154.70, 139.65, 130.85, 119.10, 138.80, 138.70 ];  // Steve
+var oppfatbastards = [ 131.45, 168.85, 187.80, 157.05, 151.60, 135.90, 154.60, 188.20, 117.60, 125.30, 152.35 ];  // Steve
 
-var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60, 135.90, 126.80, 144.10, 87.10, 153.40 ];  // Harrsion
-var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45, 154.70, 161.90, 174.85, 144.60, 135.40 ];  // Harrsion
+var belicheck    = [ 131.45, 127.05, 166.35, 131.80, 139.60, 135.90, 126.80, 144.10, 87.10, 153.40, 152.35 ];  // Harrsion
+var oppbelicheck = [ 124.05, 110.50, 142.70, 105.85, 157.45, 154.70, 161.90, 174.85, 144.60, 135.40, 138.70 ];  // Harrsion
 
-var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25, 130.65, 154.60, 174.85, 164.80, 152.70 ];  // Joe
-var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90, 149.20, 139.65, 144.10, 149.70, 125.15 ];  // Joe
+var predators    = [ 150.80, 168.80, 142.70, 154.55, 123.25, 130.65, 154.60, 174.85, 164.80, 152.70, 164.20 ];  // Joe
+var opppredators = [ 141.00, 157.85, 166.35, 129.60, 115.90, 149.20, 139.65, 144.10, 149.70, 125.15, 196.35 ];  // Joe
 
-var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85, 149.20, 161.90, 188.20, 131.60, 131.05 ];  // Noah
-var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55, 130.65, 126.80, 130.85, 160.20, 139.65 ];  // Noah
+var cookiemon    = [ 141.00, 110.50, 187.80, 162.80, 178.85, 149.20, 161.90, 188.20, 131.60, 131.05, 196.35 ];  // Noah
+var oppcookiemon = [ 150.80, 127.05, 114.80, 135.65, 129.55, 130.65, 126.80, 130.85, 160.20, 139.65, 164.20 ];  // Noah
 
 //Div 2
-var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90, 122.30, 135.20, 123.95, 160.20, 125.30 ];  // John
-var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25, 201.85, 100.10, 115.80, 131.60, 138.80 ];  // John
+var iceotopes    = [ 117.95, 113.15, 148.45, 105.85, 115.90, 122.30, 135.20, 123.95, 160.20, 125.30, 136.05 ];  // John
+var oppiceotopes = [ 131.65, 123.65, 106.85, 131.80, 123.25, 201.85, 100.10, 115.80, 131.60, 138.80, 133.00 ];  // John
 
-var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45, 201.85, 181.30, 157.75, 149.70, 139.65 ];  // Jake
-var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60, 122.30, 130.95, 146.55, 164.80, 131.05 ];  // Jake
+var tenanus    = [ 131.65, 143.45, 148.45, 157.05, 157.45, 201.85, 181.30, 157.75, 149.70, 139.65, 133.00 ];  // Jake
+var opptenanus = [ 117.95, 118.75, 151.40, 164.65, 139.60, 122.30, 130.95, 146.55, 164.80, 131.05, 136.05 ];  // Jake
 
-var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55, 114.55, 130.95, 115.80, 117.60, 135.40 ];   // Daniel
-var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85, 112.15, 181.30, 123.95, 119.10, 153.40 ];   // Daniel
+var rolltide    = [ 111.40, 118.75, 106.85, 129.60, 129.55, 114.55, 130.95, 115.80, 117.60, 135.40, 109.95 ];   // Daniel
+var opprolltide = [ 154.50, 143.45, 148.45, 154.55, 178.85, 112.15, 181.30, 123.95, 119.10, 153.40, 132.80 ];   // Daniel
 
-var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60, 112.15, 100.10, 146.55, 144.60, 125.15 ];   // Hunter Screwed
-var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65, 114.55, 135.20, 157.75, 87.10, 152.70 ];   // Hunter
+var krusty    = [ 154.50, 123.65, 151.40, 135.65, 151.60, 112.15, 100.10, 146.55, 144.60, 125.15, 132.80 ];   // Hunter Screwed
+var oppkrusty = [ 111.40, 113.15, 148.45, 162.80, 142.65, 114.55, 135.20, 157.75, 87.10, 152.70, 109.95 ];   // Hunter
 
 
 var pfl_owners = [
@@ -72,7 +72,7 @@ var pfl_owners = [
       "Steve",      // Fat Bastards
 
       "Jake",       // Tenacious Anus
-      "Hunter",     // Krusty Krushers
+      "Hunter",     // Krusty Krushers Screwed
       "John",       // Iceaholics
       "Daniel"      // Roll Tide
       ];
@@ -84,7 +84,7 @@ var pfl_scores=[
         fatbastards,
 
         tenanus,
-        krusty,
+        krusty,  //Screwed
         iceotopes,
         rolltide
      ];
@@ -96,7 +96,7 @@ var opp_scores=[
         oppfatbastards,
 
         opptenanus,
-        oppkrusty,
+        oppkrusty,  //Screwed
         oppiceotopes,
         opprolltide
      ];
@@ -113,9 +113,9 @@ var playoffs=[
               0,   // bastards
 
               0,   // tenanus
-              0,   // krusty
+              0,   // krusty  //Screwed
               0,   // iceotopes
-              0    // rolltide
+              4    // rolltide
              ];
 
 var week1_txt = "Welcome to the 2017 PFL season. For one brief moment we all had the same chance to reach the pinnacle of PFL football, but then the games are played.  Some are sitting on the top of the world while others are beginning to suspect the cause is lost!  Or maybe it was just one week...";
@@ -138,7 +138,7 @@ var week9_txt = "Guess if you're Tenacious enough, the sphincter will hold up an
 
 var week10_txt = "We can continue to fool ourselves as to who's in and who's out of the playoffs, or tell it like it is. The Preds and Anus would have to go 0-4 to even have a chance of not making the playoffs.  The Tide is out, period. And the Fat and Ice would need to go 4-0 to have chance of making it - and the Fat plays the top 3 teams in the last three weeks. So it's down to who's 3rd and 4th between Cookies, Bellies, and NOT Screwed By Rodgers.";
 
-var week11_txt = "";
+var week11_txt = "The long anticpated offcial end to the Tides season (if only Alabama was in the same boat) cam this week. It's just a formality that the Bastards aren't eliminated also. Pretty good battle shaping up for first seed though, three teams within one game and the fourth spot even kinda in reach of the 6th place Topes.";
 
 var week12_txt = "";
 
