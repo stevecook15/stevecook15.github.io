@@ -644,8 +644,8 @@ function ScoringTrend()
    }
 
    //chart.setAutoScale(true);
-   chart.setNumTics(15);
-   chart.setYMax(230.0);
+   chart.setNumTics(12);
+   chart.setYMax(200.0);
    chart.setYMin(80.0);
 
    var canvasId = document.getElementById("plot_canvas");
