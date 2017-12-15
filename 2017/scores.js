@@ -107,13 +107,13 @@ var opp_scores=[
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs=[
-              1,   // predators
+              2,   // predators
               1,   // cookiemon
               0,   // belicheck
               4,   // bastards
 
-              1,   // tenanus
-              0,   // krusty  //Screwed
+              2,   // tenanus
+              1,   // krusty  //Screwed
               0,   // iceotopes
               4    // rolltide
              ];
