@@ -109,12 +109,12 @@ var opp_scores=[
 var playoffs=[
               2,   // predators
               1,   // cookiemon
-              0,   // belicheck
+              1,   // belicheck
               4,   // bastards
 
               2,   // tenanus
-              1,   // krusty  //Screwed
-              0,   // iceotopes
+              4,   // krusty  //Screwed
+              4,   // iceotopes
               4    // rolltide
              ];
 
