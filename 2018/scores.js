@@ -11,7 +11,7 @@ var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
 var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
 var tenanusRec     = [ 0, 0,  0, 0 ];   // Jake
 var thenubsRec     = [ 0, 0,  0, 0 ];   // Adam
-var ingloriusRec   = [ 0, 0,  0, 0 ];   // Matt
+var ingloriousRec  = [ 0, 0,  0, 0 ];   // Matt
 
 var pfl_records=[
       fatbastardsRec,
@@ -117,8 +117,8 @@ var opp_scores=[
         opptenanus,
         oppiceotopes,
         opprolltide,
-        oppadamteam,
-        oppmattteam 
+        oppthenubs,
+        oppinglorious 
      ];
 
 // 0 - not in playoffs yet
@@ -134,7 +134,7 @@ var playoffs=[
               0,   // belicheck
 
               0,   // tenanus
-              4,   // iceotopes
+              0,   // iceotopes
               0,   // rolltide
               0,   // thenubs
               0    // inglorious
@@ -183,16 +183,16 @@ var nub = "The Nubs";             var dnub = nub + " *";
 var ing = "Inglorious Staffords"; var ding = ing + " *";
 
 var sfat = fatbastards;
-var sbel = belicheck;
-var spre = predators;
 var scom = cookiemon;
-var sing = ingtTeam;
-
-var snub = adamTeam;
-var sice = iceotopes;
-var sten = tenanus;
-var srol = rolltide;
+var spre = predators;
 var skru = krusty;
+var sbel = belicheck;
+
+var sice = iceotopes;
+var srol = rolltide;
+var sten = tenanus;
+var snub = thenubs;
+var sing = inglorious;
 
 var week01Teams = new Array(dfat, dbel, dice, dten, dcom, dpre, drol, dkru, ding, dnub);
 var week01Scores = new Array(sfat[0], sbel[0], sice[0], sten[0], scom[0], spre[0], srol[0], skru[0], snub[0], sing[0]);
@@ -209,7 +209,7 @@ var week04Scores = new Array(sfat[3], sten[3], sice[3], sbel[3], scom[3], skru[3
 var week05Teams = new Array(fat, kru, ice, pre, com, rol, bel, ten, ding, dnub);
 var week05Scores = new Array(sfat[4], skru[4], sice[4], spre[4], scom[4], srol[4], sbel[4], sten[4], snub[4], sing[4]);
 
-var week06Teams = new Array(dfat, dbel, dice, dten, dcom, dpre, drol, dkr, ding, dnubu);
+var week06Teams = new Array(dfat, dbel, dice, dten, dcom, dpre, drol, dkru, ding, dnub);
 var week06Scores = new Array(sfat[5], sbel[5], sice[5], sten[5], scom[5], spre[5], srol[5], skru[5], snub[5], sing[5]);
 
 var week07Teams = new Array(dfat, dpre, dice, dkru, dcom, dbel, drol, dten, ding, dnub);

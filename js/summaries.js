@@ -9,9 +9,9 @@ displayWeek = function(week)
 
    var weekStr;
    if ( week < 10 )
-      weekStr = "2017/Week0" + week + ".html";
+      weekStr = "2018/Week0" + week + ".html";
    else
-      weekStr = "2017/Week" + week + ".html";
+      weekStr = "2018/Week" + week + ".html";
 
    if ( week > 14 ) // Playoffs...
    {
@@ -136,7 +136,7 @@ mkWeek = function(week, dateStr, teams, scores, comments)
    var resHtml = "";
    var jndx=1;
 
-   for ( var indx=0; indx<8; indx += 2)
+   for ( var indx=0; indx<10; indx += 2)
    {
       if ( scores[indx] == parseInt(scores[indx]) )
          txtscr1 = "" + scores[indx] + ".0"

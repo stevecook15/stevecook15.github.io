@@ -1,168 +1,190 @@
 
-// Division 1 - Predatory Monsters of Fat Beli's
+// Division 1 - 
 
 var team0 = [ "Fat Bastards / Steve C",
-   "ST,Drew Brees,NOR,QB,0",
-   "ST,Philip Rivers,LAC,QB,0",
-   "ST,Ty Montgomery,GNB,WR,0",
-   "ST,Mike Gillislee,NWE,RB,0",
-   "ST,Jimmy Graham,SEA,TE,0",
-   "ST,Mike Evans,TAM,WR,0",
-   "ST,Kelvin Benjamin,CAR,WR,0",
-   "ST,John Brown,ARI,WR,0",
-   "ST,Wil Lutz,NOR,KR,0",
-   "ST,Houston Texans,HOU,DEF,0",
-   "BN,Dak Prescott,DAL,QB,0",
-   "BN,Leonard Fournette,JAC,RB,0",
-   "BN,Derrick Henry,TEN,RB,0",
-   "BN,Michael Thomas,NOR,WR,0",
-   "BN,Jeremy Maclin,WAS,WR,0",
-   "BN,Jeremy Hill,CIN,RB,0",
-   "BN,Minnesota Vikings,MIN,DEF,0"
+   "ST,Aaron Rodgers,GNB,QB,0",
+   "ST,Leonard Fournette,JAC,RB,0",
+   "ST,Alex Collins,BAL,RB,0",
+   "ST,Michael Thomas,NOR,WR,0",
+   "ST,Robby Anderson,NYJ,WR,0",
+   "ST,Allen Hurns,DAL,WR,0",
+   "ST,Jimmy Graham,GNB,TE,0",
+   "ST,Matt Prater,DET,KR,0",
+   "ST,Jacksonville Jaguars,JAC,DEF,0",
+   "BN,D'Onta Foreman,HOU,RB,0",
+   "BN,Ronald Jones,TAM,RB,0",
+   "BN,Will Fuller,ARI,WR,0",
+   "BN,Alshon Jeffery,PHI,WR,0",
+   "BN,Mike Williams,LAC,WR,0",
+   "BN,Cameron MEredith,NOR,WR,0"
 ];
 
-var team1 = [ "Predators / Joe",
-   "ST,Tom Brady,NWE,QB,0",
-   "ST,Brian Hoyer,SFO,QB,0",
+var team1 = [ "Cookie Monsters / Noah",
+   "ST,Drew Brees,NOR,QB,0",
+   "ST,David Johnson,ARI,RB,0",
+   "ST,Jay Ajayi,PHI,RB,0",
+   "ST,Antonio Brown,PIT,WR,0",
+   "ST,Keenan Allen,LAC,WR,0",
+   "ST,Cooper Kupp,LAR,WR,0",
+   "ST,Delanie Walker,TEN,TE,0",
+   "ST,Greg Zuerlien,LAR,KR,0",
+   "ST,Denver Broncos,DEN,DEF,0",
+   "BN,Kirk Cousins,MIN,QB,0",
+   "BN,Baker Mayfield,CLE,QB,0",
+   "BN,Duke Johnson,CLE,RB,0",
+   "BN,Isiah Crowell,NYJ,RB,0",
+   "BN,Devin Funchess,CAR,WR,0",
+   "BN,Josh Gordon,CAR,WR,0"
+];
+
+var team2 = [ "Predators / Joe",
+   "ST,Jared Goff,LAR,QB,0",
    "ST,Ezekiel Elliott,DAL,RB,0",
    "ST,Kareem Hunt,KAN,RB,0",
-   "ST,Travis Kelce,KAN,TE,0",
-   "ST,Odell Beckham Jr,NYG,WR,0",
-   "ST,Amari Cooper,OAK,WR,0",
-   "ST,Jamison Crowder,WAS,WR,0",
+   "ST,Joe Mixon,CIN,RB,0",
+   "ST,Davante Adams,GNB,WR,0",
+   "ST,Marvin Jones,DET,WR,0",
+   "ST,Emmanuel Sanders,DEN,WR,0",
    "ST,Justin Tucker,BAL,KR,0",
-   "ST,Carolina Panthers,CAR,DEF,0",
-   "BN,Davante Adams,GNB,WR,0",
-   "BN,DeVante Parker,MIA,WR,0",
-   "BN,C.J. Anderson,DEN,RB,0",
-   "BN,Ameer Abdullah,DET,RB,0",
-   "BN,Jay Cutler,MIA,QB,0",
-   "BN,Chris Hogan,NWE,WR,0",
-   "BN,Marvin Jones Jr.,DET,WR,0"
+   "ST,Kansas City,KAN,DEF,0",
+   "BN,Dalvin Cook,MIN,RB,0",
+   "BN,Rex Burkhead,NWE,RB,0",
+   "BN,Marshawn Lynch,OAK,RB,0",
+   "BN,Julian Edelman,NWE,WR,0",
+   "BN,Evan Engram,NYG,TE,0",
+   "BN,David Njuku,CLE,TE,0"
 ];
 
-var team2 = [ "Discount Belicheck / Harrison",
-   "ST,Andy Dalton,CIN,QB,0",
-   "ST,Ben Roethlisberger,PIT,QB,0",
-   "ST,Jordan Howard,CHI,RB,0",
-   "ST,Marshawn Lynch,OAK,RB,0",
-   "ST,Rob Gronkowski,NWE,TE,0",
-   "ST,Julio Jones,ATL,WR,0",
-   "ST,A.J. Green,CIN,WR,0",
-   "ST,Zach Ertz,PHI,TE,0",
+var team3 = [ "Krusty Krushers / Hunter",
+   "ST,Cam Newton,CAR,QB,0",
+   "ST,LeVeon Bell,CAR,RB,0",
+   "ST,Devonta Freeman,ATL,RB,0",
+   "ST,Mark Ingram,NOR,RB,0",
+   "ST,Demaryius Thomas,DEN,WR,0",
+   "ST,Tyreek Hill,KAN,WR,0",
+   "ST,Kelvin Benjamin,MIN,WR,0",
+   "ST,Jordan Reed,WAS,TE,0",
+   "ST,Mason Crosby,DAL,KR,0",
+   "ST,Carolina Panthers,CAR,DEF,0",
+   "BN,Matt Ryan,ATL,QB,0",
+   "BN,Jack Doyle,WAS,TE,0",
+   "BN,New Orleans Saints,NOR,DEF,0",
+   "BN,Harrsion Butker,KAN,KR,0",
+   "BN,Cleveland Browns,CLE,DEF,0"
+];
+
+var team4 = [ "Discount Belicheck / Harrison",
+   "ST,Tom Brady,NWE,QB,0",
+   "ST,Ezekial Elliott,DAL,RB,0",
+   "ST,Kenyan Drake,MIA,RB,0",
+   "ST,Odell Beckham,NYG,WR,0",
+   "ST,Doug Baldwin,SEA,WR,0",
+   "ST,Golden Tate,DET,WR,0",
+   "ST,Greg Olsen,CAR,TE,0",
    "ST,Stephen Gostkowski,NWE,KR,0",
    "ST,Philadelphia Eagles,PHI,DEF,0",
-   "BN,Mark Ingram,NOR,RB,0",
-   "BN,Bilal Powell,NYJ,RB,0",
-   "BN,Jarvis Landry,MIA,WR,0",
-   "BN,Eli Manning,NYG,QB,0",
-   "BN,Randall Cobb,GNB,WR,0",
-   "BN,DeSean Jackson,TAM,WR,0",
-   "BN,Kansas City Chiefs,KAN,DEF,0"
-];
-
-var team3 = [ "Cookie Monsters / Noah",
-   "ST,Russell Wilson,SEA,QB,0",
-   "ST,Matthew Stafford,DET,QB,0",
-   "ST,Le'Veon Bell,PIT,RB,0",
-   "ST,Rob Kelley,WAS,RB,0",
-   "ST,Delanie Walker,TEN,TE,0",
-   "ST,Antonio Brown,PIT,WR,0",
-   "ST,Brandin Cooks,NWE,WR,0",
-   "ST,Sammy Watkins,LAR,WR,0",
-   "ST,Matt Bryant,ATL,KR,0",
-   "ST,Seattle Seahawks,SEA,DEF,0",
-   "BN,Adrian Peterson,NOR,RB,0",
-   "BN,Jameis Winston,TAM,QB,0",
-   "BN,Keenan Allen,LAC,WR,0",
-   "BN,LeGarrette Blount,PHI,RB,0",
-   "BN,Tyreek Hill,KAN,WR,0",
-   "BN,Doug Martin,TAM,RB,0",
-   "BN,Deshaun Watson,HOU,QB,0"
+   "BN,Patrick Mahomes,KAN,QB,0",
+   "BN,Rashaad Penny,SEA,RB,0",
+   "BN,Michael Crabtree,BAL,WR,0",
+   "BN,Kenny Stills,MIA,WR,0",
+   "BN,O.J. Howard,TAM,TE,0",
+   "BN,Robbie Gould,SFO,KR,0",
 ];
 
 
-// Divison 2 - Tenacious Tides of Krushed Ice
 
-var team4 = [ "Iceotopes / John",
-   "ST,Kirk Cousins,WAS,QB,0",
-   "ST,Matt Ryan,ATL,QB,0",
-   "ST,David Johnson,ARI,RB,0",
-   "ST,Dalvin Cook,MIN,RB,0",
-   "ST,Jordan Reed,WAS,TE,0",
-   "ST,Doug Baldwin,SEA,WR,0",
-   "ST,Martavis Bryant,PIT,WR,0",
-   "ST,Pierre Garcon,SFO,WR,0",
-   "ST,Mason Crosby,GNB,KR,0",
-   "ST,Denver Broncos,DEN,DEF,0",
-   "BN,Tevin Coleman,ATL,RB,0",
-   "BN,Terrance West,BAL,RB,0",
-   "BN,T.Y. Hilton,IND,WR,0",
-   "BN,Joe Mixon,CIN,RB,0",
-   "BN,Martellus Bennett,GNB,TE,0",
-   "BN,Rishard Matthews,TEN,WR,0",
-   "BN,Darren McFadden,DAL,RB,0"
-];
+// Divison 2 - 
 
-var team5 = [ "Roll Tide / Daniel",
-   "ST,Derek Carr,OAK,QB,0",
-   "ST,Marcus Mariota,TEN,QB,0",
-   "ST,DeMarco Murray,TEN,RB,0",
-   "ST,Carlos Hyde,SFO,RB,0",
-   "ST,Greg Olsen,CAR,TE,0",
-   "ST,Jordy Nelson,GNB,WR,0",
-   "ST,Michael Crabtree,OAK,WR,0",
-   "ST,Brandon Marshall,NYG,WR,0",
-   "ST,Chris Boswell,PIT,KR,0",
-   "ST,New York Giants,NYG,DEF,0",
-   "BN,Jay Ajayi,MIA,RB,0",
-   "BN,Isaiah Crowell,CLE,RB,0",
-   "BN,Emmanuel Sanders,DEN,WR,0",
-   "BN,Allen Robinson,JAC,WR,0",
-   "BN,Sam Bradford,MIN,QB,0",
-   "BN,Paul Perkins,NYG,RB,0",
-   "BN,Blake Bortles,JAC,QB,0"
-];
-
-var team6 = [ "Tenacious Anus / Jacob",
-   "ST,Carson Wentz,PHI,QB,0",
-   "ST,Carson Palmer,ARI,QB,0",
-   "ST,LeSean McCoy,BUF,RB,0",
+var team5 = [ "Iceotopes / John",
+   "ST,Deshawn Watson,HOU,QB,0",
    "ST,Todd Gurley,LAR,RB,0",
-   "ST,Hunter Henry,LAC,TE,0",
-   "ST,Dez Bryant,DAL,WR,0",
-   "ST,Larry Fitzgerald,ARI,WR,0",
-   "ST,Melvin Gordon,LAC,RB,0",
-   "ST,Adam Vinatieri,IND,KR,0",
-   "ST,New England Patriots,NWE,DEF,0",
-   "BN,Demaryius Thomas,DEN,WR,0",
-   "BN,Terrelle Pryor,WAS,WR,0",
+   "ST,Royce Freeman,DEN,RB,0",
+   "ST,Amari Cooper,OAK,WR,0",
+   "ST,Adam Theilen,LAR,WR,0",
+   "ST,Pierre Garcon,SFO,WR,0",
+   "ST,Zach Ertz,CIN,TE,0",
+   "ST,Chris Boswell,PIT,KR,0",
+   "ST,Los Angeles Chargers,LAC,DEF,0",
+   "BN,Alex Smith,WAS,QB,0",
    "BN,Lamar Miller,HOU,RB,0",
-   "BN,Andrew Luck,IND,QB,0",
-   "BN,Golden Tate,DET,WR,0",
-   "BN,Danny Woodhead,BAL,RB,0",
-   "BN,Jack Doyle,IND,TE,0"
+   "BN,Kerryon Johnson,DET,RB,0",
+   "BN,Tarik Cohen,CHI,RB,0",
+   "BN,Corey Davis,TEN,WR,0",
+   "BN,Nelson Agholar,LAR,WR,0"
 ];
 
-var team7 = [ "Krusty Krushers / David",
-   "ST,Aaron Rodgers,GNB,QB,0",
-   "ST,Cam Newton,CAR,QB,0",
-   "ST,Devonta Freeman,ATL,RB,0",
-   "ST,Christian McCaffrey,CAR,RB,0",
-   "ST,Kyle Rudolph,MIN,TE,0",
-   "ST,DeAndre Hopkins,HOU,WR,0",
-   "ST,Alshon Jeffery,PHI,WR,0",
-   "ST,Stefon Diggs,MIN,WR,0",
-   "ST,Dan Bailey,DAL,KR,0",
-   "ST,Arizona,ARI,DEF,0",
-   "BN,Tyrod Taylor,BUF,QB,0",
+var team6 = [ "Roll Tide / Daniel",
+   "ST,Carson Wentz,PHI,QB,0",
+   "ST,LeSean McCoy,BUF,RB,0",
+   "ST,Tevin Coleman,ATL,RB,0",
+   "ST,Julio Jones,ATL,WR,0",
+   "ST,Mike Evans,TAM,WR,0",
+   "ST,Brandin Cooks,LAR,WR,0",
+   "ST,Travis Kelce,KAN,TE,0",
+   "ST,Matt Bryant,ATL,KR,0",
+   "ST,Minnesota Vikings,MIN,DEF,0",
+   "BN,Marcus Mariota,TEN,QB,0",
+   "BN,Ty Montgomery,GNB,RB,0",
+   "BN,Derrick Henry,TEN,RB,0",
    "BN,Theo Riddick,DET,RB,0",
-   "BN,Tyler Eifert,CIN,TE,0",
-   "BN,Cooper Kupp,LAR,WR,0",
-   "BN,Frank Gore,IND,RB,0",
-   "BN,Dustin Hopkins,WAS,KR,0",
-   "BN,Cincinnati,CIN,DEF,0"
+   "BN,Jamison Crowder,WAS,WR,0",
+   "BN,Randall Cobb,GNB,RB,0",
 ];
+
+var team7 = [ "Tenacious Anus / Jake",
+   "ST,Andrew Luck,IND,QB,0",
+   "ST,Melvin Gordon,LAC,RB,0",
+   "ST,Carlos Hyde,CLE,RB,0",
+   "ST,A.J. Green,CIN,WR,0",
+   "ST,Larry Fitzgerald,MIN,WR,0",
+   "ST,T.Y. Hilton,IND,WR,0",
+   "ST,Rob Gronkowski,NWE,TE,0",
+   "ST,Graham Gano,CAR,KR,0",
+   "ST,Baltimore,BAL,DEF,0",
+   "BN,Ben Roethlisberger,PIT,QB,0",
+   "BN,Marlon Mack,IND,RB,0",
+   "BN,Peyton Barber,TAM,RB,0",
+   "BN,James White,NWE,RB,0",
+   "BN,Chris Thompson,CAR,RB,0",
+   "BN,Jarvis Landry,CLE,WR,0"
+];
+
+var team8 = [ "The Nubs / Adam",
+   "ST,Russel Wilson,SEA,QB,0",
+   "ST,Jordan Howard,CHI,RB,0",
+   "ST,Christian McCaffrey,CAR,RB,0",
+   "ST,DeAndre Hopkins,HOU,WR,0",
+   "ST,JuJu Smith-Schudter,PIT,WR,0",
+   "ST,Marquiss Goodwin,SFO,WR,0",
+   "ST,Kyle Rudolph,MIN,TE,0",
+   "ST,Jake Elliott,PHI,KR,0",
+   "ST,Los Angeles Rams,LAR,DEF,0",
+   "BN,Adrian Peterson,WAS,RB,0",
+   "BN,Chris Carson,SEA,RB,0",
+   "BN,Jamal Williams,GNB,RB,0",
+   "BN,Sony Michel,NWE,RB,0",
+   "BN,John Ross,CIN,WR,0",
+   "BN,Keelon Cole,JAC,WR,0"
+];
+
+var team9 = [ "Inglorious Staffords / Matt",
+   "BN,Matt Stafford,DET,QB,0",
+   "ST,Alvin Kamara,NOR,RB,0",
+   "ST,Saquon Barkley,NYG,RB,0",
+   "ST,Stefon Diggs,MIN,WR,0",
+   "ST,Allen Robinson,CHI,WR,0",
+   "ST,Chris Hogan,NWE,WR,0",
+   "ST,Trey Burton,CHI,TE,0",
+   "ST,Will Lutz,NOR,KR,0",
+   "ST,Houston Texans,HOU,DEF,0",
+   "BN,Jimmy Garappalo,SFO,QB,0",
+   "BN,Sam Darnold,NYJ,QB,0",
+   "BN,Dion Lewis,TEN,RB,0",
+   "BN,Bilal Powell,NYJ,RB,0",
+   "BN,Sammy Watkins,KAN,WR,0",
+   "BN,Kenney Golladay,DET,WR,0"
+];
+
 
 
 function showRosters()
@@ -198,6 +220,14 @@ function showRosters()
    tableHdr = document.getElementById("rhead7");
    tableBody = document.getElementById("rbody7");
    fillTable(tableHdr, tableBody, team7);
+
+   tableHdr = document.getElementById("rhead8");
+   tableBody = document.getElementById("rbody8");
+   fillTable(tableHdr, tableBody, team8);
+
+   tableHdr = document.getElementById("rhead9");
+   tableBody = document.getElementById("rbody9");
+   fillTable(tableHdr, tableBody, team9);
 }
 
 function fillTable(hdr, body, players)

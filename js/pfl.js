@@ -40,24 +40,24 @@ $(document).ready(function()
    });
 
    var summaries_dialog = $("#summaries_window");
-   $("#summaries_window").dialog({ width: 150, height: 430, autoOpen: true });
+   $("#summaries_window").dialog({ width: 150, height: 470, autoOpen: true });
    $("#summaries_window").dialog('option', 'position', [10, 70]);
    $("#summaries_window").css('background', 'url(Gifs/backgrnd.gif)');
    SetWeeks();
 
    var standings_dialog = $("#standings_window");
-   standings_dialog.dialog({ width: 400, height: 430, autoOpen: true });
+   standings_dialog.dialog({ width: 400, height: 470, autoOpen: true });
    standings_dialog.dialog('option', 'position', [170, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    showStandings();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 550, height: 430, autoOpen: true });
+   currweek_dialog.dialog({ width: 550, height: 470, autoOpen: true });
    currweek_dialog.dialog('option', 'position', [580, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    displayWeek(-1);
 
-   $("#roster_window").dialog({ width: 1130, height: 530, autoOpen: false });
+   $("#roster_window").dialog({ width: 1210, height: 530, autoOpen: false });
 
    $("#plots_window").dialog({ width: 960, height: 474, autoOpen: false });
 
