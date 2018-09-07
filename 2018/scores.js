@@ -194,13 +194,13 @@ var sten = tenanus;
 var snub = thenubs;
 var sing = inglorious;
 
-var week01Teams = new Array(dfat, dkru, dice, dbel, dcom, dpre, drol, ding, dten, dnub);
+var week01Teams = new Array(dfat, dkru, ice, bel, dcom, dpre, drol, ding, dten, dnub);
 var week01Scores = new Array(sfat[0], skru[0], sice[0], sbel[0], scom[0], spre[0], srol[0], sing[0], sten[0], snub[0]);
 
-var week02Teams = new Array(dfat, dpre, dice, dnub, dcom, dbel, drol, dkru, dten, ding); 
+var week02Teams = new Array(dfat, dpre, dice, dnub, dcom, dbel, rol, kru, dten, ding); 
 var week02Scores = new Array(sfat[1], spre[1], sice[1], snub[1], scom[1], sbel[1], srol[1], skru[1], sten[1], sing[1]);
 
-var week03Teams = new Array(dfat, dcom, dice, drol, dpre, dten, dkru, dbel, dnub, ding);
+var week03Teams = new Array(dfat, dcom, dice, drol, pre, ten, dkru, dbel, dnub, ding);
 var week03Scores = new Array(sfat[2], scom[2], sice[2], srol[2], spre[2], sten[2], skru[2], sbel[2], snub[2], sing[2]);
 
 var week04Teams = new Array(fat, ice, com, ing, nub, pre, kru, ten, bel, rol);
