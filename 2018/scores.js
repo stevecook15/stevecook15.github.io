@@ -222,7 +222,7 @@ var week09Teams = new Array(fat, nub, ice, kru, com, ten, rol, pre, bel, ing);
 var week09Scores = new Array(sfat[8], snub[8], sice[8], skru[8], scom[8], sten[8], srol[8], spre[8], sbel[8], sing[8]);
 
 var week10Teams = new Array(fat, ten, ice, pre, com, rol, kru, ing, bel, nub);
-var week10Scores = new Array(sfat[9], sten[9], sicm[9], spre[9], scom[9], srol[9], skru[9], sing[9], sbel[9], snub[9]);
+var week10Scores = new Array(sfat[9], sten[9], sice[9], spre[9], scom[9], srol[9], skru[9], sing[9], sbel[9], snub[9]);
 
 var week11Teams = new Array(dfat, dpre, dice, dnub, dcom, dbel, kru, ten, drol, ding);
 var week11Scores = new Array(sfat[10], spre[10], sice[10], snub[10], scom[10], sbel[10], skru[10], sten[10], srol[10], sing[10]);
