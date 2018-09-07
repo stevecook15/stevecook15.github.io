@@ -86,7 +86,7 @@ var pfl_owners = [
       "Hunter",     // Krusty Krushers
       "Harrison",   // Belicheck
 
-      "John",       // Iceaholics
+      "John",       // Iceotopes
       "Daniel",     // Roll Tide
       "Jake",       // Tenacious Anus
       "Adam",       // The Nubs
@@ -176,7 +176,7 @@ var pre = "Predators";            var dpre = pre + " *";
 var kru = "Krusty Krushers";      var dkru = kru + " *";
 var bel = "Discount Belichecks";  var dbel = bel + " *";
 
-var ice = "Iceaholics";           var dice = ice + " *";
+var ice = "Iceotopes";            var dice = ice + " *";
 var rol = "Roll Tide";            var drol = rol + " *";
 var ten = "Tenacious Anus";       var dten = ten + " *";
 var nub = "The Nubs";             var dnub = nub + " *";
