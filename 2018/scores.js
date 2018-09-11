@@ -1,124 +1,124 @@
 
 //                  Record, Division Record
 
-var fatbastardsRec = [ 0, 0,  0, 0 ];   // Steve
-var cookiemonRec   = [ 0, 0,  0, 0 ];   // Noah
-var predatorsRec   = [ 0, 0,  0, 0 ];   // Joe
-var krustyRec      = [ 0, 0,  0, 0 ];   // Hunter
-var belicheckRec   = [ 0, 0,  0, 0 ];   // Harrison
+var cookiemonRec   = [ 1, 0,  1, 0 ];   // Noah
+var fatbastardsRec = [ 1, 0,  1, 0 ];   // Steve
+var predatorsRec   = [ 0, 1,  0, 1 ];   // Joe
+var krustyRec      = [ 0, 1,  0, 1 ];   // Hunter
+var belicheckRec   = [ 0, 1,  0, 0 ];   // Harrison
 
-var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
-var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
-var tenanusRec     = [ 0, 0,  0, 0 ];   // Jake
-var thenubsRec     = [ 0, 0,  0, 0 ];   // Adam
-var ingloriousRec  = [ 0, 0,  0, 0 ];   // Matt
+var tenanusRec     = [ 1, 0,  1, 0 ];   // Jake
+var iceotopesRec   = [ 1, 0,  0, 0 ];   // John
+var ingloriousRec  = [ 1, 0,  1, 0 ];   // Matt
+var thenubsRec     = [ 0, 1,  0, 1 ];   // Adam
+var rolltideRec    = [ 0, 1,  0, 1 ];   // Daniel
 
 var pfl_records=[
-      fatbastardsRec,
       cookiemonRec,
+      fatbastardsRec,
       predatorsRec,
-      krustyRec,
       belicheckRec,
+      krustyRec,
      
-      iceotopesRec,
-      rolltideRec,
       tenanusRec,
+      iceotopesRec,
+      ingloriousRec,
       thenubsRec,
-      ingloriousRec
+      rolltideRec
       ];
 
 var pfl_labels = [
-      "Fat Bastards",
       "Cookie Monsters",
+      "Fat Bastards",
       "Predators",
-      "Krusty Krushers",
       "Discount Belicheck",
+      "Krusty Krushers",
 
-      "Iceotopes",
-      "Roll Tide",
       "Tenacious Anus",
+      "Iceotopes",
+      "Inglorious Staffords", //Matt
       "The Nubs",  // Adam
-      "Inglorious Staffords" //Matt
+      "Roll Tide" 
       ];
 
 
 // Scoring
 
 //Div 1
-var fatbastards    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
-var oppfatbastards = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
+var fatbastards    = [ 120.05 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
+var oppfatbastards = [ 105.95 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
 
-var cookiemon    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
-var oppcookiemon = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
+var cookiemon    = [ 169.25 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
+var oppcookiemon = [ 159.10 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
 
-var predators    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
-var opppredators = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
+var predators    = [ 159.10 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
+var opppredators = [ 169.25 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
 
-var krusty    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
-var oppkrusty = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
+var krusty    = [ 105.95 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
+var oppkrusty = [ 120.05 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
 
-var belicheck    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
-var oppbelicheck = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
+var belicheck    = [ 120.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
+var oppbelicheck = [ 127.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
 
 
 //Div 2
-var iceotopes    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
-var oppiceotopes = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
+var iceotopes    = [ 127.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
+var oppiceotopes = [ 120.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
 
-var rolltide    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
-var opprolltide = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
+var rolltide    = [ 112.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
+var opprolltide = [ 126.60 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
 
-var tenanus    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
-var opptenanus = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
+var tenanus    = [ 163.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
+var opptenanus = [ 124.40 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
 
-var thenubs    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
-var oppthenubs = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
+var thenubs    = [ 124.40 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
+var oppthenubs = [ 163.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
 
-var inglorious    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
-var oppinglorious = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
+var inglorious    = [ 126.60 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
+var oppinglorious = [ 112.45 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
 
 
 
 var pfl_owners = [
+      "Noah",       // Cookie Monsters
       "Steve",      // Fat Bastards
       "Joe",        // Predators
-      "Noah",       // Cookie Monsters
       "Hunter",     // Krusty Krushers
       "Harrison",   // Belicheck
 
       "John",       // Iceotopes
-      "Daniel",     // Roll Tide
       "Jake",       // Tenacious Anus
+      "Matt",       // Inglorious Staffords
       "Adam",       // The Nubs
-      "Matt"        // Inglorious Staffords
+      "Daniel"      // Roll Tide
       ];
 
 var pfl_scores=[
-        fatbastards,
         cookiemon,
+        fatbastards,
         predators,
-        krusty,
         belicheck,
+        krusty,
 
-        iceotopes,
-        rolltide,
         tenanus,
+        iceotopes,
+        inglorious,
         thenubs,
-        inglorious
+        rolltide
      ];
 
 var opp_scores=[
-        oppfatbastards,
         oppcookiemon,
+        oppfatbastards,
         opppredators,
-        oppkrusty,
         oppbelicheck,
+        oppkrusty,
 
         opptenanus,
         oppiceotopes,
-        opprolltide,
+        oppinglorious ,
         oppthenubs,
-        oppinglorious 
+        opprolltide 
      ];
 
 // 0 - not in playoffs yet
@@ -127,20 +127,22 @@ var opp_scores=[
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs=[
-              0,   // bastards
               0,   // cookiemon
+              0,   // bastards
               0,   // predators
-              0,   // krusty
               0,   // belicheck
+              0,   // krusty
 
               0,   // tenanus
               0,   // iceotopes
-              0,   // rolltide
+              0,   // inglorious
               0,   // thenubs
-              0    // inglorious
+              0    // rolltide
              ];
 
-var week1_txt = "Welcome to the 2018 PFL season.  ";
+var week1_txt = "Welcome to the 2018 PFL season.  In another shining example of how its better to be lucky than good I present: " +
+                "Despite having the third lowest score for the week, the Bastards (despite losing QB and top RB early in games) eek " +
+                "out a win, and the Preds, despite having third highest score of the week lose a close one to the top score of the week.";
 
 var week2_txt = "";
 
