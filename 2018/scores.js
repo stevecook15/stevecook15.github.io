@@ -1,59 +1,59 @@
 
 //                  Record, Division Record
 
-var fatbastardsRec = [ 2, 0,  2, 0 ];   // Steve
-var cookiemonRec   = [ 1, 1,  1, 1 ];   // Noah
-var belicheckRec   = [ 1, 1,  1, 0 ];   // Harrison
-var predatorsRec   = [ 0, 2,  0, 2 ];   // Joe
-var krustyRec      = [ 0, 2,  0, 2 ];   // Hunter
+var fatbastardsRec = [ 3, 0,  3, 0 ];   // Steve
+var belicheckRec   = [ 2, 1,  2, 0 ];   // Harrison
+var cookiemonRec   = [ 1, 2,  1, 2 ];   // Noah
+var predatorsRec   = [ 1, 2,  0, 2 ];   // Joe
+var krustyRec      = [ 0, 3,  0, 3 ];   // Hunter
 
-var ingloriousRec  = [ 2, 0,  2, 0 ];   // Matt
-var iceotopesRec   = [ 2, 0,  1, 0 ];   // John
-var tenanusRec     = [ 1, 1,  1, 1 ];   // Jake
-var rolltideRec    = [ 1, 1,  0, 1 ];   // Daniel
-var thenubsRec     = [ 0, 2,  0, 2 ];   // Adam
+var ingloriousRec  = [ 3, 0,  3, 0 ];   // Matt
+var iceotopesRec   = [ 3, 0,  2, 0 ];   // John
+var tenanusRec     = [ 1, 2,  1, 1 ];   // Jake
+var rolltideRec    = [ 1, 2,  0, 2 ];   // Daniel
+var thenubsRec     = [ 0, 3,  0, 3 ];   // Adam
 
 // Scoring
 
 //Div 1
-var fatbastards    = [ 120.05, 133.20 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
-var oppfatbastards = [ 105.95, 127.00 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
+var fatbastards    = [ 120.05, 133.20, 130.25 ]; // Steve
+var oppfatbastards = [ 105.95, 127.00, 113.90 ]; // Steve
 
-var cookiemon    = [ 169.25, 83.75 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
-var oppcookiemon = [ 159.10, 123.60 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
+var cookiemon    = [ 169.25, 83.75, 113.90 ]; // Noah
+var oppcookiemon = [ 159.10, 123.60, 130.25 ]; // Noah
 
-var predators    = [ 159.10, 127.00 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
-var opppredators = [ 169.25, 133.20 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
+var predators    = [ 159.10, 127.00, 158.05 ]; // Joe
+var opppredators = [ 169.25, 133.20, 110.95 ]; // Joe
 
-var krusty    = [ 105.95, 122.25 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
-var oppkrusty = [ 120.05, 133.00 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
+var krusty    = [ 105.95, 122.25, 98.40 ]; // Hunter
+var oppkrusty = [ 120.05, 133.00, 117.30 ]; // Hunter
 
-var belicheck    = [ 120.45, 123.60 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
-var oppbelicheck = [ 127.45, 83.75 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
+var belicheck    = [ 120.45, 123.60, 117.30 ]; // Harrsion
+var oppbelicheck = [ 127.45, 83.75, 98.40 ]; // Harrsion
 
 
 //Div 2
-var iceotopes    = [ 127.45, 167.80 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
-var oppiceotopes = [ 120.45, 145.70 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
+var iceotopes    = [ 127.45, 167.80, 141.25 ]; // John
+var oppiceotopes = [ 120.45, 145.70, 118.40 ]; // John
 
-var rolltide    = [ 112.45, 133.00 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
-var opprolltide = [ 126.60, 122.25 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
+var rolltide    = [ 112.45, 133.00, 118.40 ]; // Daniel
+var opprolltide = [ 126.60, 122.25, 141.25 ]; // Daniel
 
-var tenanus    = [ 163.45, 155.50 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
-var opptenanus = [ 124.40, 157.80 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
+var tenanus    = [ 163.45, 155.50, 110.95 ]; // Jake
+var opptenanus = [ 124.40, 157.80, 158.05 ]; // Jake
 
-var thenubs    = [ 124.40, 145.70 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
-var oppthenubs = [ 163.45, 167.80 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
+var thenubs    = [ 124.40, 145.70, 123.10 ]; // Adam
+var oppthenubs = [ 163.45, 167.80, 139.90 ]; // Adam
 
-var inglorious    = [ 126.60, 157.80 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
-var oppinglorious = [ 112.45, 155.50 ]; // 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
+var inglorious    = [ 126.60, 157.80, 139.90 ]; // Matt
+var oppinglorious = [ 112.45, 155.50, 123.10 ]; // Matt
 
 
 
 var pfl_records=[
       fatbastardsRec,
-      cookiemonRec,
       belicheckRec,
+      cookiemonRec,
       predatorsRec,
       krustyRec,
      
@@ -66,8 +66,8 @@ var pfl_records=[
 
 var pfl_labels = [
       "Fat Bastards",
-      "Cookie Monsters",
       "Discount Belicheck",
+      "Cookie Monsters",
       "Predators",
       "Krusty Krushers",
 
@@ -80,8 +80,8 @@ var pfl_labels = [
 
 var pfl_owners = [
       "Steve",      // Fat Bastards
-      "Noah",       // Cookie Monsters
       "Harrison",   // Belicheck
+      "Noah",       // Cookie Monsters
       "Joe",        // Predators
       "Hunter",     // Krusty Krushers
 
@@ -94,8 +94,8 @@ var pfl_owners = [
 
 var pfl_scores=[
         fatbastards,
-        cookiemon,
         belicheck,
+        cookiemon,
         predators,
         krusty,
 
@@ -108,8 +108,8 @@ var pfl_scores=[
 
 var opp_scores=[
         oppfatbastards,
-        oppcookiemon,
         oppbelicheck,
+        oppcookiemon,
         opppredators,
         oppkrusty,
 
@@ -127,8 +127,8 @@ var opp_scores=[
 // 4 - eliminated from playoffs
 var playoffs=[
               0,   // bastards
-              0,   // cookiemon
               0,   // belicheck
+              0,   // cookiemon
               0,   // predators
               0,   // krusty
 
@@ -148,7 +148,10 @@ var week2_txt = "So how do you go from the highest score of week to the lowest s
                 "down to defeat, causing a fair amount of sphincter tighenting I'm sure...  The Bastards meanwhile are " +
                 " contemplating changing their name to the Michael Thomas Fan Fest!";
 
-var week3_txt = "";
+var week3_txt = "Much lower scores this week, though much appreciated by the teams starting with a B in their name (Bellis and Bastards). " +
+                "All the 2-0 teams won again, but only one of the 0-2 teams showed up as the Preds not only win but get the high score for the " +
+                "week and second score in the 150s in 2 weeks - does that now make them one of the favs despite being 1-2? How about this - 7 teams " +
+                "have a better year high score than the Fat but they're 3-0 - thats some damn good smoke and mirrors!";
 
 var week4_txt = "";
 
