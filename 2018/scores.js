@@ -1,63 +1,63 @@
 
 //                  Record, Division Record
 
-var fatbastardsRec = [ 3, 1,  3, 0 ];   // Steve
-var belicheckRec   = [ 2, 2,  2, 0 ];   // Harrison
-var predatorsRec   = [ 2, 2,  0, 2 ];   // Joe
-var cookiemonRec   = [ 1, 3,  1, 2 ];   // Noah
-var krustyRec      = [ 0, 4,  0, 3 ];   // Hunter
+var fatbastardsRec = [ 4, 1,  3, 0 ];   // Steve
+var predatorsRec   = [ 3, 2,  0, 2 ];   // Joe
+var belicheckRec   = [ 2, 3,  2, 0 ];   // Harrison
+var cookiemonRec   = [ 1, 4,  1, 2 ];   // Noah
+var krustyRec      = [ 0, 5,  0, 3 ];   // Hunter
 
-var ingloriousRec  = [ 4, 0,  3, 0 ];   // Matt
-var iceotopesRec   = [ 4, 0,  2, 0 ];   // John
-var tenanusRec     = [ 2, 2,  1, 1 ];   // Jake
-var rolltideRec    = [ 2, 2,  0, 2 ];   // Daniel
-var thenubsRec     = [ 0, 4,  0, 3 ];   // Adam
+var iceotopesRec   = [ 5, 0,  2, 0 ];   // John
+var ingloriousRec  = [ 4, 1,  3, 0 ];   // Matt
+var tenanusRec     = [ 3, 2,  1, 1 ];   // Jake
+var rolltideRec    = [ 2, 3,  0, 2 ];   // Daniel
+var thenubsRec     = [ 1, 4,  0, 3 ];   // Adam
 
 // Scoring
 
 //Div 1
-var fatbastards    = [ 120.05, 133.20, 130.25, 90.20 ]; // Steve
-var oppfatbastards = [ 105.95, 127.00, 113.90, 164.65 ]; // Steve
+var fatbastards    = [ 120.05, 133.20, 130.25, 90.20, 109.30 ]; // Steve
+var oppfatbastards = [ 105.95, 127.00, 113.90, 164.65, 92.25 ]; // Steve
 
-var predators    = [ 159.10, 127.00, 158.05, 171.70 ]; // Joe
-var opppredators = [ 169.25, 133.20, 110.95, 140.20 ]; // Joe
+var predators    = [ 159.10, 127.00, 158.05, 171.70, 194.05 ]; // Joe
+var opppredators = [ 169.25, 133.20, 110.95, 140.20, 131.65 ]; // Joe
 
-var belicheck    = [ 120.45, 123.60, 117.30, 130.70 ]; // Harrsion
-var oppbelicheck = [ 127.45, 83.75, 98.40, 152.40 ]; // Harrsion
+var belicheck    = [ 120.45, 123.60, 117.30, 130.70, 140.40 ]; // Harrsion
+var oppbelicheck = [ 127.45, 83.75, 98.40, 152.40, 141.60 ]; // Harrsion
 
-var cookiemon    = [ 169.25, 83.75, 113.90, 105.95 ]; // Noah
-var oppcookiemon = [ 159.10, 123.60, 130.25, 169.55 ]; // Noah
+var cookiemon    = [ 169.25, 83.75, 113.90, 105.95, 157.45 ]; // Noah
+var oppcookiemon = [ 159.10, 123.60, 130.25, 169.55, 193.45 ]; // Noah
 
-var krusty    = [ 105.95, 122.25, 98.40, 93.95 ]; // Hunter
-var oppkrusty = [ 120.05, 133.00, 117.30, 155.80 ]; // Hunter
+var krusty    = [ 105.95, 122.25, 98.40, 93.95, 117.55 ]; // Hunter
+var oppkrusty = [ 120.05, 133.00, 117.30, 155.80, 127.00 ]; // Hunter
 
 
 //Div 2
-var inglorious    = [ 126.60, 157.80, 139.90, 169.55 ]; // Matt
-var oppinglorious = [ 112.45, 155.50, 123.10, 105.95 ]; // Matt
+var inglorious    = [ 126.60, 157.80, 139.90, 169.55, 131.65 ]; // Matt
+var oppinglorious = [ 112.45, 155.50, 123.10, 105.95, 194.05 ]; // Matt
 
-var iceotopes    = [ 127.45, 167.80, 141.25, 164.65 ]; // John
-var oppiceotopes = [ 120.45, 145.70, 118.40, 90.20 ]; // John
+var iceotopes    = [ 127.45, 167.80, 141.25, 164.65, 193.45 ]; // John
+var oppiceotopes = [ 120.45, 145.70, 118.40, 90.20, 157.45 ]; // John
 
-var tenanus    = [ 163.45, 155.50, 110.95, 155.80 ]; // Jake
-var opptenanus = [ 124.40, 157.80, 158.05, 93.95 ]; // Jake
+var tenanus    = [ 163.45, 155.50, 110.95, 155.80, 141.60 ]; // Jake
+var opptenanus = [ 124.40, 157.80, 158.05, 93.95, 140.40 ]; // Jake
 
-var rolltide    = [ 112.45, 133.00, 118.40, 152.40 ]; // Daniel
-var opprolltide = [ 126.60, 122.25, 141.25, 130.70 ]; // Daniel
+var rolltide    = [ 112.45, 133.00, 118.40, 152.40, 92.25 ]; // Daniel
+var opprolltide = [ 126.60, 122.25, 141.25, 130.70, 109.30 ]; // Daniel
 
-var thenubs    = [ 124.40, 145.70, 123.10, 140.20 ]; // Adam
-var oppthenubs = [ 163.45, 167.80, 139.90, 171.70 ]; // Adam
+var thenubs    = [ 124.40, 145.70, 123.10, 140.20, 127.00 ]; // Adam
+var oppthenubs = [ 163.45, 167.80, 139.90, 171.70, 117.55 ]; // Adam
 
 
 var pfl_records=[
       fatbastardsRec,
-      belicheckRec,
       predatorsRec,
+      belicheckRec,
       cookiemonRec,
       krustyRec,
      
-      ingloriousRec,
       iceotopesRec,
+      ingloriousRec,
       tenanusRec,
       rolltideRec,
       thenubsRec
@@ -65,27 +65,27 @@ var pfl_records=[
 
 var pfl_labels = [
       "Fat Bastards",
-      "Discount Belicheck",
       "Predators",
+      "Discount Belicheck",
       "Cookie Monsters",
       "Krusty Krushers",
 
-      "Inglorious Staffords", //Matt
       "Iceotopes",
+      "Inglorious Staffords",
       "Tenacious Anus",
       "Roll Tide" ,
-      "The Nubs"   // Adam
+      "The Nubs"
       ];
 
 var pfl_owners = [
       "Steve",      // Fat Bastards
-      "Harrison",   // Belicheck
       "Joe",        // Predators
+      "Harrison",   // Belicheck
       "Noah",       // Cookie Monsters
       "Hunter",     // Krusty Krushers
 
-      "Matt",       // Inglorious Staffords
       "John",       // Iceotopes
+      "Matt",       // Inglorious Staffords
       "Jake",       // Tenacious Anus
       "Daniel",     // Roll Tide
       "Adam"        // The Nubs
@@ -93,13 +93,13 @@ var pfl_owners = [
 
 var pfl_scores=[
         fatbastards,
-        belicheck,
         predators,
+        belicheck,
         cookiemon,
         krusty,
 
-        inglorious,
         iceotopes,
+        inglorious,
         tenanus,
         rolltide,
         thenubs
@@ -107,15 +107,15 @@ var pfl_scores=[
 
 var opp_scores=[
         oppfatbastards,
-        oppbelicheck,
         opppredators,
+        oppbelicheck,
         oppcookiemon,
         oppkrusty,
 
-        oppinglorious ,
         oppiceotopes,
+        oppinglorious,
         opptenanus,
-        opprolltide ,
+        opprolltide,
         oppthenubs
      ];
 
@@ -126,13 +126,13 @@ var opp_scores=[
 // 4 - eliminated from playoffs
 var playoffs=[
               0,   // bastards
-              0,   // cookiemon
               0,   // belicheck
+              0,   // cookiemon
               0,   // predators
               0,   // krusty
 
-              0,   // inglorious
               0,   // iceotopes
+              0,   // inglorious
               0,   // tenanus
               0,   // rolltide
               0    // thenubs
@@ -157,7 +157,10 @@ var week4_txt = "Down to two undefeated teams and two defeated teams... good bal
                 "bunch of goons... (except nmaybe the predators who are just unlucky) - all the other four would have the lowest averages if they " +
                 "were in Division 2 :-(";
 
-var week5_txt = "";
+var week5_txt = "And then there was one (sounds like a movie plot) - one undefeated, one unfeated, and one unbelievably lucky bastard of a team! " +
+                "How often does the 2nd lowest score of the week win? The Ice are the solitary top dog (though the Pred certainly have to have " +
+                "them and the Fat worried...).  The battle of the bottom dwellers ensured at least one of them would have a win and the nubs " +
+                "finally broke through - is there no stopping them now? Time to rename the KKs to Krusty Krushed?";
 
 var week6_txt = "";
 
@@ -180,28 +183,28 @@ var week14_txt = "";
 // dxxx means division game 
 
 var fat = "Fat Bastards";         var dfat = fat + " *";
-var com = "Cookie Monsters";      var dcom = com + " *";
 var pre = "Predators";            var dpre = pre + " *";
-var kru = "Krusty Krushers";      var dkru = kru + " *";
 var bel = "Discount Belichecks";  var dbel = bel + " *";
+var com = "Cookie Monsters";      var dcom = com + " *";
+var kru = "Krusty Krushers";      var dkru = kru + " *";
 
 var ice = "Iceotopes";            var dice = ice + " *";
-var rol = "Roll Tide";            var drol = rol + " *";
-var ten = "Tenacious Anus";       var dten = ten + " *";
-var nub = "The Nubs";             var dnub = nub + " *";
 var ing = "Inglorious Staffords"; var ding = ing + " *";
+var ten = "Tenacious Anus";       var dten = ten + " *";
+var rol = "Roll Tide";            var drol = rol + " *";
+var nub = "The Nubs";             var dnub = nub + " *";
 
 var sfat = fatbastards;
-var scom = cookiemon;
 var spre = predators;
-var skru = krusty;
 var sbel = belicheck;
+var scom = cookiemon;
+var skru = krusty;
 
 var sice = iceotopes;
-var srol = rolltide;
-var sten = tenanus;
-var snub = thenubs;
 var sing = inglorious;
+var sten = tenanus;
+var srol = rolltide;
+var snub = thenubs;
 
 var week01Teams = new Array(dfat, dkru, ice, bel, dcom, dpre, drol, ding, dten, dnub);
 var week01Scores = new Array(sfat[0], skru[0], sice[0], sbel[0], scom[0], spre[0], srol[0], sing[0], sten[0], snub[0]);
