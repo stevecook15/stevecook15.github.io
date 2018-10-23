@@ -1,57 +1,57 @@
 
 //                  Record, Division Record
 
-var fatbastardsRec = [ 4, 2,  3, 1 ];   // Steve
-var predatorsRec   = [ 4, 2,  1, 2 ];   // Joe
-var belicheckRec   = [ 3, 3,  3, 0 ];   // Harrison
-var cookiemonRec   = [ 1, 5,  1, 2 ];   // Noah
-var krustyRec      = [ 0, 6,  0, 4 ];   // Hunter
+var predatorsRec   = [ 5, 2,  2, 2 ];   // Joe
+var fatbastardsRec = [ 4, 3,  3, 1 ];   // Steve
+var belicheckRec   = [ 3, 4,  3, 1 ];   // Harrison
+var cookiemonRec   = [ 2, 5,  2, 2 ];   // Noah
+var krustyRec      = [ 0, 7,  0, 5 ];   // Hunter
 
-var iceotopesRec   = [ 6, 0,  3, 0 ];   // John
-var ingloriousRec  = [ 4, 2,  3, 1 ];   // Matt
-var tenanusRec     = [ 4, 2,  2, 1 ];   // Jake
-var rolltideRec    = [ 2, 4,  0, 3 ];   // Daniel
-var thenubsRec     = [ 2, 4,  0, 3 ];   // Adam
+var iceotopesRec   = [ 7, 0,  4, 0 ];   // John
+var ingloriousRec  = [ 5, 2,  3, 1 ];   // Matt
+var tenanusRec     = [ 4, 3,  2, 2 ];   // Jake
+var rolltideRec    = [ 3, 4,  1, 3 ];   // Daniel
+var thenubsRec     = [ 2, 5,  0, 4 ];   // Adam
 
 // Scoring
 
 //Div 1
-var fatbastards    = [ 120.05, 133.20, 130.25, 90.20, 109.30, 129.15 ]; // Steve
-var oppfatbastards = [ 105.95, 127.00, 113.90, 164.65, 92.25, 157.30 ]; // Steve
+var predators    = [ 159.10, 127.00, 158.05, 171.70, 194.05, 162.65, 149.95 ]; // Joe
+var opppredators = [ 169.25, 133.20, 110.95, 140.20, 131.65, 140.15, 128.40 ]; // Joe
 
-var predators    = [ 159.10, 127.00, 158.05, 171.70, 194.05, 162.65 ]; // Joe
-var opppredators = [ 169.25, 133.20, 110.95, 140.20, 131.65, 140.15 ]; // Joe
+var fatbastards    = [ 120.05, 133.20, 130.25, 90.20, 109.30, 129.15, 122.35 ]; // Steve
+var oppfatbastards = [ 105.95, 127.00, 113.90, 164.65, 92.25, 157.30, 130.90 ]; // Steve
 
-var belicheck    = [ 120.45, 123.60, 117.30, 130.70, 140.40, 157.30 ]; // Harrsion
-var oppbelicheck = [ 127.45, 83.75, 98.40, 152.40, 141.60, 129.15 ]; // Harrsion
+var belicheck    = [ 120.45, 123.60, 117.30, 130.70, 140.40, 157.30, 128.40 ]; // Harrsion
+var oppbelicheck = [ 127.45, 83.75, 98.40, 152.40, 141.60, 129.15, 149.95 ]; // Harrsion
 
-var cookiemon    = [ 169.25, 83.75, 113.90, 105.95, 157.45, 108.15 ]; // Noah
-var oppcookiemon = [ 159.10, 123.60, 130.25, 169.55, 193.45, 122.35 ]; // Noah
+var cookiemon    = [ 169.25, 83.75, 113.90, 105.95, 157.45, 108.15, 143.85 ]; // Noah
+var oppcookiemon = [ 159.10, 123.60, 130.25, 169.55, 193.45, 122.35, 94.95 ]; // Noah
 
-var krusty    = [ 105.95, 122.25, 98.40, 93.95, 117.55, 140.15 ]; // Hunter
-var oppkrusty = [ 120.05, 133.00, 117.30, 155.80, 127.00, 162.65 ]; // Hunter
+var krusty    = [ 105.95, 122.25, 98.40, 93.95, 117.55, 140.15, 94.95 ]; // Hunter
+var oppkrusty = [ 120.05, 133.00, 117.30, 155.80, 127.00, 162.65, 143.85 ]; // Hunter
 
 
 //Div 2
-var inglorious    = [ 126.60, 157.80, 139.90, 169.55, 131.65, 124.05 ]; // Matt
-var oppinglorious = [ 112.45, 155.50, 123.10, 105.95, 194.05, 172.85 ]; // Matt
+var iceotopes    = [ 127.45, 167.80, 141.25, 164.65, 193.45, 172.85, 177.05 ]; // John
+var oppiceotopes = [ 120.45, 145.70, 118.40, 90.20, 157.45, 124.05, 145.95 ]; // John
 
-var iceotopes    = [ 127.45, 167.80, 141.25, 164.65, 193.45, 172.85 ]; // John
-var oppiceotopes = [ 120.45, 145.70, 118.40, 90.20, 157.45, 124.05 ]; // John
+var inglorious    = [ 126.60, 157.80, 139.90, 169.55, 131.65, 124.05, 130.90 ]; // Matt
+var oppinglorious = [ 112.45, 155.50, 123.10, 105.95, 194.05, 172.85, 122.35 ]; // Matt
 
-var tenanus    = [ 163.45, 155.50, 110.95, 155.80, 141.60, 135.75 ]; // Jake
-var opptenanus = [ 124.40, 157.80, 158.05, 93.95, 140.40, 127.90 ]; // Jake
+var tenanus    = [ 163.45, 155.50, 110.95, 155.80, 141.60, 135.75, 145.95 ]; // Jake
+var opptenanus = [ 124.40, 157.80, 158.05, 93.95, 140.40, 127.90, 177.05 ]; // Jake
 
-var rolltide    = [ 112.45, 133.00, 118.40, 152.40, 92.25, 127.90 ]; // Daniel
-var opprolltide = [ 126.60, 122.25, 141.25, 130.70, 109.30, 135.75 ]; // Daniel
+var rolltide    = [ 112.45, 133.00, 118.40, 152.40, 92.25, 127.90, 154.30 ]; // Daniel
+var opprolltide = [ 126.60, 122.25, 141.25, 130.70, 109.30, 135.75, 124.00 ]; // Daniel
 
-var thenubs    = [ 124.40, 145.70, 123.10, 140.20, 127.00, 122.35 ]; // Adam
-var oppthenubs = [ 163.45, 167.80, 139.90, 171.70, 117.55, 108.15 ]; // Adam
+var thenubs    = [ 124.40, 145.70, 123.10, 140.20, 127.00, 122.35, 124.00 ]; // Adam
+var oppthenubs = [ 163.45, 167.80, 139.90, 171.70, 117.55, 108.15, 154.30 ]; // Adam
 
 
 var pfl_records=[
-      fatbastardsRec,
       predatorsRec,
+      fatbastardsRec,
       belicheckRec,
       cookiemonRec,
       krustyRec,
@@ -64,8 +64,8 @@ var pfl_records=[
       ];
 
 var pfl_labels = [
-      "Fat Bastards",
       "Predators",
+      "Fat Bastards",
       "Discount Belicheck",
       "Cookie Monsters",
       "Krusty Krushers",
@@ -78,8 +78,8 @@ var pfl_labels = [
       ];
 
 var pfl_owners = [
-      "Steve",      // Fat Bastards
       "Joe",        // Predators
+      "Steve",      // Fat Bastards
       "Harrison",   // Belicheck
       "Noah",       // Cookie Monsters
       "Hunter",     // Krusty Krushers
@@ -92,8 +92,8 @@ var pfl_owners = [
       ];
 
 var pfl_scores=[
-        fatbastards,
         predators,
+        fatbastards,
         belicheck,
         cookiemon,
         krusty,
@@ -106,8 +106,8 @@ var pfl_scores=[
      ];
 
 var opp_scores=[
-        oppfatbastards,
         opppredators,
+        oppfatbastards,
         oppbelicheck,
         oppcookiemon,
         oppkrusty,
@@ -125,10 +125,10 @@ var opp_scores=[
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs=[
+              0,   // predators
               0,   // bastards
               0,   // belicheck
               0,   // cookiemon
-              0,   // predators
               0,   // krusty
 
               0,   // iceotopes
@@ -167,7 +167,10 @@ var week6_txt = "Now that we've separated the haves (ice, pred) from the nots (t
                 "kismet, the Fat's suffered some bad luck (hard to believe I know) - despite scoring 11 points over their season average, they " +
                 "lost as the Belli's scored their high score for the season!";
 
-var week7_txt = "";
+var week7_txt = "Seems like the Ice could be on their way to the first undefeated season - no ones even coming close to beating him. They " +
+                "could have scored 20 less points and still beat every team. On the other end of the spectrum, krusty is just being crushed. " +
+                "And looks like we've seen the end of the smoke and mirrors strategy as the Fat drop from division leaders to currently out " +
+                "of the playoffs, with the Pred obviously the class of the division.";
 
 var week8_txt = "";
 
