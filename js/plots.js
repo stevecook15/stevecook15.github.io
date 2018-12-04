@@ -64,9 +64,9 @@ function TeamAvgs()
    }
 
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(200.0);
-   chart.setYMin(80.0);
+   chart.setNumTics(14);
+   chart.setYMax(210.0);
+   chart.setYMin(70.0);
 
    chart.setThreeD(true);
    chart.setThreeDAxes(true);
@@ -548,9 +548,9 @@ function ScoringPlot()
    chart.addRefLine(season_avg.toFixed(2));
 
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(200.0);
-   chart.setYMin(80.0);
+   chart.setNumTics(14);
+   chart.setYMax(210.0);
+   chart.setYMin(70.0);
 
    var canvasId = document.getElementById("plot_canvas");
    var cwidth = canvasId.width;
@@ -644,9 +644,9 @@ function ScoringTrend()
    }
 
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(200.0);
-   chart.setYMin(80.0);
+   chart.setNumTics(10);
+   chart.setYMax(190.0);
+   chart.setYMin(90.0);
 
    var canvasId = document.getElementById("plot_canvas");
    var cwidth = canvasId.width;
