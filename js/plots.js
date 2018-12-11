@@ -448,8 +448,8 @@ else if ( max_wins < 75 && max_losses < 75 )
 }
 else
 {
-   chart.setYMax(100);
-   chart.setNumTics(10);
+   chart.setYMax(120);
+   chart.setNumTics(12);
 }
 
    chart.setThreeD(true);
