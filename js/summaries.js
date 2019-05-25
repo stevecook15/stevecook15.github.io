@@ -1,4 +1,4 @@
-
+// TODO: Pass year...
 displayWeek = function(week)
 {
    if ( week == -1 )   // Calculate this week
@@ -9,9 +9,9 @@ displayWeek = function(week)
 
    var weekStr;
    if ( week < 10 )
-      weekStr = "2018/Week0" + week + ".html";
+      weekStr = "2019/Week0" + week + ".html";
    else
-      weekStr = "2018/Week" + week + ".html";
+      weekStr = "2019/Week" + week + ".html";
 
    if ( week > 14 ) // Playoffs...
    {
