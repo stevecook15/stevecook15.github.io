@@ -19,7 +19,7 @@ var team0 = [ "Iceotopes / John F",
    "BN,LeSean McCoy,KAN,RB,0",
 ];
 
-var team1 = [ "Inglorious Staffords / Matt",
+var team1 = [ "Return of the Macks / Matt",
    "ST,Drew Brees,NOR,QB,0",
    "ST,Duke Johnson,HOU,RB,0",
    "ST,Christian McCaffrey,CAR,RB,0",
