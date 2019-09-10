@@ -36,10 +36,10 @@ var oppkrusty = [ 85.90,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
 
 //                  Record, Division Record
 
-var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
+var rolltideRec    = [ 1, 0,  1, 0 ];   // Daniel
 var retmackRec     = [ 1, 0,  0, 0 ];   // Matt  / Return of the Mack
 var belicheckRec   = [ 1, 0,  1, 0 ];   // Harrison
-var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
+var iceotopesRec   = [ 0, 1,  0, 1 ];   // John
 var kekeloveRec    = [ 0, 1,  0, 1 ];   // Noah Keke do you love me
 
 var thenubsRec     = [ 1, 0,  1, 0 ];   // Adam
