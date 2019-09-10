@@ -2,25 +2,99 @@
 // Create an array of teamNames
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
-/*
-struct
+
+var pfl_owners = [
+      "John",       // Iceotopes
+      "Matt"        // Inglorious Staffords
+      "Daniel",     // Roll Tide
+      "Noah",       // Keke do you love me?
+      "Harrison",   // Belicheck
+
+      "Joe",        // Predators
+      "Steve",      // Fat Bastards
+      "Adam",       // The Nubs
+      "Jake",       // Tenacious Anus
+      "Hunter"      // Krusty Krushers
+      ];
+
+var teams =
 {
-   int wins;
-   int losses;
-   int divWins;
-   int divLosses;
-   int totalPts;
-   int oppTotalPts;
-   int avgPts;
-   int oppAvgPts;
-} tdata;
+   "team":
+   [
+      {
+         "name": "Iceoholics",
+         "abrv": "ice",
+         "owner": "John",
+         "div": 1,
+         "opps": 
+         [
+            "rol", "bel", "kek", "fat", "pre", "ing", "nub", "rol", "ten", "kru", "bel", "kek", "ing", "nub"
+         ],
+         scores: 
+         [
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+         ],
+         wins: 0,
+         losses: 0,
+         divWins: 0,
+         divLosses: 0
+      },
+      {
+         name: "Fat Bastards",
+         abrv: "fat",
+         owner: "Steve",
+         div: 2,
+         opps: 
+         {
+            "ing", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre"
+         },
+         scores: 
+         {
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+         },
+         wins: 0,
+         losses: 0,
+         divWins: 0,
+         divLosses: 0
+      }
+   ]
+}
 
-String[] teams = { "Fat", "Ice", "Roll"};
+var names = { "ice", "ing", "rol", "kek", "bel",
+              "pre", "fat", "nub", "ten", "kru" };
 
-fatScores = { 100.2, 123.2 };
+var iceScores = { 100.2, 123.2 };
+var ingScores = { 100.2, 123.2 };
+var fatScores = { 100.2, 123.2 };
 scoresMap.put("Fat", fatScores);
-fatOpps = { "Ice", "Roll" };
-teamOppsMap.put("Fat", fatOpps);
+
+// Div 1 "ice", "ing", "rol", "kek", "bel"
+//                1      2      3      4      5      6      7      8      9     10     11     12     13     14  
+var iceOpps = { "rol", "bel", "kek", "fat", "pre", "ing", "nub", "rol", "ten", "kru", "bel", "kek", "ing", "nub" };
+   teamOppsMap.put("ice", iceOpps);
+var ingOpps = { "fat", "kek", "rol", "pre", "kru", "ice", "bel", "ten", "nub", "ten", "kek", "rol", "ice", "bel" };
+   teamOppsMap.put("ing", ingOpps);
+var rolOpps = { "ice", "pre", "ing", "kru", "ten", "bel", "kek", "ice", "fat", "nub", "kru", "ing", "bel", "kek" };
+   teamOppsMap.put("rol", rolOpps);
+var kekOpps = { "bel", "ing", "ice", "nub", "fat", "ten", "rol", "bel", "kru", "pre", "ing", "ice", "fat", "rol" };
+   teamOppsMap.put("kek", kekOpps);
+var belOpps = { "kek", "ice", "kru", "ten", "nub", "rol", "ing", "kek", "pre", "fat", "ice", "pre", "rol", "ing" };
+   teamOppsMap.put("bel", belOpps);
+
+
+// Div 2: "pre", "fat", "nub", "ten", "kru"
+//                1      2      3      4      5      6      7      8      9     10     11     12     13     14  
+var preOpps = { "nub", "rol", "fat", "ing", "ice", "kru", "ten", "kru", "bel", "kek", "nub", "bel", "ten", "fat" };
+   teamOppsMap.put("pre", preOpps);
+var fatOpps = { "ing", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre" };
+   teamOppsMap.put("Fat", fatOpps);
+var nubOpps = { "pre", "kru", "ten", "kek", "bel", "fat", "ice", "fat", "ing", "rol", "pre", "ten", "kru", "ice" };
+   teamOppsMap.put("nub", nubOpps);
+var tenOpps = { "kru", "fat", "nus", "bel", "rol", "kek", "pre", "ing", "ice", "ing", "fat", "nub", "pre", "kru" };
+   teamOppsMap.put("ten", tenOpps);
+var kruOpps = { "ten", "nub", "bel", "rol", "ing", "pre", "fat", "pre", "kek", "ice", "rol", "fat", "nub", "ten" };
+   teamOppsMap.put("kru", kruOpps);
+
 
 HashMap<String team, struct tdata> teamsDataMap;
 HashMap<String team, String[] opps]> teamOppsMap;
@@ -76,85 +150,6 @@ var krustyRec      = [ 0, 0,  0, 0 ];   // Hunter
 
 
 
-var pfl_records=[
-      iceotopesRec,
-      ingloriousRec,
-      rolltideRec,
-      cookiemonRec,
-      belicheckRec,
-
-      predatorsRec,      
-      fatbastardsRec,
-      thenubsRec,
-      tenanusRec,
-      krustyRec
-      ];
-
-var pfl_labels = [
-      "Fat Bastards",
-      "Cookie Monsters",
-      "Predators",
-      "Krusty Krushers",
-      "Discount Belicheck",
-
-      "Iceotopes",
-      "Roll Tide",
-      "Tenacious Anus",
-      "The Nubs",  // Adam
-      "Inglorious Staffords" //Matt
-      ];
-
-
-// Scoring
-
-//Div 1
-var fatbastards    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
-var oppfatbastards = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
-
-var cookiemon    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
-var oppcookiemon = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
-
-var predators    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
-var opppredators = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
-
-var krusty    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
-var oppkrusty = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
-
-var belicheck    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
-var oppbelicheck = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
-
-
-//Div 2
-var iceotopes    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
-var oppiceotopes = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
-
-var rolltide    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
-var opprolltide = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
-
-var tenanus    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
-var opptenanus = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
-
-var thenubs    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
-var oppthenubs = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
-
-var inglorious    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
-var oppinglorious = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
-
-
-
-var pfl_owners = [
-      "Steve",      // Fat Bastards
-      "Joe",        // Predators
-      "Noah",       // Cookie Monsters
-      "Hunter",     // Krusty Krushers
-      "Harrison",   // Belicheck
-
-      "John",       // Iceotopes
-      "Daniel",     // Roll Tide
-      "Jake",       // Tenacious Anus
-      "Adam",       // The Nubs
-      "Matt"        // Inglorious Staffords
-      ];
 
 var pfl_scores=[
         fatbastards,

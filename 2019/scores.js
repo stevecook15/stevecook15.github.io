@@ -1,126 +1,123 @@
-
-//                  Record, Division Record
-
-var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
-var ingloriousRec  = [ 0, 0,  0, 0 ];   // Matt
-var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
-var kekeloveRec    = [ 0, 0,  0, 0 ];   // Noah Keke do you love me
-var belicheckRec   = [ 0, 0,  0, 0 ];   // Harrison
-
-var predatorsRec   = [ 0, 0,  0, 0 ];   // Joe
-var fatbastardsRec = [ 0, 0,  0, 0 ];   // Steve
-var thenubsRec     = [ 0, 0,  0, 0 ];   // Adam
-var tenanusRec     = [ 0, 0,  0, 0 ];   // Jake
-var krustyRec      = [ 0, 0,  0, 0 ];   // Hunter
-
-
-
-var pfl_records=[
-      iceotopesRec,
-      ingloriousRec,
-      rolltideRec,
-      kekeloveRec,
-      belicheckRec,
-
-      predatorsRec,      
-      fatbastardsRec,
-      thenubsRec,
-      tenanusRec,
-      krustyRec
-      ];
-
-var pfl_labels = [
-      "Iceotopes",
-      "Inglorious Staffords", //Matt
-      "Roll Tide",
-      "Keke do you love me",  // Noah
-      "Discount Belicheck",
-      
-      "Predators",      
-      "Fat Bastards",
-      "The Nubs",  // Adam      
-      "Tenacious Anus",
-      "Krusty Krushers"
-      ];
-
-
 // Scoring
 
 //Div 1
-var iceotopes    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
-var oppiceotopes = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
+var iceotopes    = [ 121.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
+var oppiceotopes = [ 125.60, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // John
 
-var inglorious    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
-var oppinglorious = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
+var retmack    = [ 181.80, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
+var oppretmack = [ 146.50, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]; // Matt
 
-var rolltide    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
-var opprolltide = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
+var rolltide    = [ 125.60, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
+var opprolltide = [ 121.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Daniel
 
-var kekelove    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
-var oppkekelove = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
+var kekelove    = [ 102.55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
+var oppkekelove = [ 117.00, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Noah
 
-var belicheck    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
-var oppbelicheck = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
+var belicheck    = [ 117.00, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
+var oppbelicheck = [ 102.55, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Harrsion
 
 //Div 2
 
-var predators    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
-var opppredators = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
+var predators    = [ 109.65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
+var opppredators = [ 194.30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Joe
 
-var fatbastards    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
-var oppfatbastards = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
+var fatbastards    = [ 146.50, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
+var oppfatbastards = [ 181.80, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Steve
 
-var thenubs    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
-var oppthenubs = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
+var thenubs    = [ 194.30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
+var oppthenubs = [ 109.65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Adam
 
-var tenanus    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
-var opptenanus = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
+var tenanus    = [ 85.90,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
+var opptenanus = [ 143.70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];  // Jake
 
-var krusty    = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
-var oppkrusty = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
+var krusty    = [ 143.70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
+var oppkrusty = [ 85.90,  0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];   // Hunter
 
 
+//                  Record, Division Record
+
+var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
+var retmackRec     = [ 1, 0,  0, 0 ];   // Matt  / Return of the Mack
+var belicheckRec   = [ 1, 0,  1, 0 ];   // Harrison
+var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
+var kekeloveRec    = [ 0, 1,  0, 1 ];   // Noah Keke do you love me
+
+var thenubsRec     = [ 1, 0,  1, 0 ];   // Adam
+var krustyRec      = [ 1, 0,  1, 0 ];   // Hunter
+var fatbastardsRec = [ 0, 1,  0, 0 ];   // Steve
+var predatorsRec   = [ 0, 1,  0, 1 ];   // Joe
+var tenanusRec     = [ 0, 1,  0, 1 ];   // Jake
+
+
+var pfl_records = [
+      rolltideRec,
+      retmackRec,
+      belicheckRec,
+      iceotopesRec,
+      kekeloveRec,
+
+      thenubsRec,
+      krustyRec,
+      fatbastardsRec,
+      predatorsRec,
+      tenanusRec
+   ];
+
+var pfl_labels = [
+      "Roll Tide",
+      "Return of the Mack",   //Inglorious Staffords Matt
+      "Discount Belicheck",
+      "Iceotopes",
+      "Keke do you love me",  // Noah
+      
+      "The Nubs",  // Adam      
+      "Krusty Krushers",
+      "Fat Bastards",
+      "Predators",      
+      "Tenacious Anus"
+   ];
 
 var pfl_owners = [
-      "John",       // Iceotopes
-      "Matt",       // Inglorious Staffords
       "Daniel",     // Roll Tide
-      "Noah",       // Cookie Monsters
+      "Matt",       // Inglorious Staffords / Return of the Mack
       "Harrison",   // Belicheck
+      "John",       // Iceotopes
+      "Noah",       // Cookie Monsters / Keke
       
-      "Joe",        // Predators
-      "Steve",      // Fat Bastards
       "Adam",       // The Nubs     
-      "Jake",       // Tenacious Anus
-      "Hunter"      // Krusty Krushers
-      ];
+      "Hunter",     // Krusty Krushers
+      "Steve",      // Fat Bastards
+      "Joe",        // Predators
+      "Jake"        // Tenacious Anus
+   ];
+
 
 var pfl_scores=[
-        iceotopes,
-        inglorious,
         rolltide,
-        kekelove,
+        retmack,
         belicheck,
+        iceotopes,
+        kekelove,
         
-        predators,
-        fatbastards,
         thenubs,
-        tenanus,        
-        krusty
-     ];
+        krusty,
+        fatbastards,
+        predators,
+        tenanus        
+   ];
 
 var opp_scores=[
-        oppiceotopes,
-        oppinglorious,
         opprolltide,
-        oppkekelove,
+        oppretmack,
         oppbelicheck,
+        oppiceotopes,
+        oppkekelove,
         
-        opppredators,
-        oppfatbastards,
         oppthenubs,
-        opptenanus,        
-        oppkrusty
+        oppkrusty,
+        oppfatbastards,
+        opppredators,
+        opptenanus        
      ];
 
 // 0 - not in playoffs yet
@@ -128,21 +125,24 @@ var opp_scores=[
 // 2 - clinched division
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
-var playoffs=[
-        0,  //iceotopes,
-        0,  //inglorious,
-        0,  //rolltide,
-        0,  //kekelove,
-        0,  //belicheck,
+var playoffs = [
+        0,  //rolltide
+        0,  //retmack
+        0,  //belicheck
+        0,  //iceotopes
+        0,  //kekelove
         
-        0,  //predators,
-        0,  //fatbastards,
-        0,  //thenubs,
-        0,  //tenanus,        
-        0   //krusty
+        0,  //thenubs
+        0,  //krusty
+        0,  //fatbastards
+        0,  //predators
+        0   //tenanus        
      ];
 
-var week1_txt = "Welcome to the 2019 PFL season.  ";
+var week1_txt = "Welcome to the 2019 PFL season.  The week the optimism starts fading... for half of us. Seems " +
+                "like the Nubs and Macks (has their name changed again yet? Haven't checked in the last 10 " +
+                "minutes) are feeling pretty good.  Seems Keke apparently does not love Noah though... and the " +
+                "sphincters are squeezed tight, in need of some prep-h!"; 
 
 var week2_txt = "";
 
@@ -184,7 +184,7 @@ var ten = "Tenacious Anus";       var dten = ten + " *";
 var kru = "Krusty Krushers";      var dkru = kru + " *";
 
 var sice = iceotopes;
-var sing = inglorious;
+var sing = retmack;
 var srol = rolltide;
 var skek = kekelove;
 var sbel = belicheck;
@@ -201,11 +201,11 @@ var week01Scores = new Array(sfat[0], sing[0], sice[0], srol[0], skek[0], sbel[0
 var week02Teams = new Array(dfat, dten, dice, dbel, dkek, ding, pre, rol, dkru, dnub); 
 var week02Scores = new Array(sfat[1], sten[1], sice[1], sbel[1], skek[1], sing[1], spre[1], srol[1], skru[1], snub[1]);
 
-var week03Teams = new Array(dfat, dkek, dice, drol, pre, ten, dkru, dbel, dnub, ding);
-var week03Scores = new Array(sfat[2], skek[2], sice[2], srol[2], spre[2], sten[2], skru[2], sbel[2], snub[2], sing[2]);
+var week03Teams = new Array(dfat, dpre, dice, dkek, kru, bel, drol, ding, dten, dnub);
+var week03Scores = new Array(sfat[2], spre[2], sice[2], skek[2], skru[2], sbel[2], srol[2], sing[2], sten[2], snub[2]);
 
-var week04Teams = new Array(fat, ice, kek, ing, nub, pre, kru, ten, bel, rol);
-var week04Scores = new Array(sfat[3], sice[3], skek[3], sing[3], snub[3], spre[3], skru[3], sten[3], sbel[3], srol[3]);
+var week04Teams = new Array(fat, ice, kek, nub, pre, ing, kru, rol, bel, ten);
+var week04Scores = new Array(sfat[3], sice[3], skek[3], snub[3], spre[3], sing[3], skru[3], srol[3], sbel[3], sten[3]);
 
 var week05Teams = new Array(fat, rol, ice, kek, ing, pre, kru, nub, bel, ten);
 var week05Scores = new Array(sfat[4], srol[4], sice[4], skek[4], sing[4], spre[4], skru[4], snub[4], sbel[4], sten[4]);
