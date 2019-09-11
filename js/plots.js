@@ -2,6 +2,9 @@
 //TODO:  Avg margin of victory/loss
 
 // Reads scores from scores.js
+var PLOT_MIN_VALUE = 80.0;
+var PLOT_MAX_VALUE = 200.0;
+var PLOT_NUM_TICS = 12;
 
 function TeamAvgs()
 {
@@ -32,6 +35,10 @@ function TeamAvgs()
                lscore = pfl_scores[jteam][week];
          }
          average_data[team] = tscore/pfl_scores[jteam].length;
+         if ( average_data[team] < PLOT_MIN_VALUE )
+            average_data[team] = PLOT_MIN_VALUE;
+         if ( lscore < PLOT_MIN_VALUE )
+            lscore = PLOT_MIN_VALUE;
          low_data[team] = lscore;
          high_data[team] = hscore;
          plabels[team] = pfl_labels[jteam];
@@ -64,9 +71,9 @@ function TeamAvgs()
    }
 
    //chart.setAutoScale(true);
-   chart.setNumTics(14);
-   chart.setYMax(210.0);
-   chart.setYMin(70.0);
+   chart.setNumTics(PLOT_NUM_TICS);
+   chart.setYMax(PLOT_MAX_VALUE);
+   chart.setYMin(PLOT_MIN_VALUE);
 
    chart.setThreeD(true);
    chart.setThreeDAxes(true);
@@ -161,9 +168,9 @@ function OppAverages()
    chart.setXLabels(plabels);
 
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(160.0);
-   chart.setYMin(100.0);
+   chart.setNumTics(PLOT_NUM_TICS);
+   chart.setYMax(PLOT_MAX_VALUE);
+   chart.setYMin(PLOT_MIN_VALUE);
 
    chart.setThreeD(true);
    chart.setThreeDAxes(true);
@@ -199,6 +206,9 @@ function OppAverages()
 
 function MarginVictory()
 {
+   var PLOT_MAX_VALUE = 100.0;
+   var NUM_TICS = 10;
+
    var plot_names = new Array( "Victories", "Losses" );
 
    var team_data = pfl_scores;
@@ -271,8 +281,8 @@ function MarginVictory()
    //chart.setXLabels(pfl_labels);
    chart.setXLabels(plabels);
    //chart.setAutoScale(true);
-   chart.setNumTics(12);
-   chart.setYMax(60.0);
+   chart.setNumTics(10);
+   chart.setYMax(100.0);
    chart.setYMin(0.0);
 
    chart.setThreeD(true);
@@ -520,7 +530,7 @@ function ScoringPlot()
    var week;
 
    for ( week=0; week<num_weeks; week++ )
-      wscore[week] = 0,0;
+      wscore[week] = 0.0;
 
    for ( team=0; team<pfl_scores.length; team++ )
    {
@@ -548,9 +558,9 @@ function ScoringPlot()
    chart.addRefLine(season_avg.toFixed(2));
 
    //chart.setAutoScale(true);
-   chart.setNumTics(14);
-   chart.setYMax(210.0);
-   chart.setYMin(70.0);
+   chart.setNumTics(PLOT_NUM_TICS);
+   chart.setYMax(PLOT_MAX_VALUE);
+   chart.setYMin(PLOT_MIN_VALUE);
 
    var canvasId = document.getElementById("plot_canvas");
    var cwidth = canvasId.width;
@@ -644,9 +654,9 @@ function ScoringTrend()
    }
 
    //chart.setAutoScale(true);
-   chart.setNumTics(10);
-   chart.setYMax(190.0);
-   chart.setYMin(90.0);
+   chart.setNumTics(PLOT_NUM_TICS);
+   chart.setYMax(PLOT_MAX_VALUE);
+   chart.setYMin(PLOT_MIN_VALUE);
 
    var canvasId = document.getElementById("plot_canvas");
    var cwidth = canvasId.width;
@@ -851,5 +861,17 @@ function calcStdDev(team_scores, team)
    }
 
    return results;
+}
+
+function getScoresLength()
+{
+   var week;
+   for ( week=0; week<pfl_scores[0].length; week++ )
+   {
+      if ( pfl_scores[0][week] == 0.0 )
+         return week;
+   }
+
+   return week;
 }
 
