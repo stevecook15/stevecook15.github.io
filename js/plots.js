@@ -152,9 +152,18 @@ function OppAverages()
          opps = team.getOpponents();
          oppnt = getTeamByAbrv(opps[week]);
 
-         avg_val[jteam] = team.totPts / week;
-         opp_val[jteam] = oppnt.totPts / week;
+//TODO: Need to manually sum up opponents points
          plabels[jteam] = team.name;
+         avg_val[jteam] = team.totPts / week;
+
+         // Need to get opponents pts for that week, sum it up...
+         opp_val[jteam] = 0;
+         for ( var jndx=0; jndx<week; jndx++ )
+         {
+            oppnt = getTeamByAbrv(opps[jndx]);
+            opp_val[jteam] += oppnt.scores[jndx];
+         }
+         opp_val[jteam] /= week;
          jteam++;
       }
    }
@@ -257,9 +266,6 @@ function MarginVictory()
          for ( var jndx=0; jndx<week; jndx++ )
          {
             oppnt = getTeamByAbrv(opps[jndx]);
-
-console.log("Wk, tm, opp, score oppscore: " + (jndx+1) + ", " + team.name + ", " + oppnt.name +
-                  ", " + team.scores[jndx] + ", " + oppnt.scores[jndx]);
             if ( team.scores[jndx] > oppnt.scores[jndx] )
             {
                nwins++;
