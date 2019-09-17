@@ -1,4 +1,4 @@
-// TODO: Pass year...
+
 displayWeek = function(week)
 {
    if ( week == -1 )   // Calculate this week
@@ -20,11 +20,13 @@ displayWeek = function(week)
    else
    {
       var dateStr = weekly_dates[week-1];
-      var teams = weekly_teams[week-1];
-      var scores = weekly_scores[week-1];
+      var matchups = getWeeklyMatchUps(week-1);
+      var teams = matchups[0];
+      var scores = matchups[1];
+      var divGames = matchups[2];
       var comments = weekly_text[week-1];
 
-      var DialogContent = mkWeek(week, dateStr, teams, scores, comments);
+      var DialogContent = mkWeek(week, dateStr, teams, scores, divGames, comments);
       $('#currweek_window').html(DialogContent);
       $('#currweek_window').dialog("option", "title", "Week " + week);
    }
@@ -76,38 +78,8 @@ SetWeeks = function()
    }
 }
 
-WeeklyScoring = function(week)
-{
-   var tblName = "wk" + week + "Body"
-   var tblBody = document.getElementById(tblName);
-   var row;
 
-   var textID = "wk" + week + "Text";
-   var textObj = document.getElementById(textID);
-   if ( textObj != null )
-      textObj.innerHTML = weekly_text[week-1] + "<br>";
-   else
-      console.log("Couldn't find weekly text area " + textID);
-
-   if ( week <= iceaholics.length )
-   {
-      SetScore("juicyslip_span", juicyslip[week-1]);
-      SetScore("porkchops_span", porkchops[week-1]);
-
-      SetScore("fatbastards_span", fatbastards[week-1]);
-      SetScore("iceaholics_span", iceaholics[week-1]);
-
-      SetScore("predators_span", predators[week-1]);
-      SetScore("tenacious_span", tenacious[week-1]);
-
-      SetScore("hawkfan_span", hawkfan[week-1]);
-      SetScore("groupies_span", groupies[week-1]);
-
-      SetScore("redhot_span", redhot[week-1]);
-      SetScore("being12_span", being12[week-1]);
-   }
-}
-
+/*
 SetScore = function(team, score)
 {
    var span = document.getElementById(team);
@@ -123,16 +95,18 @@ SetScore = function(team, score)
    }
    span.appendChild(document.createTextNode(score));
 }
+*/
 
-mkWeek = function(week, dateStr, teams, scores, comments)
+
+mkWeek = function(week, dateStr, teams, scores, divGames, comments)
 {
    var hdrHtml = '<div id="wk' + week + 'Hdr" class="weeklyHdr"><center>' +
                  '<table border="0" width="100%"><tr><td align="center">' +
                  '<b>' + dateStr + '</b></td></tr></table><font size="-1">' +
                  'Asterik (*) by team name indicates a division matchup.</font></div>\n';
 
-   var txtscr1;
-   var txtscr2;
+   var txtscr1 = "";
+   var txtscr2 = "";
    var resHtml = "";
    var jndx=1;
 
@@ -150,9 +124,9 @@ mkWeek = function(week, dateStr, teams, scores, comments)
 
       resHtml += '<div id="res' + week + "_" + jndx + '" class="res' + jndx + '">' +
                  '<table border="1" cellpadding="2" cellspacing="2" bgcolor="#dddddd">' +
-                 '<tr><td class="scName">' + teams[indx] + '</td><td class="scValue"><b>' +
+                 '<tr><td class="scName">' + divGames[indx] + teams[indx] + '</td><td class="scValue"><b>' +
                  txtscr1 + '</b></td></tr>' +
-                 '<tr><td class="scName">' + teams[indx+1] + '</td><td class="scValue">' +
+                 '<tr><td class="scName">' + divGames[indx+1] + teams[indx+1] + '</td><td class="scValue">' +
                  txtscr2 + '</span></td></tr></table></div>\n';
       jndx++;
    }

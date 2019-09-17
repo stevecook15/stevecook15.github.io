@@ -1,4 +1,6 @@
 
+"use strict" 
+
 //TODO:  Avg margin of victory/loss
 
 // Reads scores from scores.js
@@ -16,37 +18,42 @@ function TeamAvgs()
 
    var tscore, lscore, hscore;
 
-   var team = 0;
+   var teamIndx = 0;
    var plabels = new Array();
-   for ( var jteam=0; jteam<pfl_scores.length; jteam++ )
+
+   var teams = getOrderedTeams();
+   var team;
+
+   for ( var jteam=0; jteam<teams.length; jteam++ )
    {
+      team = teams[jteam];
+
       var id = document.getElementById("team" + jteam);
       if ( id && id.checked == true )
       {
+         tscore = team.totPts;
          lscore = 500.0;
-         tscore = 0.0;
          hscore = 0.0;
-         for ( week=0; week<pfl_scores[jteam].length; week++ )
+         for ( var week=0; week<team.scores.length; week++ )
          {
-            tscore += pfl_scores[jteam][week];
-            if ( pfl_scores[jteam][week] > hscore )
-               hscore = pfl_scores[jteam][week];
-            if ( pfl_scores[jteam][week] < lscore )
-               lscore = pfl_scores[jteam][week];
+            if ( team.scores[week] > hscore )
+               hscore = team.scores[week];
+            if ( team.scores[week] < lscore )
+               lscore = team.scores[week];
          }
-         average_data[team] = tscore/pfl_scores[jteam].length;
-         if ( average_data[team] < PLOT_MIN_VALUE )
-            average_data[team] = PLOT_MIN_VALUE;
+         average_data[teamIndx] = tscore/team.scores.length;
+         if ( average_data[teamIndx] < PLOT_MIN_VALUE )
+            average_data[teamIndx] = PLOT_MIN_VALUE;
          if ( lscore < PLOT_MIN_VALUE )
             lscore = PLOT_MIN_VALUE;
-         low_data[team] = lscore;
-         high_data[team] = hscore;
-         plabels[team] = pfl_labels[jteam];
-         team++;
+         low_data[teamIndx] = lscore;
+         high_data[teamIndx] = hscore;
+         plabels[teamIndx] = team.name;
+         teamIndx++;
       }
    }
 
-   var plotTitle = "PFL Team Averages - Week " + pfl_scores[0].length + "";
+   var plotTitle = "PFL Team Averages - Week " + teams[0].scores.length + "";
    var xaxisTitle = "";
    var yaxisTitle = "Points";
 
@@ -63,7 +70,7 @@ function TeamAvgs()
    //chart.setVertGrid(true);
 
 // Specify bar colors??
-   if ( pfl_scores[0].length != 0 && pfl_scores[0][0] != 0 )
+   if ( teams[0].scores.length != 0 && teams[0].scores[0] != 0 )
    {
       chart.addLine(low_data);
       chart.addLine(average_data);
@@ -83,10 +90,11 @@ function TeamAvgs()
    var cheight = canvasId.height;
    chart.draw("plot_canvas", cwidth, cheight);
 
-   // Add labels in same order as data!!!
    var legend = new BizLegend();
    for ( var indx=0; indx<plot_names.length; indx++ )
+   {
       legend.addLabel(plot_names[indx]);
+   }
 
    var legendId = document.getElementById("legend_canvas");
    var lwidth = legendId.width;
@@ -108,13 +116,8 @@ function OppAverages()
 {
    var plot_names = new Array( "You", "Opponents" ); //, "Difference" );
 
-   var plotTitle = "Opponents Averages";
    var xaxisTitle = "";
    var yaxisTitle = "Points";
-
-   var avg_val = new Array();
-   var opp_val = new Array();
-   //var diff_val = new Array();
 
    var chart = new BizBarChart();
    chart.setPlotType(chart.ADJACENT);
@@ -126,39 +129,40 @@ function OppAverages()
    chart.setYTitle(yaxisTitle);
    chart.setHorzGrid(true);
 
-// Specify bar colors??
-   var avg, opp;
    var swins, slosses;
-   var cteam, oppnt;
+   var avg, oppAvg;
+   var team, oppnt;
 
    var jteam = 0;
+   var avg_val = new Array();
+   var opp_val = new Array();
+
    var plabels = new Array();
 
-   for ( var indx=0; indx< pfl_scores.length; indx++ )
+   var opps;
+   var teams = getOrderedTeams();
+   var week = teams[0].scores.length;
+
+   for ( var indx=0; indx<teams.length; indx++ )
    {
       var id = document.getElementById("team" + indx);
       if ( id.checked == true )
       {
-         cteam = pfl_scores[indx];
-         oppnt= opp_scores[indx];
-         avg = 0; opp = 0;
-         for ( var jndx=0; jndx<cteam.length; jndx++ )
-         {
-            avg += cteam[jndx];
-            opp += oppnt[jndx];
-         }
+         team = teams[indx];
+         opps = team.getOpponents();
+         oppnt = getTeamByAbrv(opps[week]);
 
-         avg_val[jteam] = avg / cteam.length;
-         opp_val[jteam] = opp / cteam.length;
-         //diff_val[jteam] = avg_val[jteam] - opp_val[jteam];
-         plabels[jteam] = pfl_labels[indx];
+         avg_val[jteam] = team.totPts / week;
+         opp_val[jteam] = oppnt.totPts / week;
+         plabels[jteam] = team.name;
          jteam++;
       }
    }
 
+   // To display avg values
    //chart.labelValues(true);
 
-   if ( pfl_scores[0].length != 0 && pfl_scores[0][0] != 0 )
+   if ( teams[0].scores.length != 0 && teams[0].scores[0] != 0 )
    {
       chart.addLine(avg_val);
       chart.addLine(opp_val);
@@ -211,9 +215,6 @@ function MarginVictory()
 
    var plot_names = new Array( "Victories", "Losses" );
 
-   var team_data = pfl_scores;
-   var opponent_data = opp_scores;
-
    var victory_margin = new Array();
    var loss_margin = new Array();
 
@@ -236,32 +237,41 @@ function MarginVictory()
 
    var nwins, nlosses;
    var swins, slosses;
-   var cteam, oppnt;
+   var teams, opps, oppnt, team;
 
    var plabels = new Array();
+   var teams = getOrderedTeams();
+   var week = teams[0].scores.length;
+
    var jteams = 0;
-   for ( var indx=0; indx<pfl_scores.length; indx++ )
+   for ( var indx=0; indx<teams.length; indx++ )
    {
       var id = document.getElementById("team" + indx);
       if ( id.checked == true )
       {
-         cteam = pfl_scores[indx];
-         oppnt= opp_scores[indx];
+         team = teams[indx];
+         opps = team.getOpponents();
+
          nwins = 0; nlosses = 0;
          swins = 0.0; slosses = 0.0;
-         for ( var jndx=0; jndx<cteam.length; jndx++ )
+         for ( var jndx=0; jndx<week; jndx++ )
          {
-            if ( cteam[jndx] > oppnt[jndx] )
+            oppnt = getTeamByAbrv(opps[jndx]);
+
+console.log("Wk, tm, opp, score oppscore: " + (jndx+1) + ", " + team.name + ", " + oppnt.name +
+                  ", " + team.scores[jndx] + ", " + oppnt.scores[jndx]);
+            if ( team.scores[jndx] > oppnt.scores[jndx] )
             {
                nwins++;
-               swins += (cteam[jndx] - oppnt[jndx]);
+               swins += (team.scores[jndx] - oppnt.scores[jndx]);
             }
             else
             {
                nlosses++;
-               slosses += (oppnt[jndx] - cteam[jndx]);
+               slosses += (oppnt.scores[jndx] - team.scores[jndx]);
             }
          }
+
          if ( nwins > 0 )
             swins = swins / nwins;
          if ( nlosses > 0 )
@@ -269,7 +279,7 @@ function MarginVictory()
 
          victory_margin[jteams] = swins;
          loss_margin[jteams] = slosses;
-         plabels[jteams] = pfl_labels[indx];
+         plabels[jteams] = team.name;
          jteams++;
       }
    }
@@ -317,42 +327,56 @@ function MarginVictory()
 
 function VsLeague()
 {
-   var teamscore, oppnscore, team;
+   var teamscore, oppnscore;
    var tot_games, wins, losses;
 
    var league_wins = new Array();
    var league_losses = new Array();
    var tot_wins = new Array();
    var tot_losses = new Array();
+   var record = "";
 
-   var num_teams = pfl_scores.length;
+   var teams = getOrderedTeams();
+   var num_teams = teams.length;
+   var num_weeks = teams[0].scores.length;
+   var labels = new Array();
 
    var tWinArr = new Array();
    var tLossArr = new Array();
 
-   var record = "";
-
-   var num_teams = pfl_scores.length;
-   var num_weeks = pfl_scores[0].length;
-
-   for ( var team=0; team<num_teams; team++ )
+   for ( var indx=0; indx<num_teams; indx++ )
    {
-      tWinArr[team] = 0;
-      tLossArr[team] = 0;
+      tWinArr[indx] = 0;
+      tLossArr[indx] = 0;
    }
 
-   for ( var week=0; week<num_weeks; week++ )
+   var team, opps, oppTeam;
+
+   for ( var indx=0; indx<num_teams; indx++ )
    {
-      for ( var team=0; team<num_teams; team++ )
+      team = teams[indx];
+
+      for ( var week=0; week<num_weeks; week++ )
       {
          for ( var oppnt=0; oppnt<num_teams; oppnt++ )
          {
-            if ( team != oppnt )
+            if ( indx != oppnt )
             {
-               if ( pfl_scores[team][week] > pfl_scores[oppnt][week] )
-                  tWinArr[team]++;
-               else if ( pfl_scores[team][week] < pfl_scores[oppnt][week] )
-                  tLossArr[team]++;
+               oppTeam = teams[oppnt];
+
+               if ( team.scores[week] > oppTeam.scores[week] )
+               {
+                  tWinArr[indx]++;
+               }
+               else if ( team.scores[week] < oppTeam.scores[week] )
+               {
+                  tLossArr[indx]++;
+               }
+               else 
+               {
+                  tWinArr[indx] += 0.5;
+                  tLossArr[indx] += 0.5;
+               }
             }
          }
       }
@@ -360,38 +384,14 @@ function VsLeague()
 
    var plabels = new Array();
    var jteams = 0;
-   for ( team=0; team<num_teams; team++ )
+   for ( var indx=0; indx<teams.length; indx++ )
    {
-      var id = document.getElementById("team" + team);
+      var id = document.getElementById("team" + indx);
       if ( id.checked == true )
       {
-         league_wins[jteams] = tWinArr[team];
-         league_losses[jteams] = tLossArr[team];
-         tot_wins[jteams] = 0.0;
-         tot_losses[jteams] = 0.0;
-
-         for ( week=0; week<pfl_scores[team].length; week++ )
-         {
-            tot_games = wins = losses = 0;
-            for ( oppnt=0; oppnt<num_teams; oppnt++ )
-            {
-               if ( team != oppnt )
-               {
-                  teamscore = pfl_scores[team][week];
-                  oppnscore = pfl_scores[oppnt][week];
-
-                  if ( teamscore > oppnscore )
-                     wins++;
-                  else
-                     losses++;
-               }
-            }
-
-            tot_wins[jteams] += wins;
-            tot_losses[jteams] += losses;
-            tot_games += (wins + losses);
-         }
-         plabels[jteams] = pfl_labels[team];
+         plabels[jteams] = teams[indx].name;
+         league_wins[jteams] = tWinArr[indx];
+         league_losses[jteams] = tLossArr[indx];
          jteams++;
       }
    }
@@ -399,68 +399,54 @@ function VsLeague()
    var max_wins = 0;
    var max_losses = 0;
 
-   //for ( team=0; team<num_teams; team++ )
-   for ( team=0; team<jteams; team++ )
+   for ( var team=0; team<jteams; team++ )
    {
-      if ( tot_wins[team] >  max_wins )
-         max_wins = tot_wins[team];
-      if ( tot_losses[team] >  max_losses )
-         max_losses = tot_losses[team];
+      if ( league_wins[team] >  max_wins )
+         max_wins = league_wins[team];
+      if ( league_losses[team] >  max_losses )
+         max_losses = league_losses[team];
    }
 
-   //var colors = new Array ( "red", "green", "blue", "yellow" );
    var colors = new Array ( "#00ff00", "#ff0000", "#0000ff", "#ffff00" );
 
    var chart = new BizBarChart();
    chart.setPlotType(chart.ADJACENT);
    chart.setColors(colors);
-//LATER   chart.labelBars(true);
 
-   if ( pfl_scores[0].length != 0 && pfl_scores[0][0] != 0 )
+   if ( teams[0].scores.length != 0 && teams[0].scores[0] != 0 )
    {
-      chart.addLine(tot_wins);
-      chart.addLine(tot_losses);
+      chart.addLine(league_wins);
+      chart.addLine(league_losses);
    }
 
-   //chart.setXLabels(pfl_labels);
    chart.setXLabels(plabels);
-//   chart.rotateLabels(true);
+   chart.rotateXLabels(true);
 
-//   for ( var jndx=10; jndx<85; jndx += 5 )
-//   {
-//      if ( max_wins < jndx )
-//      {
-//         chart.setYMax(jndx);
-//         chart.setNumTics(jndx);
-//         break;
-//      }
-//   }
-
-if ( max_wins < 10 && max_losses < 10 )
-{
-   chart.setYMax(10);
-   chart.setNumTics(10);
-}
-else if ( max_wins < 25 && max_losses < 25 )
-{
-   chart.setYMax(25);
-   chart.setNumTics(5);
-}
-else if ( max_wins < 50 && max_losses < 50 )
-{
-   chart.setYMax(50);
-   chart.setNumTics(10);
-}
-else if ( max_wins < 75 && max_losses < 75 )
-{
-   chart.setYMax(75);
-   chart.setNumTics(5);
-}
-else
-{
-   chart.setYMax(120);
-   chart.setNumTics(12);
-}
+   if ( max_wins < 10 && max_losses < 10 )
+   {
+      chart.setYMax(10);
+      chart.setNumTics(10);
+   }
+   else if ( max_wins < 25 && max_losses < 25 )
+   {
+      chart.setYMax(25);
+      chart.setNumTics(5);
+   }
+   else if ( max_wins < 50 && max_losses < 50 )
+   {
+      chart.setYMax(50);
+      chart.setNumTics(10);
+   }
+   else if ( max_wins < 75 && max_losses < 75 )
+   {
+      chart.setYMax(75);
+      chart.setNumTics(5);
+   }
+   else
+   {
+      chart.setYMax(120);
+      chart.setNumTics(12);
+   }
 
    chart.setThreeD(true);
    chart.setThreeDAxes(true);
@@ -468,12 +454,10 @@ else
    chart.labelValues(true);
 
 //   //chart.setTitleFont(new Font("SansSerif", Font.BOLD, 18));
-   chart.setPlotTitle("League Record vs All Teams after Week " + pfl_scores[0].length);
+   chart.setPlotTitle("League Record vs All Teams after Week " + teams[0].scores.length);
 
 //   //chart.setYAxisFont(new Font("SansSerif", Font.BOLD, 14));
    chart.setYTitle("Win/Loss Percentage");
-
-//   chart.addRefLine(50.0);
 
    var canvasId = document.getElementById("plot_canvas");
    var cwidth = canvasId.width;
@@ -482,12 +466,11 @@ else
 
    // Add legend
    // Add labels in same order as data!!!
-   //var legends = new Array( "League Wins", "League Losses", "All Wins", "All Losses" );
    var legends = new Array( "Wins", "Losses");
 
    var legend = new BizLegend();
    legend.setLayout(BizLegend.HORIZONTAL);
-   for ( indx=0; indx<legends.length; indx++ )
+   for ( var indx=0; indx<legends.length; indx++ )
       legend.add(legends[indx], colors[indx]);
 
    var legendId = document.getElementById("legend_canvas");
@@ -524,35 +507,43 @@ function ScoringPlot()
    chart.setLineWidth(2);
    chart.labelMaxValue(true);
 
+   var teams = getOrderedTeams();
+   var num_weeks = teams[0].scores.length;
+
    //need up to 12 colors!!!
-   var num_weeks = pfl_scores[0].length;
    var wscore = new Array();
+   var labels = new Array();
    var week;
 
-   for ( week=0; week<num_weeks; week++ )
+   for ( var week=0; week<num_weeks; week++ )
       wscore[week] = 0.0;
 
-   for ( team=0; team<pfl_scores.length; team++ )
+   var jndx = 0;
+   for ( var indx=0; indx<teams.length; indx++ )
    {
-      var id = document.getElementById("team" + team);
+      var id = document.getElementById("team" + indx);
       if ( id.checked == true )
-         chart.addLine(pfl_scores[team], "", chart.colors[team]);
-
-      for ( week=0; week<num_weeks; week++ )
       {
-         wscore[week] += pfl_scores[team][week];
+         chart.addLine(teams[indx].scores, "", chart.colors[indx]);
+         labels[jndx] = teams[indx].name;
+         jndx++;
+      }
+
+      for ( var week=0; week<num_weeks; week++ )
+      {
+         wscore[week] += teams[indx][week];
       }
    }
 
-   var num_teams = pfl_scores.length;
+   var num_teams = teams.length;
    var season_avg = 0.0;
-   for ( week=0; week<num_weeks; week++ )
+   for ( var week=0; week<num_weeks; week++ )
    {
       wscore[week] /= num_teams;
       season_avg += wscore[week];
       wscore[week] = wscore[week].toFixed(2);
-      //console.log("Wk " + (week+1) + ": " + wscore[week]);
    }
+
 //   chart.addLine(wscore, "Weekly Avg", "#000000");
    season_avg /= num_weeks;
    chart.addRefLine(season_avg.toFixed(2));
@@ -573,8 +564,8 @@ function ScoringPlot()
 
    // Add labels in same order as data!!!
    var legend = new BizLegend();
-   for ( var indx=0; indx<pfl_labels.length; indx++ )
-      legend.addLabel(pfl_labels[indx]);
+   for ( var indx=0; indx<labels.length; indx++ )
+      legend.addLabel(labels[indx]);
 
    var legendId = document.getElementById("legend_canvas");
    var lwidth = legendId.width;
@@ -601,7 +592,6 @@ function ScoringTrend()
 
    var chart = new BizLineChart();
 
-//   chart.setXLabels(pfl_labels);
    chart.setXTitle(xaxisTitle);
    chart.setYTitle(yaxisTitle);
    chart.setPlotTitle(plotTitle);
@@ -611,18 +601,24 @@ function ScoringTrend()
 //   chart.labelMinValue(true);
 
    // Everyone should be playing same number of weeks
-   var num_weeks = pfl_scores[0].length;
+   var teams = getOrderedTeams();
+   var num_weeks = teams[0].scores.length;
+   var labels = new Array();
+
    if ( num_weeks == 1 )
    {
       chart.setPlotType(chart.MARKER_PLOT);
 
-      for ( var team=0; team<pfl_scores.length; team++ )
+      for ( var team=0; team<teams.length; team++ )
       {
          var sdev = new Array();
-         sdev[0] = pfl_scores[team][0];
+         sdev[0] = teams[team].scores[0];
          var id = document.getElementById("team" + team);
          if ( id.checked == true )
-            chart.addLine(sdev, pfl_labels[team], chart.colors[team]);
+         {
+            chart.addLine(sdev, teams[team].name, chart.colors[team]);
+            labels.push(teams[team].name);
+         }
       }
    }
    else
@@ -638,18 +634,21 @@ function ScoringTrend()
       var params;
 
       //need up to 12 colors!!!
-      for ( team=0; team<pfl_scores.length; team++ )
+      for ( team=0; team<teams.length; team++ )
       {
-         params = lin.calcParams(xarr, pfl_scores[team]);
-
-         for ( indx=0; indx<num_weeks; indx++ )
-         {
-            smooth[indx] = lin.calcPoint(params, indx+1);
-         }
-
          var id = document.getElementById("team" + team);
          if ( id.checked == true )
-            chart.addLine(smooth, pfl_labels[team], chart.colors[team]);
+         {
+            params = lin.calcParams(xarr, teams[team].scores);
+
+            for ( indx=0; indx<num_weeks; indx++ )
+            {
+               smooth[indx] = lin.calcPoint(params, indx+1);
+            }
+
+            chart.addLine(smooth, teams[team].name, chart.colors[team]);
+            labels.push(teams[team].name);
+         }
       }
    }
 
@@ -669,8 +668,8 @@ function ScoringTrend()
 
    // Add labels in same order as data!!!
    var legend = new BizLegend();
-   for ( var indx=0; indx<pfl_labels.length; indx++ )
-      legend.addLabel(pfl_labels[indx]);
+   for ( var indx=0; indx<labels.length; indx++ )
+      legend.addLabel(labels[indx]);
 
    var legendId = document.getElementById("legend_canvas");
    var lwidth = legendId.width;
@@ -689,6 +688,7 @@ function ScoringTrend()
 }
 
 
+/*****
 function AvgRecord()
 {
    var num_weeks = pfl_scores[0].length;
@@ -763,6 +763,7 @@ function AvgRecord()
       detailsTxt.textContent = txt;   // Real browsers
    }
 }
+***/
 
 
 function StdDevs()
@@ -781,15 +782,22 @@ function StdDevs()
    chart.setLineWidth(2);
    chart.labelMaxValue(true);
 
+   var teams = getOrderedTeams();
+   var num_weeks = teams[0].scores.length;
+   var labels = new Array();
+
    var stdDev;
-   for ( team=0; team<pfl_scores.length; team ++ )
+   for ( var team=0; team<teams.length; team++ )
    {
       // Calculate the std dev for each
-      stdDev = calcStdDev(pfl_scores[team], team);
+      stdDev = calcStdDev(teams[team].scores, team);
 
       var id = document.getElementById("team" + team);
       if ( id.checked == true )
+      {
          chart.addLine(stdDev, "", chart.colors[team]);
+         labels.push(teams[team].name);
+      }
    }
 
    //chart.setAutoScale(true);
@@ -808,8 +816,8 @@ function StdDevs()
 
    // Add labels in same order as data!!!
    var legend = new BizLegend();
-   for ( var indx=0; indx<pfl_labels.length; indx++ )
-      legend.addLabel(pfl_labels[indx]);
+   for ( var indx=0; indx<labels.length; indx++ )
+      legend.addLabel(labels[indx]);
 
    var legendId = document.getElementById("legend_canvas");
    var lwidth = legendId.width;

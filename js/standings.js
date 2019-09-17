@@ -8,6 +8,9 @@ function showStandings()
    if ( table1Hdr != null )
       clearTable(table1Hdr);
 
+   var pteams = getOrderedTeams();
+   var team;
+
    if ( table1Body != null )
    {
       clearTable(table1Body);
@@ -15,10 +18,11 @@ function showStandings()
       addRow(table1Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
       for ( var indx=0; indx<5; indx++ )
       {
-         rec = pfl_records[indx];
-         addRow(table1Body, pfl_labels[indx], pfl_owners[indx],
-                      "" + rec[0] + "/" + rec[1],
-                      "" + rec[2] + "/" + rec[3], playoffs[indx]);
+         team = pteams[indx];
+         addRow(table1Body, team.name, team.owner,
+                        "" + team.wins + "/" + team.losses,
+                        "" + team.divWins + "/" + team.divLosses,
+                        playoffs[indx]);
       }
    }
 
@@ -34,10 +38,11 @@ function showStandings()
       addRow(table2Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
       for ( var indx=5; indx<10; indx++ )
       {
-         rec = pfl_records[indx];
-         addRow(table2Body, pfl_labels[indx], pfl_owners[indx],
-                      "" + rec[0] + "/" + rec[1],
-                      "" + rec[2] + "/" + rec[3], playoffs[indx]);
+         team = pteams[indx];
+         addRow(table2Body, team.name, team.owner,
+                        "" + team.wins + "/" + team.losses,
+                        "" + team.divWins + "/" + team.divLosses,
+                        playoffs[indx]);
       }
    }
 }
@@ -104,6 +109,7 @@ function addRow(tbody, teamname, owner, record, points, playoffs)
    tbody.appendChild(row);
 }
 
+/****
 function ssort(names, owners, wins, losses, points)
 {
    var len = names.length;
@@ -162,4 +168,5 @@ function ssort(names, owners, wins, losses, points)
       }
    }
 }
+***/
 

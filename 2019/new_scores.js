@@ -3,204 +3,49 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var pfl_owners = [
-      "John",       // Iceotopes
-      "Matt"        // Inglorious Staffords
-      "Daniel",     // Roll Tide
-      "Noah",       // Keke do you love me?
-      "Harrison",   // Belicheck
+var iceScores = [ 121.75, 126.80 ];
+var makScores = [ 181.80, 138.50 ];
+var rolScores = [ 125.60,  97.10 ];
+var kekScores = [ 102.55, 144.95 ];
+var belScores = [ 117.00, 142.15 ];
 
-      "Joe",        // Predators
-      "Steve",      // Fat Bastards
-      "Adam",       // The Nubs
-      "Jake",       // Tenacious Anus
-      "Hunter"      // Krusty Krushers
-      ];
+var preScores = [ 109.65, 117.85 ];
+var fatScores = [ 146.50,  99.15 ];
+var nubScores = [ 194.30, 157.95 ];
+var tenScores = [  85.90, 132.85 ];
+var kruScores = [ 143.70, 142.30 ];
 
-var teams =
-{
-   "team":
-   [
-      {
-         "name": "Iceoholics",
-         "abrv": "ice",
-         "owner": "John",
-         "div": 1,
-         "opps": 
-         [
-            "rol", "bel", "kek", "fat", "pre", "ing", "nub", "rol", "ten", "kru", "bel", "kek", "ing", "nub"
-         ],
-         scores: 
-         [
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-         ],
-         wins: 0,
-         losses: 0,
-         divWins: 0,
-         divLosses: 0
-      },
-      {
-         name: "Fat Bastards",
-         abrv: "fat",
-         owner: "Steve",
-         div: 2,
-         opps: 
-         {
-            "ing", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre"
-         },
-         scores: 
-         {
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-         },
-         wins: 0,
-         losses: 0,
-         divWins: 0,
-         divLosses: 0
-      }
-   ]
-}
-
-var names = { "ice", "ing", "rol", "kek", "bel",
-              "pre", "fat", "nub", "ten", "kru" };
-
-var iceScores = { 100.2, 123.2 };
-var ingScores = { 100.2, 123.2 };
-var fatScores = { 100.2, 123.2 };
-scoresMap.put("Fat", fatScores);
-
-// Div 1 "ice", "ing", "rol", "kek", "bel"
-//                1      2      3      4      5      6      7      8      9     10     11     12     13     14  
-var iceOpps = { "rol", "bel", "kek", "fat", "pre", "ing", "nub", "rol", "ten", "kru", "bel", "kek", "ing", "nub" };
-   teamOppsMap.put("ice", iceOpps);
-var ingOpps = { "fat", "kek", "rol", "pre", "kru", "ice", "bel", "ten", "nub", "ten", "kek", "rol", "ice", "bel" };
-   teamOppsMap.put("ing", ingOpps);
-var rolOpps = { "ice", "pre", "ing", "kru", "ten", "bel", "kek", "ice", "fat", "nub", "kru", "ing", "bel", "kek" };
-   teamOppsMap.put("rol", rolOpps);
-var kekOpps = { "bel", "ing", "ice", "nub", "fat", "ten", "rol", "bel", "kru", "pre", "ing", "ice", "fat", "rol" };
-   teamOppsMap.put("kek", kekOpps);
-var belOpps = { "kek", "ice", "kru", "ten", "nub", "rol", "ing", "kek", "pre", "fat", "ice", "pre", "rol", "ing" };
-   teamOppsMap.put("bel", belOpps);
-
-
-// Div 2: "pre", "fat", "nub", "ten", "kru"
-//                1      2      3      4      5      6      7      8      9     10     11     12     13     14  
-var preOpps = { "nub", "rol", "fat", "ing", "ice", "kru", "ten", "kru", "bel", "kek", "nub", "bel", "ten", "fat" };
-   teamOppsMap.put("pre", preOpps);
-var fatOpps = { "ing", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre" };
-   teamOppsMap.put("Fat", fatOpps);
-var nubOpps = { "pre", "kru", "ten", "kek", "bel", "fat", "ice", "fat", "ing", "rol", "pre", "ten", "kru", "ice" };
-   teamOppsMap.put("nub", nubOpps);
-var tenOpps = { "kru", "fat", "nus", "bel", "rol", "kek", "pre", "ing", "ice", "ing", "fat", "nub", "pre", "kru" };
-   teamOppsMap.put("ten", tenOpps);
-var kruOpps = { "ten", "nub", "bel", "rol", "ing", "pre", "fat", "pre", "kek", "ice", "rol", "fat", "nub", "ten" };
-   teamOppsMap.put("kru", kruOpps);
-
-
-HashMap<String team, struct tdata> teamsDataMap;
-HashMap<String team, String[] opps]> teamOppsMap;
-HashMap<String team, int[] scores> scoresMap;
-
-for ( i=0; i<teams.length; i++ )
-{
-   teamName = teams[i];
-   scores = scoresMap.get(teamName);
-   // Zero out all the team pts values
-   teamData = teamsDataMap.get(teamName);
-   teamData.wins = 0;
-   
-   for ( int week = 0; week < currWeek; week++ )
-   {
-      teamScore = scores[week];
-      oppScores = oppsMap.get(teamName);
-      oppScore = oppScores[week];
-      
-      teams[i].totalPts += teamScore;
-      teams[i].oppTotalPts += oppScore;
-      if ( teamScore >= oppScore )
-      {
-         teams[i].wins++;
-         if ( divGame )
-            teams[i].divWins++;
-      }
-      else
-      {
-         team[i].losses++;
-         if ( divGame )
-            teams[i].divLosses++;
-      }
-      teams[i].weekAvg = teams[i].totalPts / (week+1);
-      teams[i].oppAvg = teams[i].oppTotalPts / (week+1); 
-   }
-}
-*/
-//                  Record, Division Record
-
-
-var iceotopesRec   = [ 0, 0,  0, 0 ];   // John
-var ingloriousRec  = [ 0, 0,  0, 0 ];   // Matt
-var rolltideRec    = [ 0, 0,  0, 0 ];   // Daniel
-var cookiemonRec   = [ 0, 0,  0, 0 ];   // Noah Keke do you love me
-var belicheckRec   = [ 0, 0,  0, 0 ];   // Harrison
-
-var predatorsRec   = [ 0, 0,  0, 0 ];   // Joe
-var fatbastardsRec = [ 0, 0,  0, 0 ];   // Steve
-var thenubsRec     = [ 0, 0,  0, 0 ];   // Adam
-var tenanusRec     = [ 0, 0,  0, 0 ];   // Jake
-var krustyRec      = [ 0, 0,  0, 0 ];   // Hunter
-
-
-
-
-var pfl_scores=[
-        fatbastards,
-        cookiemon,
-        predators,
-        krusty,
-        belicheck,
-
-        iceotopes,
-        rolltide,
-        tenanus,
-        thenubs,
-        inglorious
-     ];
-
-var opp_scores=[
-        oppfatbastards,
-        oppcookiemon,
-        opppredators,
-        oppkrusty,
-        oppbelicheck,
-
-        opptenanus,
-        oppiceotopes,
-        opprolltide,
-        oppthenubs,
-        oppinglorious 
-     ];
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
 // 2 - clinched division
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
-var playoffs=[
-              0,   // bastards
-              0,   // cookiemon
-              0,   // predators
-              0,   // krusty
-              0,   // belicheck
+var playoffs = [
+        0,  //rolltide
+        0,  //retmack
+        0,  //belicheck
+        0,  //iceotopes
+        0,  //kekelove
 
-              0,   // tenanus
-              0,   // iceotopes
-              0,   // rolltide
-              0,   // thenubs
-              0    // inglorious
-             ];
+        0,  //thenubs
+        0,  //krusty
+        0,  //fatbastards
+        0,  //predators
+        0   //tenanus
+     ];
 
-var week1_txt = "Welcome to the 2019 PFL season.  ";
 
-var week2_txt = "";
+var week1_txt = "Welcome to the 2019 PFL season.  The week the optimism starts fading... for half of us. Seems " +
+                "like the Nubs and Macks (has their name changed again yet? Haven't checked in the last 10 " +
+                "minutes) are feeling pretty good.  Seems Keke apparently does not love Noah though... and the " +
+                "sphincters are squeezed tight, in need of some prep-h!";
+
+var week2_txt = "A little lower scoring but the Nubs still the top dog with the high score for the second straight " +
+                "week, crushing the Krustys hopes. The Bellys are keeping pace with them, staying " +
+                "undefeated.  On the all-defeated front the Fat, and Ice continue to stink, falling to " +
+                "0-2. So, 2 undefeated and 2 winless, that leaves the middling six still hopeful early in the " +
+                "season.";
 
 var week3_txt = "";
 
@@ -225,91 +70,4 @@ var week12_txt = "";
 var week13_txt = "";
 
 var week14_txt = "";
-
-// dxxx means division game 
-
-var fat = "Fat Bastards";         var dfat = fat + " *";
-var com = "Cookie Monsters";      var dcom = com + " *";
-var pre = "Predators";            var dpre = pre + " *";
-var kru = "Krusty Krushers";      var dkru = kru + " *";
-var bel = "Discount Belichecks";  var dbel = bel + " *";
-
-var ice = "Iceotopes";            var dice = ice + " *";
-var rol = "Roll Tide";            var drol = rol + " *";
-var ten = "Tenacious Anus";       var dten = ten + " *";
-var nub = "The Nubs";             var dnub = nub + " *";
-var ing = "Inglorious Staffords"; var ding = ing + " *";
-
-var sfat = fatbastards;
-var scom = cookiemon;
-var spre = predators;
-var skru = krusty;
-var sbel = belicheck;
-
-var sice = iceotopes;
-var srol = rolltide;
-var sten = tenanus;
-var snub = thenubs;
-var sing = inglorious;
-
-var week01Teams = new Array(dfat, dkru, ice, bel, dcom, dpre, drol, ding, dten, dnub);
-var week01Scores = new Array(sfat[0], skru[0], sice[0], sbel[0], scom[0], spre[0], srol[0], sing[0], sten[0], snub[0]);
-
-var week02Teams = new Array(dfat, dpre, dice, dnub, dcom, dbel, rol, kru, dten, ding); 
-var week02Scores = new Array(sfat[1], spre[1], sice[1], snub[1], scom[1], sbel[1], srol[1], skru[1], sten[1], sing[1]);
-
-var week03Teams = new Array(dfat, dcom, dice, drol, pre, ten, dkru, dbel, dnub, ding);
-var week03Scores = new Array(sfat[2], scom[2], sice[2], srol[2], spre[2], sten[2], skru[2], sbel[2], snub[2], sing[2]);
-
-var week04Teams = new Array(fat, ice, com, ing, nub, pre, kru, ten, bel, rol);
-var week04Scores = new Array(sfat[3], sice[3], scom[3], sing[3], snub[3], spre[3], skru[3], sten[3], sbel[3], srol[3]);
-
-var week05Teams = new Array(fat, rol, ice, com, ing, pre, kru, nub, bel, ten);
-var week05Scores = new Array(sfat[4], srol[4], sice[4], scom[4], sing[4], spre[4], skru[4], snub[4], sbel[4], sten[4]);
-
-var week06Teams = new Array(dfat, dbel, dice, ding, com, nub, dpre, dkru, drol, dten);
-var week06Scores = new Array(sfat[5], sbel[5], sice[5], sing[5], scom[5], snub[5], spre[5], skru[5], srol[5], sten[5]);
-
-var week07Teams = new Array(fat, ing, dice, dten, dcom, dkru, dpre, dbel, drol, dten);
-var week07Scores = new Array(sfat[6], sing[6], sice[6], sten[6], scom[6], skru[6], spre[6], sbel[6], srol[6], sten[6]);
-
-var week08Teams = new Array(dfat, dkru, dice, ding, dcom, dpre, bel, nub, drol, dten);
-var week08Scores = new Array(sfat[7], skru[7], sice[7], sing[7], scom[7], spre[7], sbel[7], snub[7], srol[7], sten[7]);
-
-var week09Teams = new Array(fat, nub, ice, kru, com, ten, rol, pre, bel, ing);
-var week09Scores = new Array(sfat[8], snub[8], sice[8], skru[8], scom[8], sten[8], srol[8], spre[8], sbel[8], sing[8]);
-
-var week10Teams = new Array(fat, ten, ice, pre, com, rol, kru, ing, bel, nub);
-var week10Scores = new Array(sfat[9], sten[9], sice[9], spre[9], scom[9], srol[9], skru[9], sing[9], sbel[9], snub[9]);
-
-var week11Teams = new Array(dfat, dpre, dice, dnub, dcom, dbel, kru, ten, drol, ding);
-var week11Scores = new Array(sfat[10], spre[10], sice[10], snub[10], scom[10], sbel[10], skru[10], sten[10], srol[10], sing[10]);
-
-var week12Teams = new Array(dfat, dcom, dice, dten, rol, pre, dkru, dbel, ding, dnub);
-var week12Scores = new Array(sfat[11], scom[11], sice[11], sten[11], srol[11], spre[11], skru[11], sbel[11], sing[11], snub[11]);
-
-var week13Teams = new Array(dfat, dbel, ice, com, dkru, dpre, drol, dnub, dten, ding);
-var week13Scores = new Array(sfat[12], sbel[12], sice[12], scom[12], skru[12], spre[12], srol[12], snub[12], sten[12], sing[12]);
-
-var week14Teams = new Array(fat, ing, dice, drol, dcom, dkru, dpre, dbel, dten, dnub);
-var week14Scores = new Array(sfat[13], sing[13], sice[13], srol[13], scom[13], skru[13], spre[13], sbel[13], sten[13], snub[13]);
-
-var weekly_dates = [ "Thursday, September 6th",  "Thursday, September 13th", "Thursday, September 20th",
-                     "Thursday, September 27th", "Thursday, October 4th",    "Thursday, October 11th", 
-                     "Thursday, October 18th",   "Thursday, October 25th",   "Thursday, November 1st", 
-                     "Thursday, November 8th",   "Thursday, November 15th",  "Thursday, November 22rd", 
-                     "Thursday, November 29th",  "Thursday, December 6th" ];
-
-var weekly_teams = [ week01Teams, week02Teams, week03Teams, week04Teams, week05Teams, week06Teams, week07Teams,
-                     week08Teams, week09Teams, week10Teams, week11Teams, week12Teams, week13Teams, week14Teams ];
-
-var weekly_scores = [ week01Scores, week02Scores, week03Scores, week04Scores, week05Scores, week06Scores, week07Scores,
-                      week08Scores, week09Scores, week10Scores, week11Scores, week12Scores, week13Scores, week14Scores ];
-
-var weekly_text = [
-      week1_txt,   week2_txt,   week3_txt,   week4_txt,
-      week5_txt,   week6_txt,   week7_txt,   week8_txt,
-      week9_txt,   week10_txt,  week11_txt,  week12_txt,
-      week13_txt,  week14_txt
-  ];
 

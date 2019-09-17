@@ -1,6 +1,8 @@
 
 $(document).ready(function()
 {
+   initTeams();
+
    $('#summaries_button').button();
    $('#standings_button').button();
    $('#roster_button').button();
@@ -61,7 +63,7 @@ $(document).ready(function()
 
    $("#plots_window").dialog({ width: 960, height: 474, autoOpen: false });
 
-   setFilter("plot_options", pfl_labels);
+   setFilter("plot_options", getTeamNames());
 });
 
 
@@ -93,7 +95,7 @@ function setFilter(form, labels)
       label = document.createElement("label");
       label.setAttribute("for", "team" + i);
       label.htmlFor = "team" + i;
-      label.innerHTML = pfl_labels[i];
+      label.innerHTML = labels[i];
 
       container.appendChild(label);
 
