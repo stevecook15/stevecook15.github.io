@@ -16,118 +16,120 @@
 //
 //
 
-function BizLineChart()
+class BizLineChart
 {
-   this.DEBUG = true;
+   constructor()
+   {
+      this.DEBUG = true;
 
-   this.XORG_OFFSET = 60;
-   this.XTOP_OFFSET = 20;
-   this.YORG_OFFSET = 44;
-   this.YTOP_OFFSET = 30;
+      this.XORG_OFFSET = 60;
+      this.XTOP_OFFSET = 20;
+      this.YORG_OFFSET = 44;
+      this.YTOP_OFFSET = 30;
 
-   this.YPLOT_OFFSET  = 10;
-   this.THREED_OFFSET = 10;
+      this.YPLOT_OFFSET  = 10;
+      this.THREED_OFFSET = 10;
 
-   this.YONLY_PLOT  = 0;
-   this.AREA_PLOT   = 1;
-   this.RIBBON_PLOT = 2;
-   this.MARKER_PLOT = 3;
-   this.XY_PLOT     = 4;   // XY plot
-   this.LOGY_PLOT   = 5;   // Log Y plot
-   this.LOGX_PLOT   = 6;   // Log X plot
-   this.LOGLOG_PLOT = 7;   // Log XY plot
+      this.YONLY_PLOT  = 0;
+      this.AREA_PLOT   = 1;
+      this.RIBBON_PLOT = 2;
+      this.MARKER_PLOT = 3;
+      this.XY_PLOT     = 4;   // XY plot
+      this.LOGY_PLOT   = 5;   // Log Y plot
+      this.LOGX_PLOT   = 6;   // Log X plot
+      this.LOGLOG_PLOT = 7;   // Log XY plot
 
-   this.BLACK = "#000000";
-   this.WHITE = "#ffffff";
-   this.GRAY = "#aaaaaa";
+      this.BLACK = "#000000";
+      this.WHITE = "#ffffff";
+      this.GRAY = "#aaaaaa";
 
-   //                        // red,       blue,     green,    purple,
-   //                        // orange,    cyan,     yellow,   magenta
-   //this.colors = new Array("#ff0000", "#0000ff", "#008800", "#900090",
-   //                        "#ffa500", "#00ffff", "#ffff00", "#008000");
+      //                        // red,       blue,     green,    purple,
+      //                        // orange,    cyan,     yellow,   magenta
+      //this.colors = new Array("#ff0000", "#0000ff", "#008800", "#900090",
+      //                        "#ffa500", "#00ffff", "#ffff00", "#008000");
 
-   //this.shadows = new Array("#a00000", "#0000a0", "#007000", "#700070",
-   //                         "#cc8500", "#00a0a0", "#a0a000", "#007000");
+      //this.shadows = new Array("#a00000", "#0000a0", "#007000", "#700070",
+      //                         "#cc8500", "#00a0a0", "#a0a000", "#007000");
 
-   this.colors = new Array("#ff0000",  // red
-                           "#0000ff",  // blue
-                           "#008000",  // green
-                           "#800080",  // purple
-                           "#ffa580",  // orange
-                           "#00ffff",  // cyan
-                           "#ffff00",  // yellow
-                           "#008080",  // teal
-                           "#ff00ff",  //pink
-                           "#00ff00",  // lime
-                           "#800000",  // maroon
-                           "#808000"); // olive
+      this.colors = new Array("#ff0000",  // red
+                              "#0000ff",  // blue
+                              "#008000",  // green
+                              "#800080",  // purple
+                              "#ffa580",  // orange
+                              "#00ffff",  // cyan
+                              "#ffff00",  // yellow
+                              "#008080",  // teal
+                              "#ff00ff",  //pink
+                              "#00ff00",  // lime
+                              "#800000",  // maroon
+                              "#808000"); // olive
 
 //gray #808080
 //navy #000080
 //silver #C0C0C0
 
-   // Internal values
-   this.plotData = new Array();
-   this.plotLabel = new Array();
-   this.plotColors = new Array();
-   this.plotXScale = 1.0;
-   this.plotYMax = 100.0;
-   this.plotYMin = 0.0;
-   this.xOrg = 0;
-   this.yOrg = 0;
-   this.xTop = 0;
-   this.yTop = 0;
-   this.xScale = 0;
-   this.yScale = 0;
+      // Internal values
+      this.plotData = new Array();
+      this.plotLabel = new Array();
+      this.plotColors = new Array();
+      this.plotXScale = 1.0;
+      this.plotYMax = 100.0;
+      this.plotYMin = 0.0;
+      this.xOrg = 0;
+      this.yOrg = 0;
+      this.xTop = 0;
+      this.yTop = 0;
+      this.xScale = 0;
+      this.yScale = 0;
 
-   // Settable params
-   this.plotType = this.YONLY_PLOT;
-   this.plotWidth = 0;
-   this.plotHeight = 0;
-   this.plotTitle = null;
-   this.yAxisTitle = null;
-   this.xAxisTitle = null;
-   this.xAxisLabels = null;
-   this.yAxisLabels = null;
-   this.backgroundColor = "#ffffff";
-   this.axesColor = "#000000";
-   this.xAxisStartValue = 1;
-   this.xAxisIncrement = 1;
-   this.numTics = 5;
-   this.drawMarkers = true;
-   this.labelAllPts = false;
-   this.labelMax = false;
-   this.labelMin = false;
-   this.rotate_xflag = false;   // Rotate x axis labels
-   this.rotate_yflag = false;   // Rotate y axis labels
-   this.auto_scale = false;
-   this.vertGrid = false;
-   this.horzGrid = false;
-   this.lineWidth = 1;
+      // Settable params
+      this.plotType = this.YONLY_PLOT;
+      this.plotWidth = 0;
+      this.plotHeight = 0;
+      this.plotTitle = null;
+      this.yAxisTitle = null;
+      this.xAxisTitle = null;
+      this.xAxisLabels = null;
+      this.yAxisLabels = null;
+      this.backgroundColor = "#ffffff";
+      this.axesColor = "#000000";
+      this.xAxisStartValue = 1;
+      this.xAxisIncrement = 1;
+      this.numTics = 5;
+      this.drawMarkers = true;
+      this.labelAllPts = false;
+      this.labelMax = false;
+      this.labelMin = false;
+      this.rotate_xflag = false;   // Rotate x axis labels
+      this.rotate_yflag = false;   // Rotate y axis labels
+      this.auto_scale = false;
+      this.vertGrid = false;
+      this.horzGrid = false;
+      this.lineWidth = 1;
 
-   this.refLine = false;
-   this.refValue = 0.0;
+      this.refLine = false;
+      this.refValue = 0.0;
 
-   // Need to get fonts sizing same for text and numbers!
-   this.titleFont = 10;
-   this.xAxisFont = 10;
-   this.yAxisFont = 10;
-   this.xLabelsFont = 10;
-   this.yLabelsFont = 10;
-   this.refLineFont = 10;
+      // Need to get fonts sizing same for text and numbers!
+      this.titleFont = 10;
+      this.xAxisFont = 10;
+      this.yAxisFont = 10;
+      this.xLabelsFont = 10;
+      this.yLabelsFont = 10;
+      this.refLineFont = 10;
 
-   this.titleFontSize = 12;
-   this.xAxisFontSize = 12;
-   this.yAxisFontSize = 12;
-   this.xLabelsFontSize = 10;
-   this.yLabelsFontSize = 10;
-   this.refLineFontSize = 10;
+      this.titleFontSize = 12;
+      this.xAxisFontSize = 12;
+      this.yAxisFontSize = 12;
+      this.xLabelsFontSize = 10;
+      this.yLabelsFontSize = 10;
+      this.refLineFontSize = 10;
 
-   if ( this.plotData.length != 0 )
-      this.initialize();
-}
+      if ( this.plotData.length != 0 )
+         this.initialize();
+   }
 
-BizLineChart.prototype.initialize = function() 
+initialize() 
 {  
    var lineData;
    
@@ -151,7 +153,7 @@ BizLineChart.prototype.initialize = function()
  * @param lineLabel Optional info label for line, displayed at start
  *                   or end of line 
  */
-BizLineChart.prototype.addLine = function(data, lineLabel, lineColor)
+addLine(data, lineLabel, lineColor)
 {
    // Create and fill the data elements
    var lineData = new Array();
@@ -185,7 +187,7 @@ BizLineChart.prototype.addLine = function(data, lineLabel, lineColor)
  *
  * @param scale     Max value
  */
-BizLineChart.prototype.setYMax = function(scale)
+setYMax(scale)
 {
    this.plotYMax = scale;
    if ( this.plotYMax == 0.0 )  // Small sanity check....
@@ -198,7 +200,7 @@ BizLineChart.prototype.setYMax = function(scale)
  *
  * @param scale     Min value
  */
-BizLineChart.prototype.setYMin = function(scale)
+setYMin(scale)
 {
    this.plotYMin = scale;
    if ( this.plotYMin >= this.plotYMax )  // Small sanity check....
@@ -210,7 +212,7 @@ BizLineChart.prototype.setYMin = function(scale)
  *
  * @param plot_type     Type of plot, e.g. line, area, ribbon...
  */
-BizLineChart.prototype.setPlotType = function(plot_type)
+setPlotType(plot_type)
 {
    this.plotType = plot_type;
 }
@@ -221,7 +223,7 @@ BizLineChart.prototype.setPlotType = function(plot_type)
  *
  * @param title     Title for the plot
  */
-BizLineChart.prototype.setPlotTitle = function(title)
+setPlotTitle(title)
 {
    this.plotTitle = title;
 }
@@ -232,7 +234,7 @@ BizLineChart.prototype.setPlotTitle = function(title)
  *
  * @param title     Title to display on Y axis
  */
-BizLineChart.prototype.setYTitle = function(title)
+setYTitle(title)
 {
    this.yAxisTitle = title;
 }
@@ -243,7 +245,7 @@ BizLineChart.prototype.setYTitle = function(title)
  *
  * @param title     Title to display on X axis
  */
-BizLineChart.prototype.setXTitle = function(title)
+setXTitle(title)
 {
    this.xAxisTitle = title;
 }
@@ -254,7 +256,7 @@ BizLineChart.prototype.setXTitle = function(title)
  *
  * @param color     Color to draw background with
  */
-BizLineChart.prototype.setBackground = function(color)
+setBackground(color)
 {
    this.backgroundColor = color;
 }
@@ -265,7 +267,7 @@ BizLineChart.prototype.setBackground = function(color)
  *
  * @param color     Color to draw axes with
  */
-BizLineChart.prototype.setAxesColor = function(color)
+setAxesColor(color)
 {
    this.axesColor = color;
 }
@@ -276,7 +278,7 @@ BizLineChart.prototype.setAxesColor = function(color)
  *
  * @param font     Font for the plot
  */
-BizLineChart.prototype.setFont = function(font)
+setFont(font)
 {
    this.titleFont = font;
    this.xAxisFont = font;
@@ -292,7 +294,7 @@ BizLineChart.prototype.setFont = function(font)
  *
  * @param font     Font for the title
  */
-BizLineChart.prototype.setTitleFont = function(font)
+setTitleFont(font)
 {
    this.titleFont = font;
 }
@@ -303,7 +305,7 @@ BizLineChart.prototype.setTitleFont = function(font)
  *
  * @param font     Font for the title
  */
-BizLineChart.prototype.setXAxisFont = function(font)
+setXAxisFont(font)
 {
    this.xAxisFont = font;
 }
@@ -314,7 +316,7 @@ BizLineChart.prototype.setXAxisFont = function(font)
  *
  * @param font     Font for the title
  */
-BizLineChart.prototype.setYAxisFont = function(font)
+setYAxisFont(font)
 {
    this.yAxisFont = font;
 }
@@ -325,7 +327,7 @@ BizLineChart.prototype.setYAxisFont = function(font)
  *
  * @param font     Font for the title
  */
-BizLineChart.prototype.setXLabelsFont = function(font)
+setXLabelsFont(font)
 {
    this.xLabelsFont = font;
 }
@@ -336,7 +338,7 @@ BizLineChart.prototype.setXLabelsFont = function(font)
  *
  * @param font     Font for the title
  */
-BizLineChart.prototype.setYLabelsFont = function(font)
+setYLabelsFont(font)
 {
    this.yLabelsFont = font;
 }
@@ -347,19 +349,19 @@ BizLineChart.prototype.setYLabelsFont = function(font)
  *
  * @param font     Font for the reference lines
  */
-BizLineChart.prototype.setRefLineFont = function(font)
+setRefLineFont(font)
 {
    this.refLineFont = font;
 }
 
 
-BizLineChart.prototype.addRefLine = function(value)
+addRefLine(value)
 {
    this.refLine = true;
    this.refValue = value;
 }
 
-BizLineChart.prototype.setXLabels = function(labels)
+setXLabels(labels)
 {
    // Create and fill the label elements
    var num_pts = labels.length;
@@ -370,7 +372,7 @@ BizLineChart.prototype.setXLabels = function(labels)
       this.xAxisLabels[indx] = labels[indx];
 }
 
-BizLineChart.prototype.setYLabels = function(labels)
+setYLabels(labels)
 {
    // Create and fill the label elements
    var num_pts = labels.length;
@@ -385,7 +387,7 @@ BizLineChart.prototype.setYLabels = function(labels)
  * Flag to rotate X axis labels 90 degrees (ie vertical)
  * @param {boolean} rot_flag Rotate X axis labels
  */
-BizLineChart.prototype.rotateXLabels = function(rot_flag)
+rotateXLabels(rot_flag)
 {
    this.rotate_xflag = rot_flag;
 }
@@ -395,7 +397,7 @@ BizLineChart.prototype.rotateXLabels = function(rot_flag)
  * Flag to rotate Y axis labels 90 degrees (ie horizontal)
  * @param {boolean} rot_flag Rotate Y axis labels
  */
-BizLineChart.prototype.rotateYLabels = function(rot_flag)
+rotateYLabels(rot_flag)
 {
    this.rotate_yflag = rot_flag;
 }
@@ -406,7 +408,7 @@ BizLineChart.prototype.rotateYLabels = function(rot_flag)
  *
  * @param label_flag     Display max value
  */
-BizLineChart.prototype.labelMaxValue = function(label_flag)
+labelMaxValue(label_flag)
 {
    this.labelMax = label_flag;
 }
@@ -417,7 +419,7 @@ BizLineChart.prototype.labelMaxValue = function(label_flag)
  *
  * @param label_flag     Display max value
  */
-BizLineChart.prototype.labelMinValue = function(label_flag)
+labelMinValue(label_flag)
 {
    this.labelMin = label_flag;
 }
@@ -428,7 +430,7 @@ BizLineChart.prototype.labelMinValue = function(label_flag)
  *
  * @param label_flag     Display data value
  */
-BizLineChart.prototype.labelAllValues = function(label_flag)
+labelAllValues(label_flag)
 {
    this.labelAllPts = label_flag;
 }
@@ -439,7 +441,7 @@ BizLineChart.prototype.labelAllValues = function(label_flag)
  *
  * @param num_tics     Number of tic marks
  */
-BizLineChart.prototype.setNumTics = function(num_tics)
+setNumTics(num_tics)
 {
    this.numTics = num_tics;
 }
@@ -450,7 +452,7 @@ BizLineChart.prototype.setNumTics = function(num_tics)
  *
  * @param startX      Value of first X axis tic (default 1)
  */
-BizLineChart.prototype.setXStartValue = function(startX)
+setXStartValue(startX)
 {
    this.xAxisStartValue = startX;
 }
@@ -461,7 +463,7 @@ BizLineChart.prototype.setXStartValue = function(startX)
  *
  * @param incrX      Value of increment (default 1)
  */
-BizLineChart.prototype.setXIncrement = function(incrX)
+setXIncrement(incrX)
 {
    this.xAxisIncrement = incrX;
 }
@@ -471,27 +473,27 @@ BizLineChart.prototype.setXIncrement = function(incrX)
  *
  * @param line_width      Value of line width (default 1)
  */
-BizLineChart.prototype.setLineWidth = function(line_width)
+setLineWidth(line_width)
 {
    this.lineWidth = line_width;
 }
 
-BizLineChart.prototype.setAutoScale = function(scale_flag)
+setAutoScale(scale_flag)
 {
    this.auto_scale = scale_flag;
 }
 
-BizLineChart.prototype.setYScale = function(scale)
+setYScale(scale)
 {
 //ZZZZ LATER!
 }
 
-BizLineChart.prototype.setVertGrid = function(flag)
+setVertGrid(flag)
 {
    this.vertGrid = flag;
 }
 
-BizLineChart.prototype.setHorzGrid = function(flag)
+setHorzGrid(flag)
 {
    this.horzGrid = flag;
 }
@@ -501,7 +503,7 @@ BizLineChart.prototype.setHorzGrid = function(flag)
 //           sense but hey, if they wanna do it...
 
 
-BizLineChart.prototype.draw = function(canvasID, width, height)
+draw(canvasID, width, height)
 {
    var canvas = document.getElementById(canvasID);
    if ( canvas == null || canvas.length == 0 )
@@ -621,7 +623,7 @@ BizLineChart.prototype.draw = function(canvasID, width, height)
 }
 
 
-BizLineChart.prototype.drawAxes = function(ctx, num_pts, ymin, ymax, num_tics)
+drawAxes(ctx, num_pts, ymin, ymax, num_tics)
 {
    var x, y, x1, x2, y1, y2;
 
@@ -812,7 +814,7 @@ BizLineChart.prototype.drawAxes = function(ctx, num_pts, ymin, ymax, num_tics)
    }
 }
 
-BizLineChart.prototype.drawRibbonPlot = function(ctx, curr_set, ymin, ymax, color)
+drawRibbonPlot(ctx, curr_set, ymin, ymax, color)
 {
    var lineData = this.plotData[curr_set];
 
@@ -890,7 +892,7 @@ BizLineChart.prototype.drawRibbonPlot = function(ctx, curr_set, ymin, ymax, colo
    }
 }
 
-BizLineChart.prototype.drawAreaPlot = function(ctx, curr_set, ymin, color)
+drawAreaPlot(ctx, curr_set, ymin, color)
 {
    var lineData = this.plotData[curr_set];
 
@@ -967,7 +969,7 @@ BizLineChart.prototype.drawAreaPlot = function(ctx, curr_set, ymin, color)
 //   }
 }
 
-BizLineChart.prototype.drawPlot = function(ctx, curr_set, ymin, color)
+drawPlot(ctx, curr_set, ymin, color)
 {
    var lineData = this.plotData[curr_set];
    var x1, y1, x2, y2;
@@ -1115,7 +1117,7 @@ BizLineChart.prototype.drawPlot = function(ctx, curr_set, ymin, color)
 }
 
 // Determine maximum number of x axis data points among the sets of data
-BizLineChart.prototype.calcMaxPoints = function()
+calcMaxPoints()
 {
    var max_pts = 0;
    var lineData;
@@ -1131,12 +1133,12 @@ BizLineChart.prototype.calcMaxPoints = function()
 }
 
 
-BizLineChart.prototype.calcMinValue = function()
+calcMinValue()
 {
    return 0.0;
 }
 
-BizLineChart.prototype.calcMaxValue = function()
+calcMaxValue()
 {
    var max_val = -999999.0;
 
@@ -1181,3 +1183,4 @@ BizLineChart.prototype.calcMaxValue = function()
    return max_val;
 }
 
+}

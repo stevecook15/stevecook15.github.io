@@ -50,17 +50,17 @@ class PflTeam {
 }
 
 
-iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);               iceTeam.setScores(iceScores);
-makTeam = new PflTeam("Return of the Mack", "Matt", "mak", 1, makOpps);      makTeam.setScores(makScores);
-rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 1, rolOpps);             rolTeam.setScores(rolScores);
-kekTeam = new PflTeam("Keke do you love me?", "Noah", "kek", 1, kekOpps);    kekTeam.setScores(kekScores);
-belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);  belTeam.setScores(belScores);
+let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);               iceTeam.setScores(iceScores);
+let makTeam = new PflTeam("Return of the Mack", "Matt", "mak", 1, makOpps);      makTeam.setScores(makScores);
+let rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 1, rolOpps);             rolTeam.setScores(rolScores);
+let kekTeam = new PflTeam("Keke do you love me?", "Noah", "kek", 1, kekOpps);    kekTeam.setScores(kekScores);
+let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);  belTeam.setScores(belScores);
 
-preTeam = new PflTeam("Predators", "Joe", "pre", 2, preOpps);                preTeam.setScores(preScores);
-fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);
-nubTeam = new PflTeam("The Nubs", "Adam", "nub", 2, nubOpps);                nubTeam.setScores(nubScores);
-tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 2, tenOpps);          tenTeam.setScores(tenScores);
-kruTeam = new PflTeam("Krusty Krushers", "Hunter", "kru", 2, kruOpps);       kruTeam.setScores(kruScores);
+let preTeam = new PflTeam("Predators", "Joe", "pre", 2, preOpps);                preTeam.setScores(preScores);
+let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);
+let nubTeam = new PflTeam("The Nubs", "Adam", "nub", 2, nubOpps);                nubTeam.setScores(nubScores);
+let tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 2, tenOpps);          tenTeam.setScores(tenScores);
+let kruTeam = new PflTeam("Krusty Krushers", "Hunter", "kru", 2, kruOpps);       kruTeam.setScores(kruScores);
 
 var pflTeams =  [
    iceTeam,

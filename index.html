@@ -18,26 +18,6 @@
    <!-- Load jQuery first before jQuery UI! -->
    <script src="js/jquery-1.9.1.min.js"></script>
    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
-
-   <script type="text/javascript" src="2019/new_scores.js"></script>
-
-   <script type="text/javascript" src="2019/scores.js"></script>
-   <script type="text/javascript" src="2019/rosters.js"></script>
-
-   <script type="text/javascript" src="js/pfl.js"></script>
-   <script type="text/javascript" src="js/standings.js"></script>
-   <script type="text/javascript" src="js/plots.js"></script>
-   <script type="text/javascript" src="js/scoring.js"></script>
-   <script type="text/javascript" src="js/summaries.js"></script>
-   <script type="text/javascript" src="js/utils.js"></script>
-
-   <script type="text/javascript" src="js/biz/linreg.js"></script>
-   <script type="text/javascript" src="js/biz/barchart.js"></script>
-   <script type="text/javascript" src="js/biz/linechart.js"></script>
-   <script type="text/javascript" src="js/biz/piechart.js"></script>
-   <script type="text/javascript" src="js/biz/legend.js"></script>
-   <script type="text/javascript" src="js/biz/auto_scale.js"></script>
-   <script type="text/javascript" src="js/biz/canvastext.js"></script>
 </head>
 
 <body>
@@ -83,10 +63,10 @@
    <center>
    <table cellpadding="2" cellspacing="2" border="0"><tr>
    <td align="CENTER">
-   <input id="wk1Btn" type="image" src="Gifs/week01.png" align="center" onclick="displayWeek(1);" disable="true">
+   <input id="wk1Btn" type="image" src="Gifs/week01.png" align="center" onclick="summaries.displayWeek(1);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk2Btn" type="image" src="Gifs/week02.png" align="center" onclick="displayWeek(2);" disable="true">
+   <input id="wk2Btn" type="image" src="Gifs/week02.png" align="center" onclick="summaries.displayWeek(2);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
    <input id="wk3Btn" type="image" src="Gifs/week03.png" align="center" onclick="displayWeek(3);" disable="true">
@@ -163,16 +143,16 @@
 <div id="plots_window" class="dialog_window" title="Plots">
    <div class="controlsDiv" id="controlsDiv">
       <table>
-         <tr><td><button class="plotBtn" onClick="TeamAvgs();">Team Averages</button></td></tr>
-         <tr><td><button class="plotBtn" onClick="ScoringPlot();">Weekly Scoring</button></td></tr>
-         <tr><td><button class="plotBtn" onClick="ScoringTrend();">Scoring Trend</button></td></tr>
+         <tr><td><button class="plotBtn" onClick="plots.teamAvgs();">Team Averages</button></td></tr>
+         <tr><td><button class="plotBtn" onClick="plots.scoringPlot();">Weekly Scoring</button></td></tr>
+         <tr><td><button class="plotBtn" onClick="plots.scoringTrend();">Scoring Trend</button></td></tr>
 <!--
-         <tr><td><button class="plotBtn" onClick="SmoothedScoringPlot();">Smoothed Scoring</button></td></tr>
+         <tr><td><button class="plotBtn" onClick="plots.SmoothedScoringPlot();">Smoothed Scoring</button></td></tr>
 -->
-         <tr><td><button class="plotBtn" onClick="StdDevs();">Scoring Volatility</button></td></tr>
-         <tr><td><button class="plotBtn" onClick="VsLeague();">Vs Entire League</button></td><tr>
-         <tr><td><button class="plotBtn" onClick="MarginVictory();">Margin of Victory</button></td><tr>
-         <tr><td><button class="plotBtn" onClick="OppAverages();">Opponents Avgs</button></td><tr>
+         <tr><td><button class="plotBtn" onClick="plots.volatilityTrend();">Scoring Volatility</button></td></tr>
+         <tr><td><button class="plotBtn" onClick="plots.vsLeague();">Vs Entire League</button></td><tr>
+         <tr><td><button class="plotBtn" onClick="plots.marginOfVictory();">Margin of Victory</button></td><tr>
+         <tr><td><button class="plotBtn" onClick="plots.oppAverages();">Opponents Avgs</button></td><tr>
       </table>
    </div>
 
@@ -207,5 +187,26 @@
 <div id="currweek_window" class="dialog_window" title="Week 1">
    <p>Weekly Summary</p>
 </div>
+
+   <!-- These must be defined prior to use by pfl.js -->
+   <script type="text/javascript" src="2019/new_scores.js"></script>
+   <script type="text/javascript" src="2019/scores.js"></script>
+   <script type="text/javascript" src="2019/roster_data.js"></script>
+
+   <script type="text/javascript" src="js/utils.js"></script>
+   <script type="text/javascript" src="js/rosters.js"></script>
+   <script type="text/javascript" src="js/standings.js"></script>
+   <script type="text/javascript" src="js/summaries.js"></script>
+   <script type="text/javascript" src="js/plots.js"></script>
+
+   <script type="text/javascript" src="js/biz/linreg.js"></script>
+   <script type="text/javascript" src="js/biz/barchart.js"></script>
+   <script type="text/javascript" src="js/biz/linechart.js"></script>
+   <script type="text/javascript" src="js/biz/piechart.js"></script>
+   <script type="text/javascript" src="js/biz/legend.js"></script>
+   <script type="text/javascript" src="js/biz/auto_scale.js"></script>
+   <script type="text/javascript" src="js/biz/canvastext.js"></script>
+
+   <script type="text/javascript" src="js/pfl.js"></script>
 </body>
 </html>

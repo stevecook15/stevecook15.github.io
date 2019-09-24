@@ -1,3 +1,9 @@
+let pflUtils = new PflUtils();
+let standings = new Standings();
+let summaries = new Summaries();
+let rosters = new Rosters();
+let plots = new Plots();
+
 
 $(document).ready(function()
 {
@@ -21,7 +27,7 @@ $(document).ready(function()
     
    $("#currweek_button").button().click(function()
    {
-      displayWeek(-1);
+      summaries.displayWeek(-1);
    });
 
    $("#roster_button").button().click(function()
@@ -30,7 +36,7 @@ $(document).ready(function()
       rosters_dialog.css('background', 'url(Gifs/backgrnd.gif)');
       rosters_dialog.dialog('option', 'position', [100, 80]);
       rosters_dialog.dialog("open");
-      showRosters();
+      rosters.show();
    });
 
    $("#plots_button").button().click(function()
@@ -45,19 +51,19 @@ $(document).ready(function()
    $("#summaries_window").dialog({ width: 150, height: 470, autoOpen: true });
    $("#summaries_window").dialog('option', 'position', [10, 70]);
    $("#summaries_window").css('background', 'url(Gifs/backgrnd.gif)');
-   SetWeeks();
+   summaries.setWeeks();
 
    var standings_dialog = $("#standings_window");
    standings_dialog.dialog({ width: 400, height: 470, autoOpen: true });
    standings_dialog.dialog('option', 'position', [170, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
-   showStandings();
+   standings.show();
 
    var currweek_dialog = $("#currweek_window");
    currweek_dialog.dialog({ width: 550, height: 470, autoOpen: true });
    currweek_dialog.dialog('option', 'position', [580, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
-   displayWeek(-1);
+   summaries.displayWeek(-1);
 
    $("#roster_window").dialog({ width: 1210, height: 530, autoOpen: false });
 

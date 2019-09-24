@@ -22,104 +22,106 @@
  * BizBarChart - a minimal bar javascript charting library using the html <canvas> tag
  * @constructor
  */
-function BizBarChart()
+class BizBarChart
 {
-   this.DEBUG = false;
+   constructor()
+   {
+      this.DEBUG = false;
 
-   this.ADJACENT = 1;   // Stack bars next to each other
-   this.INLAID   = 2;   // Inlay each successive set of bars
-   this.STACKED  = 3;   // Stack successive sets on top of previous
-   this.THREED_ADJACENT = 4;  // Three D adjacent bars
-   this.THREED_STACKED  = 5;  // Three D stacked bars
-   this.PERCENT  = 6;   // Stacked bars scaled to always be 100%
+      this.ADJACENT = 1;   // Stack bars next to each other
+      this.INLAID   = 2;   // Inlay each successive set of bars
+      this.STACKED  = 3;   // Stack successive sets on top of previous
+      this.THREED_ADJACENT = 4;  // Three D adjacent bars
+      this.THREED_STACKED  = 5;  // Three D stacked bars
+      this.PERCENT  = 6;   // Stacked bars scaled to always be 100%
 
-   this.XORG_OFFSET = 60;
-   this.XTOP_OFFSET = 20;
-   this.YORG_OFFSET = 50;
-   this.YTOP_OFFSET = 30;
+      this.XORG_OFFSET = 60;
+      this.XTOP_OFFSET = 20;
+      this.YORG_OFFSET = 50;
+      this.YTOP_OFFSET = 30;
 
-   this.BLACK = "#000000";
-   this.WHITE = "#ffffff";
-   this.GRAY = "#bbbbbb";
+      this.BLACK = "#000000";
+      this.WHITE = "#ffffff";
+      this.GRAY = "#bbbbbb";
 
-   this.plotData = new Array();
-   this.percentData = new Array();
-   this.xAxisLabels = null;
-   this.yAxisLabels = null;
+      this.plotData = new Array();
+      this.percentData = new Array();
+      this.xAxisLabels = null;
+      this.yAxisLabels = null;
 
-   this.highlightSet = -100;
+      this.highlightSet = -100;
 
-   // Standard colors
+      // Standard colors
                            // red,       blue,     green,    purple,
                            // orange,    cyan,     yellow,   magenta
-   this.colors = new Array("#ff0000", "#0000ff", "#008800", "#900090",
+      this.colors = new Array("#ff0000", "#0000ff", "#008800", "#900090",
                            "#ffa500", "#00ffff", "#ffff00", "#ff00ff");
 
-   this.shadows = new Array("#a00000", "#0000a0", "#007000", "#700070",
+      this.shadows = new Array("#a00000", "#0000a0", "#007000", "#700070",
                             "#cc8500", "#00a0a0", "#a0a000", "#700070");
 
-   this.color_bars = new Array("#ff0000", "#0000ff", "#008800", "#900090",
+      this.color_bars = new Array("#ff0000", "#0000ff", "#008800", "#900090",
                                "#ffa500", "#00ffff", "#ffff00", "#ff00ff");
-   this.color_bars_flag = false;
+      this.color_bars_flag = false;
 
-   this.plotYMax = 100.0;
-   this.plotYMin = 0.0;
-   this.plotWidth = 0;
-   this.plotHeight = 0;
-   this.xOrg = 0;
-   this.yOrg = 0;
-   this.xTop = 0;
-   this.yTop = 0;
-   this.xScale = 0;
-   this.yScale = 0;
-   this.plotType = this.ADJACENT;
-   this.threeD = false;
-   this.threeDAxes = false;
-   this.rotate_xflag = false;
-   this.rotate_yflag = false;
-   this.auto_scale = false;
-   this.labelMax = false;
-   this.labelMin = false;
-   this.labelBars = false;
-   this.numTics = 5;
+      this.plotYMax = 100.0;
+      this.plotYMin = 0.0;
+      this.plotWidth = 0;
+      this.plotHeight = 0;
+      this.xOrg = 0;
+      this.yOrg = 0;
+      this.xTop = 0;
+      this.yTop = 0;
+      this.xScale = 0;
+      this.yScale = 0;
+      this.plotType = this.ADJACENT;
+      this.threeD = false;
+      this.threeDAxes = false;
+      this.rotate_xflag = false;
+      this.rotate_yflag = false;
+      this.auto_scale = false;
+      this.labelMax = false;
+      this.labelMin = false;
+      this.labelBars = false;
+      this.numTics = 5;
 
-   this.vertGrid = false;
-   this.horzGrid = false;
+      this.vertGrid = false;
+      this.horzGrid = false;
 
-   this.refLine = false;
-   this.refValue = 0.0;
+      this.refLine = false;
+      this.refValue = 0.0;
 
-   this.titleFont = 10;
-   this.xAxisFont = 10;
-   this.yAxisFont = 10;
-   this.xLabelsFont = 10;
-   this.yLabelsFont = 10;
-   this.refLineFont = 10;
+      this.titleFont = 10;
+      this.xAxisFont = 10;
+      this.yAxisFont = 10;
+      this.xLabelsFont = 10;
+      this.yLabelsFont = 10;
+      this.refLineFont = 10;
 
-   this.titleFontSize = 12;
-   this.xAxisFontSize = 12;
-   this.yAxisFontSize = 12;
-   this.xLabelsFontSize = 10;
-   this.yLabelsFontSize = 10;
-   this.refLineFontSize = 10;
+      this.titleFontSize = 12;
+      this.xAxisFontSize = 12;
+      this.yAxisFontSize = 12;
+      this.xLabelsFontSize = 10;
+      this.yLabelsFontSize = 10;
+      this.refLineFontSize = 10;
 
-   this.yAxisTitle = null;
-   this.xAxisTitle = null;
-   this.plotTitle = null;
-   this.backgroundColor = "#ffffff";
-   this.axesColor = "#000000";
-   this.xAxisStartValue = 1;
-   this.xAxisIncrement = 1;
+      this.yAxisTitle = null;
+      this.xAxisTitle = null;
+      this.plotTitle = null;
+      this.backgroundColor = "#ffffff";
+      this.axesColor = "#000000";
+      this.xAxisStartValue = 1;
+      this.xAxisIncrement = 1;
 
-   if ( this.plotData.length != 0 )
-      this.initialize();
-}
+      if ( this.plotData.length != 0 )
+         this.initialize();
+   }
 
 
 /*
  * Re-initializes any data structures / display values
  */
-BizBarChart.prototype.initialize = function()
+initialize()
 {
    var barData;
 
@@ -139,7 +141,7 @@ BizBarChart.prototype.initialize = function()
  * Add a set of data to the bar chart (ie a row of bars)
  * @param {Array} data Array of data values
  */
-BizBarChart.prototype.addLine = function(data)
+addLine(data)
 {
    // Create and fill the data elements
    var num_pts = data.length;
@@ -158,7 +160,7 @@ BizBarChart.prototype.addLine = function(data)
  * Highlight/empahsize a particular bar srer
  * @param line_num  Which bar set to highlight/emphasize
  */
-BizBarChart.prototype.highlightLine = function(line_num)
+highlightLine(line_num)
 {
    this.highlightSet = line_num;
 }
@@ -169,7 +171,7 @@ BizBarChart.prototype.highlightLine = function(line_num)
  * more data sets than colors exist.
  * @param {Array} bar_colors Array of color names (eg red, #ff0033)
  */
-BizBarChart.prototype.setColors = function(bar_colors)
+setColors(bar_colors)
 {
    this.color_bars_flag = false;
 
@@ -184,7 +186,7 @@ BizBarChart.prototype.setColors = function(bar_colors)
  * @param {int} bar_set Which bar set to set color for 
  * @param {String} color Color name (eg red, #ff0033)
  */
-BizBarChart.prototype.setColor = function(bar_set, color)
+setColor(bar_set, color)
 {
    this.color_bars_flag = false;
    this.colors[bar_set] = color;
@@ -193,7 +195,7 @@ BizBarChart.prototype.setColor = function(bar_set, color)
 /*
  * Set color plot by bar as opposed to by set
  */
-BizBarChart.prototype.setColorByBars = function()
+setColorByBars()
 {
    this.color_bars_flag = true;
 }
@@ -202,7 +204,7 @@ BizBarChart.prototype.setColorByBars = function()
  * Define different colors to use when using setColorByBars
  * @param {Array} bar_colors Array of color names (eg red, #ff0033)
  */
-BizBarChart.prototype.setBarColors = function(bar_colors)
+setBarColors(bar_colors)
 {
    this.color_bars_flag = true;
 
@@ -217,7 +219,7 @@ BizBarChart.prototype.setBarColors = function(bar_colors)
  * Set the color for the background of the plot area
  * @param {String} color Color name (eg red, #ff0033)
  */
-BizBarChart.prototype.setBackgroundColor = function(color)
+setBackgroundColor(color)
 {
    this.backgroundColor = color;
 }
@@ -227,7 +229,7 @@ BizBarChart.prototype.setBackgroundColor = function(color)
  * Define the color used to draw axes lines
  * @param {String} color Color name (eg red, #ff0033)
  */
-BizBarChart.prototype.setAxesColor = function(color)
+setAxesColor(color)
 {
    this.axesColor = color;
 }
@@ -236,7 +238,7 @@ BizBarChart.prototype.setAxesColor = function(color)
 /*
  * Set auto_scaling to true - overides previously set mins/maxs
  */
-BizBarChart.prototype.setAutoScale = function()
+setAutoScalen()
 {
    this.auto_scale = true;
 }
@@ -247,7 +249,7 @@ BizBarChart.prototype.setAutoScale = function()
  * Overrides any previously set auto scale
  * @param {float} ymax Maximum Y value (ie top of chart)
  */
-BizBarChart.prototype.setYMax = function(ymax)
+setYMax(ymax)
 {
    this.auto_scale = false;
    this.plotYMax = ymax;
@@ -261,7 +263,7 @@ BizBarChart.prototype.setYMax = function(ymax)
  * Overrides any previously set auto scale
  * @param {float} ymin Minimum Y value (ie bottom of chart)
  */
-BizBarChart.prototype.setYMin = function(ymin)
+setYMin(ymin)
 {
    this.auto_scale = false;
    this.plotYMin = ymin;
@@ -280,7 +282,7 @@ BizBarChart.prototype.setYMin = function(ymin)
  * Valid values are: ADJACENT, INLAID, STACKED, PERCENT
  * @param {int} plot_type Bar chart type
  */
-BizBarChart.prototype.setPlotType = function(plot_type)
+setPlotType(plot_type)
 {
    this.plotType = plot_type;
 }
@@ -290,7 +292,7 @@ BizBarChart.prototype.setPlotType = function(plot_type)
  * Sets flag for displaying 3D bars
  * @param {boolean} flag3d true/false flag
  */
-BizBarChart.prototype.setThreeD = function(flag3d)
+setThreeD(flag3d)
 {
    this.threeD = flag3d;
 }
@@ -300,7 +302,7 @@ BizBarChart.prototype.setThreeD = function(flag3d)
  * Sets flag for displaying 3D axes
  * @param {boolean} flag3d true/false flag
  */
-BizBarChart.prototype.setThreeDAxes = function(flag3d)
+setThreeDAxes(flag3d)
 {
    this.threeDAxes = flag3d;
 }
@@ -310,7 +312,7 @@ BizBarChart.prototype.setThreeDAxes = function(flag3d)
  * Sets the title of the Y axis
  * @param {String} title Y axis title
  */
-BizBarChart.prototype.setYTitle = function(title)
+setYTitle(title)
 {
    this.yAxisTitle = title;
 }
@@ -320,7 +322,7 @@ BizBarChart.prototype.setYTitle = function(title)
  * Sets the title of the X axis
  * @param {String} title X axis title
  */
-BizBarChart.prototype.setXTitle = function(title)
+setXTitle(title)
 {
    this.xAxisTitle = title;
 }
@@ -330,7 +332,7 @@ BizBarChart.prototype.setXTitle = function(title)
  * Sets the title displayed above the plot
  * @param {String} title Plot title
  */
-BizBarChart.prototype.setPlotTitle = function(title)
+setPlotTitle(title)
 {
    this.plotTitle = title;
 }
@@ -340,7 +342,7 @@ BizBarChart.prototype.setPlotTitle = function(title)
  * Set X axis tic/interval labels to passed array of labels
  * @param {Array} labels X Axis labels
  */
-BizBarChart.prototype.setXLabels = function(labels)
+setXLabels(labels)
 {
    // Create and fill the label elements
    var num_pts = labels.length;
@@ -356,7 +358,7 @@ BizBarChart.prototype.setXLabels = function(labels)
  * Set Y axis tic/interval labels to passed array of labels
  * @param {Array} labels Y Axis labels
  */
-BizBarChart.prototype.setYLabels = function(labels)
+setYLabels(labels)
 {
    // Create and fill the label elements
    var num_pts = labels.length;
@@ -372,7 +374,7 @@ BizBarChart.prototype.setYLabels = function(labels)
  * Flag to rotate X axis labels 90 degrees (ie vertical)
  * @param {boolean} rot_flag Rotate X axis labels
  */
-BizBarChart.prototype.rotateXLabels = function(rot_flag)
+rotateXLabels(rot_flag)
 {
    this.rotate_xflag = rot_flag;
 }
@@ -382,7 +384,7 @@ BizBarChart.prototype.rotateXLabels = function(rot_flag)
  * Flag to rotate Y axis labels 90 degrees (ie horizontal)
  * @param {boolean} rot_flag Rotate Y axis labels
  */
-BizBarChart.prototype.rotateYLabels = function(rot_flag)
+rotateYLabels(rot_flag)
 {
    this.rotate_yflag = rot_flag;
 }
@@ -391,7 +393,7 @@ BizBarChart.prototype.rotateYLabels = function(rot_flag)
  * Flag to display marker detailing value of the max data value
  * @param {boolean} label_flag     Display max value
  */
-BizBarChart.prototype.labelMaxValue = function(label_flag)
+labelMaxValue(label_flag)
 {
    this.labelMax = label_flag;
 }
@@ -401,7 +403,7 @@ BizBarChart.prototype.labelMaxValue = function(label_flag)
  * Flag to display marker detailing value of the min data value
  * @param {boolean} label_flag     Display min value
  */
-BizBarChart.prototype.labelMinValue = function(label_flag)
+labelMinValue(label_flag)
 {
    this.labelMin = label_flag;
 }
@@ -411,7 +413,7 @@ BizBarChart.prototype.labelMinValue = function(label_flag)
  * Flag to display value of each bar value
  * @param {boolean} label_flag     Display min value
  */
-BizBarChart.prototype.labelValues = function(label_flag)
+labelValues(label_flag)
 {
    this.labelBars = label_flag;
 }
@@ -421,59 +423,59 @@ BizBarChart.prototype.labelValues = function(label_flag)
  * Set number of tic marks on Y axis
  * @param {int} num_tics Number of tic marks
  */
-BizBarChart.prototype.setNumTics = function(num_tics)
+setNumTics(num_tics)
 {
    this.numTics = num_tics;
 }
 
-BizBarChart.prototype.setTitleFont = function(font, size)
+setTitleFont(font, size)
 {
    this.titleFont = font;
    this.titleFontSize = size;
 }
 
-BizBarChart.prototype.setXAxisFont = function(font, size)
+setXAxisFont(font, size)
 {
    this.xAxisFont = font;
    this.xAxisFontSize = size;
 }
 
-BizBarChart.prototype.setYAxisFont = function(font, size)
+setYAxisFont(font, size)
 {
    this.yAxisFont = font;
    this.yAxisFontSize = size;
 }
 
-BizBarChart.prototype.setXLabelsFont = function(font, size)
+setXLabelsFont(font, size)
 {
    this.xLabelsFont = font;
    this.xLabelsFontSize = size;
 }
 
-BizBarChart.prototype.setYLabelsFont = function(font, size)
+setYLabelsFont(font, size)
 {
    this.yLabelsFont = font;
    this.yLabelsFontSize = size;
 }
 
-BizBarChart.prototype.setRefLineFont = function(font, size)
+setRefLineFont(font, size)
 {
    this.refLineFont = font;
    this.refLineFontSize = size;
 }
 
-BizBarChart.prototype.addRefLine = function(value)
+addRefLine(value)
 {
    this.refLine = true;
    this.refValue = value;
 }
 
-BizBarChart.prototype.setVertGrid = function(flag)
+setVertGrid(flag)
 {
    this.vertGrid = flag;
 }
 
-BizBarChart.prototype.setHorzGrid = function(flag)
+setHorzGrid(flag)
 {
    this.horzGrid = flag;
 }
@@ -483,7 +485,7 @@ BizBarChart.prototype.setHorzGrid = function(flag)
  * Value to start X axis labeling with
  * @param {float} startX Value of first X axis tic (default 1)
  */
-BizBarChart.prototype.setXStartValue = function(startX)
+setXStartValue(startX)
 {
    this.xAxisStartValue = startX;
 }
@@ -493,7 +495,7 @@ BizBarChart.prototype.setXStartValue = function(startX)
  * Value to increment X axis labeling by
  * @param {float} incrX Value of increment (default 1)
  */
-BizBarChart.prototype.setXIncrement = function(incrX)
+setXIncrement(incrX)
 {
    this.xAxisIncrement = incrX;
 }
@@ -510,7 +512,7 @@ BizBarChart.prototype.setXIncrement = function(incrX)
  * @param {int} width  Width of canvas area
  * @param {int} height Height of canvas area
  */
-BizBarChart.prototype.draw = function(canvasID, width, height)
+draw(canvasID, width, height)
 {
    var canvas = document.getElementById(canvasID);
    if ( canvas == null || canvas.length == 0 )
@@ -658,7 +660,7 @@ BizBarChart.prototype.draw = function(canvasID, width, height)
  * Calc pixel width of any given bar area (single, adjacent, inlaid, etc...)
  * @ignore
  */
-BizBarChart.prototype.calcBarWidth = function(max_bars)
+calcBarWidth(max_bars)
 {
    return this.plotWidth/(max_bars*1.5);
 }
@@ -668,7 +670,7 @@ BizBarChart.prototype.calcBarWidth = function(max_bars)
  * Draw the X, Y axis and plot titles
  * @ignore
  */
-BizBarChart.prototype.drawAxes = function(ctx, num_pts, width, height, ymin, ymax, num_tics)
+drawAxes(ctx, num_pts, width, height, ymin, ymax, num_tics)
 {
    var indx;
    var x, y, x1, x2, y1, y2;
@@ -858,8 +860,8 @@ BizBarChart.prototype.drawAxes = function(ctx, num_pts, width, height, ymin, yma
    }
 
    // Calc the Y axis labels
-   yoff = (this.yOrg-this.yTop)/num_tics;
-   yval = (ymax-ymin)/num_tics;
+   var yoff = (this.yOrg-this.yTop)/num_tics;
+   var yval = (ymax-ymin)/num_tics;
 
    var ytxt, label, ynum;
 
@@ -974,7 +976,7 @@ BizBarChart.prototype.drawAxes = function(ctx, num_pts, width, height, ymin, yma
  * Draw the standard bar chart (ie ADJACENT)
  * @ignore
  */
-BizBarChart.prototype.drawPlot = function(ctx, curr_set, num_sets)
+drawPlot(ctx, curr_set, num_sets)
 {
    var xpt;
    var y1, y2;
@@ -1157,7 +1159,7 @@ if ( this.labelBars == true )
  * Draw the shadows on any bars if threeD bars flag is set
  * @ignore
  */
-BizBarChart.prototype.drawShadows = function(ctx, bar_width, x, y, bar_height, color)
+drawShadows(ctx, bar_width, x, y, bar_height, color)
 {
    var max_bars = this.calcMaxBars();
    var offset = this.calcBarWidth(max_bars)/this.plotData.length;
@@ -1216,7 +1218,7 @@ BizBarChart.prototype.drawShadows = function(ctx, bar_width, x, y, bar_height, c
  * Draw markers indicating min and max values for a given set of bars
  * @ignore
  */
-BizBarChart.prototype.drawMinMaxes = function(ctx, ymin, ymax)
+drawMinMaxes(ctx, ymin, ymax)
 {
    var barData = new Array();
 
@@ -1288,7 +1290,7 @@ BizBarChart.prototype.drawMinMaxes = function(ctx, ymin, ymax)
  * Find out the maximum number of bars (ie data points) in all the define data sets
  * @ignore
  */
-BizBarChart.prototype.calcMaxBars = function()
+calcMaxBars()
 {
    var max_bars = 0;
    var barData = new Array();
@@ -1308,7 +1310,7 @@ BizBarChart.prototype.calcMaxBars = function()
  * Find out the min and max values in all the sets of bars
  * @ignore
  */
-BizBarChart.prototype.setPlotScale = function()
+setPlotScale()
 {
    var barData = new Array();
    var max_value = -99999999.0;
@@ -1365,4 +1367,4 @@ BizBarChart.prototype.setPlotScale = function()
    this.plotYMax = max_value;
 }
 
-
+}
