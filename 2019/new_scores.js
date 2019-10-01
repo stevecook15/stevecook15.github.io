@@ -3,17 +3,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var belScores = [ 117.00, 142.15, 147.70 ];
-var makScores = [ 181.80, 138.50, 169.40 ];
-var rolScores = [ 125.60,  97.10, 139.40 ];
-var kekScores = [ 102.55, 144.95, 114.05 ];
-var iceScores = [ 121.75, 126.80, 158.60 ];
+var belScores = [ 117.00, 142.15, 147.70, 103.35 ];
+var makScores = [ 181.80, 138.50, 169.40, 154.15 ];
+var rolScores = [ 125.60,  97.10, 139.40, 91.30 ];
+var kekScores = [ 102.55, 144.95, 114.05, 72.20 ];
+var iceScores = [ 121.75, 126.80, 158.60, 132.35 ];
 
-var nubScores = [ 194.30, 157.95, 143.75 ];
-var preScores = [ 109.65, 117.85, 138.35 ];
-var tenScores = [  85.90, 132.85, 118.10 ];
-var kruScores = [ 143.70, 142.30, 155.75 ];
-var fatScores = [ 146.50,  99.15, 108.05 ];
+var nubScores = [ 194.30, 157.95, 143.75, 121.45 ];
+var preScores = [ 109.65, 117.85, 138.35, 141.15 ];
+var tenScores = [  85.90, 132.85, 118.10, 99.15 ];
+var kruScores = [ 143.70, 142.30, 155.75, 144.65 ];
+var fatScores = [ 146.50,  99.15, 108.05, 135.05 ];
 
 
 // 0 - not in playoffs yet
@@ -54,7 +54,11 @@ var week3_txt = "And then there was one... undefeated and totally defeated teams
                 "undefeated team got Belly Krushed, while the other winless team Iced their opponent easily to " +
                 "get off the schneid.";
 
-var week4_txt = "";
+var week4_txt = "Well, some times it better to be lucky than good (though being both seems unfair) as the still undefeated Nubs were " +
+                "pedestrian this week (121 pts?) and still won by almost 50! Nice job Keke Got No Love For Nobody...  even the " +
+				"(till now, sorrt Ice!) winless Bastards ain't that bad, eeking out the closest game of the week by less than 3 pts, " +
+				"leading us to that much anticipated matchup of 1-3 Flat vs 1-3 Keke next week. Whee!  Not to be outdone by next weeks " +
+				"1-3 Roll Tide vs 1-3 Tenacious Anus.  The 1-3 Ice are probably left out of the lose-a-fest next week!";
 
 var week5_txt = "";
 
