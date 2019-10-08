@@ -63,7 +63,7 @@ var week4_txt = "Well, some times it better to be lucky than good (though being 
 
 var week5_txt = "Down go Frazier, down goes frazier (I know, a lost reference to our younger owners) as the " +
                 "Nubs got discounted! In a bad week for the top two teams even the Macks got Krushed in the " +
-                "closest match of the year. Apparently somewhat put some air in the Bastards tires as they " +
+                "closest match of the year. Apparently someone put some air in the Bastards tires as they " +
                 "seemed well inflated this week with the high score for the week, showing no love for Keke! " +
                 "Meanwhile, in the I'm not very good but I'm better than you bowl, the Ice preyed on the " +
                 "Preds, and the Tide rolled over the Tentative Anus.";
