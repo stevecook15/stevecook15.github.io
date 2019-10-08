@@ -96,17 +96,25 @@ class Summaries
       var resHtml = "";
       var jndx=1;
 
+      var score;
+
       for ( var indx=0; indx<10; indx += 2)
       {
-         if ( scores[indx] == parseInt(scores[indx]) )
-            txtscr1 = "" + scores[indx] + ".0"
+         score = scores[indx];
+         if ( score === undefined )
+            txtscr1 = "0.0";
+         else if ( scores[indx] == parseInt(scores[indx]) )
+            txtscr1 = "" + scores[indx] + ".0";
          else
-            txtscr1 = "" + scores[indx]
+            txtscr1 = "" + scores[indx];
 
-         if ( scores[indx+1] == parseInt(scores[indx+1]) )
-            txtscr2 = "" + scores[indx+1] + ".0"
+         score = scores[indx];
+         if ( score === undefined )
+            txtscr2 = "0.0";
+         else if ( scores[indx+1] == parseInt(scores[indx+1]) )
+            txtscr2 = "" + scores[indx+1] + ".0";
          else
-            txtscr2 = "" + scores[indx+1]
+            txtscr2 = "" + scores[indx+1];
 
          resHtml += '<div id="res' + week + "_" + jndx + '" class="res' + jndx + '">' +
                     '<table border="1" cellpadding="2" cellspacing="2" bgcolor="#dddddd">' +
