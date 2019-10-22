@@ -1,19 +1,20 @@
+//TODO: Add a rolling average plot...
 
 // Create an array of teamNames
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05 ];
-var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60 ];
-var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15 ];
-var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95 ];
-var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00 ];
+var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00 ];
+var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15 ];
+var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65 ];
+var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75 ];
+var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05 ];
 
-var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55 ];
-var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80 ];
-var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25 ];
-var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80 ];
-var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70 ];
+var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60 ];
+var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80 ];
+var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65 ];
+var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90 ];
+var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75 ];
 
 
 // 0 - not in playoffs yet
@@ -30,9 +31,9 @@ var playoffs = [
 
         0,  //thenubs
         0,  //krusty
+        0,  //predators
         0,  //fatbastards
-        0,  //tenanus
-        0   //predators
+        0   //tenanus
      ];
 
 
@@ -75,7 +76,11 @@ var week6_txt = "From first to worst, the Flat score 100 points less than last w
                 "Speaking about playoffs, the Anus pooped on Keke in the Tank for Tua bowl (does that work for " +
                 "the PFL too?) with Keke doing their best Miami Bengals impression.";
 
-var week7_txt = "";
+var week7_txt = "A pretty low scoring week - lowest high score of the week yet. How's this for roller coaster - Flat " +
+                "goes from high score 2 weeks ago, to low score last week to 2nd highest score this week! Never a dull " +
+                "moment. Congrats to Keke getting their second win (if winning with less than 100 points counts).  " +
+                "And with the Nubs (with an eyebrow raising of a 102 points them selves) and the Bellis going down it seems " +
+                "like the battle for the playoffs is tightening up...";
 
 var week8_txt = "";
 

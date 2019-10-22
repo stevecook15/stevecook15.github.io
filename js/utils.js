@@ -1,14 +1,23 @@
 
 class PflUtils
 {
-//TODO: Figure out how to calculate this based on first tue of season
-//------ Day of each wednesday, leading up to next weeks game
-//------ WK:   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
-   dMons = [  8,  8,  8,  9,  9,  9,  9, 10, 10, 10, 10, 11, 11, 11, 11, 11 ];
-   dDays = [ 16, 23, 30,  7, 14, 21, 28,  4, 11, 18, 25,  2,  9, 16, 23, 30 ];
-
-   constructor()
+   constructor(year, month, day)
    {
+      this.dMons = new Array();
+      this.dDays = new Array();
+
+      var d = new Date(year, month-1, day, 12, 0, 0, 0); 
+      var dd, mm;
+
+      for ( var week=1; week<=16; week++ )
+      {
+         d.setDate(d.getDate() + 7); 
+         dd = d.getDate();
+         mm = d.getMonth() + 1;
+         this.dMons.push(mm); 
+         this.dDays.push(dd);
+         //console.log("Week " + week + " Month " + mm + " Day " + dd);
+      }
    }
 
    clearTable(tbl)
@@ -31,7 +40,7 @@ class PflUtils
       {
          var d = new Date();
          var year = d.getFullYear();
-         tuesday = new Date(year, this.dMons[indx], this.dDays[indx]);
+         tuesday = new Date(year, (this.dMons[indx]-1), this.dDays[indx]);
          tuesnum = this.getDOY(tuesday); 
 
          if ( daynum <= tuesnum )

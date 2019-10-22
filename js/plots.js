@@ -25,6 +25,8 @@ class Plots
       var teams = getOrderedTeams();
       var team;
 
+      var numWeeks = this.getNumWeeks();
+
       for ( var jteam=0; jteam<teams.length; jteam++ )
       {
          team = teams[jteam];
@@ -32,17 +34,18 @@ class Plots
          var id = document.getElementById("team" + jteam);
          if ( id && id.checked == true )
          {
-            tscore = team.totPts;
+            tscore = 0.0;
             lscore = 500.0;
             hscore = 0.0;
-            for ( var week=0; week<team.scores.length; week++ )
+            for ( var week=0; week<numWeeks; week++ )
             {
                if ( team.scores[week] > hscore )
                   hscore = team.scores[week];
                if ( team.scores[week] < lscore )
                   lscore = team.scores[week];
+               tscore += team.scores[week];
             }
-            average_data[teamIndx] = tscore/team.scores.length;
+            average_data[teamIndx] = tscore/numWeeks;
             if ( average_data[teamIndx] < this.PLOT_MIN_VALUE )
                average_data[teamIndx] = this.PLOT_MIN_VALUE;
             if ( lscore < this.PLOT_MIN_VALUE )
@@ -54,7 +57,7 @@ class Plots
          }
       }
 
-      var plotTitle = "PFL Team Averages - Week " + teams[0].scores.length + "";
+      var plotTitle = "PFL Team Averages - Week " + numWeeks + "";
       var xaxisTitle = "";
       var yaxisTitle = "Points";
 
@@ -71,7 +74,7 @@ class Plots
       //chart.setVertGrid(true);
 
       // Specify bar colors??
-      if ( teams[0].scores.length != 0 && teams[0].scores[0] != 0 )
+      if ( numWeeks != 0 && teams[0].scores[0] != 0 )
       {
          chart.addLine(low_data);
          chart.addLine(average_data);
@@ -106,7 +109,8 @@ class Plots
       var detailsTxt = document.getElementById("detailsText");
       if ( detailsTxt != null )
       {
-         var txt = "Your season scoring average, how's it match up?";
+         var txt = "Your season scoring average, low score and high score, how's it match up? " +
+                   "Hint: you want the red bar high, and the green bar even higher!!!";
          detailsTxt.innerText = txt;     // IE
          detailsTxt.textContent = txt;   // Real browsers
       }
@@ -142,7 +146,8 @@ class Plots
 
       var opps;
       var teams = getOrderedTeams();
-      var week = teams[0].scores.length;
+
+      var numWeeks = this.getNumWeeks();
 
       for ( var indx=0; indx<teams.length; indx++ )
       {
@@ -151,20 +156,20 @@ class Plots
          {
             team = teams[indx];
             opps = team.getOpponents();
-            oppnt = getTeamByAbrv(opps[week]);
+            oppnt = getTeamByAbrv(opps[numWeeks]);
 
 //TODO: Need to manually sum up opponents points
             plabels[jteam] = team.name;
-            avg_val[jteam] = team.totPts / week;
+            avg_val[jteam] = team.totPts / numWeeks;
 
             // Need to get opponents pts for that week, sum it up...
             opp_val[jteam] = 0;
-            for ( var jndx=0; jndx<week; jndx++ )
+            for ( var jndx=0; jndx<numWeeks; jndx++ )
             {
                oppnt = getTeamByAbrv(opps[jndx]);
                opp_val[jteam] += oppnt.scores[jndx];
             }
-            opp_val[jteam] /= week;
+            opp_val[jteam] /= numWeeks;
             jteam++;
          }
       }
@@ -172,7 +177,7 @@ class Plots
       // To display avg values
       //chart.labelValues(true);
 
-      if ( teams[0].scores.length != 0 && teams[0].scores[0] != 0 )
+      if ( numWeeks != 0 && teams[0].scores[0] != 0 )
       {
          chart.addLine(avg_val);
          chart.addLine(opp_val);
@@ -248,7 +253,7 @@ class Plots
 
       var plabels = new Array();
       var teams = getOrderedTeams();
-      var week = teams[0].scores.length;
+      var numWeeks = this.getNumWeeks();
 
       var jteams = 0;
       for ( var indx=0; indx<teams.length; indx++ )
@@ -261,7 +266,7 @@ class Plots
 
             nwins = 0; nlosses = 0;
             swins = 0.0; slosses = 0.0;
-            for ( var jndx=0; jndx<week; jndx++ )
+            for ( var jndx=0; jndx<numWeeks; jndx++ )
             {
                oppnt = getTeamByAbrv(opps[jndx]);
                if ( team.scores[jndx] > oppnt.scores[jndx] )
@@ -295,8 +300,8 @@ class Plots
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(10);
-      chart.setYMax(100.0);
+      chart.setNumTics(12);
+      chart.setYMax(60.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);
@@ -342,7 +347,7 @@ class Plots
 
       var teams = getOrderedTeams();
       var num_teams = teams.length;
-      var num_weeks = teams[0].scores.length;
+      var numWeeks = this.getNumWeeks();
       var labels = new Array();
 
       var tWinArr = new Array();
@@ -360,7 +365,7 @@ class Plots
       {
          team = teams[indx];
 
-         for ( var week=0; week<num_weeks; week++ )
+         for ( var week=0; week<numWeeks; week++ )
          {
             for ( var oppnt=0; oppnt<num_teams; oppnt++ )
             {
@@ -458,7 +463,7 @@ class Plots
       chart.labelValues(true);
 
    //   //chart.setTitleFont(new Font("SansSerif", Font.BOLD, 18));
-      chart.setPlotTitle("League Record vs All Teams after Week " + teams[0].scores.length);
+      chart.setPlotTitle("League Record vs All Teams after Week " + numWeeks + "");
 
    //   //chart.setYAxisFont(new Font("SansSerif", Font.BOLD, 14));
       chart.setYTitle("Win/Loss Percentage");
@@ -512,14 +517,14 @@ class Plots
       chart.labelMaxValue(true);
 
       var teams = getOrderedTeams();
-      var num_weeks = teams[0].scores.length;
+      var numWeeks = this.getNumWeeks();
 
       //need up to 12 colors!!!
       var wscore = new Array();
       var labels = new Array();
       var week;
 
-      for ( var week=0; week<num_weeks; week++ )
+      for ( var week=0; week<numWeeks; week++ )
          wscore[week] = 0.0;
 
       var jndx = 0;
@@ -533,7 +538,7 @@ class Plots
             jndx++;
          }
 
-         for ( var week=0; week<num_weeks; week++ )
+         for ( var week=0; week<numWeeks; week++ )
          {
             wscore[week] += teams[indx][week];
          }
@@ -541,7 +546,7 @@ class Plots
 
       var num_teams = teams.length;
       var season_avg = 0.0;
-      for ( var week=0; week<num_weeks; week++ )
+      for ( var week=0; week<numWeeks; week++ )
       {
          wscore[week] /= num_teams;
          season_avg += wscore[week];
@@ -549,7 +554,7 @@ class Plots
       }
 
 //   chart.addLine(wscore, "Weekly Avg", "#000000");
-      season_avg /= num_weeks;
+      season_avg /= numWeeks;
       chart.addRefLine(season_avg.toFixed(2));
 
       //chart.setAutoScale(true);
@@ -606,10 +611,10 @@ class Plots
 
       // Everyone should be playing same number of weeks
       var teams = getOrderedTeams();
-      var num_weeks = teams[0].scores.length;
+      var numWeeks = this.getNumWeeks();
       var labels = new Array();
    
-      if ( num_weeks == 1 )
+      if ( numWeeks == 1 )
       {
          chart.setPlotType(chart.MARKER_PLOT);
 
@@ -630,7 +635,7 @@ class Plots
          chart.setPlotType(chart.RIBBON_PLOT);
 
          var xarr = new Array();
-         for ( indx=0; indx<num_weeks; indx++ )
+         for ( indx=0; indx<numWeeks; indx++ )
             xarr[indx] = indx + 1;
 
          var lin = new BizInterp();
@@ -645,7 +650,7 @@ class Plots
             {
                params = lin.calcParams(xarr, teams[team].scores);
    
-               for ( indx=0; indx<num_weeks; indx++ )
+               for ( indx=0; indx<numWeeks; indx++ )
                {
                   smooth[indx] = lin.calcPoint(params, indx+1);
                }
@@ -709,7 +714,7 @@ class Plots
       chart.labelMaxValue(true);
 
       var teams = getOrderedTeams();
-      var num_weeks = teams[0].scores.length;
+      var numWeeks = this.getNumWeeks();
       var labels = new Array();
 
       var stdDev;
@@ -765,11 +770,11 @@ class Plots
 
    calcStdDev(team_scores, team)
    {
-      var num_weeks = team_scores.length;
+      var numWeeks = this.getNumWeeks();
       var results = new Array();
       var sum, devnsum, deviation;
 
-      for ( var week=0; week<num_weeks; week++ )
+      for ( var week=0; week<numWeeks; week++ )
       {
          deviation = new Array();
          sum = 0;
@@ -791,11 +796,112 @@ class Plots
          if ( week == 0 )  // Std dev is zero...
             results[week] = 0;
          else
-            results[week] = Math.sqrt(devnsum/(pt-1)).toFixed(3);  // 6 decimal places
+            results[week] = Math.sqrt(devnsum/(pt-1)).toFixed(2);  // 6 decimal places
       }
 
       return results;
    }
 
+
+   rollingAvgPlot()
+   {
+      var plotTitle = "Rolling Average";
+      var xaxisTitle = "Week";
+      var yaxisTitle = "Points";
+
+      var chart = new BizLineChart();
+      chart.setPlotType(chart.YONLY_PLOT);
+
+      chart.setXTitle(xaxisTitle);
+      chart.setYTitle(yaxisTitle);
+      chart.setPlotTitle(plotTitle);
+      chart.setHorzGrid(true);
+      chart.setLineWidth(2);
+      //chart.labelMaxValue(true);
+
+      var teams = getOrderedTeams();
+      var team;
+      var numWeeks = this.getNumWeeks();
+
+      //need up to 12 colors!!!
+      var labels = new Array();
+
+      var jndx = 0;
+      for ( var indx=0; indx<teams.length; indx++ )
+      {
+         var id = document.getElementById("team" + indx);
+         if ( id.checked == true )
+         {
+            team = teams[indx];
+
+            var rollingAvg = new Array();
+            var sum;
+            for ( var week=0; week<numWeeks; week++ )
+            {
+               sum = 0.0;
+               for ( var week2=0; week2<=week; week2++ )
+               {
+                  sum += team.scores[week2];
+               }
+
+               rollingAvg[week] = (sum / (week+1)).toFixed(2);
+            }
+
+            chart.addLine(rollingAvg, "", chart.colors[indx]);
+            labels[jndx] = teams[indx].name;
+            jndx++;
+         }
+      }
+
+      //chart.setAutoScale(true);
+      chart.setNumTics(this.PLOT_NUM_TICS);
+      chart.setYMax(this.PLOT_MAX_VALUE);
+      chart.setYMin(this.PLOT_MIN_VALUE);
+
+      var canvasId = document.getElementById("plot_canvas");
+      var cwidth = canvasId.width;
+      var cheight = canvasId.height;
+      chart.draw("plot_canvas", cwidth, cheight);
+
+      var legendId = document.getElementById("legend_canvas");
+      var cwidth = legendId.width;
+      var cheight = legendId.height;
+
+      // Add labels in same order as data!!!
+      var legend = new BizLegend();
+      for ( var indx=0; indx<labels.length; indx++ )
+         legend.addLabel(labels[indx]);
+
+      var legendId = document.getElementById("legend_canvas");
+      var lwidth = legendId.width;
+      var lheight = legendId.height;
+   
+      legend.draw("legend_canvas", lwidth, lheight);
+
+      var detailsTxt = document.getElementById("detailsText");
+      if ( detailsTxt != null )
+      {
+         var txt = "Rolling average is another measure of your teams scoring trend. Plot points indicate " +
+                   "your teams average at each week, is it going up or down (hope for the former!)";
+         detailsTxt.innerText = txt;     // IE
+         detailsTxt.textContent = txt;   // Real browsers
+      }
+   }
+
+   getNumWeeks()
+   {
+      var teams = getOrderedTeams();
+      var num_teams = teams.length;
+      var min_weeks = 20;
+
+      for ( var team=0; team<num_teams; team++ )
+      {
+         if ( teams[team].scores.length < min_weeks )
+            min_weeks = teams[team].scores.length;
+      }
+
+console.log("Min Weeks: " + min_weeks);
+      return min_weeks;
+   }
 }
 

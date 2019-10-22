@@ -108,7 +108,7 @@ class Summaries
          else
             txtscr1 = "" + scores[indx];
 
-         score = scores[indx];
+         score = scores[indx+1];
          if ( score === undefined )
             txtscr2 = "0.0";
          else if ( scores[indx+1] == parseInt(scores[indx+1]) )

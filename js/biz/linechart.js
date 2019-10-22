@@ -790,7 +790,7 @@ drawAxes(ctx, num_pts, ymin, ymax, num_tics)
          yOffset += 50;
 
       //var ypos = this.plotHeight + yOffset + this.YTOP_OFFSET + 6;
-      var ypos = this.yOrg + 14;
+      var ypos = this.yOrg + 36;
 
       ctx.drawTextCenter(this.xAxisFont, this.xAxisFontSize, xpos, ypos, this.xAxisTitle);
    }
@@ -981,7 +981,7 @@ drawPlot(ctx, curr_set, ymin, color)
    var maxIndex = -1;
    var xp, yp;
 
-   if ( this.labelMax == true || this.labelMin == true )
+   if ( this.labelMax == true )
    {
       for ( var indx=0; indx<num_pts; indx++ )
       {
@@ -990,6 +990,17 @@ drawPlot(ctx, curr_set, ymin, color)
             maxValue = lineData[indx];
             maxIndex = indx;
          }
+      }
+
+      if ( maxIndex == 0 || this.labelAllPts == true )
+      {
+      }
+   }
+
+   if ( this.labelMin == true )
+   {
+      for ( var indx=0; indx<num_pts; indx++ )
+      {
          if ( lineData[indx] < minValue )
          {
             minValue = lineData[indx];
@@ -1001,38 +1012,30 @@ drawPlot(ctx, curr_set, ymin, color)
    xp = x1 = this.xOrg + this.xScale/2.0;
    yp = y1 = this.yOrg - (lineData[0]-ymin)*this.yScale;
 
-//ZZZ Need to ensure proper label colors
-   ctx.strokeStyle = this.BLACK;
 
-   if ( this.labelAllPts == true ) // Display value for each point
+   if ( maxIndex == 0 || this.labelAllPts == true )
    {
-//ZZZ Need to use numberHeight
       var ytxt = lineData[0];
       ctx.strokeStyle = this.BLACK;
       ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
                                x1, y1-6, ytxt + "");
    }
-   else
-   {
-      if ( this.labelMax == true && maxIndex == 0 )
-      {
-//ZZZ Need to use numberHeight
-         var ytxt = lineData[maxIndex];
-         ctx.strokeStyle = this.BLACK;
-         ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
-                               x1, y1-6, ytxt + "");
-      }
 
-      if ( this.labelMin == true && minIndex == 0 )
+   if ( minIndex != maxIndex )
+   { 
+      if ( minIndex == 0 || this.labelAllPts == true )
       {
-//ZZZ Need to use numberHeight
-         var ytxt = lineData[minIndex];
+         var ytxt = lineData[0];
          ctx.strokeStyle = this.BLACK;
          ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
                                x1, y1-6, ytxt + "");
       }
    }
 
+//ZZZ Need to ensure proper label colors
+   ctx.strokeStyle = this.BLACK;
+
+   // Draw markers for first point if set
    if ( this.drawMarkers == true || this.plotType == this.MARKER_PLOT )
    {
          ctx.strokeStyle = color;
@@ -1046,7 +1049,6 @@ drawPlot(ctx, curr_set, ymin, color)
          ctx.fillStyle = color;
          ctx.fill();
    }
-
 
    for ( var indx=1; indx<num_pts; indx++ )
    {

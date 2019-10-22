@@ -79,7 +79,7 @@ var pflTeams =  [
 
 function initTeams()
 {
-   var numWeeks = pflTeams[0].scores.length;
+   var numWeeks = getNumWeeks(); //pflTeams[0].scores.length;
    var scores, opps;
    var team, opp;
 
@@ -140,6 +140,23 @@ function initTeams()
       //              team.totPts);
    //}
 }
+
+function getNumWeeks()
+{
+   var teams = getOrderedTeams();
+   var num_teams = teams.length;
+   var min_weeks = 20;
+
+   for ( var team=0; team<num_teams; team++ )
+   {
+      if ( teams[team].scores.length < min_weeks )
+         min_weeks = teams[team].scores.length;
+   }
+
+console.log("Min Weeks: " + min_weeks);
+   return min_weeks;
+}
+
 
 function getTeamNames()
 {
