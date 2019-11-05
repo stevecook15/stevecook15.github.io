@@ -4,17 +4,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90 ];
-var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45 ];
-var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45 ];
-var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90 ];
-var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35 ];
+var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90, 100.95 ];
+var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45, 128.55 ];
+var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45, 96.15 ];
+var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90, 161.80 ];
+var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35, 127.85 ];
 
-var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85 ];
-var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65 ];
-var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15 ];
-var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80 ];
-var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35 ];
+var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85, 146.30 ];
+var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65, 101.85 ];
+var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15, 173.75 ];
+var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80, 151.60 ];
+var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35, 128.05 ];
 
 
 // 0 - not in playoffs yet
@@ -90,7 +90,10 @@ var week8_txt = "OK, which teams aren't 4-4?  Six of the ten are 4-4, two more a
                 ".500 for the first time this year. And amazingly, the Mack despite scoring more points than anyone are " +
                 "now 2 games under .500! Say what?";
 
-var week9_txt = "";
+var week9_txt = "Eight out of ten teams are within a game of the playoffs and the remaining two are only two out. " +
+                "No close games this week, making MNF kind of a snoozer. The Flat continue to pay back karma from " +
+                "their lucky season last year, scoring the third highest score of the week and still losing (and " +
+                "would have won if they hadn't changed TE late in the week, D'oh).";
 
 var week10_txt = "";
 

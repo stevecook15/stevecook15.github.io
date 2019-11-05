@@ -117,7 +117,7 @@ BizLegend.prototype.addLabel = function(label)
 
 
 /**
- * Add a line to the legend with explicit color
+ * Add an item to the legend with explicit color
  * @param {String} label  Label string to display
  * @param {String} color  Color to draw label box with
  */

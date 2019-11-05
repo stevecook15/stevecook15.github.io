@@ -522,6 +522,7 @@ class Plots
       //need up to 12 colors!!!
       var wscore = new Array();
       var labels = new Array();
+      var colors = new Array();
       var week;
 
       for ( var week=0; week<numWeeks; week++ )
@@ -535,6 +536,7 @@ class Plots
          {
             chart.addLine(teams[indx].scores, "", chart.colors[indx]);
             labels[jndx] = teams[indx].name;
+            colors[jndx] = chart.colors[indx];
             jndx++;
          }
 
@@ -574,7 +576,7 @@ class Plots
       // Add labels in same order as data!!!
       var legend = new BizLegend();
       for ( var indx=0; indx<labels.length; indx++ )
-         legend.addLabel(labels[indx]);
+         legend.add(labels[indx], colors[indx])
 
       var legendId = document.getElementById("legend_canvas");
       var lwidth = legendId.width;
@@ -613,6 +615,7 @@ class Plots
       var teams = getOrderedTeams();
       var numWeeks = this.getNumWeeks();
       var labels = new Array();
+      var colors = new Array();
    
       if ( numWeeks == 1 )
       {
@@ -627,6 +630,7 @@ class Plots
             {
                chart.addLine(sdev, teams[team].name, chart.colors[team]);
                labels.push(teams[team].name);
+               colors.push(chart.colors[team]);
             }
          }
       }
@@ -657,6 +661,7 @@ class Plots
    
                chart.addLine(smooth, teams[team].name, chart.colors[team]);
                labels.push(teams[team].name);
+               colors.push(chart.colors[team]);
             }
          }
       }
@@ -678,7 +683,7 @@ class Plots
       // Add labels in same order as data!!!
       var legend = new BizLegend();
       for ( var indx=0; indx<labels.length; indx++ )
-         legend.addLabel(labels[indx]);
+         legend.add(labels[indx], colors[indx]);
 
       var legendId = document.getElementById("legend_canvas");
       var lwidth = legendId.width;
@@ -716,6 +721,7 @@ class Plots
       var teams = getOrderedTeams();
       var numWeeks = this.getNumWeeks();
       var labels = new Array();
+      var colors = new Array();
 
       var stdDev;
       for ( var team=0; team<teams.length; team++ )
@@ -728,6 +734,7 @@ class Plots
          {
             chart.addLine(stdDev, "", chart.colors[team]);
             labels.push(teams[team].name);
+            colors.push(chart.colors[team]);
          }
       }
 
@@ -748,7 +755,7 @@ class Plots
       // Add labels in same order as data!!!
       var legend = new BizLegend();
       for ( var indx=0; indx<labels.length; indx++ )
-         legend.addLabel(labels[indx]);
+         legend.add(labels[indx], colors[indx]);
 
       var legendId = document.getElementById("legend_canvas");
       var lwidth = legendId.width;
@@ -825,6 +832,7 @@ class Plots
 
       //need up to 12 colors!!!
       var labels = new Array();
+      var colors = new Array();
 
       var jndx = 0;
       for ( var indx=0; indx<teams.length; indx++ )
@@ -849,6 +857,7 @@ class Plots
 
             chart.addLine(rollingAvg, "", chart.colors[indx]);
             labels[jndx] = teams[indx].name;
+            colors[jndx] = chart.colors[indx];
             jndx++;
          }
       }
@@ -870,7 +879,7 @@ class Plots
       // Add labels in same order as data!!!
       var legend = new BizLegend();
       for ( var indx=0; indx<labels.length; indx++ )
-         legend.addLabel(labels[indx]);
+         legend.add(labels[indx], colors[indx]);
 
       var legendId = document.getElementById("legend_canvas");
       var lwidth = legendId.width;
