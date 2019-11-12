@@ -1,20 +1,20 @@
-//TODO: Add a rolling average plot...
+//TODO: Add a more plots
 
-// Create an array of teamNames
+// Create an array of teamNames  (see scores.js)
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90, 100.95 ];
-var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45, 128.55 ];
-var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45, 96.15 ];
-var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90, 161.80 ];
-var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35, 127.85 ];
+var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90, 100.95, 133.90 ];
+var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45, 128.55, 138.20 ];
+var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45, 96.15, 104.70 ];
+var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90, 161.80, 99.80 ];
+var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35, 127.85, 94.05 ];
 
-var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85, 146.30 ];
-var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65, 101.85 ];
-var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15, 173.75 ];
-var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80, 151.60 ];
-var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35, 128.05 ];
+var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85, 146.30, 108.80 ];
+var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65, 101.85, 138.45 ];
+var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15, 173.75, 125.80 ];
+var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80, 151.60, 171.05 ];
+var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35, 128.05, 166.05 ];
 
 
 // 0 - not in playoffs yet
@@ -31,9 +31,9 @@ var playoffs = [
 
         0,  //thenubs
         0,  //predators
-        0,  //fatbastards
         0,  //tenanus
-        0   //krusty
+        0,  //krusty
+        0   //fatbastards
      ];
 
 
@@ -95,7 +95,8 @@ var week9_txt = "Eight out of ten teams are within a game of the playoffs and th
                 "their lucky season last year, scoring the third highest score of the week and still losing (and " +
                 "would have won if they hadn't changed TE late in the week, D'oh).";
 
-var week10_txt = "";
+var week10_txt = "Go Hawks!!!!  We now officially dub the nub to be the 2019 version of the 2018 Fat - ever seen so much " +
+                 "good luck?  Or has anyone seen as bad of luck as the Mack? ";
 
 var week11_txt = "";
 

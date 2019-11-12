@@ -22,13 +22,15 @@ class Standings
       {
          pflUtils.clearTable(table1Body);
 
-         this.addRow(table1Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
+         this.addRow(table1Hdr, "Team", "Owner", "W/L", "Div W/L", "Tot Pts", 0);
          for ( var indx=0; indx<5; indx++ )
          {
             team = pteams[indx];
             this.addRow(table1Body, team.name, team.owner,
                         "" + team.wins + "/" + team.losses,
                         "" + team.divWins + "/" + team.divLosses,
+                        team.totPts.toFixed(0),
+                        team.totPts,
                         playoffs[indx]);
          }
       }
@@ -42,20 +44,21 @@ class Standings
       {
          pflUtils.clearTable(table2Body);
 
-         this.addRow(table2Hdr, "Team", "Owner", "W/L", "Div W/L", 0);
+         this.addRow(table2Hdr, "Team", "Owner", "W/L", "Div W/L", "Tot Pts", 0);
          for ( var indx=5; indx<10; indx++ )
          {
             team = pteams[indx];
             this.addRow(table2Body, team.name, team.owner,
                         "" + team.wins + "/" + team.losses,
                         "" + team.divWins + "/" + team.divLosses,
+                        team.totPts.toFixed(0),
                         playoffs[indx]);
          }
       }
    }
 
 
-   addRow(tbody, teamname, owner, record, points, playoffs)
+   addRow(tbody, teamname, owner, record, div_record, points, playoffs)
    {
       var row, cell, textNode, lf;
 
@@ -95,10 +98,16 @@ class Standings
       row.appendChild(cell);
 
       cell = document.createElement("td");
+      cell.setAttribute("class", "records");
+      cell.setAttribute("className", "records");
+      textNode = document.createTextNode("  " + div_record + "  "); 
+      cell.appendChild(textNode);
+      row.appendChild(cell);
+
+      cell = document.createElement("td");
       cell.setAttribute("class", "points");
       cell.setAttribute("className", "points");
       textNode = document.createTextNode("  " + points + "  "); 
-
       cell.appendChild(textNode);
       row.appendChild(cell);
 
