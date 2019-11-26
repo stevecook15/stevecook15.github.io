@@ -187,8 +187,8 @@ class Plots
       chart.setXLabels(plabels);
 
       //chart.setAutoScale(true);
-      chart.setNumTics(this.PLOT_NUM_TICS);
-      chart.setYMax(this.PLOT_MAX_VALUE);
+      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setYMax(170.0); //this.PLOT_MAX_VALUE);
       chart.setYMin(this.PLOT_MIN_VALUE);
 
       chart.setThreeD(true);
@@ -739,8 +739,8 @@ class Plots
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(8);
-      chart.setYMax(80.0);
+      chart.setNumTics(5);
+      chart.setYMax(50.0);
       chart.setYMin(0.0);
 
       var canvasId = document.getElementById("plot_canvas");

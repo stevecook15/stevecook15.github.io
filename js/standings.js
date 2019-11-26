@@ -30,7 +30,6 @@ class Standings
                         "" + team.wins + "/" + team.losses,
                         "" + team.divWins + "/" + team.divLosses,
                         team.totPts.toFixed(0),
-                        team.totPts,
                         playoffs[indx]);
          }
       }
@@ -67,6 +66,7 @@ class Standings
       cell = document.createElement("td");
       cell.setAttribute("className", "standings");
 
+console.log("Team " + teamname + ", " + playoffs);
       switch ( playoffs )
       {
          case 1: cell.setAttribute("class", "playoffs"); break;
