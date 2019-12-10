@@ -4,17 +4,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90, 100.95, 133.90, 126.60, 114.05, 125.65 ];
-var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90, 161.80, 99.80, 128.35, 156.60, 122.60 ];
-var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45, 96.15, 104.70, 130.35, 154.75, 116.70 ];
-var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45, 128.55, 138.20, 147.10, 126.30, 115.0 ];
-var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35, 127.85, 94.05, 86.70, 114.35, 95.90 ];
+var belScores = [ 117.00, 142.15, 147.70, 103.35, 170.25, 82.05, 115.00, 137.90, 100.95, 133.90, 126.60, 114.05, 125.65, 166.25 ];
+var rolScores = [ 125.60,  97.10, 139.40, 91.30, 166.40, 160.15, 85.75, 131.90, 161.80, 99.80, 128.35, 156.60, 122.60, 151.55 ];
+var iceScores = [ 121.75, 126.80, 158.60, 132.35, 125.60, 170.00, 94.65, 112.45, 96.15, 104.70, 130.35, 154.75, 116.70, 118.65 ];
+var makScores = [ 181.80, 138.50, 169.40, 154.15, 153.40, 121.60, 97.15, 135.45, 128.55, 138.20, 147.10, 126.30, 115.0, 156.70 ];
+var kekScores = [ 102.55, 144.95, 114.05, 72.20, 75.95, 106.95, 94.05, 137.35, 127.85, 94.05, 86.70, 114.35, 95.90, 107.75 ];
 
-var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85, 146.30, 108.80, 145.10, 106.45, 109.55 ];
-var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80, 151.60, 171.05, 123.60, 128.55, 103.90 ];
-var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15, 173.75, 125.80,124.95, 107.95, 133.20 ];
-var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35, 128.05, 166.05, 117.60, 101.10, 107.95 ];
-var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65, 101.85, 138.45, 121.20, 111.15, 123.95 ];
+var nubScores = [ 194.30, 157.95, 143.75, 121.45, 133.20, 106.55, 93.60, 119.85, 146.30, 108.80, 145.10, 106.45, 109.55, 87.30 ];
+var fatScores = [ 146.50,  99.15, 108.05, 135.05, 188.45, 81.70, 139.90, 136.80, 151.60, 171.05, 123.60, 128.55, 103.90, 154.05 ];
+var preScores = [ 109.65, 117.85, 138.35, 141.15, 89.70, 146.80, 128.65, 146.15, 173.75, 125.80,124.95, 107.95, 133.20, 98.85 ];
+var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65, 101.85, 138.45, 121.20, 111.15, 123.95, 128.55 ];
+var tenScores = [  85.90, 132.85, 118.10, 99.15, 153.15, 148.25, 143.75, 139.35, 128.05, 166.05, 117.60, 101.10, 107.95, 100.45 ];
 
 
 // 0 - not in playoffs yet
@@ -23,17 +23,17 @@ var kruScores = [ 143.70, 142.30, 155.75, 144.65, 155.95, 130.80, 100.80, 141.65
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs = [
-        0,  //belicheck
-        0,  //rolltide
-        0,  //iceotopes
+        2,  //belicheck
+        1,  //rolltide
+        4,  //iceotopes
         4,  //retmack
         4,  //kekelove
 
-        1,  //thenubs
-        0,  //fatbastards
-        0,  //predators
-        0,  //tenanus
-        0   //krusty
+        2,  //thenubs
+        1,  //fatbastards
+        4,  //predators
+        4,  //krusty
+        4   //tenanus
      ];
 
 
@@ -111,5 +111,8 @@ var week13_txt = "Amazingly, not a single additional team clinched or was elimin
                  "Assuming the Pred take them out by over 30 pts, the Ice or Roll or Belis have an even larger deficit " +
                  "to make up to catch Fat for the last spot.";
 
-var week14_txt = "";
+var week14_txt = "And so its set. Congrats to Nubs and Bellies on DIv titles, and Fat and Tide for scarfing up the wildcards." +
+                 "The Ice finished with the same record as the Tide but lose out on season total points (~3 pts a week). " +
+                 "Interesting to note two of the top three scoring teams didn't make the playoffs - that certainly doesn't bode " +
+                 "well for the remaining high scorer, the Fat!"
 
