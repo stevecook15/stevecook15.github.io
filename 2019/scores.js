@@ -1,15 +1,15 @@
 
+var belOpps = ["kek", "ice", "kru", "ten", "nub", "rol", "mak", "kek", "pre", "fat", "ice", "pre", "rol", "mak"];
+var rolOpps = ["ice", "pre", "mak", "kru", "ten", "bel", "kek", "ice", "fat", "nub", "kru", "mak", "bel", "kek"];
 var iceOpps = ["rol", "bel", "kek", "fat", "pre", "mak", "nub", "rol", "ten", "kru", "bel", "kek", "mak", "nub"];
 var makOpps = ["fat", "kek", "rol", "pre", "kru", "ice", "bel", "ten", "nub", "ten", "kek", "rol", "ice", "bel"];
-var rolOpps = ["ice", "pre", "mak", "kru", "ten", "bel", "kek", "ice", "fat", "nub", "kru", "mak", "bel", "kek"];
 var kekOpps = ["bel", "mak", "ice", "nub", "fat", "ten", "rol", "bel", "kru", "pre", "mak", "ice", "fat", "rol"];
-var belOpps = ["kek", "ice", "kru", "ten", "nub", "rol", "mak", "kek", "pre", "fat", "ice", "pre", "rol", "mak"];
 
-var preOpps = ["nub", "rol", "fat", "mak", "ice", "kru", "ten", "kru", "bel", "kek", "nub", "bel", "ten", "fat"];
-var fatOpps = ["mak", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre"];
 var nubOpps = ["pre", "kru", "ten", "kek", "bel", "fat", "ice", "fat", "mak", "rol", "pre", "ten", "kru", "ice"];
-var tenOpps = ["kru", "fat", "nub", "bel", "rol", "kek", "pre", "mak", "ice", "mak", "fat", "nub", "pre", "kru"];
+var fatOpps = ["mak", "ten", "pre", "ice", "kek", "nub", "kru", "nub", "rol", "bel", "ten", "kru", "kek", "pre"];
+var preOpps = ["nub", "rol", "fat", "mak", "ice", "kru", "ten", "kru", "bel", "kek", "nub", "bel", "ten", "fat"];
 var kruOpps = ["ten", "nub", "bel", "rol", "mak", "pre", "fat", "pre", "kek", "ice", "rol", "fat", "nub", "ten"];
+var tenOpps = ["kru", "fat", "nub", "bel", "rol", "kek", "pre", "mak", "ice", "mak", "fat", "nub", "pre", "kru"];
 
 
 class PflTeam {
