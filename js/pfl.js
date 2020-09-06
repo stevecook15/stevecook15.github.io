@@ -1,5 +1,5 @@
 
-let pflUtils = new PflUtils(2019, 9, 4);   // TODO: Pass first wednesday before league start each year
+let pflUtils = new PflUtils(2020, 9, 9);   // TODO: Pass first wednesday before league start each year
 let standings = new Standings();
 let summaries = new Summaries();
 let rosters = new Rosters();

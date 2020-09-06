@@ -14,9 +14,9 @@ class Summaries
 
       var weekStr;
       if ( week < 10 )
-         weekStr = "2019/Week0" + week + ".html";
+         weekStr = "2020/Week0" + week + ".html";
       else
-         weekStr = "2019/Week" + week + ".html";
+         weekStr = "2020/Week" + week + ".html";
 
       if ( week > 14 ) // Playoffs...
       {
