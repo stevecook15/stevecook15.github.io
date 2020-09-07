@@ -167,7 +167,7 @@ var team8 = [ "Tenacious Anus / Jake",
    "BN,Jalen Samuels,PIT,RB,0"
 ];
 
-var team9 = [ "Krusty Krushers / Matt",
+var team9 = [ "Michaels Bold Team / Michael",
    "BN,Deshaun Watson,HOU,QB,0",
    "ST,Dalvin Cook,MIN,RB,0",
    "ST,David Johnson,ARI,RB,0",

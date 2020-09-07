@@ -1,15 +1,15 @@
 
-var belOpps = ["prk", "ice", "kru", "ten", "coc", "rol", "mak", "prk", "pre", "fat", "ice", "pre", "rol", "mak"];
-var rolOpps = ["ice", "pre", "mak", "kru", "ten", "bel", "prk", "ice", "fat", "coc", "kru", "mak", "bel", "prk"];
-var iceOpps = ["rol", "bel", "prk", "fat", "pre", "mak", "coc", "rol", "ten", "kru", "bel", "prk", "mak", "coc"];
-var makOpps = ["fat", "prk", "rol", "pre", "kru", "ice", "bel", "ten", "coc", "ten", "prk", "rol", "ice", "bel"];
-var prkOpps = ["bel", "mak", "ice", "coc", "fat", "ten", "rol", "bel", "kru", "pre", "mak", "ice", "fat", "rol"];
+var belOpps = ["prk", "ice", "mik", "ten", "coc", "rol", "mak", "prk", "pre", "fat", "ice", "pre", "rol", "mak"];
+var rolOpps = ["ice", "pre", "mak", "mik", "ten", "bel", "prk", "ice", "fat", "coc", "mik", "mak", "bel", "prk"];
+var iceOpps = ["rol", "bel", "prk", "fat", "pre", "mak", "coc", "rol", "ten", "mik", "bel", "prk", "mak", "coc"];
+var makOpps = ["fat", "prk", "rol", "pre", "mik", "ice", "bel", "ten", "coc", "ten", "prk", "rol", "ice", "bel"];
+var prkOpps = ["bel", "mak", "ice", "coc", "fat", "ten", "rol", "bel", "mik", "pre", "mak", "ice", "fat", "rol"];
 
-var cocOpps = ["pre", "kru", "ten", "prk", "bel", "fat", "ice", "fat", "mak", "rol", "pre", "ten", "kru", "ice"];
-var fatOpps = ["mak", "ten", "pre", "ice", "prk", "coc", "kru", "coc", "rol", "bel", "ten", "kru", "prk", "pre"];
-var preOpps = ["coc", "rol", "fat", "mak", "ice", "kru", "ten", "kru", "bel", "prk", "coc", "bel", "ten", "fat"];
-var kruOpps = ["ten", "coc", "bel", "rol", "mak", "pre", "fat", "pre", "prk", "ice", "rol", "fat", "coc", "ten"];
-var tenOpps = ["kru", "fat", "coc", "bel", "rol", "prk", "pre", "mak", "ice", "mak", "fat", "coc", "pre", "kru"];
+var cocOpps = ["pre", "mik", "ten", "prk", "bel", "fat", "ice", "fat", "mak", "rol", "pre", "ten", "mik", "ice"];
+var fatOpps = ["mak", "ten", "pre", "ice", "prk", "coc", "mik", "coc", "rol", "bel", "ten", "mik", "prk", "pre"];
+var preOpps = ["coc", "rol", "fat", "mak", "ice", "mik", "ten", "mik", "bel", "prk", "coc", "bel", "ten", "fat"];
+var mikOpps = ["ten", "coc", "bel", "rol", "mak", "pre", "fat", "pre", "prk", "ice", "rol", "fat", "coc", "ten"];
+var tenOpps = ["mik", "fat", "coc", "bel", "rol", "prk", "pre", "mak", "ice", "mak", "fat", "coc", "pre", "mik"];
 
 
 class PflTeam {
@@ -58,9 +58,9 @@ let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps); 
 
 let preTeam = new PflTeam("Predators", "Joe", "pre", 2, preOpps);                preTeam.setScores(preScores);
 let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);
-let cocTeam = new PflTeam("Coco Brown", "Andy", "coc", 2, cocOpps);              cocTeam.setScores(cocScores);
+let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);             cocTeam.setScores(cocScores);
 let tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 2, tenOpps);          tenTeam.setScores(tenScores);
-let kruTeam = new PflTeam("Krusty Krushers", "Hunter", "kru", 2, kruOpps);       kruTeam.setScores(kruScores);
+let mikTeam = new PflTeam("Michaels Bold Team", "Michael", "mik", 2, mikOpps);   mikTeam.setScores(mikScores);
 
 var pflTeams =  [
    iceTeam,
@@ -73,7 +73,7 @@ var pflTeams =  [
    fatTeam,
    cocTeam,
    tenTeam,
-   kruTeam
+   mikTeam
 ];
 
 
@@ -305,11 +305,11 @@ function AddUnique(weekList, name)
    return true;
 }
 
-var weekly_dates = [ "Thursday, September 6th",  "Thursday, September 13th", "Thursday, September 20th",
-                     "Thursday, September 27th", "Thursday, October 4th",    "Thursday, October 11th", 
-                     "Thursday, October 18th",   "Thursday, October 25th",   "Thursday, November 1st", 
-                     "Thursday, November 8th",   "Thursday, November 15th",  "Thursday, November 22rd", 
-                     "Thursday, November 29th",  "Thursday, December 6th" ];
+var weekly_dates = [ "Thursday, September 10th",  "Thursday, September 17th", "Thursday, September 24th",
+                     "Thursday, October 1st",   "Thursday, October 8th",    "Thursday, October 15th", 
+                     "Thursday, October 22nd",  "Thursday, October 29th",   "Thursday, November 5th", 
+                     "Thursday, November 12th", "Thursday, November 19th",  "Thursday, November 26rd", 
+                     "Thursday, December 3rd",  "Thursday, December 10th" ];
 
 var weekly_text = [
       week1_txt,   week2_txt,   week3_txt,   week4_txt,
