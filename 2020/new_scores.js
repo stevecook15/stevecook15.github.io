@@ -4,18 +4,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var rolScores = [ 0.00 ];
-var iceScores = [ 0.00 ];
-var prkScores = [ 0.00 ];
+var fatScores = [ 0.00 ];
+var porScores = [ 0.00 ];
 var mikScores = [ 0.00 ];
 var cocScores = [ 0.00 ];
-
-var belScores = [ 0.00 ];
-var fatScores = [ 0.00 ];
-var tenScores = [ 0.00 ];
-var preScores = [ 0.00 ];
 var makScores = [ 0.00 ];
 
+var iceScores = [ 0.00 ];
+var preScores = [ 0.00 ];
+var belScores = [ 0.00 ];
+var rolScores = [ 0.00 ];
+var tenScores = [ 0.00 ];
 
 
 // 0 - not in playoffs yet
@@ -24,16 +23,16 @@ var makScores = [ 0.00 ];
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs = [
+        0,  //fatbastards
+        0,  //porkchops
+        0,  //teamfubar (mik)
+        0,  //cocobrown
+        0,  //retmack
+
+        0,  //iceotopes
+        0,  //predators
         0,  //belicheck
         0,  //rolltide
-        0,  //iceotopes
-        0,  //retmack
-        0,  //porkchop
-
-        0,  //cocobrown
-        0,  //fatbastards
-        0,  //predators
-        0,  //mikesbt
         0   //tenanus
      ];
 
