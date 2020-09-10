@@ -73,7 +73,7 @@ var team3 = [ "Coco Browns / Andy",
    "BN,Mike Gesicki,MIA,TE,0"
 ];
 
-var team4 = [ "Return of the Mack / Matt",
+var team4 = [ "The Fu Minshews / Matt",
    "ST,Dak Prescott,DAL,QB,0",
    "ST,Clyde Edwards-Helaire,KAN,RB,0",
    "ST,Todd Gurley,ATL,RB,0",
