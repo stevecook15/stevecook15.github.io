@@ -25,7 +25,7 @@ var tenScores = [ 0.00 ];
 var playoffs = [
         0,  //fatbastards
         0,  //porkchops
-        0,  //teamfubar (mik)
+        0,  //tenydfight (mik)
         0,  //cocobrown
         0,  //retmack
 
@@ -38,7 +38,20 @@ var playoffs = [
 
 
 var week1_txt = "Welcome to the 2020 Phantom League. Which is sure to be different this year with covid! " +
-                "And welcome to the newby Andy. Good luck! But not too much luck! Newbies should know their place.";
+                "And welcome to the newby Andy. Good luck! But not too much luck! Newbies should know their place.<br><br>" +
+                "While I'm no Yahoo for projecting the draft, I did project the weekly average for each teams best lineup. " +
+                "Eight of the ten teams are basically in a dead heat, with one outlier on both ends:<br><br>" +
+                "<font style='myfont'>" +
+                "Phat Bastards &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;118.875<br>" +
+                "Porkchops &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;119.1875<br>" +
+                "Ten Yard Fight &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;120.375<br>" +
+                "Coco Browns&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;121.3125<br>" +
+                "Return of the Mack &nbsp;118.4375<br><br>" +
+                "Iceotopes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;114.125<br>" +
+                "Predators &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;121.875<br>" +
+                "Discount Belicheck &nbsp;119.3125<br>" +
+                "Roll Tide &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;119.5625<br>" +
+                "Tenacious Anus &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;127.125<br></font>";
 
 var week2_txt = "";
 

@@ -37,7 +37,7 @@ var team1 = [ "Porkchops / Noah G",
    "BN,Tevin Coleman,SFO,RB,0"
 ];
 
-var team2 = [ "Team FUBAR / Michael",
+var team2 = [ "Ten Yard Fight / Michael",
    "BN,Kyler Murray,ARI,QB,0",
    "ST,Ezekiel Elliott,DAL,RB,0",
    "ST,Aaron Jones,GNB,RB,0",
@@ -57,7 +57,7 @@ var team2 = [ "Team FUBAR / Michael",
 
 var team3 = [ "Coco Browns / Andy",
    "ST,Patrick Mahones,KAN,QB,0",
-   "ST,Delvin Cook,MIN,RB,0",
+   "ST,Dalvin Cook,MIN,RB,0",
    "ST,Miles Sanders,PHI,RB,0",
    "ST,Odell Beckham Jr,CLE,WR,0",
    "ST,Courtland Sutton,DEN,WR,0",
@@ -126,7 +126,7 @@ var team6 = [ "Predators / Joe",
    "BN,Kareem Hunt,CLE,RB,0",
    "BN,Zack Moss,BUF,RB,0",
    "BN,Marvin Jones Jr,DET,WR,0",
-   "BN,Darius SLayton,NYG,WR,0"
+   "BN,Darius Slayton,NYG,WR,0"
 ];
 
 var team7 = [ "Discount Belicheck / Harrison",
