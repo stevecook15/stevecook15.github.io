@@ -300,8 +300,8 @@ class Plots
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(12);
-      chart.setYMax(60.0);
+      chart.setNumTics(8);
+      chart.setYMax(80.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);

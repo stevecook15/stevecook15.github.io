@@ -1,15 +1,15 @@
 
-var fatOpps = ["coc", "mik", "por", "ice", "pre", "mak", "ten", "coc", "rol", "bel", "mik", "por", "mak", "ten"];
-var porOpps = ["mik", "mak", "fat", "ten", "ice", "rol", "coc", "mik", "bel", "pre", "mak", "fat", "ice", "coc"];
-var mikOpps = ["por", "fat", "bel", "rol", "ten", "coc", "mak", "por", "pre", "ice", "fat", "pre", "coc", "mak"];
-var cocOpps = ["fat", "pre", "mak", "bel", "rol", "mik", "por", "fat", "ice", "ten", "bel", "mak", "mik", "por"];
-var makOpps = ["ice", "por", "coc", "pre", "bel", "fat", "mik", "rol", "ten", "rol", "por", "coc", "fat", "mik"];
+var fatOpps = ["coc", "mik", "por", "ice", "pre", "fum", "ten", "coc", "rol", "bel", "mik", "por", "fum", "ten"];
+var porOpps = ["mik", "fum", "fat", "ten", "ice", "rol", "coc", "mik", "bel", "pre", "fum", "fat", "ice", "coc"];
+var mikOpps = ["por", "fat", "bel", "rol", "ten", "coc", "fum", "por", "pre", "ice", "fat", "pre", "coc", "fum"];
+var cocOpps = ["fat", "pre", "fum", "bel", "rol", "mik", "por", "fat", "ice", "ten", "bel", "fum", "mik", "por"];
+var fumOpps = ["ice", "por", "coc", "pre", "bel", "fat", "mik", "rol", "ten", "rol", "por", "coc", "fat", "mik"];
 
-var iceOpps = ["mak", "rol", "pre", "fat", "por", "ten", "bel", "ten", "coc", "mik", "rol", "bel", "por", "pre"];
-var preOpps = ["ten", "coc", "ice", "mak", "fat", "bel", "rol", "bel", "mik", "por", "ten", "mik", "rol", "ice"];
-var belOpps = ["rol", "mik", "mik", "coc", "mak", "pre", "ice", "pre", "por", "fat", "coc", "ice", "ten", "rol"];
-var rolOpps = ["bel", "ice", "ten", "mik", "coc", "por", "pre", "mak", "fat", "mak", "ice", "ten", "pre", "bel"];
-var tenOpps = ["pre", "bel", "rol", "por", "mik", "ice", "fat", "ice", "mak", "coc", "pre", "rol", "bel", "fat"];
+var iceOpps = ["fum", "rol", "pre", "fat", "por", "ten", "bel", "ten", "coc", "mik", "rol", "bel", "por", "pre"];
+var preOpps = ["ten", "coc", "ice", "fum", "fat", "bel", "rol", "bel", "mik", "por", "ten", "mik", "rol", "ice"];
+var belOpps = ["rol", "mik", "mik", "coc", "fum", "pre", "ice", "pre", "por", "fat", "coc", "ice", "ten", "rol"];
+var rolOpps = ["bel", "ice", "ten", "mik", "coc", "por", "pre", "fum", "fat", "fum", "ice", "ten", "pre", "bel"];
+var tenOpps = ["pre", "bel", "rol", "por", "mik", "ice", "fat", "ice", "fum", "coc", "pre", "rol", "bel", "fat"];
 
 
 class PflTeam {
@@ -51,9 +51,9 @@ class PflTeam {
 
 let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 1, fatOpps);           fatTeam.setScores(fatScores);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);               porTeam.setScores(porScores);
-let mikTeam = new PflTeam("Ten Yard Fight", "Michael", "mik", 1, mikOpps);           mikTeam.setScores(mikScores);
+let mikTeam = new PflTeam("Ten Yard Fight", "Michael", "mik", 1, mikOpps);       mikTeam.setScores(mikScores);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores);
-let makTeam = new PflTeam("The Fu Minshews", "Matt", "mak", 1, makOpps);      makTeam.setScores(makScores);
+let fumTeam = new PflTeam("The Fu Minshew", "Matt", "fum", 1, fumOpps);          fumTeam.setScores(fumScores);
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores);
 let preTeam = new PflTeam("Predators", "Joe", "pre", 2, preOpps);                preTeam.setScores(preScores);
@@ -66,7 +66,7 @@ var pflTeams =  [
    porTeam,
    mikTeam,
    cocTeam,
-   makTeam,
+   fumTeam,
 
    iceTeam,
    preTeam,
