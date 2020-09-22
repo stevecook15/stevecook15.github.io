@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25 ];
-var porScores = [ 148.60 ];
-var mikScores = [ 119.60 ];
-var cocScores = [ 101.65 ];
-var fumScores = [ 107.90 ];
+var fatScores = [ 170.25, 160.40 ];
+var porScores = [ 148.60, 141.80 ];
+var tyfScores = [ 119.60, 177.10 ];
+var cocScores = [ 101.65, 146.60 ];
+var fumScores = [ 107.90, 139.30 ];
 //Fu Minshews
 
-var iceScores = [ 118.60 ];
-var preScores = [ 139.25 ];
-var belScores = [ 159.45 ];
-var rolScores = [ 139.90 ];
-var tenScores = [ 139.80 ];
+var iceScores = [ 118.60, 136.35 ];
+var preScores = [ 139.25, 130.90 ];
+var belScores = [ 159.45, 105.30 ];
+var rolScores = [ 139.90, 125.00 ];
+var tenScores = [ 139.80, 133.25 ];
 
 
 // 0 - not in playoffs yet
@@ -66,7 +66,15 @@ var week1_txt = "D+ my derriere!!!! Take that Yahoo!  So, despite having the wor
                 "Oh, yeah, in other news... the Ten Yarders didn't put up much of a fight versus the other white meat, " +
                 "and the Tide got rolled by last years champ like some discount speed bump. Tide musta been going out.";
 
-var week2_txt = "";
+var week2_txt = "In another demonstration of sometimes it's just bad timing, the Phat would be 17-1 against the whole league after two " +
+                "weeks yet are only 1-1 in the real world. Well, at least none of their players got seriously hurt. What a weekend for that! In " +
+                "other news Mikes renaming his team to 20 Yard Stroll after posting the league high score for the year so far.<br><br>" + 
+                "On the opposite ends of the luck spectrum are the Ice, 2-0 despite averaging just 127 points a week and the Predators are " +
+                "0-2 despite averaging 135 pts a week(opp avg = 143).  While we're on the subject, the Porks get a Brees to Kamara completion " +
+                "on the final meaningless play of the game to overtake the Few Minshews.<br><br>" +
+                "Finally, the Bellies discount lineup posted the low score of the year, allowing the Anus to luck their way into being one " +
+                "of the only three remaining undefeated teams despite having the third lowest score of the week, in a deju vu of the Ices win " +
+                "from week 1! If you're gonna suck try to be the third suckiest apparently - it's 2-0 so far.";
 
 var week3_txt = "";
 

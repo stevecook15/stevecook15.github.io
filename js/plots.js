@@ -1,9 +1,9 @@
 class Plots
 {
    // Reads scores from scores.js
-   PLOT_MIN_VALUE = 70.0;
+   PLOT_MIN_VALUE = 90.0;
    PLOT_MAX_VALUE = 190.0;
-   PLOT_NUM_TICS = 12;
+   PLOT_NUM_TICS = 10;
 
    constructor()
    {
@@ -187,7 +187,7 @@ class Plots
       chart.setXLabels(plabels);
 
       //chart.setAutoScale(true);
-      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setNumTics(8); //this.PLOT_NUM_TICS);
       chart.setYMax(170.0); //this.PLOT_MAX_VALUE);
       chart.setYMin(this.PLOT_MIN_VALUE);
 
