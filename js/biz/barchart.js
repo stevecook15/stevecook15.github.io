@@ -1306,65 +1306,64 @@ calcMaxBars()
 }
 
 
-/*
- * Find out the min and max values in all the sets of bars
- * @ignore
- */
-setPlotScale()
-{
-   var barData = new Array();
-   var max_value = -99999999.0;
-   var min_value = +99999999.0;
-
-   if ( this.plotType == this.STACKED )  // Need to sum each X value
+   /*
+    * Find out the min and max values in all the sets of bars
+    * @ignore
+    */
+   setPlotScale()
    {
-      var maxBars = this.calcMaxBars();
-      var tmpData = new Array(maxBars);
-      for ( var indx=0; indx<maxBars; indx++ )
-         tmpData[indx] = 0;
+      var barData = new Array();
+      var max_value = -99999999.0;
+      var min_value = +99999999.0;
 
-      for ( var indx=0; indx<this.plotData.length; indx++ )
+      if ( this.plotType == this.STACKED )  // Need to sum each X value
       {
-         barData = this.plotData[indx];
-         for ( var jndx=0; jndx<barData.length; jndx++ )
+         var maxBars = this.calcMaxBars();
+         var tmpData = new Array(maxBars);
+         for ( var indx=0; indx<maxBars; indx++ )
+            tmpData[indx] = 0;
+
+         for ( var indx=0; indx<this.plotData.length; indx++ )
          {
-            tmpData[jndx] += barData[jndx];
+            barData = this.plotData[indx];
+            for ( var jndx=0; jndx<barData.length; jndx++ )
+            {
+               tmpData[jndx] += barData[jndx];
+            }
+         }
+
+         // Now calculate against summed bars...
+         for ( var indx=0; indx<maxBars; indx++ )
+         {
+            if ( tmpData[indx] > max_value )
+               max_value = tmpData[indx];
+         }
+      }
+      else   // Just find min/max value within data set
+      {
+         for ( var indx=0; indx<this.plotData.length; indx++ )
+         {
+            barData = this.plotData[indx];
+            for ( var jndx=0; jndx<barData.length; jndx++ )
+            {
+               if ( barData[jndx] > max_value )
+                  max_value = barData[jndx];
+            }
          }
       }
 
-      // Now calculate against summed bars...
-      for ( var indx=0; indx<maxBars; indx++ )
-      {
-         if ( tmpData[indx] > max_value )
-            max_value = tmpData[indx];
-      }
+      //ZZZ What about supporting negative values?
+      min_value = 0;
+
+      // Needed? Rounds axes in the 0.0 to 1.0 to 1.0
+      // Could check orders of magnitude...  0.001 or 1000
+
+      if ( max_value > 0.0 && max_value < 1.0 )
+         max_value = 1.0;
+      if ( min_value < 1.0 && min_value > 0.0 )
+         min_value = 0.0;
+
+      this.plotYMin = min_value;
+      this.plotYMax = max_value;
    }
-   else   // Just find min/max value within data set
-   {
-      for ( var indx=0; indx<this.plotData.length; indx++ )
-      {
-         barData = this.plotData[indx];
-         for ( var jndx=0; jndx<barData.length; jndx++ )
-         {
-            if ( barData[jndx] > max_value )
-               max_value = barData[jndx];
-         }
-      }
-   }
-
-//ZZZ What about supporting negative values?
-   min_value = 0;
-
-// Needed? Rounds axes in the 0.0 to 1.0 to 1.0
-// Could check orders of magnitude...  0.001 or 1000
-
-   if ( max_value > 0.0 && max_value < 1.0 )
-      max_value = 1.0;
-   if ( min_value < 1.0 && min_value > 0.0 )
-      min_value = 0.0;
-
-   this.plotYMin = min_value;
-   this.plotYMax = max_value;
-}
-
 }

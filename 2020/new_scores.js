@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40 ];
-var porScores = [ 148.60, 141.80 ];
-var tyfScores = [ 119.60, 177.10 ];
-var cocScores = [ 101.65, 146.60 ];
-var fumScores = [ 107.90, 139.30 ];
+var fatScores = [ 170.25, 160.40, 119.25 ];
+var porScores = [ 148.60, 141.80, 177.10 ];
+var tyfScores = [ 119.60, 177.10, 153.50 ];
+var cocScores = [ 101.65, 146.60, 144.95 ];
+var fumScores = [ 107.90, 139.30, 110.00 ];
 //Fu Minshews
 
-var iceScores = [ 118.60, 136.35 ];
-var preScores = [ 139.25, 130.90 ];
-var belScores = [ 159.45, 105.30 ];
-var rolScores = [ 139.90, 125.00 ];
-var tenScores = [ 139.80, 133.25 ];
+var iceScores = [ 118.60, 136.35, 108.00 ];
+var preScores = [ 139.25, 130.90, 162.05 ];
+var belScores = [ 159.45, 105.30, 107.05 ];
+var rolScores = [ 139.90, 125.00, 168.05 ];
+var tenScores = [ 139.80, 133.25, 154.75 ];
 
 
 // 0 - not in playoffs yet
@@ -76,7 +76,16 @@ var week2_txt = "In another demonstration of sometimes it's just bad timing, the
                 "of the only three remaining undefeated teams despite having the third lowest score of the week, in a deju vu of the Ices win " +
                 "from week 1! If you're gonna suck try to be the third suckiest apparently - it's 2-0 so far.";
 
-var week3_txt = "";
+var week3_txt = "Higher scoring this week, with five teams over 150 pts! Sadly, not all five of them won. :-( " +
+                "Well, just one of them actually as the Anus got to feel that oh so special anguish when they were " +
+                "rolled over by the Tide.  Three weeks in we're down to one un-defeated team and one is-defeated team, " +
+                "but the season is early!<br><br>Seems like maybe the Yahoo was right in saying the Phat lineup was " +
+                "pretty thin and would go 1-13 - they're on their way after the winds blew away all the smoke and " +
+                "mirrors and they are who we thought they were (obscure reference for the younger crowd). Guess it " +
+                "didn't help the Chops porked their way to a new season league high and took over the points lead " +
+                "<br><br>Then again, looking at the trend lines, the Belly's seem to be doing a Mini-Me impression of " +
+                "the Phat, so maybe theres hope one of them can get a second win before their trends hit zero or they " +
+                "play each other!"
 
 var week4_txt = "";
 
