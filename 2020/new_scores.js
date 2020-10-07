@@ -6,18 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25 ];
-var porScores = [ 148.60, 141.80, 177.10 ];
-var tyfScores = [ 119.60, 177.10, 153.50 ];
-var cocScores = [ 101.65, 146.60, 144.95 ];
-var fumScores = [ 107.90, 139.30, 110.00 ];
-//Fu Minshews
+var fatScores = [ 170.25, 160.40, 119.25, 94.10 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50 ];  //Fu Minshews
 
-var iceScores = [ 118.60, 136.35, 108.00 ];
-var preScores = [ 139.25, 130.90, 162.05 ];
-var belScores = [ 159.45, 105.30, 107.05 ];
-var rolScores = [ 139.90, 125.00, 168.05 ];
-var tenScores = [ 139.80, 133.25, 154.75 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90 ];
 
 
 // 0 - not in playoffs yet
@@ -26,7 +25,7 @@ var tenScores = [ 139.80, 133.25, 154.75 ];
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs = [
-        0,  //fatbastards
+        4,  //fatbastards
         0,  //porkchops
         0,  //tenydfight (mike)
         0,  //cocobrown
@@ -87,7 +86,14 @@ var week3_txt = "Higher scoring this week, with five teams over 150 pts! Sadly, 
                 "the Phat, so maybe theres hope one of them can get a second win before their trends hit zero or they " +
                 "play each other!"
 
-var week4_txt = "";
+var week4_txt = "And in breaking news, the Phat were eliminated from the playoffs.  Ok, ok, technically they're not eliminated but " +
+                "they're so stinky Yahoo invoked the mercy rule, removing any pressure on them to exceed Yahoos 1-13 prediction. But " +
+                "what about us the Pred-Fu-Belly alliance cries? Have you seen the scoring trend plot, the Flat respond? By week 7,  " +
+                "Flat will be scoring 0 pts - can they go negative in week 8?<br><br>In the " +
+                "feated world the undef Chops went down (the Flat you can understand but Pork scoring less than 100? huh?) " +
+                "and the def Minshews got off the floor with the 2nd highest score of the week, leaving the standings all looking " +
+                "very symmetrical! But keep an eye on Coco Puffs - they're starting to discount all their opponents. " +
+                "<br><br>Last question: how in the name of hades is Intensive Care 3-1?  They been iceing their opponents?";
 
 var week5_txt = "";
 
