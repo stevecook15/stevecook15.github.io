@@ -1,9 +1,9 @@
 class Plots
 {
    // Reads scores from scores.js
-   PLOT_MIN_VALUE = 90.0;
-   PLOT_MAX_VALUE = 190.0;
-   PLOT_NUM_TICS = 10;
+   PLOT_MIN_VALUE = 75.0;
+   PLOT_MAX_VALUE = 185.0;
+   PLOT_NUM_TICS = 11;
 
    constructor()
    {

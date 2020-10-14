@@ -6,17 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50 ];  //Fu Minshews
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50 ];
+  //Fu Minshews
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55 ];
 
 
 // 0 - not in playoffs yet
@@ -95,7 +96,18 @@ var week4_txt = "And in breaking news, the Phat were eliminated from the playoff
                 "very symmetrical! But keep an eye on Coco Puffs - they're starting to discount all their opponents. " +
                 "<br><br>Last question: how in the name of hades is Intensive Care 3-1?  They been iceing their opponents?";
 
-var week5_txt = "";
+var week5_txt = "The good news for Intensive Don't Care is that there have been five lower scores over the last ten " +
+                "years, but those probably occured before the invention of the forward pass. As expected, the ice " +
+                "melted underneath them but winters coming so they've still got hope. <br><br>" +
+                "The Pork continues to be tasty as they're now the only one loss team left (despite four other " +
+                "teams with more total points - life is good). The Fight, Coco's and Tide certainly are waiting " +
+                "for the cream rise to the top. Meanwhile in the shallow end of the fantasy pool, half the teams " +
+                "(ie 2) poked their heads up and pulled out a win. Course, given that all four 1-3 teams were " +
+                "facing each other, we can understand how that happened!<br><br>" +
+                "Amazingly the Phat were the other team that moved up from the bottom, they're now 2-0 when " +
+                "having the high score for the week and 0-3 otherwise. Tough to win consistently that way. " +
+                "They've now doubled their predicted win total for the year so pressures off and it's all " +
+                "gravy from here on out..."
 
 var week6_txt = "";
 
