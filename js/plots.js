@@ -187,8 +187,8 @@ class Plots
       chart.setXLabels(plabels);
 
       //chart.setAutoScale(true);
-      chart.setNumTics(8); //this.PLOT_NUM_TICS);
-      chart.setYMax(170.0); //this.PLOT_MAX_VALUE);
+      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setYMax(175.0); //this.PLOT_MAX_VALUE);
       chart.setYMin(this.PLOT_MIN_VALUE);
 
       chart.setThreeD(true);

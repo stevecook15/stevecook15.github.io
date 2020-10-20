@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65 ];
   //Fu Minshews
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60 ];
 
 
 // 0 - not in playoffs yet
@@ -109,7 +109,13 @@ var week5_txt = "The good news for Intensive Don't Care is that there have been 
                 "They've now doubled their predicted win total for the year so pressures off and it's all " +
                 "gravy from here on out..."
 
-var week6_txt = "";
+var week6_txt = "Ah, I love symmetry. One 1 loss team, one 1 win team, two 2 win teams, two 2 loss teams. Four " +
+                "all evened up in the middle... Low scoring week as half the teams fail to score 110 pts and " +
+                "also the lowest high score for a week of the year. This weeks high score would have only the " + 
+                "4th highest score of the week (or worse) any other week this year - the Chops are loving it of " +
+                "course, continuing to pile up wins while impressing no one... a charmed team? Wait and see, " +
+                "wait and see...<br><br>Don't look now but if the playoffs started today (too early for that?) " +
+                "the 3-3 Phat (1-3 two weeks ago, they're butter) would be in! Love that garbage time Drake TD!"
 
 var week7_txt = "";
 
