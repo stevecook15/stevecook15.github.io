@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85 ];
   //Fu Minshews
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15 ];
 
 
 // 0 - not in playoffs yet
@@ -117,7 +117,11 @@ var week6_txt = "Ah, I love symmetry. One 1 loss team, one 1 win team, two 2 win
                 "wait and see...<br><br>Don't look now but if the playoffs started today (too early for that?) " +
                 "the 3-3 Phat (1-3 two weeks ago, they're butter) would be in! Love that garbage time Drake TD!"
 
-var week7_txt = "";
+var week7_txt = "In further proof that you shouldn't grab the tail of a carnivore, the Preds treated the Tide " +
+                "like three-legged geriatric gazelles in piling their high score of the year and the high score " +
+                "for the week.  But the other white meat showed even the Pred how its done, blowing out the Coco " +
+                "Puffs by 69 points! Mark them down for a playoff spot today.  Kinda like early voting! Kinda dull " +
+                "week though, with no games closer than 12 points.";
 
 var week8_txt = "";
 
