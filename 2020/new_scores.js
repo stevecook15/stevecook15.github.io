@@ -125,9 +125,9 @@ var week7_txt = "In further proof that you shouldn't grab the tail of a carnivor
 
 var week8_txt = "You know its a charmed year when you can score under a 100 points and still win by double digits! " +
                 "The Pork, not needing any breaks, laid an egg and still ended up with a full meal deal, omlet, bacon and " +
-                "all. On the less lucky side, despite the Coco's not even filling the roster, they eek out a narrow " +
-                "victory when the Phat inexplicably decide to play a TE that doesn't even make it on the field despite " +
-                "being healthy and having led their team in receptions the previous week.<br><br>" +
+                "all. On the less lucky side the Phat, despite the Coco's not even filling their roster, suffer a narrow " +
+                "loss when they inexplicably decide to play a TE that doesn't even make it on the field, much less catch " +
+                " a pass despite being healthy and having led their team in receptions the previous week.<br><br>" +
                 "We're now over halfway through the fantasy and half of us are looking up at 0.500 - but on the cheerier " +
                 "side if you're 3-5 you're still only one game out of a playoff spot.  Not sure what that says about " +
                 "the league but allows all but one of us to continue to have some misplaced hope!<br><br> " +
