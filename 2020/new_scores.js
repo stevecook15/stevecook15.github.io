@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40 ];
   //Fu Minshews, WA Fantasy Team
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15 ];
 
 
 // 0 - not in playoffs yet
@@ -135,7 +135,16 @@ var week8_txt = "You know its a charmed year when you can score under a 100 poin
                 "Must be nice to know your team is going to be competitive each week and not score 70 pts. They might be " +
                 "team to beat if the Chops ever lose their lucky shamrock.";
 
-var week9_txt = "";
+var week9_txt = "Well, half the 3-5 teams managed a win, including the Bellys taking down the top chops despite only " +
+                "scoring a 107 pts, so they're still in it. " +
+                "The other two, in a must win week, lost any realistic shot at the playoffs, joining the Waah Waah team " +
+                "in waiting for next year, probably needed to win out to have any hope of making it. That ain't happening! " +
+                "The hapless Bastards, who would lead the league if we played against every team each week, have lost the "+
+                "last two weeks by a combined total of 5 (count em 5) points, and the " +
+                "Ice are fielding a team consisting of backups from NW Texas State Junior Varsity water boys. Sigh. " +
+                "<br><br>And in news from the winning side of the standings, with the Pork getting ground up the last " +
+                "couple of weeks, seems like the Orifices might be the best team going forward. Now lead in points and tied " +
+                "for the best record!"
 
 var week10_txt = "";
 
