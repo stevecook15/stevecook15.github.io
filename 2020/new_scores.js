@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85 ];
   //Fu Minshews, WA Fantasy Team
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70 ];
 
 
 // 0 - not in playoffs yet
@@ -146,7 +146,16 @@ var week9_txt = "Well, half the 3-5 teams managed a win, including the Bellys ta
                 "couple of weeks, seems like the Orifices might be the best team going forward. Now lead in points and tied " +
                 "for the best record!"
 
-var week10_txt = "";
+var week10_txt = "Very low scoring week, with only two teams breaking 130 pts. Why even the Team That Must Not Be Named " +
+                 "managed their third win of the year despite only scoring 93 points (actually a banner day for them!). " +
+                 "The Ice are going, wait a minute I scored more than that... alas its not to be as their lost season " +
+                 "continues. They're both probably feeling better than the Tide, as the tide rolled all the way out to " +
+                 "the low score for the week!<br><br>" +
+                 "At the top of the league, the Pork chopped their opponent down by posting the high " +
+                 "score for the week, while the Anus push out a turd with their low score of the year but still win by " +
+                 "20! How many teams can say that?! One more win apiece will lock up a playoff spot for them so looks like " +
+                 "they're sitting pretty.<br><br>And then there's the rest of us just muddling along in the middle " +
+                 "hoping to stay alive another week, even the Ice and WA.";
 
 var week11_txt = "";
 

@@ -53,7 +53,7 @@ let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 1, fatOpps);          
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);               porTeam.setScores(porScores);
 let tyfTeam = new PflTeam("Ten Yard Fight", "Michael", "tyf", 1, tyfOpps);       tyfTeam.setScores(tyfScores);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores);
-let fumTeam = new PflTeam("The Fu Minshew", "Matt", "fum", 1, fumOpps);          fumTeam.setScores(fumScores);
+let fumTeam = new PflTeam("WA Fantasy Team", "Matt", "fum", 1, fumOpps);          fumTeam.setScores(fumScores);
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores);
 let preTeam = new PflTeam("Predators", "Joe", "pre", 2, preOpps);                preTeam.setScores(preScores);
