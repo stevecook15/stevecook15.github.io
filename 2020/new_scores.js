@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95, 145.00 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70, 117.15 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25, 123.35 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65, 129.70 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85, 149.30 ];
   //Fu Minshews, WA Fantasy Team
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50, 89.10 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30, 135.35 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25, 113.30 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10, 150.25 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70, 128.60 ];
 
 
 // 0 - not in playoffs yet
@@ -157,7 +157,17 @@ var week10_txt = "Very low scoring week, with only two teams breaking 130 pts. W
                  "they're sitting pretty.<br><br>And then there's the rest of us just muddling along in the middle " +
                  "hoping to stay alive another week, even the Ice and WA.";
 
-var week11_txt = "";
+var week11_txt = "Interesting.  The top 3 teams all lose and there is absolutely no change in the standings. All " +
+                 "ten teams are in the same exact place they were in a week ago. Not that the Pork and Anus " +
+                 "are too worried at this point with 2 game division leads with 3 to go. Pencil them in...<br><br>" +
+                 "However, in the forgone conclusion department the Ice are virtually frozen out unless they " +
+                 "win out, score 300 pts each week and have a number of other miracles occur. Hard to remember they " +
+                 "were 3-1 at one time. Some one woke up the WA WAs this week so they didn't join the Ice. " +
+                 "They've even got a chance next week to move above the Discounts who performed another perfect " +
+                 "Belly flop this week! But it's a really big hill to climb for all three.<br><br>And in the " +
+                 "middle (or is that muddle) are five teams needing a strong finish to lock up one of the two " +
+                 "remaining playoff spots. Total points is probably going to come in play at the end so they'll " +
+                 "need to run up some scores in the next 3 weeks! Coco and the Tide especally need some points!"
 
 var week12_txt = "";
 
