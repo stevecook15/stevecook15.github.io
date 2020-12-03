@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95, 145.00 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70, 117.15 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25, 123.35 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65, 129.70 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85, 149.30 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95, 145.00, 147.40 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70, 117.15, 98.35 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25, 123.35, 114.60 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65, 129.70, 154.80 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85, 149.30, 107.20 ];
   //Fu Minshews, WA Fantasy Team
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50, 89.10 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30, 135.35 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25, 113.30 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10, 150.25 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70, 128.60 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50, 89.10, 96.75 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30, 135.35, 117.30 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25, 113.30, 167.55 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10, 150.25, 192.80 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70, 128.60, 170.15 ];
 
 
 // 0 - not in playoffs yet
@@ -30,9 +30,9 @@ var playoffs = [
         0,  //porkchops
         0,  //tenydfight (mike)
         0,  //cocobrown
-        0,  //fu minshus
+        4,  //fu minshus
 
-        0,  //iceotopes
+        4,  //iceotopes
         0,  //predators
         0,  //belicheck
         0,  //rolltide
@@ -169,7 +169,15 @@ var week11_txt = "Interesting.  The top 3 teams all lose and there is absolutely
                  "remaining playoff spots. Total points is probably going to come in play at the end so they'll " +
                  "need to run up some scores in the next 3 weeks! Coco and the Tide especally need some points!"
 
-var week12_txt = "";
+var week12_txt = "The two division leaders gotta be feeling a little more nervous don't they? Their division leads " +
+                 "are down to one and the teams right behind them (the Brown Tide???) both won big this week. Course " +
+                 "the Anus did still score 170 pts in their loss... not so much the Chops!<br><br>While no ones locked " +
+                 "up a playoff spot, we did have the first two teams eliminated, probably a surprise to none. The " +
+                 "Ice lost any chance weeks and weeks ago when all of their players worth having decided to get injured " +
+                 "and the WA Fans just weren't any good. It's probably over for the Bellies too but there may be some " +
+                 "strange set of outcomes that would allow them to sneak in...   Nah, ain't gonna happen!<br><br>That's " +
+                 "because there are five teams within one game battling it out for the last two spots, can't see any way " +
+                 "two of them don't take up the final spots. But we probably won't know for sure till the final weeks over!"
 
 var week13_txt = "";
 
