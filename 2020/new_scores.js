@@ -6,18 +6,18 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95, 145.00, 147.40, 137.85 ];
-var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70, 117.15, 98.35, 99.85 ];
-var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25, 123.35, 114.60, 143.95 ];
-var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65, 129.70, 154.80, 163.80 ];
-var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85, 149.30, 107.20, 80.25 ];
+var fatScores = [ 170.25, 160.40, 119.25, 94.10, 155.05, 144.15, 120.65, 132.55, 115.55, 130.95, 145.00, 147.40, 137.85, 123.90 ];
+var porScores = [ 148.60, 141.80, 177.10, 96.30, 142.15, 152.45, 164.90, 99.05, 103.00, 140.70, 117.15, 98.35, 99.85, 132.05 ];
+var tyfScores = [ 119.60, 177.10, 153.50, 140.75, 145.50, 136.40, 131.50,88.40, 136.15, 123.25, 123.35, 114.60, 143.95, 114.40 ];
+var cocScores = [ 101.65, 146.60, 144.95, 181.25, 148.20, 107.25, 95.90, 135.00, 130.50, 98.65, 129.70, 154.80, 163.80, 172.95 ];
+var fumScores = [ 107.90, 139.30, 110.00, 167.50, 118.50, 93.65, 117.85, 110.70, 96.40, 93.85, 149.30, 107.20, 80.25, 78.45 ];
   //Fu Minshews, WA Fantasy Team
 
-var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50, 89.10, 96.75, 89.25 ];
-var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30, 135.35, 117.30, 144.05 ];
-var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25, 113.30, 167.55, 75.95 ];
-var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10, 150.25, 192.80, 129.15 ];
-var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70, 128.60, 170.15, 159.95 ];
+var iceScores = [ 118.60, 136.35, 108.00, 151.75, 79.90, 108.65, 127.00, 89.40, 89.30, 94.50, 89.10, 96.75, 89.25, 111.90 ];
+var preScores = [ 139.25, 130.90, 162.05, 135.00, 111.85, 90.80, 165.30, 122.95, 145.90, 99.30, 135.35, 117.30, 144.05, 117.65 ];
+var belScores = [ 159.45, 105.30, 107.05, 146.30, 114.55, 143.65, 139.10, 119.10, 107.70, 109.25, 113.30, 167.55, 75.95, 164.45 ];
+var rolScores = [ 139.90, 125.00, 168.05, 156.30, 152.75, 84.90, 111.10, 152.95, 118.10, 84.10, 150.25, 192.80, 129.15, 151.80 ];
+var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90, 150.15, 119.70, 128.60, 170.15, 159.95, 140.80 ];
 
 
 // 0 - not in playoffs yet
@@ -26,15 +26,15 @@ var tenScores = [ 139.80, 133.25, 154.75, 142.90, 136.55, 134.60, 136.15, 134.90
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 var playoffs = [
+        2,  //cocobrown
         1,  //porkchops
-        0,  //cocobrown
-        0,  //fatbastards
-        0,  //tenydfight (mike)
+        4,  //fatbastards
+        4,  //tenydfight (mike)
         4,  //fu minshus
 
         2,  //tenanus
-        0,  //predators
-        0,  //rolltide
+        1,  //predators
+        4,  //rolltide
         4,  //belicheck
         4   //iceotopes
      ];
@@ -186,5 +186,12 @@ var week13_txt = "Finally we have some clinched playoff spots! The Anus win thei
                  "contender's (the No Chance) bad luck contnues and play the number one team in the league so looks like " +
                  " an uphill battle, but not a bad season for a team projected to go 1-13, all in all...";
 
-var week14_txt = "";
+var week14_txt = "And its all over folks. At least the regular season is, so six of us can go back to watching  Green Acres " +
+                 "re-runs (old guy reference). Congrats to those advancing to the playoffs, may we never speak of it " +
+                 "again. But was a big change. For the first time since the second week of the season the Chops aren't " +
+                 "leading their division (how's that for bad timing?) though they still made the playoffs. The Anus " +
+                 "remaised the top seed but have to be just a little worried about the Coconuts, who are currently the " +
+                 "hottest team around. Then there's the Preds, who are probably just happy to collecting a playoff check, " +
+                 "leaving the three 7-7 teams (who all scored more points than the Preds, and the Chops for that matter, " +
+                 "did this season) wondering how they missed out? ";
 
