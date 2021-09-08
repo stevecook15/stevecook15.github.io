@@ -37,7 +37,13 @@ BizScaleAxes.prototype.calculate = function(dataMin, dataMax, numIntervals)
 
    if ( dataMin >= dataMax )
       return;
-
+      
+   if ((datamax - datamin) < 2 )
+   {
+      datamax = datamax + 1;
+      numIntervals = 2;
+   }
+    
    if ( numIntervals < 2 )
       numIntervals = 2;
 
@@ -48,10 +54,16 @@ BizScaleAxes.prototype.calculate = function(dataMin, dataMax, numIntervals)
    this.plot_index = 0;
 
    // Calculate the smallest nice number not smaller then IntervalSize
-   for ( NiceNum = this.firstNiceNum(IntervalSize);
-           NiceNum < IntervalSize; NiceNum = this.nextNiceNum() )
-      ;
-
+   //for ( NiceNum = this.firstNiceNum(IntervalSize);
+   //        NiceNum < IntervalSize; NiceNum = this.nextNiceNum() )
+   //   ;
+   
+   niceNum = firstNiceNum(IntervalSize)
+   while (niceNum < IntervalSize)
+   {
+      niceNum = nextNiceNum();
+   }
+    
    // Produce the scale using the specified nice number
    var lo_mult = this.calcLowMult(dataMin, dataMax, NiceNum);
    var hi_mult = this.calcHighMult(dataMin, dataMax, NiceNum);
