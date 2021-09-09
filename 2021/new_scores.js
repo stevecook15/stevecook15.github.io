@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 0.0 ];  // Predators
-var belScores = [ 0.0 ];  // Discount Belicheck
-var tenScores = [ 0.0 ];  // Tenacious Anus
-var cocScores = [ 0.0 ];  // Coco Browns
-var seaScores = [ 0.0 ];  // Seamen
+var preScores = [ ];  // Predators
+var belScores = [ ];  // Discount Belicheck
+var tenScores = [ ];  // Tenacious Anus
+var cocScores = [ ];  // Coco Browns
+var seaScores = [ ];  // Seamen
 
-var iceScores = [ 0.0 ];  // Iceotopes
-var fatScores = [ 0.0 ];  // Phat Bastards
-var porScores = [ 0.0 ];  // Porkchops
-var rolScores = [ 0.0 ];  // Roll Tide
-var pepScores = [ 0.0 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ ];  // Iceotopes
+var fatScores = [ ];  // Phat Bastards
+var porScores = [ ];  // Porkchops
+var rolScores = [ ];  // Roll Tide
+var pepScores = [ ];  // Fuller go eazy on the Pepsi
 
 
 // 0 - not in playoffs yet
@@ -45,7 +45,11 @@ var week0_txt = "Welcome to the 2021 Phantom League.  Another year of hope dashe
                 "rankings in which case the Phat will just mail the check in and go back to watching I" +
                 "Love Lucy re-runs.";
 
-var week1_txt = "";
+var week1_txt = "Welcome to the 2021 Phantom League.  Another year of hope dashed by the realization" +
+                "that at least half of us drafted a shitty team... and half have a hope of making the" +
+                "playoffs!  But which one is your team?  Only time will tell, unless you believe Yahoos" +
+                "rankings in which case the Phat will just mail the check in and go back to watching I" +
+                "Love Lucy re-runs.";
 
 var week2_txt = "";
 
