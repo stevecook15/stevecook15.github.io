@@ -45,11 +45,11 @@ var week0_txt = "Welcome to the 2021 Phantom League.  Another year of hope dashe
                 "rankings in which case the Phat will just mail the check in and go back to watching I" +
                 "Love Lucy re-runs.";
 
-var week1_txt = "Welcome to the 2021 Phantom League.  Another year of hope dashed by the realization" +
-                "that at least half of us drafted a shitty team... and half have a hope of making the" +
-                "playoffs!  But which one is your team?  Only time will tell, unless you believe Yahoos" +
-                "rankings in which case the Phat will just mail the check in and go back to watching I" +
-                "Love Lucy re-runs.";
+var week1_txt = "Welcome to the 2021 Phantom League.  Another year of hope about to be dashed for many of " +
+                "by the realization that we drafted a shitty team... or maybe your wildest dreams will be " +
+                "fulflled and you'll make the playoffs!  But which one is your team?  Only time will tell, " +
+                "unless you believe in Yahoos draft rankings in which case it seems the Phat should just " +
+                "mail the check in and go back to watching I Love Lucy re-runs.";
 
 var week2_txt = "";
 
