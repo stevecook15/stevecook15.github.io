@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ ];  // Predators
-var belScores = [ ];  // Discount Belicheck
-var tenScores = [ ];  // Tenacious Anus
-var cocScores = [ ];  // Coco Browns
-var seaScores = [ ];  // Seamen
+var preScores = [ 133.45 ];  // Predators
+var belScores = [ 113.45 ];  // Discount Belicheck
+var tenScores = [ 150.20 ];  // Tenacious Anus
+var cocScores = [ 143.60 ];  // Coco Browns
+var seaScores = [ 172.20 ];  // Seamen
 
-var iceScores = [ ];  // Iceotopes
-var fatScores = [ ];  // Phat Bastards
-var porScores = [ ];  // Porkchops
-var rolScores = [ ];  // Roll Tide
-var pepScores = [ ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55 ];  // Iceotopes
+var fatScores = [ 84.80 ];  // Phat Bastards
+var porScores = [ 158.25 ];  // Porkchops
+var rolScores = [ 126.55 ];  // Roll Tide
+var pepScores = [ 119.10 ];  // Fuller go eazy on the Pepsi
 
 
 // 0 - not in playoffs yet
@@ -49,7 +49,14 @@ var week1_txt = "Welcome to the 2021 Phantom League.  Another year of PFL. Maybe
                 "will be fulflled and you'll make the playoffs and win the league! Or will that hope be " +
                 "cruelly dashed by the realization that you drafted a shitty team... ? Which one is your " +
                 "team?  Only time will tell, unless you believe in Yahoos draft rankings in which case it " +
-                "seems the Phat should just mail in the season and go back to watching I Love Lucy re-runs.";
+                "seems the Phat (who have mastered the art of bad drafting) should just mail in the season " +
+                "and go back to watching I Love Lucy re-runs after this weeks effort.<br>" +
+                "The Fuller wasn't very full but they didn't have to be as they could have benched both their " +
+                "RBs and their TE and still beat the Phlat despite already having the 3rd worst score of the " +
+                "week. The Ice, Tide, Belis could only watch and wonder why they weren't so lucky...<br>" +
+                "In the actually interesting side of the ledger the Preds and Browns had a nail biter going, " +
+                "separated by just a half point Monday night with 4 minutes to go before the Cocos pulled away " +
+                "with a win!";
 
 var week2_txt = "";
 
