@@ -1,15 +1,15 @@
 
-var preOpps = ["coc", "ten", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var belOpps = ["ten", "sea", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var tenOpps = ["bel", "pre", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var cocOpps = ["pre", "fat", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var seaOpps = ["ice", "bel", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
+var preOpps = ["coc", "ten", "bel", "ice", "fat", "sea", "pep", "coc", "rol", "por", "ten", "bel", "sea", "pep"];
+var belOpps = ["ten", "sea", "pre", "pep", "ice", "rol", "coc", "ten", "por", "fat", "sea", "pre", "ice", "coc"];
+var tenOpps = ["bel", "pre", "por", "rol", "pep", "coc", "sea", "bel", "fat", "ice", "pre", "fat", "coc", "sea"];
+var cocOpps = ["pre", "fat", "sea", "por", "rol", "ten", "bel", "pre", "ice", "pep", "por", "sea", "ten", "bel"];
+var seaOpps = ["ice", "bel", "coc", "fat", "por", "pre", "ten", "rol", "pep", "rol", "bel", "coc", "pre", "ten"];
 
-var iceOpps = ["sea", "rol", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var fatOpps = ["pep", "coc", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var porOpps = ["rol", "pep", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var rolOpps = ["por", "ice", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
-var pepOpps = ["fat", "por", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx", "xxx"];
+var iceOpps = ["sea", "rol", "fat", "pre", "bel", "pep", "por", "pep", "coc", "ten", "rol", "por", "bel", "fat"];
+var fatOpps = ["pep", "coc", "ice", "sea", "pre", "por", "rol", "por", "ten", "bel", "pep", "ten", "rol", "ice"];
+var porOpps = ["rol", "pep", "ten", "coc", "sea", "fat", "ice", "fat", "bel", "pre", "coc", "ice", "pep", "rol"];
+var rolOpps = ["por", "ice", "pep", "ten", "coc", "bel", "fat", "sea", "pre", "sea", "ice", "pep", "fat", "por"];
+var pepOpps = ["fat", "por", "rol", "bel", "ten", "ice", "pre", "ice", "sea", "coc", "fat", "rol", "por", "pre"];
 
 
 class PflTeam {
@@ -286,22 +286,29 @@ function getWeeklyMatchUps(week)
       opps = team.getOpponents(); // Return opp list abbrvs
       opp = getTeamByAbrv(opps[week]);
 
-      if ( team.division == opp.division )
-         divWeek = "* ";
+      if ( opp == null )
+      {
+         console.log("Unable to get opp for week " + (week+1) + " for team " + team);
+      }
       else
-         divWeek = "";
+      {
+         if ( team.division == opp.division )
+            divWeek = "* ";
+         else
+            divWeek = "";
 
 //console.log("Checking " + team.name + " and " + opp.name);
-      if ( AddUnique(weekList, team.name) &&
-            AddUnique(weekList, opp.name) )
-      {
-         weekList.push(team.name);
-         weekScore.push(team.scores[week]);
-         weekDiv.push(divWeek);
+         if ( AddUnique(weekList, team.name) &&
+               AddUnique(weekList, opp.name) )
+         {
+            weekList.push(team.name);
+            weekScore.push(team.scores[week]);
+            weekDiv.push(divWeek);
 
-         weekList.push(opp.name);
-         weekScore.push(opp.scores[week]);
-         weekDiv.push(divWeek);
+            weekList.push(opp.name);
+            weekScore.push(opp.scores[week]);
+            weekDiv.push(divWeek);
+         }
       }
    }
 
