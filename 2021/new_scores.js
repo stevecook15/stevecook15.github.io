@@ -6,18 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15 ];  // Predators
-var belScores = [ 113.45, 90.85 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30 ];  // Seamen
+var preScores = [ 133.45, 115.15, 103.35 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30, 96.00 ];  // Seamen
 
-var iceScores = [ 131.55, 197.80 ];  // Iceotopes
-var fatScores = [ 84.80, 107.55 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40 ];  // Porkchops
-var rolScores = [ 126.55, 115.00 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25 ];  // Fuller go eazy on the Pepsi
-
+var iceScores = [ 131.55, 197.80, 116.30 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.0 ];  // Fuller go eazy on the Pepsi
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -59,7 +58,8 @@ var week1_txt = "Welcome to the 2021 Phantom League.  Another year of PFL. Maybe
                 "with a win!";
 
 var week2_txt = "In early returns, seems like the defending porksters are serious about repeating. Their " +
-                "opponent apparently went easy on the <b>Pepsi</b> who fizzled out, discovering what it's like to play a real team this week after " +
+                "opponent apparently went easy on the <b>Pepsi</b> who fizzled out, discovering what it's " +
+                "like to play a real team this week after " +
                 "last weeks bye against the <b>Phlat</b>.  In the way, way to early department, can the <b>Chops</b> " +
                 "go undefeated, after winning easily again to take the early lead in their division? But wait, " +
                 "who're those <b>Topes</b> characters running up the score on the <b>Tide</b> (wouldn't you love " +
@@ -81,7 +81,24 @@ var week2_txt = "In early returns, seems like the defending porksters are seriou
                 "any great shakes but they didn't have to be, happily gettting their turn to whack " +
                 "the Phlat and the automatic win that comes along with that!";
 
-var week3_txt = "";
+var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> The recently formed Moral Victory " +
+                "(MVFF) league announced it was closing it's doors after it's sole team (the <b>Fat Bastards</b>) " +
+                "unexpectedly won a game this week. Said it's owner: <i>'We were never " +
+                "ever expecting a victory this week, what with our opponent being the red hot " +
+                "<b>Iceotopes</b> who scored more points last week than we had all season combined. Needless to say we " +
+                "are stunned. Obviously there aren't any more moral victories to be had once you've actually won a " +
+                "real victory, so we had to leave the MVFF.</i> The Topes couldn't be reached for comment as they " +
+                "were apparently still frozen solid in the meat locker." +
+                "<br><br>In related news, the other two PFL teams that had applied to join the MMVF were denied " +
+                "admission to the league after also actually winning, the <b>Tide</b>, slowly rolling by the " +
+                "<b>Full-of-Themselves</b> who lost despite having the second highest score of the week (don't " +
+                "you hate it when that happens?), and the <b>Discounts</b>, who didn't so much roll but kinda belly " +
+                "smacked the <b>Prey</b>, leaving the MVFF with zero teams, and leading to it's shutdown. The " +
+                "MVFF leqague office announced there would be NO refunds on ticket sales, saying quote <i><b>'stuff it you " +
+                " losers'</b></i> unquote. <br><br>Meanwhile, the non-losers side of the PFL bracket took a beating as the " +
+                "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Seamen</b> did their best Seahawks " +
+                "impersonation against the <b>Cocos's</b>, leaving the Browns (??!!!) as the last undefeated team! " +
+                "Dolphin fans should begin to worry! Go mighty CBs!"
 
 var week4_txt = "";
 

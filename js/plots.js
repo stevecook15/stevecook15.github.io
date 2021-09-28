@@ -1,3 +1,5 @@
+'use strict';
+
 class Plots
 {
    // Reads scores from scores.js
@@ -604,6 +606,7 @@ class Plots
       var yaxisTitle = "Points";
 
       var chart = new BizLineChart();
+      chart.setPlotType(chart.YONLY_PLOT);
 
       chart.setXTitle(xaxisTitle);
       chart.setYTitle(yaxisTitle);
@@ -911,7 +914,6 @@ class Plots
             min_weeks = teams[team].scores.length;
       }
 
-console.log("Min Weeks: " + min_weeks);
       return min_weeks;
    }
 
@@ -922,11 +924,11 @@ console.log("Min Weeks: " + min_weeks);
          return 0.0;
  
       var lagrange = new Array();
-      for ( i=0; i<xpts.length; i++ )
+      for ( var i=0; i<xpts.length; i++ )
       {
          lagrange[i] = 1;
 
-         for ( k=0; k<xpts.length; k++ )
+         for ( var k=0; k<xpts.length; k++ )
          {
             if ( i != k )
             {
@@ -936,7 +938,7 @@ console.log("Min Weeks: " + min_weeks);
       }
 
       var y = 0.0;
-      for ( i=0; i<ypts.length; i++ )
+      for ( var i=0; i<ypts.length; i++ )
       {
          y += lagrange[i] * ypts[i];
       }
@@ -951,7 +953,7 @@ console.log("Min Weeks: " + min_weeks);
       var yaxisTitle = "Points";
 
       var chart = new BizLineChart();
-      chart.setPlotType(chart.YONLY_PLOT);
+      chart.setPlotType(chart.XY_PLOT);
 
       chart.setXTitle(xaxisTitle);
       chart.setYTitle(yaxisTitle);
@@ -963,6 +965,18 @@ console.log("Min Weeks: " + min_weeks);
       var teams = getOrderedTeams();
       var numWeeks = this.getNumWeeks();
 
+      chart.setXMin(0.5);
+      chart.setXMax(numWeeks + 0.5);
+
+      var wscore = new Array();
+      var labels = new Array();
+      var colors = new Array();
+
+      for ( var week=0; week<numWeeks; week++ )
+      {
+         wscore[week] = 0.0;
+      }
+
       var jndx = 0;
       for ( var indx=0; indx<teams.length; indx++ )
       {
@@ -973,28 +987,48 @@ console.log("Min Weeks: " + min_weeks);
             var xpts = new Array();
             var ypts = new Array();
 
-            for ( i=0; i<scores.length; i++ )
+            for (var j=0; j<scores.length; j++ )
             {
-               xpts[i] = i; ypts[i] = scores[i];
+console.log("Week " + (j+1) + " Score: " & scores[j]);
+               xpts[j] = j+1;
+               ypts[j] = scores[j];
             }
 
-            var smooth = new Array();
-            var x = 0.0, y;
+            var smoothX = new Array();
+            var smoothY = new Array();
+            var x = 1.0; // Week 1
+            var y;
             var i = 0;
             while ( x <= scores.length )
             {
-               y = predictY(xpts, ypts, x);
-// Add to output array
-               smooth[i] = y;
-               x += 0.5;
+               y = this.predictY(xpts, ypts, x);
+
+					// Add to output array
+               smoothX[i] = x;
+               smoothY[i] = y;
+               x += 0.125;
                i++;
             }
 
-            chart.addLine(smooth, "", chart.colors[indx]);
+            chart.addXYLine(smoothX, smoothY, "", chart.colors[indx]);
             labels[jndx] = teams[indx].name;
             colors[jndx] = chart.colors[indx];
             jndx++;
          }
+
+         for ( var week=0; week<numWeeks; week++ )
+         {
+            wscore[week] += teams[indx][week];
+         }
+      }
+
+      var num_teams = teams.length;
+      var season_avg = 0.0;
+      for ( var week=0; week<numWeeks; week++ )
+      {
+         wscore[week] /= num_teams;
+         season_avg += wscore[week];
+         wscore[week] = wscore[week].toFixed(2);
       }
 
       season_avg /= numWeeks;
@@ -1008,6 +1042,8 @@ console.log("Min Weeks: " + min_weeks);
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
       var cheight = canvasId.height;
+
+	   // OK, draw the plot...
       chart.draw("plot_canvas", cwidth, cheight);
 
       var legendId = document.getElementById("legend_canvas");
@@ -1035,6 +1071,5 @@ console.log("Min Weeks: " + min_weeks);
          detailsTxt.textContent = txt;   // Real browsers
       }
    }
-
 }
 

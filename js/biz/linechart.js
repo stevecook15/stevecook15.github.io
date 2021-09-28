@@ -1,3 +1,4 @@
+'use strict';
 
 //
 // linechart.js - A simplistic HTML canvas tag line chart widget
@@ -57,7 +58,7 @@ class BizLineChart
                               "#800080",  // purple
                               "#ffa580",  // orange
                               "#00ffff",  // cyan
-                              "#ffff00",  // yellow
+                              "#eeee00",  // yellow
                               "#008080",  // teal
                               "#ff00ff",  //pink
                               "#00ff00",  // lime
@@ -70,9 +71,13 @@ class BizLineChart
 
       // Internal values
       this.plotData = new Array();
+      this.xPlotData = new Array();
+      this.yPlotData = new Array();
       this.plotLabel = new Array();
       this.plotColors = new Array();
       this.plotXScale = 1.0;
+      this.plotXMax = 10.0;
+      this.plotXMin = 0.0;
       this.plotYMax = 100.0;
       this.plotYMin = 0.0;
       this.xOrg = 0;
@@ -91,7 +96,7 @@ class BizLineChart
       this.xAxisTitle = null;
       this.xAxisLabels = null;
       this.yAxisLabels = null;
-      this.backgroundColor = "#ffffff";
+      this.backgroundColor = "#f2f2f2";  //"#ffffff";
       this.axesColor = "#000000";
       this.xAxisStartValue = 1;
       this.xAxisIncrement = 1;
@@ -143,6 +148,8 @@ initialize()
    }
    
    this.plotData.length = 0;
+   this.xPlotData.length = 0;
+   this.yPlotData.length = 0;
 }
 
 
@@ -150,8 +157,7 @@ initialize()
  * Add a data line to the plot
  *
  * @param data      Array of Y values
- * @param lineLabel Optional info label for line, displayed at start
- *                   or end of line 
+ * @param lineLabel Optional info label for line, displayed at start or end of line 
  */
 addLine(data, lineLabel, lineColor)
 {
@@ -179,6 +185,77 @@ addLine(data, lineLabel, lineColor)
       this.plotLabel[num_lines] = lineLabel;
    else
       this.plotLabel[num_lines] = "";
+}
+
+/**
+ * Add an X/Y data line to the plot
+ *
+ * @param xvals      Array of X values
+ * @param yvals      Array of Y values
+ * @param lineLabel Optional info label for line, displayed at start or end of line 
+ * @param lineColor Optional line color
+ */
+addXYLine(xvals, yvals, lineLabel, lineColor)
+{
+	//console.log("Adding XY plot line...");
+   // Create and fill the data elements
+   var lineData = new Array();
+
+	var xData = new Array();
+	var yData = new Array();
+
+   for ( var indx=0; indx<xvals.length; indx++ )
+   {
+//console.log("Adding XY point: " + xvals[indx] + ", " + yvals[indx]);
+      xData[indx] = xvals[indx];
+      yData[indx] = yvals[indx];
+   } 
+
+   var num_lines = this.xPlotData.length;
+   this.xPlotData[num_lines] = xData;
+   this.yPlotData[num_lines] = yData;
+
+   if ( lineColor != null )
+   {
+      this.plotColors[num_lines] = lineColor;
+   }
+   else
+   {
+      // Get next color in list...
+      var jndx = num_lines % this.colors.length;
+      this.plotColors[num_lines] = this.colors[jndx];
+   }
+
+   if ( lineLabel != null )
+      this.plotLabel[num_lines] = lineLabel;
+   else
+      this.plotLabel[num_lines] = "";
+}
+
+
+/**
+ * Set the max value used for X axis scaling (XY Plot only)
+ *
+ * @param scale     Max value
+ */
+setXMax(scale)
+{
+   this.plotXMax = scale;
+   if ( this.plotXMax == 0.0 )  // Small sanity check....
+      this.plotXMax = 1.0;
+}
+
+
+/**
+ * Set the min value used for X axis scaling (XY Plot only)
+ *
+ * @param scale     Min value
+ */
+setXMin(scale)
+{
+   this.plotXMin = scale;
+   if ( this.plotXMin >= this.plotXMax )  // Small sanity check....
+      this.plotXMin = 0.0;
 }
 
 
@@ -563,38 +640,67 @@ draw(canvasID, width, height)
    }
 
    var color;
-
-   var max_pts = this.calcMaxPoints();
-
-   this.xScale = this.plotWidth/max_pts;
-   this.yScale = this.plotHeight/(ymax-ymin);
-
    ctx.fillStyle = this.backgroundColor;
    ctx.fillRect(0, 0, width, height);
 
-   this.drawAxes(ctx, max_pts, ymin, ymax, num_tics);
+   var num_sets;
+   if ( this.plotType == this.XY_PLOT ) 
+   {
+      num_sets = this.xPlotData.length;
+console.log("Num set: " + num_sets + ", Num Pts: " + num_pts);
+num_pts = 3;
+      var xmin = this.plotXMin; //0.5;
+      var xmax = this.plotXMax; //num_pts + 0.5;
+      var num_pts = xmax - xmin;
+//ZZZZZZZZZZ
+      this.xScale = this.plotWidth / num_pts;
+      //console.log("Xscale: " + this.plotWidth + "/" + (xmax-xmin));
+      this.yScale = this.plotHeight/(ymax-ymin);
+      this.drawAxes(ctx, num_pts, ymin, ymax, num_tics);
+      //console.log("Draw XY Linechart: num lines: " + num_sets);
+   }
+   else
+   {
+      num_sets = this.plotData.length;
+      var max_pts = this.calcMaxPoints();
+      this.xScale = this.plotWidth/max_pts;
+      this.yScale = this.plotHeight/(ymax-ymin);
+      this.drawAxes(ctx, max_pts, ymin, ymax, num_tics);
 
-   var num_sets = this.plotData.length;
+      //console.log("Draw Y Only Linechart: num lines: " + num_sets);
+   }
+
    for ( var indx=0; indx<num_sets; indx++ )
    {
       switch ( this.plotType )
       {
          case this.RIBBON_PLOT:
+				//console.log("Draw Ribbon chart");
             color = this.plotColors[indx];
             this.drawRibbonPlot(ctx, indx, ymin, ymax, color);
             break;
 
          case this.AREA_PLOT:
+				//console.log("Draw Area chart");
             color = this.plotColors[num_sets-1-indx];
             this.drawAreaPlot(ctx, num_sets-1-indx, ymin, color);
             break;
 
+         case this.XY_PLOT:
+				//console.log("Draw XY chart");
+            color = this.plotColors[indx];
+            this.drawXYPlot(ctx, indx, ymin, ymax, color);
+            break;
+
          case this.YONLY_PLOT:
          case this.MARKER_PLOT:
-         default:
+				//console.log("Draw YONLY/Marker chart");
             color = this.plotColors[indx];
             this.drawPlot(ctx, indx, ymin, color);
             break;
+
+         default:
+				//console.log("Unknown linechart type: " + this.plotType);
       }
    }
 
@@ -814,6 +920,164 @@ drawAxes(ctx, num_pts, ymin, ymax, num_tics)
    }
 }
 
+
+drawXYPlot(ctx, currSet, ymin, ymax, color)
+{
+   //console.log("drawXYPlot " + currSet);
+   var xData = this.xPlotData[currSet];
+   var num_pts = xData.length;
+   if ( num_pts == 0 )
+   {
+      console.log("draw XY Plot: No X data");
+      return;
+   }
+
+   var yData = this.yPlotData[currSet];
+   if ( yData.length != num_pts )
+   {
+      console.log("draw XY Plot: Y data doesn't match X: " + yData.length + ", " + xData.length);
+      return;
+   }
+
+   ctx.strokeStyle = color;
+   ctx.lineWidth = this.lineWidth;
+
+   var x1, y1, x2, y2, fval;
+   var minValue =  1000000000.0;
+   var maxValue = -1000000000.0;
+   var minIndex = -1;
+   var maxIndex = -1;
+
+   if ( this.labelMax == true )
+   {
+      for ( var indx=0; indx<num_pts; indx++ )
+      {
+         if ( yData[indx] > maxValue )
+         {
+            maxValue = yData[indx];
+            maxIndex = indx;
+         }
+      }
+   }
+
+   if ( this.labelMin == true )
+   {
+      for ( var indx=0; indx<num_pts; indx++ )
+      {
+         if ( yData[indx] < minValue )
+         {
+            minValue = yData[indx];
+            minIndex = indx;
+         }
+      }
+   }
+
+   var xp = x1 = this.xOrg + this.xScale/2.0;
+   var yp = y1 = this.yOrg - (yData[0]-ymin)*this.yScale;
+
+   // Label first point
+   if ( maxIndex == 0 || this.labelAllPts == true )
+   {
+      var ytxt = yData[0];
+      ctx.strokeStyle = this.BLACK;
+      ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize, x1, y1-6, ytxt + "");
+   }
+
+   if ( minIndex != maxIndex && (minIndex == 0 || this.labelAllPts == true) )
+   {
+      var ytxt = yData[0];
+      ctx.strokeStyle = this.BLACK;
+      ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize, x2, y1-6, ytxt + "");
+   }
+
+//ZZZ Need to ensure proper label colors
+   //ctx.strokeStyle = this.BLACK;
+
+   // Draw markers for first point if set
+   if ( this.drawMarkers == true || this.plotType == this.MARKER_PLOT )
+   {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = this.lineWidth;
+      ctx.beginPath();
+      ctx.moveTo(x1-5, y1);
+      ctx.lineTo(x1, y1+5);
+      ctx.lineTo(x1+5, y1);
+      ctx.lineTo(x1, y1-5);
+      ctx.lineTo(x1-5, y1);
+      ctx.fillStyle = color;
+      ctx.fill();
+   }
+
+   var xmin = 0.5 * this.xScale;
+   x1 = (xData[0] * this.xScale) - xmin + this.xOrg;
+   y1 = this.yOrg - ((yData[0]-ymin) * this.yScale);
+
+   for ( var indx=1; indx<num_pts; indx++ )
+   {
+//console.log("X, Y: " + xData[indx] + ", " + yData[indx]);
+      x2 = (xData[indx] * this.xScale) - xmin + this.xOrg;
+      y2 = this.yOrg - ((yData[indx]-ymin) * this.yScale);
+
+      ctx.strokeStyle = color;
+      ctx.beginPath();
+      ctx.lineWidth = this.lineWidth + 1;
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      //console.log("Draw from " + x1 + ", " + y1 + " to " + x2 + ", " + y2);
+      ctx.lineWidth = this.lineWidth;
+
+      fval = Math.floor(xData[indx]);
+      if ( fval == xData[indx] )  // Only do the integer (ie week pts)
+      {
+//console.log("Week pt: " & xData[indx]);
+         if ( this.drawMarkers == true )
+         {
+            ctx.strokeStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(x2-5, y2);
+            ctx.lineTo(x2, y2+5);
+            ctx.lineTo(x2+5, y2);
+            ctx.lineTo(x2, y2-5);
+            ctx.lineTo(x2-5, y2);
+            ctx.fillStyle = color;
+            ctx.fill();
+         }
+
+         ctx.strokeStyle = this.BLACK;
+         if ( this.labelAllPts == true )
+         {
+//ZZZ Need to use numberHeight
+            ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
+                                  x2, y2-6, yData[indx] + "");
+         }
+         else
+         {
+//console.log("Max indx vs indx: " + maxIndex + " vs " + i);
+            if ( this.labelMax == true && maxIndex == indx )
+            {
+   //ZZZ Need to use numberHeight
+               var ytxt = yData[indx];
+               ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
+                                  x2, y2-6, ytxt + "");
+            }
+
+            if ( this.labelMin == true && minIndex == indx )
+            {
+//ZZZ Need to use numberHeight
+               var ytxt = yData[indx];
+               ctx.drawTextCenter(this.xLabelsFont, this.xLabelsFontSize,
+                               x2, y2-6, ytxt + "");
+            }
+         }
+      }
+
+      x1 = x2; 
+      y1 = y2; 
+   }
+}
+
+
 drawRibbonPlot(ctx, curr_set, ymin, ymax, color)
 {
    var lineData = this.plotData[curr_set];
@@ -1012,7 +1276,6 @@ drawPlot(ctx, curr_set, ymin, color)
    xp = x1 = this.xOrg + this.xScale/2.0;
    yp = y1 = this.yOrg - (lineData[0]-ymin)*this.yScale;
 
-
    if ( maxIndex == 0 || this.labelAllPts == true )
    {
       var ytxt = lineData[0];
@@ -1038,16 +1301,16 @@ drawPlot(ctx, curr_set, ymin, color)
    // Draw markers for first point if set
    if ( this.drawMarkers == true || this.plotType == this.MARKER_PLOT )
    {
-         ctx.strokeStyle = color;
-         ctx.lineWidth = this.lineWidth;
-         ctx.beginPath();
-         ctx.moveTo(x1-5, y1);
-         ctx.lineTo(x1, y1+5);
-         ctx.lineTo(x1+5, y1);
-         ctx.lineTo(x1, y1-5);
-         ctx.lineTo(x1-5, y1);
-         ctx.fillStyle = color;
-         ctx.fill();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = this.lineWidth;
+      ctx.beginPath();
+      ctx.moveTo(x1-5, y1);
+      ctx.lineTo(x1, y1+5);
+      ctx.lineTo(x1+5, y1);
+      ctx.lineTo(x1, y1-5);
+      ctx.lineTo(x1-5, y1);
+      ctx.fillStyle = color;
+      ctx.fill();
    }
 
    for ( var indx=1; indx<num_pts; indx++ )
@@ -1058,11 +1321,12 @@ drawPlot(ctx, curr_set, ymin, color)
       if ( this.plotType == this.YONLY_PLOT )
       {
          ctx.strokeStyle = color;
-         ctx.lineWidth = this.lineWidth;
+         ctx.lineWidth = this.lineWidth+1;
          ctx.beginPath();
          ctx.moveTo(x1, y1);
          ctx.lineTo(x2, y2);
          ctx.stroke();
+         ctx.lineWidth = this.lineWidth;
       }
 
 //TODO Need to define multiple marker types
@@ -1118,17 +1382,30 @@ drawPlot(ctx, curr_set, ymin, color)
                                x2+2, y2-4, this.plotLabel[curr_set]);
 }
 
+
 // Determine maximum number of x axis data points among the sets of data
 calcMaxPoints()
 {
    var max_pts = 0;
    var lineData;
 
-   for ( var indx=0; indx<this.plotData.length; indx++ )
+   if ( this.plotType == this.XY_PLOT )
    {
-      lineData = this.plotData[indx];
-      if ( lineData.length > max_pts )
-         max_pts = lineData.length;
+      for ( var indx=0; indx<this.xPlotData.length; indx++ )
+      {
+         lineData = this.xPlotData[indx];
+         if ( lineData.length > max_pts )
+            max_pts = 3; //lineData.length;
+      }
+   }
+   else
+   {
+      for ( var indx=0; indx<this.plotData.length; indx++ )
+      {
+         lineData = this.plotData[indx];
+         if ( lineData.length > max_pts )
+            max_pts = lineData.length;
+      }
    }
 
    return max_pts;

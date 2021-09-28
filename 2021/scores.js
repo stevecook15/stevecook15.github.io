@@ -99,7 +99,7 @@ function initTeams()
       pflTeams[i].totPts = 0;
       pflTeams[i].oppPts = 0;
 
-      console.log("Getting opps " + team.getName());
+      //console.log("Getting opps " + team.getName());
       opps = team.getOpponents(); // Return opp list abbrvs
       if ( opps == null )
       {
@@ -109,7 +109,7 @@ function initTeams()
 
       for ( var week=0; week<numWeeks; week++ )
       {
-         console.log("Week " + (week+1));
+         //console.log("Week " + (week+1));
 
          opp = getTeamByAbrv(opps[week]);
          if ( opp == null )
@@ -118,7 +118,7 @@ function initTeams()
          }
          else
          {
-            console.log(team.name + " vs " + opp.name + " Pts: " + team.scores[week] + " : " + opp.scores[week]);
+            //console.log(team.name + " vs " + opp.name + " Pts: " + team.scores[week] + " : " + opp.scores[week]);
    
             team.totPts += team.scores[week];
             team.oppPts += opp.scores[week];
