@@ -4,7 +4,8 @@
    <meta charset="utf-8">
    <title>PFL Home Page - 2021</title>
    <!-- Load the jQuery UI CSS -->
-   <link rel="stylesheet" href="css/flick/jquery-ui-1.10.2.custom.css" type="text/css" />
+   <link rel="stylesheet" href="css/flick/jquery-ui-1.10.2.css" type="text/css">
+   <!--link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" -->
    <link rel="stylesheet" href="css/standings.css" type="text/css" />
    <link rel="stylesheet" href="css/plots.css" type="text/css" />
    <link rel="stylesheet" href="css/rosters.css" type="text/css" />
@@ -17,7 +18,10 @@
 
    <!-- Load jQuery first before jQuery UI! -->
    <script src="js/jquery-1.9.1.min.js"></script>
-   <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+   <!--script src="js/jquery-3.6.0.min.js" script-->
+
+   <script src="js/jquery-ui-1.10.2.min.js"></script>
+   <!--script src="js/jquery-ui.min.js" script-->
 </head>
 
 <body>
@@ -33,17 +37,17 @@
 <td><img src="Gifs/ffllogo.gif" width="40" height="40"></td>
 </tr>
 </table>
-
+<br>
 <div id="standings_window" class="dialog_window" title="Standings">
    <div class="standings1">
       <center>
-      <b>Division 1</b>
+      <b>Division 1 - The Good, The Bad (ya know who...)</b>
       <table class="standingsTable" border="1" cellpadding="2" width="100%">
          <thead class="standingsHdr" id="Div1Hdr" bgcolor="#f3d766"></thead>
          <tbody class="standingsBody" id="Div1Body"></tbody>
       </table>
       <br> 
-      <b>Division 2</b>
+      <b>Division 2 - The Ugly</b>
       <table class="standingsTable" border="1" cellpadding="2" width="100%">
          <thead class="standingsHdr" id="Div2Hdr" bgcolor="#f3d766"></thead>
          <tbody class="standingsBody" id="Div2Body"></tbody>
@@ -115,6 +119,7 @@
    </table>
    </center>
 </div>
+
 <div id="roster_window" class="dialog_window" title="Roster Churn">
    <div class="rosters">
    <b><i>Heres your original rosters and starting day linesup / bench.<br>

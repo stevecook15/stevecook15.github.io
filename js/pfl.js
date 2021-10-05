@@ -1,5 +1,5 @@
 
-let pflUtils = new PflUtils(2020, 9, 9);   // TODO: Pass first wednesday before league start each year
+let pflUtils = new PflUtils(2021, 9, 8);   // TODO: Pass first wednesday before league start each year
 let standings = new Standings();
 let summaries = new Summaries();
 let rosters = new Rosters();
@@ -48,13 +48,16 @@ $(document).ready(function()
       plots_dialog.dialog("open");
    });
 
+ 
+ 
+
    var summaries_dialog = $("#summaries_window");
-   $("#summaries_window").dialog({ width: 150, height: 470, autoOpen: true });
-   $("#summaries_window").dialog('option', 'position', [10, 70]);
-   $("#summaries_window").css('background', 'url(Gifs/backgrnd.gif)');
+   summaries_dialog.dialog({ width: 150, height: 470, autoOpen: true });
+   summaries_dialog.dialog( 'option', 'position', [10, 70] );
+   summaries_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    summaries.setWeeks();
 
-   var standings_dialog = $("#standings_window");
+   var standings_dialog = jQuery("#standings_window");
    standings_dialog.dialog({ width: 480, height: 470, autoOpen: true });
    standings_dialog.dialog('option', 'position', [170, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
@@ -64,11 +67,12 @@ $(document).ready(function()
    currweek_dialog.dialog({ width: 550, height: 470, autoOpen: true });
    currweek_dialog.dialog('option', 'position', [662, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
+
    summaries.displayWeek(-1);
 
    $("#roster_window").dialog({ width: 1210, height: 530, autoOpen: false });
 
-   $("#plots_window").dialog({ width: 960, height: 474, autoOpen: false });
+   $("#plots_window").dialog({ width: 980, height: 500, autoOpen: false });
 
    setFilter("plot_options", getTeamNames());
 });

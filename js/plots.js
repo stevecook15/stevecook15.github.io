@@ -729,23 +729,27 @@ class Plots
       var colors = new Array();
 
       var stdDev;
+      var relDev;
       for ( var team=0; team<teams.length; team++ )
       {
          // Calculate the std dev for each
          stdDev = this.calcStdDev(teams[team].scores, team);
+         relDev = this.calcRelStdDev(teams[team].scores, team);
 
          var id = document.getElementById("team" + team);
          if ( id.checked == true )
          {
-            chart.addLine(stdDev, "", chart.colors[team]);
+            //chart.addLine(stdDev, "", chart.colors[team]);
             labels.push(teams[team].name);
             colors.push(chart.colors[team]);
+
+            chart.addLine(relDev, "", chart.colors[team]);
          }
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(5);
-      chart.setYMax(50.0);
+      chart.setNumTics(8);
+      chart.setYMax(40.0);
       chart.setYMin(0.0);
 
       var canvasId = document.getElementById("plot_canvas");
@@ -808,7 +812,35 @@ class Plots
          if ( week == 0 )  // Std dev is zero...
             results[week] = 0;
          else
-            results[week] = Math.sqrt(devnsum/(pt-1)).toFixed(2);  // 6 decimal places
+            results[week] = Math.sqrt(devnsum/(pt-1)).toFixed(2);  // 2 decimal places
+      }
+
+      return results;
+   }
+
+
+   calcRelStdDev(team_scores, team)
+   {
+      var numWeeks = this.getNumWeeks();
+      var results = new Array();
+      var sum, stdDev, mean, pt;
+
+      for ( var week=0; week<numWeeks; week++ )
+      {
+         stdDev = this.calcStdDev(team_scores, team);
+
+         sum = 0;
+         for ( pt=0; pt<=week; pt++ )
+         {
+            sum += (team_scores[pt] * 1)         // ensure number
+         }
+
+         mean = (sum/(pt)).toFixed(6);       // 6 decimal places
+
+         if ( week == 0 )  // Rel Std dev is zero...
+            results[week] = 0;
+         else
+            results[week] = ((stdDev[week] / mean ) * 100.0).toFixed(2);
       }
 
       return results;

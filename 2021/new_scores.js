@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30, 96.00 ];  // Seamen
+var preScores = [ 133.45, 115.15, 103.35, 136.50 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60 ];  // Seamen
 
-var iceScores = [ 131.55, 197.80, 116.30 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.0 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55, 197.80, 116.30, 119.80 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20 ];  // Fuller go eazy on the Pepsi
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -98,9 +98,33 @@ var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> Th
                 " losers'</b></i> unquote. <br><br>Meanwhile, the non-losers side of the PFL bracket took a beating as the " +
                 "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Seamen</b> did their best Seahawks " +
                 "impersonation against the <b>Cocos's</b>, leaving the Browns (??!!!) as the last undefeated team! " +
-                "Dolphin fans should begin to worry! Go mighty CBs!"
+                "Dolphin fans should begin to worry! Go mighty CBs!";
 
-var week4_txt = "";
+var week4_txt = "Sphincters were titghening throughout the leqgue this week as 7 of 10 teams couldn't match their " +
+                "projected scores. The <b>Tens</b> weren't one of them, apparently having taken their Kaopectate, sliding  " +
+                "smoothly to this weeks top score, then using the last of the Roll to wipe the <b>Tide</b> away.  But they " +
+                "weren't the only team feeling regular as the <b>Coco's</b> are apparently dropping golden nuggets out " +
+                "their, well you know where.... taking down the <b>Chops</b>, who maybe need a little roughage along with " +
+                "all that Pork after that butt biter.<br><br>The last of the overachievers this week were the <b>Water Boys</b> " +
+                "who didn't really need to do all that well since they were playing the <b>Bass Turds</b> (which legally " +
+                "counts as a bye in this league except when the Turds are playing the Topes...), who were just hoping to " +
+                "still have the lead in their contest after the first quarter of MNF. Of such little dreams one has when " +
+                "living in the Fat camp, but some joy was squeezed out in the end as they lasted four minutes into the 2nd " +
+                "quarter before being sent to bed without dinner.<br><br>On the other hand, the <b>Predators</b> ordered " +
+                "up the full meal deal, large size that please, devouring the <b>Topes</b> well before Sunday bedtime, " +
+                "leaving the Ice to wonder: where the hell did those 197.8 points go anyway. Finally, in the someone's " +
+                "got to win it because it on the schedule matchup, the <b>Bellies</b> got a discounted win when the " +
+                "<b>Pepsi</b> went flat due to lack of a tight end, which, gosh, brings us all the way round to "+
+                "spinchters again! <i>Editors Note: See how I made that work? Such a clever boy...</i><br><br>" +
+                "So, the perfect season watch continues as the Golden Browns remain undefeated, can't believe I'm " +
+                "typing that... leaving Dolphin fans everywhere with sleepness nights.  Can it continue?  Go go Cokes! " +
+                "As far as the rest of the league goes, the two divisions are strikingly different as the last four " +
+                "teams in 'The Ugly' are 8 games under .500 collectively (in 4 weeks!), which amazingly means even a " +
+                "1-3 start puts every team in the division within a game of the lead...  All the teams in 'The 'Good, " +
+                "The Bad' can only watch the carnage, salivatinfg over the chance to continue hitting the rival " +
+                "division with the ugly stick, leading them to petition league officials this week to make all " +
+                "remaining PFL weeks inter-divsion games, or at the very least against the Fat!!";
+ 
 
 var week5_txt = "";
 
