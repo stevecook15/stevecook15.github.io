@@ -1021,7 +1021,7 @@ class Plots
 
             for (var j=0; j<scores.length; j++ )
             {
-console.log("Week " + (j+1) + " Score: " & scores[j]);
+console.log("Week " + (j+1) + " Score: " + scores[j]);
                xpts[j] = j+1;
                ypts[j] = scores[j];
             }

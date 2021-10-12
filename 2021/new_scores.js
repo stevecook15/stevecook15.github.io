@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60 ];  // Seamen
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30 ];  // Seamen
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05 ];  // Fuller go eazy on the Pepsi
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -126,7 +126,28 @@ var week4_txt = "Sphincters were titghening throughout the leqgue this week as 7
                 "remaining PFL weeks inter-divsion games, or at the very least against the Fat!!";
  
 
-var week5_txt = "";
+var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three weeks, sandwiched around an 100 point effort, and " +
+                "we'll just pretend the first two weeks didn't happen.  Obviously they're on a <i>Roll</i>, so it's hard to say " +
+                "their score came as a complete surprise, but...  ah, heck I'll say it anyway: I'm surprised! But not as surprised " +
+                "as about the 68 point butt whipping they put on the mighty <b>Coco's</b> who dropped a big smelly " +
+                "<i><font color='brown'>brown</font></i> one!  Down goes Fraiser! Down goes Fraiser! " +
+                "The Dolphins sleep well tonight as the last undefeated PFL team is no more! That gave the <b>Sphincter</b> boys a " +
+                "chance to catch up and move into first in the <i>Not Too Bad</i> division, with a massive win, setting a new " +
+                "league high with 205 points and the <font color='green'><i>cash</i></font> that comes with it, over the <b>Fuller</b> "+
+                "who didn't go eazy but did go anyway, leaving the Peps looking up from the bottom of the <i>Mostly Bad</i> division " +
+                "(still figuratively standing on top of the Phat's heads of course). " +
+                "<br><br>Speaking of the <b>Phlat</b>, they fufilled their designated PFL role, stinking it up like a ten day old " +
+                "skunk carcass, to deliver the <b>Preds</b> a stress free weekend, which they helped along with by scoring 202 " +
+                "points, which also beat the previous high, to apply a 72 point beatdown on our ever suffering Phat.  The " +
+                "<b>Pork</b> are the next in line for a free win which we're sure they're looking forward to after slinking by " +
+                "the <b>AquaBoys</b> despite the Chops scoring their lowest score of the year, keeping on top of their sad " +
+                "division. And finally, because we have to, in a low scoring affair " +
+                "between two struggling teams, that one of them by league rules was going to <i>'win'?</i> the <b>Bellys</b> " +
+                "<i>'scored'?</i> more points than the <b>Topes</b> to <i>'beat'?</i> their <i><font color='blue'>ice</font></i> " +
+                "cold opponent, who are threatening to change their name to the <i>AlcohlTopes</i> if this keeps up."
+
+//var xx = "Weeks I played Courtland Sutton: 2.5, 8.7, 7.7"
+//var yy = "Weeks I didn't play Courtland Sutton:  24.9, 25.0"
 
 var week6_txt = "";
 
