@@ -10,7 +10,7 @@ var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10 ];  // Predators
 var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50 ];  // Discount Belicheck
 var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00 ];  // Tenacious Anus
 var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30 ];  // Seamen
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30 ];  // Aliens (Adam)
 
 var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35 ];  // Iceotopes
 var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95 ];  // Phat Bastards
@@ -28,7 +28,7 @@ var playoffs = [
         0,  //belicheck
         0,  //tenanus
         0,  //cocobrown
-        0,  //seamen
+        0,  //aliens
         
         0,  //iceotops
         0,  //fatbastards
@@ -73,8 +73,8 @@ var week2_txt = "In early returns, seems like the defending porksters are seriou
                 "fiber, in the end. Don't you love garbage time pts!<br><br>" +
                 "And meanwhile in the newly formed Moral Victory FF league, we get the Phlat managing the " +
                 "break 100 pts, and not having the low score for the week to now lead the MVFF (BTW after " +
-                "this week's thrashing by the <b>Seadudes</b> we're discounting <b>Bellis</b> so much I think " +
-                "we'll see them for sale in the clearance section of the freezer " +
+                "this week's thrashing by the <b>UFOs</b>, we're discounting <b>Bellis</b> so much I think " +
+                "we'll see them for sale in the clearance section of the meat freezer " +
                 "at <font color='green'><b>Dollar Tree</b></font> this week).  But the Bastards still lost " +
                 "badly to the <b>Coco's</b> after they left 45 pts on the bench. <font color='blue'><i>Note to Steve: " +
                 "don't overreact to a bad week and bench your best receivers...</i></font> The Coco's weren't " +
@@ -96,7 +96,7 @@ var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> Th
                 "smacked the <b>Prey</b>, leaving the MVFF with zero teams, and leading to it's shutdown. The " +
                 "MVFF leqague office announced there would be NO refunds on ticket sales, saying quote <i><b>'stuff it you " +
                 " losers'</b></i> unquote. <br><br>Meanwhile, the non-losers side of the PFL bracket took a beating as the " +
-                "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Seamen</b> did their best Seahawks " +
+                "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Aliens</b> did their best Seahawks " +
                 "impersonation against the <b>Cocos's</b>, leaving the Browns (??!!!) as the last undefeated team! " +
                 "Dolphin fans should begin to worry! Go mighty CBs!";
 
@@ -105,7 +105,7 @@ var week4_txt = "Sphincters were titghening throughout the leqgue this week as 7
                 "smoothly to this weeks top score, then using the last of the Roll to wipe the <b>Tide</b> away.  But they " +
                 "weren't the only team feeling regular as the <b>Coco's</b> are apparently dropping golden nuggets out " +
                 "their, well you know where.... taking down the <b>Chops</b>, who maybe need a little roughage along with " +
-                "all that Pork after that butt biter.<br><br>The last of the overachievers this week were the <b>Water Boys</b> " +
+                "all that Pork after that butt biter.<br><br>The last of the overachievers this week were the <b>Alienators</b> " +
                 "who didn't really need to do all that well since they were playing the <b>Bass Turds</b> (which legally " +
                 "counts as a bye in this league except when the Turds are playing the Topes...), who were just hoping to " +
                 "still have the lead in their contest after the first quarter of MNF. Of such little dreams one has when " +
@@ -140,8 +140,8 @@ var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three we
                 "skunk carcass, to deliver the <b>Preds</b> a stress free weekend, which they helped along with by scoring 202 " +
                 "points, which also beat the previous high, to apply a 72 point beatdown on our ever suffering Phat.  The " +
                 "<b>Pork</b> are the next in line for a free win which we're sure they're looking forward to after slinking by " +
-                "the <b>AquaBoys</b> despite the Chops scoring their lowest score of the year, keeping on top of their sad " +
-                "division. And finally, because we have to, in a low scoring affair " +
+                "the <b>Little Green Men</b> despite the Chops posting their lowest score of the year, keeping them on top of " +
+                "their sad little division. And finally, because we have to, in a low scoring affair " +
                 "between two struggling teams, that one of them by league rules was going to <i>'win'?</i> the <b>Bellys</b> " +
                 "<i>'scored'?</i> more points than the <b>Topes</b> to <i>'beat'?</i> their <i><font color='blue'>ice</font></i> " +
                 "cold opponent, who are threatening to change their name to the <i>AlcohlTopes</i> if this keeps up."
