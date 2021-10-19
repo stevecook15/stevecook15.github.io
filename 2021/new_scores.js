@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30 ];  // Aliens (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35 ];  // Aliens (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35 ];  // Fuller go eazy on the Pepsi
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -149,7 +149,27 @@ var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three we
 //var xx = "Weeks I played Courtland Sutton: 2.5, 8.7, 7.7"
 //var yy = "Weeks I didn't play Courtland Sutton:  24.9, 25.0"
 
-var week6_txt = "";
+var week6_txt = "It's always a wild ride in the PFL.  There were no close games with Monday nights game not providing any " +
+                "suspense in the outcomes, but that doesn't mean it wasn't a wild and wooly weekend in the PFL! One week you're " +
+                "scoring over 200 points for the leagues season high, the next week you're going down the crapper, as " +
+                "evidenced by both the <b>Anus</b> and <b>Preds</b> getting flushed! The <b>Tide's</b> fortunes also rolled " +
+                "way out as they scored over 100 points less than they did the week before, setting the new league low for the " +
+                "year <i>(the Phat thank you for that by the way)</i>. That of course means that <b>Aliens</b>, <b>Bellies</b>, " +
+                "and <b>Coco's</b> all are winner winner chicken dinners, leaving the Browns, who didn't even bother fielding " +
+                "a defense, once again atop the leqgue as the " +
+                "sole leaders of the PFL pack (one of those magical luck is on your side seasons I guess).<br><br>" +
+                "The <b>Pork</b> too were chopped down as they scored close to 50 points below their seasons average for by far " +
+                "their lowest score of the year, inexplicably losing to their <b>Phat</b> opponent who said, I'll take that and " +
+                "pile on top of it, as they in turn have their highest score of the year, actually looking like a real fantasy " +
+                "football team for a week leading to all sorts of soon to be dashed false hope by their owner. Lastly, and " +
+                "maybe even leastly, two 1-4 teams matched up for our final pairing, where the <b>Fullers</b> maybe took it " +
+                "a little bit too <i><b>Eazy</b></i> on the <b>Topes</b>, allowing the Ice to melt the permafrost a little on " +
+                "their way to an easy victory and their best showing in many a week!.<br><br>On the <i>'I know it's way to " +
+                "early'</i> news front, it sure looks like the <i>Good</i> division, where every team is at .500 or above, is " +
+                "going to be the source of most of the playoff teams, while the <i>Bad/Ugly</i> gang, where everyone is at .500 " +
+                "or below (mostly below), and having a 2-4 record means only being a game out of first, they're just hoping " +
+                "the league doesn't change rules about the division winners getting a playoff spot as it will probably be the " +
+                "only way one of these sad sacks sniff the playoffs!";
 
 var week7_txt = "";
 

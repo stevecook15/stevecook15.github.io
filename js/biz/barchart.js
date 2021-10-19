@@ -935,7 +935,7 @@ drawAxes(ctx, num_pts, width, height, ymin, ymax, num_tics)
    if ( this.plotTitle != null && this.plotTitle.length > 0 )
    {
       var title_strs = this.plotTitle.split("|");
-      var ypos = ctx.fontHeight(this.titleFont, this.titleFontSize) + 14;
+      var ypos = ctx.fontHeight(this.titleFont, this.titleFontSize) + 4;
 
       for ( var indx=0; indx<title_strs.length; indx++ )
       {
