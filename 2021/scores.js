@@ -58,7 +58,7 @@ let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);               
 let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);  belTeam.setScores(belScores);
 let tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 1, tenOpps);          tenTeam.setScores(tenScores);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores);
-let seaTeam = new PflTeam("Aliens", "Adam", "sea", 1, seaOpps);                  seaTeam.setScores(seaScores);
+let seaTeam = new PflTeam("Seamen", "Adam", "sea", 1, seaOpps);                  seaTeam.setScores(seaScores);
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores);
 let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);

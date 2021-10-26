@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35 ];  // Aliens (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05 ];  // Fuller go eazy on the Pepsi
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -96,7 +96,7 @@ var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> Th
                 "smacked the <b>Prey</b>, leaving the MVFF with zero teams, and leading to it's shutdown. The " +
                 "MVFF leqague office announced there would be NO refunds on ticket sales, saying quote <i><b>'stuff it you " +
                 " losers'</b></i> unquote. <br><br>Meanwhile, the non-losers side of the PFL bracket took a beating as the " +
-                "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Aliens</b> did their best Seahawks " +
+                "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Seamen</b> did their best Seahawks " +
                 "impersonation against the <b>Cocos's</b>, leaving the Browns (??!!!) as the last undefeated team! " +
                 "Dolphin fans should begin to worry! Go mighty CBs!";
 
@@ -154,7 +154,7 @@ var week6_txt = "It's always a wild ride in the PFL.  There were no close games 
                 "scoring over 200 points for the leagues season high, the next week you're going down the crapper, as " +
                 "evidenced by both the <b>Anus</b> and <b>Preds</b> getting flushed! The <b>Tide's</b> fortunes also rolled " +
                 "way out as they scored over 100 points less than they did the week before, setting the new league low for the " +
-                "year <i>(the Phat thank you for that by the way)</i>. That of course means that <b>Aliens</b>, <b>Bellies</b>, " +
+                "year <i>(the Phat thank you for that by the way)</i>. That of course means that <b>Seamen</b>, <b>Bellies</b>, " +
                 "and <b>Coco's</b> all are winner winner chicken dinners, leaving the Browns, who didn't even bother fielding " +
                 "a defense, once again atop the leqgue as the " +
                 "sole leaders of the PFL pack (one of those magical luck is on your side seasons I guess).<br><br>" +
@@ -171,7 +171,23 @@ var week6_txt = "It's always a wild ride in the PFL.  There were no close games 
                 "the league doesn't change rules about the division winners getting a playoff spot as it will probably be the " +
                 "only way one of these sad sacks sniff the playoffs!";
 
-var week7_txt = "";
+var week7_txt = "Remember when we thought 84 points was a horrendous unmatchable low score? <i>(Editors Note: That was all of two " +
+                "weeks ago)</i>. Well, in the last two weeks thats been <i>improved?</i> on three times, including this weeks horrific " +
+                "Dollar Tree discounted coconuts of a matchup of 63 to 53! Wow! Can you believe one of them got a win for that? Seems " +
+                "unjust! Amazingly it wasn't the seemingly charmed <b>Choco Umbers</b> on the up side this week, as they got " +
+                "<b>Bellyslapped</b> on their way to (according to PFLs snap research team) a 10 year record low in the PFL...  course both " +
+                "teams had to not bother filling in their roster to do it but hey, 53 points is 53 " +
+                "points and 63 is more than that!<br><br>But enough of that, how about some teams that actually earned a victory. " +
+                "The <b>Pork Cutlets</b> snorted their way to the high score for the week, much to the <b>Topes</b> misery, who " +
+                "actually had the fourth highest score of the week, despite Penny's two cents worth of points, but still lost. Gotta " +
+                "hate life at that point. The <b>Ators</b> popped open a Big Gulp sized <b>Pepsi</b> for a oh so refreshing win, " +
+                "which combined with Coco's, can't say it often enough, sad sad perfomance, left the Preds, Browns and Tens " +
+                "perched on top of the Div 1 bowl.<br><br>In a Bye Week Horror matchup, the <b>Bastard</b> cousins proved a bit better " +
+                "than the <b>Tides</b> flotsum, beating their projected total by almost 20 points (maybe they should play the scrubs " +
+                " more often!), moving up to second in their division (ooh, what heady heights!) though still just seventh in the " +
+                "league (which sure says a lot about the Ugly Div boys!). And lastly in the final matchup, the only game that was " +
+                "decided Monday night, and therefore, probably the only owners watching the Hawks stink it up again,  the " +
+                "<b>Anus</b> popped out a ho hum medium scoring win over the <b>Large Body of Water Adults</b>.";
 
 var week8_txt = "";
 

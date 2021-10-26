@@ -3,9 +3,9 @@
 class Plots
 {
    // Reads scores from scores.js
-   PLOT_MIN_VALUE = 70.0;
+   PLOT_MIN_VALUE = 50.0;
    PLOT_MAX_VALUE = 210.0;
-   PLOT_NUM_TICS = 14;
+   PLOT_NUM_TICS = 8;
 
    constructor()
    {
@@ -492,9 +492,8 @@ class Plots
       var detailsTxt = document.getElementById("detailsText");
       if ( detailsTxt != null )
       {
-         var txt = "Your combined recored if you played " +
-                   "against all the other teams each week, " +
-                   "instead of lucking out against some team! ";
+         var txt = "Your combined recored if you played against all the other teams each week, " +
+                   "instead of lucking out against some team only scoring 53 points!! ";
    
          detailsTxt.innerText = txt;     // IE
          detailsTxt.textContent = txt;   // Real browsers
@@ -672,9 +671,9 @@ class Plots
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(this.PLOT_NUM_TICS);
-      chart.setYMax(this.PLOT_MAX_VALUE);
-      chart.setYMin(this.PLOT_MIN_VALUE);
+      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setYMax(180); //this.PLOT_MAX_VALUE);
+      chart.setYMin(80); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
@@ -900,9 +899,9 @@ class Plots
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(this.PLOT_NUM_TICS);
-      chart.setYMax(this.PLOT_MAX_VALUE);
-      chart.setYMin(this.PLOT_MIN_VALUE);
+      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setYMax(180);  //this.PLOT_MAX_VALUE);
+      chart.setYMin(80);  //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
@@ -1097,8 +1096,8 @@ console.log("Week " + (j+1) + " Score: " + scores[j]);
       var detailsTxt = document.getElementById("detailsText");
       if ( detailsTxt != null )
       {
-         var txt = "How consistent is your scoring? Blind dog finding a bone " +
-                   "every now and then or actually a good team. You decide...";
+         var txt = "How consistent is your scoring? If your line zooms outside the box " +
+                   "it's probably every bit the roller coaster ride it looks like!!";
          detailsTxt.innerText = txt;     // IE
          detailsTxt.textContent = txt;   // Real browsers
       }
