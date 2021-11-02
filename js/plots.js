@@ -1020,7 +1020,7 @@ class Plots
 
             for (var j=0; j<scores.length; j++ )
             {
-console.log("Week " + (j+1) + " Score: " + scores[j]);
+//console.log("Week " + (j+1) + " Score: " + scores[j]);
                xpts[j] = j+1;
                ypts[j] = scores[j];
             }
@@ -1066,9 +1066,9 @@ console.log("Week " + (j+1) + " Score: " + scores[j]);
       chart.addRefLine(season_avg.toFixed(2));
 
       //chart.setAutoScale(true);
-      chart.setNumTics(this.PLOT_NUM_TICS);
-      chart.setYMax(this.PLOT_MAX_VALUE);
-      chart.setYMin(this.PLOT_MIN_VALUE);
+      chart.setNumTics(20); //this.PLOT_NUM_TICS);
+      chart.setYMax(240); //this.PLOT_MAX_VALUE);
+      chart.setYMin(40); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;

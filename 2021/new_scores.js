@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05 ];  // Fuller go eazy on the Pepsi
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95 ];  // Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -189,7 +189,23 @@ var week7_txt = "Remember when we thought 84 points was a horrendous unmatchable
                 "decided Monday night, and therefore, probably the only owners watching the Hawks stink it up again,  the " +
                 "<b>Anus</b> popped out a ho hum medium scoring win over the <b>Large Body of Water Adults</b>.";
 
-var week8_txt = "";
+var week8_txt = "<i>Timber!!!!</i> In a massive fall from grace the <b>CocoNOTs</b>, who's 71 pts were actually a double digit improvement over " +
+                "last weeks effort, go from first in the league to the bottom of their division (also known as a four team tie for second) " +
+                "after being preyed upon by the <b>Ators</b>! <i>Editors Note: Never mind they'd still be sharing the top spot in " +
+                "that other, who's name shall not be mentioned, division.</i><br><br>The king is dead, long live the king! The <b>Orifices</b>, " +
+                "who now sit on top of the PFL throne with the best record in the league, as a result of discounting any hope the " +
+                "<b>Bellies</b> had of winning (59 pts! Oh the shame, and coming on top of last weeks 63 pt effort). The Tens will " +
+                "still need to be tenacious though as they're only one game up on all the other teams in the division (though they do have " +
+                "a bye week against the Phat this coming weekend to rest on their laurels).<br><br>Speaking of the <b>Phlat</b>, they " +
+                "continue to have not won a game this year when their opponent has scored more than 116 points (so yeah, you have to suck " +
+                "badly to lose to the Turds!), this time gifting a two game lead in <i>THAT other</i> division to the <b>Chopsters</b>, " +
+                "who just strolled out saying thank you, thank you very much..." +
+                "The <b>Tide</b> continues to roll out (getting so low at this point you're kinda expecting a tsunami at some " +
+                "time) as the <b>C-men</b> sailed that outpour to a close win, but hey a win is a win...<br><br>And in the final " +
+                "matchup, where a win is just something one of them had to get, the <b>Zamboni Bunch</b> (who now have more name changes " +
+                "than wins) smoothed the <b>Ice</b> to take the closest matchup of the week, creating a three way tie for pathetic (oops, meant " +
+                "third) in the Abysmal division (Damnit, I mentioned their name! Doom, doom I say!), all three of which are just left " +
+                "looking up and wondering: <i>How the hell are we behind the Phat?</i>";
 
 var week9_txt = "";
 

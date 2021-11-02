@@ -64,7 +64,8 @@ let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);              
 let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 2, porOpps);               porTeam.setScores(porScores);
 let rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 2, rolOpps);             rolTeam.setScores(rolScores);
-let pepTeam = new PflTeam("Fuller go eazy on the Pepsi", "Matt", "pep", 2, pepOpps); pepTeam.setScores(pepScores);
+//let pepTeam = new PflTeam("Fuller go eazy on the Pepsi", "Matt", "pep", 2, pepOpps); pepTeam.setScores(pepScores);
+let pepTeam = new PflTeam("A Bunch of Jabronis", "Matt", "pep", 2, pepOpps); pepTeam.setScores(pepScores);
 
 var pflTeams =  [
    preTeam,
