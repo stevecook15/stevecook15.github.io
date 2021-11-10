@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95 ];  // Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30 ];  // Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -207,7 +207,18 @@ var week8_txt = "<i>Timber!!!!</i> In a massive fall from grace the <b>CocoNOTs<
                 "third) in the Abysmal division (Damnit, I mentioned their name! Doom, doom I say!), all three of which are just left " +
                 "looking up and wondering: <i>How the hell are we behind the Phat?</i>";
 
-var week9_txt = "";
+var week9_txt = "In a rare change this year, there were still two contests to decide going into Monday night. The <b>Chop Suey</b> seemed like " +
+                "sure bets to score enough to overcome the <b>Bellyachers</b>, and the <b>Illigetimate Children</b> seemed like sure bets to " +
+                "NOT score enough points to overtake the <b>Constipators</b>. And,... wait for it, wait for it... yeah, thats what happened.  " +
+                "Yawn... who writes these scripts anyway?<br><br>Two other teams also had players in Monday night's games but since they'd " +
+                "already won they probably didn't bother watching the (lack of) drama on the tube, the <b>Ice Capades</b> skated around " +
+                "the the <b>Coco Puffs</b> and the <b>Swabbies</b> sea chanted their way to more points (<i>Potentional Poll Question: " +
+                "Can we really call beating your opponent, despite having the second lowest score of the week, and just barely 100 pts, " +
+                "a win? Perhaps it should be called a 'what'</i>) than the Jabberwockies (<i>Editors Note: Apparently a bunch is not " +
+                "enough to secure wins in this league, perhaps one needs a whole horde of JibberJabbers to succeed?</i>).<br><br>" +
+                "Finally, in the only matchup without any players in tonights pigskin classic, the <b>Laundry Detergent</b> rolled over " +
+                "the <b>Predestrians</b> (<i>Editors Note: This is normally at least frowned on and in some states possibly even illegal</i>) " +
+                "to win for the first time since Fidget Spinners were cool. Congrats."; 
 
 var week10_txt = "";
 
