@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30 ];  // Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40 ];  // Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -146,9 +146,6 @@ var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three we
                 "<i>'scored'?</i> more points than the <b>Topes</b> to <i>'beat'?</i> their <i><font color='blue'>ice</font></i> " +
                 "cold opponent, who are threatening to change their name to the <i>AlcohlTopes</i> if this keeps up."
 
-//var xx = "Weeks I played Courtland Sutton: 2.5, 8.7, 7.7"
-//var yy = "Weeks I didn't play Courtland Sutton:  24.9, 25.0"
-
 var week6_txt = "It's always a wild ride in the PFL.  There were no close games with Monday nights game not providing any " +
                 "suspense in the outcomes, but that doesn't mean it wasn't a wild and wooly weekend in the PFL! One week you're " +
                 "scoring over 200 points for the leagues season high, the next week you're going down the crapper, as " +
@@ -220,7 +217,16 @@ var week9_txt = "In a rare change this year, there were still two contests to de
                 "the <b>Predestrians</b> (<i>Editors Note: This is normally at least frowned on and in some states possibly even illegal</i>) " +
                 "to win for the first time since Fidget Spinners were cool. Congrats."; 
 
-var week10_txt = "";
+var week10_txt = "Ya know, there's usually a week somewhere mid season where its just kinda unsurprising.  The teams you know are gonna " +
+                 "make the playoffs win, the teams you know are gonna miss the playoffs lose, and there's a smallish group in the middle " +
+                 "just kinda muddling around hoping they'll get that last playoff spot. Well, that was this week...<br><br>The only surprising " +
+                 "result was the <b>Topes</b> win, by definition - more points than their opponent, over the vacillating <b>Anus</b>, which " +
+                 "was really more about the Anus than the Topes when you get down to it...  The <b>Belli's</b> couldn't be bothered to replace " +
+                 "an out DeAndre Hopkins, but that didn't matter when the <b>Bastards</b> actually playing Gieski scored exactly as many points " +
+                 "as a dead guy, leading to discounted phlattening of their opponent. But the Bells were happy for the win given their recent " +
+                 "history. I guess that's what playing the Fat will do for you!<br><br>In the other three matchups, ehh... The <b>WaterBoys</b> "+
+                 "continued their quiet but sucessful season, the <b>Porkers</b> moved into overall first place and the the <b>Coconuts</b> " +
+                 "righted the boat for a week. The <b>Tide</b>, <b>Pre-Daters</b>, and <b>Jaccuzzis</b>, well, not so much.";
 
 var week11_txt = "";
 
