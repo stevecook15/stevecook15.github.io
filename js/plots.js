@@ -302,8 +302,8 @@ class Plots
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(8);
-      chart.setYMax(80.0);
+      chart.setNumTics(6);
+      chart.setYMax(60.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);
@@ -453,10 +453,15 @@ class Plots
          chart.setYMax(75);
          chart.setNumTics(5);
       }
+      else if ( max_wins < 100 && max_losses < 100 )
+      {
+         chart.setYMax(100);
+         chart.setNumTics(10);
+      }
       else
       {
-         chart.setYMax(120);
-         chart.setNumTics(12);
+         chart.setYMax(140);
+         chart.setNumTics(7);
       }
 
       chart.setThreeD(true);

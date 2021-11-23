@@ -6,17 +6,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40 ];  // Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -42,7 +42,7 @@ var week0_txt = "Welcome to the 2021 Phantom League.  Another year of hope dashe
                 "that at least half of us drafted a shitty team... and half have a hope of making the" +
                 "playoffs!  But which one is your team?  Only time will tell, unless you believe Yahoos" +
                 "rankings in which case the Phat will just mail the check in and go back to watching I" +
-                "Love Lucy re-runs.";
+                "Love Lucy re-runs.<br><br>";
 
 var week1_txt = "Welcome to the 2021 Phantom League.  Another year of PFL. Maybe your wildest dreams " +
                 "will be fulflled and you'll make the playoffs and win the league! Or will that hope be " +
@@ -55,7 +55,7 @@ var week1_txt = "Welcome to the 2021 Phantom League.  Another year of PFL. Maybe
                 "week. The Ice, Tide, Belis could only watch and wonder why they weren't so lucky...<br>" +
                 "In the actually interesting side of the ledger the Preds and Browns had a nail biter going, " +
                 "separated by just a half point Monday night with 4 minutes to go before the Cocos pulled away " +
-                "with a win!";
+                "with a win!<br><br>";
 
 var week2_txt = "In early returns, seems like the defending porksters are serious about repeating. Their " +
                 "opponent apparently went easy on the <b>Pepsi</b> who fizzled out, discovering what it's " +
@@ -79,7 +79,7 @@ var week2_txt = "In early returns, seems like the defending porksters are seriou
                 "badly to the <b>Coco's</b> after they left 45 pts on the bench. <font color='blue'><i>Note to Steve: " +
                 "don't overreact to a bad week and bench your best receivers...</i></font> The Coco's weren't " +
                 "any great shakes but they didn't have to be, happily gettting their turn to whack " +
-                "the Phlat and the automatic win that comes along with that!";
+                "the Phlat and the automatic win that comes along with that!<br><br>";
 
 var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> The recently formed Moral Victory " +
                 "(MVFF) league announced it was closing it's doors after it's sole team (the <b>Fat Bastards</b>) " +
@@ -98,7 +98,7 @@ var week3_txt = "<i><font color='red'>(AP) Breaking News Bulletin:</font></i> Th
                 " losers'</b></i> unquote. <br><br>Meanwhile, the non-losers side of the PFL bracket took a beating as the " +
                 "<b>Pork</b> were chopped by the <b>Anus</b>, and the <b>Seamen</b> did their best Seahawks " +
                 "impersonation against the <b>Cocos's</b>, leaving the Browns (??!!!) as the last undefeated team! " +
-                "Dolphin fans should begin to worry! Go mighty CBs!";
+                "Dolphin fans should begin to worry! Go mighty CBs!<br><br>";
 
 var week4_txt = "Sphincters were titghening throughout the leqgue this week as 7 of 10 teams couldn't match their " +
                 "projected scores. The <b>Tens</b> weren't one of them, apparently having taken their Kaopectate, sliding  " +
@@ -123,7 +123,7 @@ var week4_txt = "Sphincters were titghening throughout the leqgue this week as 7
                 "1-3 start puts every team in the division within a game of the lead...  All the teams in 'The 'Good, " +
                 "The Bad' can only watch the carnage, salivatinfg over the chance to continue hitting the rival " +
                 "division with the ugly stick, leading them to petition league officials this week to make all " +
-                "remaining PFL weeks inter-divsion games, or at the very least against the Fat!!";
+                "remaining PFL weeks inter-divsion games, or at the very least against the Fat!!<br><br>";
  
 
 var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three weeks, sandwiched around an 100 point effort, and " +
@@ -144,7 +144,7 @@ var week5_txt = "So, the <b>Tide</b> has had big scores two of the last three we
                 "their sad little division. And finally, because we have to, in a low scoring affair " +
                 "between two struggling teams, that one of them by league rules was going to <i>'win'?</i> the <b>Bellys</b> " +
                 "<i>'scored'?</i> more points than the <b>Topes</b> to <i>'beat'?</i> their <i><font color='blue'>ice</font></i> " +
-                "cold opponent, who are threatening to change their name to the <i>AlcohlTopes</i> if this keeps up."
+                "cold opponent, who are threatening to change their name to the <i>AlcohlTopes</i> if this keeps up.<br><br>"
 
 var week6_txt = "It's always a wild ride in the PFL.  There were no close games with Monday nights game not providing any " +
                 "suspense in the outcomes, but that doesn't mean it wasn't a wild and wooly weekend in the PFL! One week you're " +
@@ -166,7 +166,7 @@ var week6_txt = "It's always a wild ride in the PFL.  There were no close games 
                 "going to be the source of most of the playoff teams, while the <i>Bad/Ugly</i> gang, where everyone is at .500 " +
                 "or below (mostly below), and having a 2-4 record means only being a game out of first, they're just hoping " +
                 "the league doesn't change rules about the division winners getting a playoff spot as it will probably be the " +
-                "only way one of these sad sacks sniff the playoffs!";
+                "only way one of these sad sacks sniff the playoffs!<br><br>";
 
 var week7_txt = "Remember when we thought 84 points was a horrendous unmatchable low score? <i>(Editors Note: That was all of two " +
                 "weeks ago)</i>. Well, in the last two weeks thats been <i>improved?</i> on three times, including this weeks horrific " +
@@ -184,7 +184,7 @@ var week7_txt = "Remember when we thought 84 points was a horrendous unmatchable
                 " more often!), moving up to second in their division (ooh, what heady heights!) though still just seventh in the " +
                 "league (which sure says a lot about the Ugly Div boys!). And lastly in the final matchup, the only game that was " +
                 "decided Monday night, and therefore, probably the only owners watching the Hawks stink it up again,  the " +
-                "<b>Anus</b> popped out a ho hum medium scoring win over the <b>Large Body of Water Adults</b>.";
+                "<b>Anus</b> popped out a ho hum medium scoring win over the <b>Large Body of Water Adults</b>.<br><br>";
 
 var week8_txt = "<i>Timber!!!!</i> In a massive fall from grace the <b>CocoNOTs</b>, who's 71 pts were actually a double digit improvement over " +
                 "last weeks effort, go from first in the league to the bottom of their division (also known as a four team tie for second) " +
@@ -202,7 +202,7 @@ var week8_txt = "<i>Timber!!!!</i> In a massive fall from grace the <b>CocoNOTs<
                 "matchup, where a win is just something one of them had to get, the <b>Zamboni Bunch</b> (who now have more name changes " +
                 "than wins) smoothed the <b>Ice</b> to take the closest matchup of the week, creating a three way tie for pathetic (oops, meant " +
                 "third) in the Abysmal division (Damnit, I mentioned their name! Doom, doom I say!), all three of which are just left " +
-                "looking up and wondering: <i>How the hell are we behind the Phat?</i>";
+                "looking up and wondering: <i>How the hell are we behind the Phat?</i><br><br>";
 
 var week9_txt = "In a rare change this year, there were still two contests to decide going into Monday night. The <b>Chop Suey</b> seemed like " +
                 "sure bets to score enough to overcome the <b>Bellyachers</b>, and the <b>Illigetimate Children</b> seemed like sure bets to " +
@@ -215,7 +215,7 @@ var week9_txt = "In a rare change this year, there were still two contests to de
                 "enough to secure wins in this league, perhaps one needs a whole horde of JibberJabbers to succeed?</i>).<br><br>" +
                 "Finally, in the only matchup without any players in tonights pigskin classic, the <b>Laundry Detergent</b> rolled over " +
                 "the <b>Predestrians</b> (<i>Editors Note: This is normally at least frowned on and in some states possibly even illegal</i>) " +
-                "to win for the first time since Fidget Spinners were cool. Congrats."; 
+                "to win for the first time since Fidget Spinners were cool. Congrats.<br><br>"; 
 
 var week10_txt = "Ya know, there's usually a week somewhere mid season where its just kinda unsurprising.  The teams you know are gonna " +
                  "make the playoffs win, the teams you know are gonna miss the playoffs lose, and there's a smallish group in the middle " +
@@ -226,9 +226,23 @@ var week10_txt = "Ya know, there's usually a week somewhere mid season where its
                  "as a dead guy, leading to discounted phlattening of their opponent. But the Bells were happy for the win given their recent " +
                  "history. I guess that's what playing the Fat will do for you!<br><br>In the other three matchups, ehh... The <b>WaterBoys</b> "+
                  "continued their quiet but sucessful season, the <b>Porkers</b> moved into overall first place and the the <b>Coconuts</b> " +
-                 "righted the boat for a week. The <b>Tide</b>, <b>Pre-Daters</b>, and <b>Jaccuzzis</b>, well, not so much.";
+                 "righted the boat for a week. The <b>Tide</b>, <b>Pre-Daters</b>, and <b>Jaccuzzis</b>, well, not so much.<br><br>";
 
-var week11_txt = "";
+var week11_txt = "This week we saw the top six teams in the league play each other, engaging in a battle royal for the PFL crown. And " +
+                 "after 11 weeks we now have a new PFL leader! All hail the <b>Thlassic</b> <i>(look it up)</i> <b>Chaps</b> who took " +
+                 "out the <b>Clearance Beliicose's</b> to rise to sole possesion of first place! The <b>Cokes</b> and <b>Pre-Daters</b> (with " +
+                 "the high score of the week!) had important wins to keep themselves in the hunt, with victories over the <b>Chop Fooeys</b> " +
+                 "and <b>Tenative Butts</b> respectively, both who could afford a loss and still be right in the running. That'll make the " +
+                 "last couple of weeks more interesting for all of them as all six are within two games of each other!<br><br>" +
+                 "Course the top six facing off also meant the bottom four teams all played each other, with the expected level of " +
+                 "underperforming and who cares... especially seeing as how the four are just fighting over who'll get to finish 7th with " +
+                 "three of the four now all having the same 4-7 records!  Oh boy! The excitement of it all!  The "  +
+                 "<b>Slush Dopes</b> with 98.76% percent of their lineup out <i>(OK, slight exaggeration)</i> managed to get washed over by " +
+                 "the <b>Red Tide</b> while the <b>Obese Illegitimates</b> sorta avenged their week 1 loss (the first of many, losses that "+
+                 "is!), though really what kind of revenge is a 4-7 team over a 2-9 team really getting anyway? by filing the " + 
+                 "<b>Jawbone Bunch</b> down to bone spurs.<br><br>" +
+                 "Editors Note: The average margin of victory was over 40 pts this week, route city, the closest game decided by 28 points, " +
+                 "and pretty much every matchup a done deal by mid Sunday.  Not much drama for Sunday night or Monday!<br><br>";
 
 var week12_txt = "";
 
@@ -237,3 +251,4 @@ var week13_txt = "";
 var week14_txt = "";
 
 var week15_txt = "";
+
