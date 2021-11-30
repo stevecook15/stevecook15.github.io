@@ -1,3 +1,5 @@
+'use strict';
+
 /*
  * Canvas2Image v0.1
  * Copyright (c) 2008 Jacob Seidelin, cupboy@gmail.com

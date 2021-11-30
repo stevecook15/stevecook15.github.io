@@ -1,3 +1,5 @@
+"use strict";
+
 function SmoothedScoringPlot()
 {
    var plotTitle = "Smoothed Weekly Scoring";

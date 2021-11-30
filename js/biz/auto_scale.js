@@ -1,3 +1,4 @@
+'use strict';
 
 /**
  * BizScaleAxes is a set of functions to generate nice (ie reasonable) axis numbers

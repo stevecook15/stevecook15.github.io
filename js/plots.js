@@ -676,9 +676,9 @@ class Plots
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(10); //this.PLOT_NUM_TICS);
-      chart.setYMax(180); //this.PLOT_MAX_VALUE);
-      chart.setYMin(80); //this.PLOT_MIN_VALUE);
+      chart.setNumTics(8); //this.PLOT_NUM_TICS);
+      chart.setYMax(170); //this.PLOT_MAX_VALUE);
+      chart.setYMin(90); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
@@ -956,6 +956,11 @@ class Plots
 
    predictY(xpts, ypts, x)
    {
+//if ( x == 1.0 )
+//{
+//console.log("predict pts: " + xpts.length + ", " + ypts.length + " for " + x);
+//}
+
       if ( xpts.length == 0 )
          return 0.0;
  
@@ -1001,6 +1006,26 @@ class Plots
       var teams = getOrderedTeams();
       var numWeeks = this.getNumWeeks();
 
+//     // Notional caller for JS
+//     var bc = new BezierCurve();
+//var bxpts = new Array()
+// var bypts = new Array()
+// var bscores = teams[3].scores;
+// var numScores = bscores.length;
+//var bx = 1.0; // Week 1
+//var numXpts = 0;
+//while ( bx <= numScores )
+//{
+//   bxpts[numXpts] = bx;
+//   bx += 0.125;
+//   numXpts += 1;
+//}
+//console.log("Num X: " + bxpts.length);
+
+//// Fill in Y points (evenly spaced X pts)
+//bypts = bc.Bezier2D(bscores, bxpts.length);  // 8 data points per week
+//console.log("Returned Y data: " + bypts.length);
+
       chart.setXMin(0.5);
       chart.setXMax(numWeeks + 0.5);
 
@@ -1023,26 +1048,44 @@ class Plots
             var xpts = new Array();
             var ypts = new Array();
 
-            for (var j=0; j<scores.length; j++ )
+            var numScores = scores.length;
+            if ( scores[numScores] === 'undefined' )
             {
-//console.log("Week " + (j+1) + " Score: " + scores[j]);
-               xpts[j] = j+1;
-               ypts[j] = scores[j];
+               console.log("last week undefined...");
+	            numScores -= 1;
             }
+
+            var j;
+            for (j=1; j<=numScores; j++ )
+            {
+               xpts[j] = j;
+               ypts[j] = scores[j-1];
+            }
+
+            numScores += 2;
+
+            xpts[0] = 0.0;
+            ypts[0] = scores[0];
+
+            xpts[numScores-1] = j;
+            ypts[numScores-1] = ypts[j-1];
 
             var smoothX = new Array();
             var smoothY = new Array();
             var x = 1.0; // Week 1
             var y;
             var i = 0;
-            while ( x <= scores.length )
+            while ( x <= (numScores-2) )
             {
                y = this.predictY(xpts, ypts, x);
 
 					// Add to output array
-               smoothX[i] = x;
-               smoothY[i] = y;
-               x += 0.125;
+					if ( i > 0 )
+               {
+                  smoothX[i] = x;
+                  smoothY[i] = y;
+                  x += 0.125;
+               }
                i++;
             }
 
@@ -1057,6 +1100,13 @@ class Plots
             wscore[week] += teams[indx][week];
          }
       }
+
+
+//for ( var indx=0; indx<bypts.length; indx++ )
+//{
+//   //console.log("Indx " + indx + ": " + bxpts[indx] + ", " + bypts[indx]);
+//}
+//   chart.addXYLine(bxpts, bypts, "", chart.colors[0]);
 
       var num_teams = teams.length;
       var season_avg = 0.0;

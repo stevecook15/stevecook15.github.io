@@ -647,7 +647,7 @@ draw(canvasID, width, height)
    if ( this.plotType == this.XY_PLOT ) 
    {
       num_sets = this.xPlotData.length;
-console.log("Num set: " + num_sets + ", Num Pts: " + num_pts);
+//console.log("Num set: " + num_sets); // + ", Num Pts: " + num_pts);
 num_pts = 3;
       var xmin = this.plotXMin; //0.5;
       var xmax = this.plotXMax; //num_pts + 0.5;

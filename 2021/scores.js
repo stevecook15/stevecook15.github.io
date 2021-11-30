@@ -1,3 +1,4 @@
+"use strict";
 
 var preOpps = ["coc", "ten", "bel", "ice", "fat", "sea", "pep", "coc", "rol", "por", "ten", "bel", "sea", "pep"];
 var belOpps = ["ten", "sea", "pre", "pep", "ice", "rol", "coc", "ten", "por", "fat", "sea", "pre", "ice", "coc"];

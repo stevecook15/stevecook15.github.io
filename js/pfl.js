@@ -1,3 +1,4 @@
+"use strict";
 
 let pflUtils = new PflUtils(2021, 9, 8);   // TODO: Pass first wednesday before league start each year
 let standings = new Standings();
@@ -92,7 +93,7 @@ function setFilter(form, labels)
    var input;
    var label;
 
-   for ( i=0; i<labels.length; i++ )
+   for ( var i=0; i<labels.length; i++ )
    {
       // Append a node with a random text
       // Create an <input> element, set its type and name attributes

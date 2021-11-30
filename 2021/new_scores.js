@@ -1,3 +1,5 @@
+"use strict";
+
 //TODO: Add a more plots
 //TODO: Sort division record by score, div record and total pts
 //TODO: fix bar chart label below X axis
@@ -6,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95, 124.05 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90, 107.35 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55, 114.25 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40, 100.35 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15, 151.55 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25, 145.60 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10,  96.90 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95, 107.70 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20,  98.15 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05, 102.30 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -28,13 +30,13 @@ var playoffs = [
         0,  //belicheck
         0,  //tenanus
         0,  //cocobrown
-        0,  //aliens
+        0,  //alien seamen
         
         0,  //iceotops
         0,  //fatbastards
         0,  //porkchops
-        0,  //rolltide
-        0   //fullpepsi
+        4,  //rolltide
+        4   //fullpepsi
      ];
 
 
@@ -239,12 +241,29 @@ var week11_txt = "This week we saw the top six teams in the league play each oth
                  "three of the four now all having the same 4-7 records!  Oh boy! The excitement of it all!  The "  +
                  "<b>Slush Dopes</b> with 98.76% percent of their lineup out <i>(OK, slight exaggeration)</i> managed to get washed over by " +
                  "the <b>Red Tide</b> while the <b>Obese Illegitimates</b> sorta avenged their week 1 loss (the first of many, losses that "+
-                 "is!), though really what kind of revenge is a 4-7 team over a 2-9 team really getting anyway? by filing the " + 
-                 "<b>Jawbone Bunch</b> down to bone spurs.<br><br>" +
+                 "is!), though really what kind of revenge is a 4-7 team over a 2-9 team really getting anyway, by filing the " + 
+                 "<b>Jawbone Bunch</b> down to bone spurs, and officially eliminating them from the playoffs, though in reality they were " +
+                 "probably unofficially eliminated several weeks ago...<br><br>" +
                  "Editors Note: The average margin of victory was over 40 pts this week, route city, the closest game decided by 28 points, " +
                  "and pretty much every matchup a done deal by mid Sunday.  Not much drama for Sunday night or Monday!<br><br>";
 
-var week12_txt = "";
+var week12_txt = "Unbelievably, even after scoring the lowest week total and losing this week to the <b>Anal Retentives</b> to go to 4-8 " +
+                 "the <b>Flat Boys</b> still have a really really long shot at the playoffs thanks to the <b>Spare Ribs</b> losing to " +
+                 "the <b>Slushies</b>, allowing the Topes to close to within one game of the Chops. But, if the Bastards win out and " +
+                 "the Pork lose out the Bastards would win the division as they would have the best division record (including against " +
+                 "the Topes)... What excitement, what joy!!!! And then reality sets in, you look at the remaining schedule, and you see " +
+                 "there's no way Porkys gonna lay down three more times in a row...  what excitement? what joy? Mark the Flat down as " +
+                 "toast!<br><br>The other two bottom dwellers in the Sucky Division battled it out, playing the first to reach 100 wins, "+
+                 "well, the <b>Jabronis</b> managed to just hit triple digits and the <b>Tide</b> did not (but oh so close!), so..., that " +
+                 "result means the Tide get to join the Jabronis in the currently exclusive 'wait till next year club'. <i>(Editors " +
+                 "Note: Technically the Tide probably aren't eliminated, but their odds of making the playoffs make the Fats playoff " +
+                 "chances seem like a lead pipe cinch, so we're counting them as done for! Hah! The Fat will join them next week " +
+                 "anyway)</i><br><br>Meanwhile in the division where they're actually fielding real fantasy <i>(oxymoron?)</i> teams, " +
+                 "the <b>SeaKids</b> won again, defeating the <b>SoSo Tans</b> to stay tenaciously on top of the Anus (despite the " +
+                 "Ten's auto-win against the Phat, not to mention they've got another Fat sponsored auto-win coming up in Week 15 that'll " +
+                 "really solidify the Anal's post-season chances!). And in the final matchup, the <b>Tater Tots</b> flogged the " +
+                 "<b>Disco Bellys</b> to position themselves in the top spot for the probable last playoff spot! But all five teams are " +
+                 "still alive and none have clinched yet so we'll have to wait till next week to see if the murky waters clear up a bit...";
 
 var week13_txt = "";
 

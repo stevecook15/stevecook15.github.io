@@ -1,3 +1,5 @@
+'use strict';
+
 /* Copyright (C) 1999 Masanao Izumo <iz@onicos.co.jp>
  * Version: 1.0
  * LastModified: Dec 25 1999

@@ -1,3 +1,5 @@
+'use strict';
+
 // 
 // Eventually this will provide standard set of colors for the other chart objects
 //

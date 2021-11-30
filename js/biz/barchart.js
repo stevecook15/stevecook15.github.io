@@ -1,3 +1,4 @@
+'use strict';
 
 // Clear an area: clearRect(x,y,width,height) : Clears the specified area
 //   and makes it fully transparent

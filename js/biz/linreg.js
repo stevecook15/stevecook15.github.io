@@ -1,3 +1,4 @@
+'use strict';
 
 /*
  * linreg.js - A simple minded linear regression ported to javascript
@@ -48,7 +49,7 @@ BizInterp.prototype.calcParams = function(x, y)
    // first pass: read in data, compute xbar and ybar
    var sumx = 0.0, sumy = 0.0, sumx2 = 0.0;
 
-   for ( indx=0; indx<x.length; indx++ )
+   for ( var indx=0; indx<x.length; indx++ )
    {
       sumx  += x[indx];
       sumx2 += x[indx] * x[indx];
@@ -61,7 +62,7 @@ BizInterp.prototype.calcParams = function(x, y)
 
    // second pass: compute summary statistics
    var xxbar = 0.0, yybar = 0.0, xybar = 0.0;
-   for ( i = 0; i < n; i++ )
+   for ( var i = 0; i < n; i++ )
    {
       xxbar += (x[i] - xbar) * (x[i] - xbar);
       yybar += (y[i] - ybar) * (y[i] - ybar);
@@ -79,7 +80,7 @@ BizInterp.prototype.calcParams = function(x, y)
    var rss = 0.0;      // residual sum of squares
    var ssr = 0.0;      // regression sum of squares
    var fit;
-   for ( i=0; i<n; i++ )
+   for ( var i=0; i<n; i++ )
    {
       fit = beta1*x[i] + beta0;
       rss += (fit - y[i]) * (fit - y[i]);
@@ -91,16 +92,16 @@ BizInterp.prototype.calcParams = function(x, y)
    var svar1 = svar / xxbar;
    var svar0 = svar/n + xbar*xbar*svar1;
 
-   //System.out.println("R^2                 = " + R2);
-   //System.out.println("std error of beta_1 = " + Math.sqrt(svar1));
-   //System.out.println("std error of beta_0 = " + Math.sqrt(svar0));
+   //console.log("R^2                 = " + R2);
+   //console.log("std error of beta_1 = " + Math.sqrt(svar1));
+   //println("std error of beta_0 = " + Math.sqrt(svar0));
 
    svar0 = svar * sumx2 / (n * xxbar);
 
-   //System.out.println("std error of beta_0 = " + Math.sqrt(svar0));
-   //System.out.println("SSTO = " + yybar);
-   //System.out.println("SSE  = " + rss);
-   //System.out.println("SSR  = " + ssr);
+   //console.log("std error of beta_0 = " + Math.sqrt(svar0));
+   //console.log("SSTO = " + yybar);
+   //console.log("SSE  = " + rss);
+   //console.log("SSR  = " + ssr);
 
    var params = new Array();
    params[0] = beta0;
