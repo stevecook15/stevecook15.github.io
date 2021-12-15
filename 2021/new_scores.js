@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95, 124.05, 141.75 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90, 107.35,  92.70 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55, 114.25, 115.25 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40, 100.35, 144.00 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15, 151.55, 149.60 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95, 124.05, 141.75,  76.35 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90, 107.35,  92.70, 119.15 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55, 114.25, 115.25, 156.15 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40, 100.35, 144.00,  94.10 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15, 151.55, 149.60, 144.80 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25, 145.60, 100.15 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10,  96.90, 152.80 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95, 107.70, 124.10 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20,  98.15, 142.95 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05, 102.30,  93.75 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25, 145.60, 100.15, 151.15 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10,  96.90, 152.80, 143.30 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95, 107.70, 124.10, 130.65 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20,  98.15, 142.95, 149.05 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05, 102.30,  93.75,  69.40 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -28,8 +28,8 @@ var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95
 //TODO: Apparently this isn't sorted along with the tems...
 var playoffs = [
         2,  //alien seamen
+        1,  //tenanus
         0,  //predators
-        0,  //tenanus
         0,  //cocobrown
         4,  //belicheck
         
@@ -279,11 +279,18 @@ var week13_txt = "Well, the futile hopes of the <b>Flat</b> and the <b>Slush</b>
                  "grasp on the #1 seed by, ho hum, winning again, making <b>Prey</b> out of their opponents.  And in the last matchup of " +
                  "the week, the <b>Black Coffees</b> overcame a <b>Tight Sphincter</b> <i>(guess coco is a laxitive?)</i>, leaving both " +
                  "teams tied at the top of the wildcard race with two weeks to go, with the Preds one back...<br><br>As a final note: " +
-                 "what the heck were the Patriots doing Monday night? Trying to prove Bill B is cleverer than the rest of the leqgue? " +
+                 "what the heck were the Patriots doing Monday night? Trying to prove Bill B is cleverer than the rest of the league? " +
                  "Running on 3 and 17, 3rd and 12, etc? Three total passes? Guess it worked though, so maybe he is smarter than all the " +
                  "rest of us? Good thing the Bastards didn't need any points from Jakobi Myers! Hope no one was starting Mac Jones...";
 
-var week14_txt = "";
+var week14_txt = "In the penultimate week most every thing shook itself out, sorta. No teams were eliminated this week but one team " +
+                 "(congrats go to <b>Ten A</b>) clinched a playoff berth along with the 2 division winners (<b>Sea Pork</b>!) clinching " +
+                 "last week and the losers, well, they're still losers... Will be an exciting final week for some though as two of the three " +
+                 "teams still in the hunt, the <b>Cocos</b> and the <b>Topes</b> face off, so one of them will have a shot at the final " +
+                 "spot. But both their hopes and dreams rest on the the <b>Tide</b> beating the <b>Predators</b> who'll clinch the " +
+                 "final spot if they roll over their opponent.  The last week will be pretty much a yawner for the rest of us though... " +
+                 "so it'll be yard work all weekend instead!";
+
 
 var week15_txt = "";
 
