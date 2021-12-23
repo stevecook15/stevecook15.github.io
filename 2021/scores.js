@@ -1,16 +1,16 @@
 "use strict";
 
-var preOpps = ["coc", "ten", "bel", "ice", "fat", "sea", "pep", "coc", "rol", "por", "ten", "bel", "sea", "pep"];
-var belOpps = ["ten", "sea", "pre", "pep", "ice", "rol", "coc", "ten", "por", "fat", "sea", "pre", "ice", "coc"];
-var tenOpps = ["bel", "pre", "por", "rol", "pep", "coc", "sea", "bel", "fat", "ice", "pre", "fat", "coc", "sea"];
-var cocOpps = ["pre", "fat", "sea", "por", "rol", "ten", "bel", "pre", "ice", "pep", "por", "sea", "ten", "bel"];
-var seaOpps = ["ice", "bel", "coc", "fat", "por", "pre", "ten", "rol", "pep", "rol", "bel", "coc", "pre", "ten"];
+var preOpps = ["coc", "ten", "bel", "ice", "fat", "sea", "pep", "coc", "rol", "por", "ten", "bel", "sea", "pep", "rol" ];
+var belOpps = ["ten", "sea", "pre", "pep", "ice", "rol", "coc", "ten", "por", "fat", "sea", "pre", "ice", "coc", "por" ];
+var tenOpps = ["bel", "pre", "por", "rol", "pep", "coc", "sea", "bel", "fat", "ice", "pre", "fat", "coc", "sea", "fat" ];
+var cocOpps = ["pre", "fat", "sea", "por", "rol", "ten", "bel", "pre", "ice", "pep", "por", "sea", "ten", "bel", "ice" ];
+var seaOpps = ["ice", "bel", "coc", "fat", "por", "pre", "ten", "rol", "pep", "rol", "bel", "coc", "pre", "ten", "pep" ];
 
-var iceOpps = ["sea", "rol", "fat", "pre", "bel", "pep", "por", "pep", "coc", "ten", "rol", "por", "bel", "fat"];
-var fatOpps = ["pep", "coc", "ice", "sea", "pre", "por", "rol", "por", "ten", "bel", "pep", "ten", "rol", "ice"];
-var porOpps = ["rol", "pep", "ten", "coc", "sea", "fat", "ice", "fat", "bel", "pre", "coc", "ice", "pep", "rol"];
-var rolOpps = ["por", "ice", "pep", "ten", "coc", "bel", "fat", "sea", "pre", "sea", "ice", "pep", "fat", "por"];
-var pepOpps = ["fat", "por", "rol", "bel", "ten", "ice", "pre", "ice", "sea", "coc", "fat", "rol", "por", "pre"];
+var iceOpps = ["sea", "rol", "fat", "pre", "bel", "pep", "por", "pep", "coc", "ten", "rol", "por", "bel", "fat", "coc" ];
+var fatOpps = ["pep", "coc", "ice", "sea", "pre", "por", "rol", "por", "ten", "bel", "pep", "ten", "rol", "ice", "ten" ];
+var porOpps = ["rol", "pep", "ten", "coc", "sea", "fat", "ice", "fat", "bel", "pre", "coc", "ice", "pep", "rol", "bel" ];
+var rolOpps = ["por", "ice", "pep", "ten", "coc", "bel", "fat", "sea", "pre", "sea", "ice", "pep", "fat", "por", "pre" ];
+var pepOpps = ["fat", "por", "rol", "bel", "ten", "ice", "pre", "ice", "sea", "coc", "fat", "rol", "por", "pre", "sea" ];
 
 
 class PflTeam {

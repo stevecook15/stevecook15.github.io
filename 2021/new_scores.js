@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95, 124.05, 141.75,  76.35 ];  // Predators
-var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90, 107.35,  92.70, 119.15 ];  // Discount Belicheck
-var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55, 114.25, 115.25, 156.15 ];  // Tenacious Anus
-var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40, 100.35, 144.00,  94.10 ];  // Coco Browns
-var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15, 151.55, 149.60, 144.80 ];  // Seamen (Adam)
+var preScores = [ 133.45, 115.15, 103.35, 136.50, 202.10, 143.35, 159.45, 109.80, 126.10, 114.40, 191.95, 124.05, 141.75,  76.35, 112.60 ];  // Predators
+var belScores = [ 113.45,  90.85, 121.50, 114.80, 115.50, 142.15,  63.70,  59.00, 111.90, 132.20, 111.90, 107.35,  92.70, 119.15,  74.15 ];  // Discount Belicheck
+var tenScores = [ 150.20, 113.15, 158.40, 170.15, 205.00, 124.00, 124.15, 154.15, 117.80, 100.65, 125.55, 114.25, 115.25, 156.15, 138.50 ];  // Tenacious Anus
+var cocScores = [ 143.60, 126.15, 114.00, 144.10, 108.80, 134.55,  53.00,  71.25, 111.50, 143.90, 149.40, 100.35, 144.00,  94.10, 113.90 ];  // Coco Browns
+var seaScores = [ 172.20, 166.30,  96.00, 134.60, 135.30, 164.35, 111.10, 122.85, 108.80, 144.80, 154.15, 151.55, 149.60, 144.80, 109.95 ];  // Seamen (Adam)
 
-var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25, 145.60, 100.15, 151.15 ];  // Iceotopes
-var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10,  96.90, 152.80, 143.30 ];  // Phat Bastards
-var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95, 107.70, 124.10, 130.65 ];  // Porkchops
-var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20,  98.15, 142.95, 149.05 ];  // Roll Tide
-var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05, 102.30,  93.75,  69.40 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
+var iceScores = [ 131.55, 197.80, 116.30, 119.80, 108.35, 160.95, 139.75, 126.80, 123.50, 108.05, 106.25, 145.60, 100.15, 151.15, 125.85 ];  // Iceotopes
+var fatScores = [  84.80, 107.55, 142.55, 127.85, 129.95, 161.85, 141.10, 137.95, 114.20, 120.30, 130.10,  96.90, 152.80, 143.30,  88.85 ];  // Phat Bastards
+var porScores = [ 158.25, 157.40, 140.80, 142.60, 139.40,  95.85, 182.00, 153.25, 120.50, 142.40, 113.95, 107.70, 124.10, 130.65, 114.70 ];  // Porkchops
+var rolScores = [ 126.55, 115.00, 163.75, 105.00, 176.80,  71.55, 117.45, 107.50, 145.70,  92.35, 138.20,  98.15, 142.95, 149.05, 102.90 ];  // Roll Tide
+var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95,  87.30,  74.40, 102.05, 102.30,  93.75,  69.40,  79.50 ];  // Jabronis Fuller go eazy on the Pepsi/Jabronos
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
@@ -29,12 +29,12 @@ var pepScores = [ 119.10, 137.25, 159.00,  86.20, 152.05, 113.35, 124.05, 131.95
 var playoffs = [
         2,  //alien seamen
         1,  //tenanus
-        0,  //predators
-        0,  //cocobrown
+        1,  //predators
+        4,  //cocobrown
         4,  //belicheck
         
         2,  //porkchops
-        0,  //iceotops
+        4,  //iceotops
         4,  //fatbastards
         4,  //rolltide
         4   //fullpepsi
@@ -208,11 +208,11 @@ var week8_txt = "<i>Timber!!!!</i> In a massive fall from grace the <b>CocoNOTs<
                 "looking up and wondering: <i>How the hell are we behind the Phat?</i><br><br>";
 
 var week9_txt = "In a rare change this year, there were still two contests to decide going into Monday night. The <b>Chop Suey</b> seemed like " +
-                "sure bets to score enough to overcome the <b>Bellyachers</b>, and the <b>Illigetimate Children</b> seemed like sure bets to " +
+                "sure bets to score enough to overcome the <b>Bellyachers</b>, and the <b>Illegitimate Children</b> seemed like sure bets to " +
                 "NOT score enough points to overtake the <b>Constipators</b>. And,... wait for it, wait for it... yeah, thats what happened.  " +
                 "Yawn... who writes these scripts anyway?<br><br>Two other teams also had players in Monday night's games but since they'd " +
                 "already won they probably didn't bother watching the (lack of) drama on the tube, the <b>Ice Capades</b> skated around " +
-                "the the <b>Coco Puffs</b> and the <b>Swabbies</b> sea chanted their way to more points (<i>Potentional Poll Question: " +
+                "the <b>Coco Puffs</b> and the <b>Swabbies</b> sea chanted their way to more points (<i>Potentional Poll Question: " +
                 "Can we really call beating your opponent, despite having the second lowest score of the week, and just barely 100 pts, " +
                 "a win? Perhaps it should be called a 'what'</i>) than the Jabberwockies (<i>Editors Note: Apparently a bunch is not " +
                 "enough to secure wins in this league, perhaps one needs a whole horde of JibberJabbers to succeed?</i>).<br><br>" +
@@ -292,5 +292,14 @@ var week14_txt = "In the penultimate week most every thing shook itself out, sor
                  "so it'll be yard work all weekend instead!";
 
 
-var week15_txt = "";
+var week15_txt = "Well, can't say there was much suspense this week even though it took an extra day to end... three spots were locked up and " +
+                 "favorite to lock up the fourth spot locked up the fourth spot. Congrats to <i>Seamen, Porkchops, Tenacious and Predators...</i> " +
+                 "The Topes and Browns just missed out, leaving them selves to wonder if they could have made some roster change one week " +
+                 "that could have gotten them in. On the other end, the Bastards, Tide and Jabronis are just glad the sufferings over. That " +
+                 "of course leaves the Belichecks just hanging out in the middle, wondering what the hell is going on?<br><br>Intresting to " +
+                 "note that 4 of the 5 teams to win in week 1 made the playoffs - who says you can win the league in the first week!!!! The " +
+                 "fifth winner in week one (which was basically a bye against the Phat) ended up in dead last! Who says you can't lose the " +
+                 "league in the first week too!  Heres a sad footnote to the Jabronis and Bastards awful seasons: both went 0-7 against the " +
+                 "real men division! Sas, sad, sad... On a stranger note, the Bastards were the only team to end up with a positive scoring " +
+                 "trend for the season, course thats easier to do when you really start off sucky!"; 
 

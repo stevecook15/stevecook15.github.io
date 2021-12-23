@@ -14,6 +14,19 @@
 
 <style>
 #dialog_window { background: transparent url(Gifs/background.gif) no-repeat center; }
+pflbutton {
+	color: #ffffff;
+	background-color: #2125d3;
+	font-size: 15px;
+	border: 1px solid #1f7ad6;
+	border-radius: 8px;
+	padding: 4px 4px;
+	cursor: pointer
+}
+pflbutton:hover {
+	color: #1e3ed7;
+	background-color: #ffffff;
+}
 </style>
 
    <!-- Load jQuery first before jQuery UI! -->
@@ -108,12 +121,19 @@
    </td>
    <td align="CENTER">
    <input id="wk14Btn" type="image" src="Gifs/week14.png" align="center" onclick="summaries.displayWeek(14);" disable="true">
-   </td></tr><tr>
+   </td></tr>
+   <tr>
    <td align="CENTER" colspan="2">
-   <input id="wk15Btn" type="image" src="Gifs/round1.png" vspace="8" align="center" onclick="summaries.displayWeek(15);" disable="true">
-   </td></tr><tr>
+	<button type="pflbutton" name="wk15Btn" onclick="summaries.displayWeek(15);" disable="true">Week 15</button><!--disabled-->
+   </td></tr>
+   <tr>
    <td align="CENTER" colspan="2">
-   <input id="wk16Btn" type="image" src="Gifs/finals.png" vspace="8" align="center" onclick="summaries.displayWeek(16);" disable="true">
+   <input id="wk16Btn" type="image" src="Gifs/round1.png" vspace="8" align="center" onclick="summaries.displayWeek(16);" disable="true"> 
+   </td>
+   </tr>
+   <tr>
+   <td align="CENTER" colspan="2">
+   <input id="wk17Btn" type="image" src="Gifs/finals.png" vspace="8" align="center" onclick="summaries.displayWeek(17);" disable="true">
    </td>
    </tr>
    </table>
@@ -220,3 +240,8 @@
    <script type="text/javascript" src="js/pfl.js"></script>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>

@@ -268,6 +268,9 @@ class Plots
 
             nwins = 0; nlosses = 0;
             swins = 0.0; slosses = 0.0;
+
+console.log("NUM WEEKS:" + numWeeks);
+
             for ( var jndx=0; jndx<numWeeks; jndx++ )
             {
                oppnt = getTeamByAbrv(opps[jndx]);
@@ -460,8 +463,8 @@ class Plots
       }
       else
       {
-         chart.setYMax(140);
-         chart.setNumTics(7);
+         chart.setYMax(120);
+         chart.setNumTics(6);
       }
 
       chart.setThreeD(true);
@@ -676,8 +679,8 @@ class Plots
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(8); //this.PLOT_NUM_TICS);
-      chart.setYMax(170); //this.PLOT_MAX_VALUE);
+      chart.setNumTics(7); //this.PLOT_NUM_TICS);
+      chart.setYMax(160); //this.PLOT_MAX_VALUE);
       chart.setYMin(90); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");

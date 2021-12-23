@@ -16,11 +16,11 @@ class Summaries
 
       var weekStr;
       if ( week < 10 )
-         weekStr = "2020/Week0" + week + ".html";
+         weekStr = "2021/Week0" + week + ".html";
       else
-         weekStr = "2020/Week" + week + ".html";
+         weekStr = "2021/Week" + week + ".html";
 
-      if ( week > 14 ) // Playoffs...
+      if ( week > 15 ) // Playoffs...
       {
          $('#currweek_window').dialog("option", "title", "Week " + week).load(weekStr);
       }
@@ -56,9 +56,9 @@ class Summaries
          {
             if ( indx < 10 )
                btn.src = "Gifs/gweek0" + indx + ".png";
-            else if ( indx == 15 )
-               btn.src = "Gifs/ground1.png";
             else if ( indx == 16 )
+               btn.src = "Gifs/ground1.png";
+            else if ( indx == 17 )
                btn.src = "Gifs/gfinals.png";
             else
                btn.src = "Gifs/gweek" + indx + ".png";
@@ -74,9 +74,9 @@ class Summaries
          {
             if ( indx < 10 )
                btn.src = "Gifs/week0" + indx + ".png";
-            else if ( indx == 15 )
-               btn.src = "Gifs/round1.png";
             else if ( indx == 16 )
+               btn.src = "Gifs/round1.png";
+            else if ( indx == 17 )
                btn.src = "Gifs/finals.png";
             else
                btn.src = "Gifs/week" + indx + ".png";
