@@ -44,11 +44,12 @@ class Summaries
    {
       var today = new Date();
       var week = pflUtils.calcWeek(today);
+console.log("Summ Week: " + week);
 
       var btnId;
       var btn;
 
-      for ( var indx=week; indx<=16; indx++ )
+      for ( var indx=week; indx<=17; indx++ )
       {
          btnId = "wk" + indx + "Btn";
          btn = document.getElementById(btnId);

@@ -10,7 +10,7 @@ class PflUtils
       var d = new Date(year, month-1, day, 12, 0, 0, 0); 
       var dd, mm;
 
-      for ( var week=1; week<=16; week++ )
+      for ( var week=1; week<=17; week++ )
       {
          d.setDate(d.getDate() + 7); 
          dd = d.getDate();
@@ -52,8 +52,13 @@ class PflUtils
 
       if ( week == 0 )  // Always make first week available
          week = 1;
-      else if ( week > 16 )  // Never go past last week
-         week = 16;
+      else if ( week > 17 )  // Never go past last week
+         week = 17;
+
+if (year == 2022 ) 
+{
+    week = 17;
+}
 
       return week;
    }
