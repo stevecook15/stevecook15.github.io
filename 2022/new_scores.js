@@ -45,8 +45,8 @@ var week0_txt = "Welcome to the 2022 Phantom League.";
 
 var week1_txt = "Welcome once again to the exciting PFL league for the 2022 season.  While we know you're all looking forward " +
                 "to pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guarenteed " +
-                "lock on that (at least on this web site). Don't care what that damn Yahoo site indicates... Good luck to you all " +
-                "in securing second place!";
+                "lock on that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
+                "Good luck to you all in securing second place!";
 
 var week2_txt = "";
 

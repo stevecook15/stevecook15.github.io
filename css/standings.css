@@ -4,6 +4,7 @@ div.standings1 {
    position: absolute;
    top: 10px;
    left: 10px;
+	background-color: #ffffff
    border-width: 0px;
    border-color: #000000;
    border-style: none;
@@ -15,6 +16,7 @@ div.standings4 {
    position: absolute;
    top: 380px;
    left: 20px;
+	background-color: #ffffff
    border-width: 0px;
    border-color: #000000;
    border-style: none;
@@ -26,6 +28,7 @@ td.standings {
    font-size: 9pt;
    font-weight: bold;
    color: #000000;
+	background-color: #ffffff
    min-width: 110px;
    width: auto; 
    _width: 110px; 
@@ -36,6 +39,7 @@ td.owners {
    font-size: 9pt;
    font-weight: bold;
    color: #000000;
+   background-color: #ffffff
    min-width: 70px;
    width: auto; 
    _width: 70px; 
@@ -47,9 +51,10 @@ td.records {
    font-weight: bold;
    text-align: center;
    color: #000000;
-   min-width: 70px;
+   background-color: #ffffff
+   min-width: 80px;
    width: auto; 
-   _width: 70px; 
+   _width: 80px; 
 }
 
 td.points {
@@ -58,6 +63,7 @@ td.points {
    font-weight: bold;
    text-align: center;
    color: #000000;
+   background-color: #ffffff
    min-width: 70px;
    width: auto; 
    _width: 70px; 

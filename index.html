@@ -9,24 +9,11 @@
    <link rel="stylesheet" href="css/standings.css" type="text/css" />
    <link rel="stylesheet" href="css/plots.css" type="text/css" />
    <link rel="stylesheet" href="css/rosters.css" type="text/css" />
-   <link rel="stylesheet" href="css/summaries.css" type="text/css" />
+   <!--link rel="stylesheet" href="css/summaries.css" type="text/css" /--->
    <link rel="stylesheet" href="css/weekly.css" type="text/css" />
 
 <style>
 #dialog_window { background: transparent url(Gifs/background.gif) no-repeat center; }
-pflbutton {
-	color: #ffffff;
-	background-color: #2125d3;
-	font-size: 15px;
-	border: 1px solid #1f7ad6;
-	border-radius: 8px;
-	padding: 4px 4px;
-	cursor: pointer
-}
-pflbutton:hover {
-	color: #1e3ed7;
-	background-color: #ffffff;
-}
 </style>
 
    <!-- Load jQuery first before jQuery UI! -->
@@ -54,16 +41,16 @@ pflbutton:hover {
 <div id="standings_window" class="dialog_window" title="Standings">
    <div class="standings1">
       <center>
-      <b>Division 1 - The Real Men Fantasy Teams</b>
+      <b>Division 1 - Pathetic Hopefuls</b>
       <table class="standingsTable" border="1" cellpadding="2" width="100%">
          <thead class="standingsHdr" id="Div1Hdr" bgcolor="#f3d766"></thead>
-         <tbody class="standingsBody" id="Div1Body"></tbody>
+         <tbody class="standingsBody" id="Div1Body" bgColor="#ffffff"></tbody>
       </table>
       <br> 
-      <b>Division 2 - The Suckies</b>
+      <b>Division 2 - Resigned Losers</b>
       <table class="standingsTable" border="1" cellpadding="2" width="100%">
          <thead class="standingsHdr" id="Div2Hdr" bgcolor="#f3d766"></thead>
-         <tbody class="standingsBody" id="Div2Body"></tbody>
+         <tbody class="standingsBody" id="Div2Body" bgColor="#ffffff"></tbody>
       </table>
       </center>
    </div>
@@ -81,59 +68,59 @@ pflbutton:hover {
    <center>
    <table cellpadding="2" cellspacing="2" border="0"><tr>
    <td align="CENTER">
-   <input id="wk1Btn" type="image" src="Gifs/week01.png" align="center" onclick="summaries.displayWeek(1);" disable="true">
+   <input id="wk1Btn" type="image" src="Gifs/week01.png" width="62" height="24" align="center" onclick="summaries.displayWeek(1);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk2Btn" type="image" src="Gifs/week02.png" align="center" onclick="summaries.displayWeek(2);" disable="true">
+   <input id="wk2Btn" type="image" src="Gifs/week02.png" width="62" height="24" align="center" onclick="summaries.displayWeek(2);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk3Btn" type="image" src="Gifs/week03.png" align="center" onclick="summaries.displayWeek(3);" disable="true">
+   <input id="wk3Btn" type="image" src="Gifs/week03.png" width="62" height="24" align="center" onclick="summaries.displayWeek(3);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk4Btn" type="image" src="Gifs/week04.png" align="center" onclick="summaries.displayWeek(4);" disable="true">
+   <input id="wk4Btn" type="image" src="Gifs/week04.png" width="62" height="24" align="center" onclick="summaries.displayWeek(4);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk5Btn" type="image" src="Gifs/week05.png" align="center" onclick="summaries.displayWeek(5);" disable="true">
+   <input id="wk5Btn" type="image" src="Gifs/week05.png" width="62" height="24" align="center" onclick="summaries.displayWeek(5);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk6Btn" type="image" src="Gifs/week06.png" align="center" onclick="summaries.displayWeek(6);" disable="true">
+   <input id="wk6Btn" type="image" src="Gifs/week06.png" width="62" height="24" align="center" onclick="summaries.displayWeek(6);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk7Btn" type="image" src="Gifs/week07.png" align="center" onclick="summaries.displayWeek(7);" disable="true">
+   <input id="wk7Btn" type="image" src="Gifs/week07.png" width="62" height="24" align="center" onclick="summaries.displayWeek(7);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk8Btn" type="image" src="Gifs/week08.png" align="center" onclick="summaries.displayWeek(8);" disable="true">
+   <input id="wk8Btn" type="image" src="Gifs/week08.png" width="62" height="24" align="center" onclick="summaries.displayWeek(8);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk9Btn" type="image" src="Gifs/week09.png" align="center" onclick="summaries.displayWeek(9);" disable="true">
+   <input id="wk9Btn" type="image" src="Gifs/week09.png" width="62" height="24" align="center" onclick="summaries.displayWeek(9);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk10Btn" type="image" src="Gifs/week10.png" align="center" onclick="summaries.displayWeek(10);" disable="true">
+   <input id="wk10Btn" type="image" src="Gifs/week10.png" width="62" height="24" align="center" onclick="summaries.displayWeek(10);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk11Btn" type="image" src="Gifs/week11.png" align="center" onclick="summaries.displayWeek(11);" disable="true">
+   <input id="wk11Btn" type="image" src="Gifs/week11.png" width="62" height="24" align="center" onclick="summaries.displayWeek(11);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk12Btn" type="image" src="Gifs/week12.png" align="center" onclick="summaries.displayWeek(12);" disable="true">
+   <input id="wk12Btn" type="image" src="Gifs/week12.png" width="62" height="24" align="center" onclick="summaries.displayWeek(12);" disable="true">
    </td></tr><tr>
    <td align="CENTER">
-   <input id="wk13Btn" type="image" src="Gifs/week13.png" align="center" onclick="summaries.displayWeek(13);" disable="true">
+   <input id="wk13Btn" type="image" src="Gifs/week13.png" width="62" height="24" align="center" onclick="summaries.displayWeek(13);" disable="true">
    </td>
    <td align="CENTER">
-   <input id="wk14Btn" type="image" src="Gifs/week14.png" align="center" onclick="summaries.displayWeek(14);" disable="true">
+   <input id="wk14Btn" type="image" src="Gifs/week14.png" width="62" height="24" align="center" onclick="summaries.displayWeek(14);" disable="true">
    </td></tr>
    <tr>
    <td align="CENTER" colspan="2">
-	<button type="pflbutton" name="wk15Btn" onclick="summaries.displayWeek(15);" disable="true">Week 15</button><!--disabled-->
+   <input id="wk15Btn" type="image" src="Gifs/week15.png" width="62" height="24" align="center" onclick="summaries.displayWeek(15);" disable="true">
    </td></tr>
    <tr>
    <td align="CENTER" colspan="2">
-   <input id="wk16Btn" type="image" src="Gifs/round1.png" vspace="8" align="center" onclick="summaries.displayWeek(16);" disable="true"> 
+   <input id="wk16Btn" type="image" src="Gifs/semis.png" width="62" height="24" vspace="8" align="center" onclick="summaries.displayWeek(16);" disable="true"> 
    </td>
    </tr>
    <tr>
    <td align="CENTER" colspan="2">
-   <input id="wk17Btn" type="image" src="Gifs/finals.png" vspace="8" align="center" onclick="summaries.displayWeek(17);" disable="true">
+   <input id="wk17Btn" type="image" src="Gifs/finals.png" width="62" height="24" vspace="8" align="center" onclick="summaries.displayWeek(17);" disable="true">
    </td>
    </tr>
    </table>

@@ -148,3 +148,16 @@ myfont {
   line-height: 13.4px;
 }
 
+mybutton {
+	color: #ffffff;
+	background-color: #224b97;
+	font-size: 12px;
+	border: 1px solid #2d63c8;
+	padding: 2px 8px;
+	cursor: pointer
+}
+mybutton:hover {
+	color: #2d63c8;
+	background-color: #ffffff;
+}
+

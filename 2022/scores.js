@@ -330,11 +330,11 @@ function AddUnique(weekList, name)
    return true;
 }
 
-var weekly_dates = [ "Thursday, September 9th",  "Thursday, September 16th", "Thursday, September 23th",
-                     "Thursday, September 30th", "Thursday, October 7th",    "Thursday, October 14th", 
-                     "Thursday, October 21st",   "Thursday, October 28th",   "Thursday, November 4th", 
-                     "Thursday, November 11th",  "Thursday, November 18th",  "Thursday, November 25th", 
-                     "Thursday, December 2nd",   "Thursday, December 9th",   "Thursday, December 16th" ];
+var weekly_dates = [ "Thursday, September 8th",  "Thursday, September 15th", "Thursday, September 22nd",
+                     "Thursday, September 29th", "Thursday, October 6th",    "Thursday, October 13th", 
+                     "Thursday, October 20th",   "Thursday, October 27th",   "Thursday, November 3rd", 
+                     "Thursday, November 10th",  "Thursday, November 17th",  "Thursday, November 24th", 
+                     "Thursday, December 1st",   "Thursday, December 8th",   "Thursday, December 15th" ];
 
 var weekly_text = [
       week1_txt,   week2_txt,   week3_txt,   week4_txt,

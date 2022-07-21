@@ -44,11 +44,11 @@ class Summaries
    {
       var today = new Date();
       var week = pflUtils.calcWeek(today);
-console.log("Summ Week: " + week);
 
       var btnId;
       var btn;
 
+      // Disable all buttons
       for ( var indx=week; indx<=17; indx++ )
       {
          btnId = "wk" + indx + "Btn";
@@ -58,7 +58,7 @@ console.log("Summ Week: " + week);
             if ( indx < 10 )
                btn.src = "Gifs/gweek0" + indx + ".png";
             else if ( indx == 16 )
-               btn.src = "Gifs/ground1.png";
+               btn.src = "Gifs/gsemis.png";
             else if ( indx == 17 )
                btn.src = "Gifs/gfinals.png";
             else
@@ -67,6 +67,7 @@ console.log("Summ Week: " + week);
          }
       }
 
+      // Enable buttons up to current week
       for ( var indx=1; indx<=week; indx++ )
       {
          btnId = "wk" + indx + "Btn";
@@ -76,7 +77,7 @@ console.log("Summ Week: " + week);
             if ( indx < 10 )
                btn.src = "Gifs/week0" + indx + ".png";
             else if ( indx == 16 )
-               btn.src = "Gifs/round1.png";
+               btn.src = "Gifs/semis.png";
             else if ( indx == 17 )
                btn.src = "Gifs/finals.png";
             else
@@ -120,7 +121,7 @@ console.log("Summ Week: " + week);
             txtscr2 = "" + scores[indx+1];
 
          resHtml += '<div id="res' + week + "_" + jndx + '" class="res' + jndx + '">' +
-                    '<table border="1" cellpadding="2" cellspacing="2" bgcolor="#dddddd">' +
+                    '<table border="1" cellpadding="2" cellspacing="2" bgcolor="#ffffff">' +
                     '<tr><td class="scName">' + divGames[indx] + teams[indx] + '</td><td class="scValue"><b>' +
                     txtscr1 + '</b></td></tr>' +
                     '<tr><td class="scName">' + divGames[indx+1] + teams[indx+1] + '</td><td class="scValue">' +
