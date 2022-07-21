@@ -33,11 +33,11 @@ var playoffs = [
         0,  //cocobrown
         0,  //belicheck
         
-        9,  //porkchops
-        9,  //iceotops
-        9,  //fatbastards
-        9,  //rolltide
-        9   //fullpepsi
+        0,  //porkchops
+        0,  //iceotops
+        0,  //fatbastards
+        0,  //rolltide
+        0   //fullpepsi
      ];
 
 
