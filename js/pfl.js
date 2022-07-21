@@ -1,6 +1,6 @@
 "use strict";
 
-let pflUtils = new PflUtils(2021, 9, 8);   // TODO: Pass first wednesday before league start each year
+let pflUtils = new PflUtils(2022, 9, 8);   // TODO: Pass first wednesday before league start each year
 let standings = new Standings();
 let summaries = new Summaries();
 let rosters = new Rosters();
@@ -50,8 +50,6 @@ $(document).ready(function()
    });
 
  
- 
-
    var summaries_dialog = $("#summaries_window");
    summaries_dialog.dialog({ width: 150, height: 470, autoOpen: true });
    summaries_dialog.dialog( 'option', 'position', [10, 70] );

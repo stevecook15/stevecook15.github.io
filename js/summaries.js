@@ -16,9 +16,9 @@ class Summaries
 
       var weekStr;
       if ( week < 10 )
-         weekStr = "2021/Week0" + week + ".html";
+         weekStr = "2022/Week0" + week + ".html";
       else
-         weekStr = "2021/Week" + week + ".html";
+         weekStr = "2022/Week" + week + ".html";
 
       if ( week > 15 ) // Playoffs...
       {
