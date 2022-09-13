@@ -1,16 +1,24 @@
 "use strict";
+//               1      2      3      4      5      6      7      8      9      10     11     12     13     14     15
+var cocOpps = ["fat", "pre", "bel", "ice", "por", "sea", "rol", "fat", "jab", "ten", "pre", "jab", "sea", "rol", "jab" ];
+var fatOpps = ["coc", "rol", "pre", "por", "ten", "ice", "sea", "coc", "bel", "jab", "rol", "pre", "ten", "sea", "bel" ];
+var preOpps = ["sea", "coc", "fat", "ten", "jab", "rol", "por", "sea", "ice", "bel", "coc", "fat", "rol", "por", "ice" ];
+var rolOpps = ["ten", "fat", "sea", "jab", "bel", "pre", "coc", "ice", "por", "ice", "fat", "sea", "pre", "coc", "por" ];
+var seaOpps = ["pre", "jab", "rol", "bel", "ice", "coc", "fat", "pre", "ten", "por", "bel", "rol", "coc", "fat", "ten" ];
 
-var preOpps = ["coc", "ten", "bel", "ice", "fat", "sea", "pep", "coc", "rol", "por", "ten", "bel", "sea", "pep", "rol" ];
-var belOpps = ["ten", "sea", "pre", "pep", "ice", "rol", "coc", "ten", "por", "fat", "sea", "pre", "ice", "coc", "por" ];
-var tenOpps = ["bel", "pre", "por", "rol", "pep", "coc", "sea", "bel", "fat", "ice", "pre", "fat", "coc", "sea", "fat" ];
-var cocOpps = ["pre", "fat", "sea", "por", "rol", "ten", "bel", "pre", "ice", "pep", "por", "sea", "ten", "bel", "ice" ];
-var seaOpps = ["ice", "bel", "coc", "fat", "por", "pre", "ten", "rol", "pep", "rol", "bel", "coc", "pre", "ten", "pep" ];
+var iceOpps = ["bel", "ten", "por", "coc", "sea", "fat", "jab", "rol", "pre", "rol", "ten", "por", "jab", "bel", "pre" ];
+var jabOpps = ["por", "sea", "ten", "rol", "pre", "bel", "ice", "bel", "coc", "fat", "por", "coc", "ice", "ten", "coc" ];
+var belOpps = ["ice", "por", "coc", "sea", "rol", "jab", "ten", "jab", "fat", "pre", "sea", "ten", "por", "ice", "fat" ];
+var porOpps = ["jab", "bel", "ice", "fat", "coc", "ten", "pre", "ten", "rol", "sea", "jab", "ice", "bel", "pre", "rol" ];
+var tenOpps = ["rol", "ice", "jab", "pre", "fat", "por", "bel", "por", "sea", "coc", "ice", "bel", "fat", "jab", "sea" ];
 
-var iceOpps = ["sea", "rol", "fat", "pre", "bel", "pep", "por", "pep", "coc", "ten", "rol", "por", "bel", "fat", "coc" ];
-var fatOpps = ["pep", "coc", "ice", "sea", "pre", "por", "rol", "por", "ten", "bel", "pep", "ten", "rol", "ice", "ten" ];
-var porOpps = ["rol", "pep", "ten", "coc", "sea", "fat", "ice", "fat", "bel", "pre", "coc", "ice", "pep", "rol", "bel" ];
-var rolOpps = ["por", "ice", "pep", "ten", "coc", "bel", "fat", "sea", "pre", "sea", "ice", "pep", "fat", "por", "pre" ];
-var pepOpps = ["fat", "por", "rol", "bel", "ten", "ice", "pre", "ice", "sea", "coc", "fat", "rol", "por", "pre", "sea" ];
+
+// Playoffs
+// 0 - not in playoffs yet
+// 1 - clinched playoff spot
+// 2 - clinched division
+// 3 - clinched first round bye
+// 4 - eliminated from playoffs
 
 
 class PflTeam {
@@ -23,6 +31,7 @@ class PflTeam {
     this.division = division; 
     this.opponents = opponents;
     this.wins = 0;
+    this.playoffs = 0;
   }
 
   getName()
@@ -53,33 +62,43 @@ class PflTeam {
   {
      return this.wins;
   }
+
+  setPlayoffs(playoffs)
+  {
+     this.playoffs = playoffs;
+  }
+
+  getPlayoffs()
+  {
+     return this.playoffs;
+  }
 }
 
-let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                preTeam.setScores(preScores);
-let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);  belTeam.setScores(belScores);
-let tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 1, tenOpps);          tenTeam.setScores(tenScores);
-let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores);
-let seaTeam = new PflTeam("Seamen", "Adam", "sea", 1, seaOpps);                  seaTeam.setScores(seaScores);
+let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
+let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 1, fatOpps);           fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
+let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
+let rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 1, rolOpps);             rolTeam.setScores(rolScores); rolTeam.setPlayoffs(rolPlayoffs);
+let seaTeam = new PflTeam("Seamen", "Adam", "sea", 1, seaOpps);                  seaTeam.setScores(seaScores); seaTeam.setPlayoffs(seaPlayoffs);
 
-let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores);
-let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 2, fatOpps);           fatTeam.setScores(fatScores);
-let porTeam = new PflTeam("Porkchops", "Noah", "por", 2, porOpps);               porTeam.setScores(porScores);
-let rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 2, rolOpps);             rolTeam.setScores(rolScores);
-//let pepTeam = new PflTeam("Fuller go eazy on the Pepsi", "Matt", "pep", 2, pepOpps); pepTeam.setScores(pepScores);
-let pepTeam = new PflTeam("A Bunch of Jabronis", "Matt", "pep", 2, pepOpps); pepTeam.setScores(pepScores);
+let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
+let jabTeam = new PflTeam("Najee By Nature", "Matt", "jab", 2, jabOpps); 		   jabTeam.setScores(jabScores); jabTeam.setPlayoffs(jabPlayoffs);
+let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 2, belOpps);  belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
+let porTeam = new PflTeam("Porkchops", "Noah", "por", 2, porOpps);               porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
+let tenTeam = new PflTeam("Tenacious Anus", "Jake", "ten", 2, tenOpps);          tenTeam.setScores(tenScores); tenTeam.setPlayoffs(tenPlayoffs);
+
 
 var pflTeams =  [
-   preTeam,
-   belTeam,
-   tenTeam,
    cocTeam,
+   fatTeam,
+   preTeam,
+   rolTeam,
    seaTeam,
    
    iceTeam,  
-   fatTeam,
+   jabTeam,
+   belTeam,
    porTeam,
-   rolTeam,
-   pepTeam
+   tenTeam
 ];
 
 
@@ -340,6 +359,6 @@ var weekly_text = [
       week1_txt,   week2_txt,   week3_txt,   week4_txt,
       week5_txt,   week6_txt,   week7_txt,   week8_txt,
       week9_txt,   week10_txt,  week11_txt,  week12_txt,
-      week13_txt,  week14_txt, week15_txt
+      week13_txt,  week14_txt,  week15_txt
   ];
 

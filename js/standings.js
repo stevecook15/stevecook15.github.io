@@ -31,7 +31,7 @@ class Standings
                         "" + team.wins + "/" + team.losses,
                         "" + team.divWins + "/" + team.divLosses,
                         team.totPts.toFixed(0),
-                        playoffs[indx]);
+                        team.playoffs);
          }
       }
 
@@ -52,7 +52,7 @@ class Standings
                         "" + team.wins + "/" + team.losses,
                         "" + team.divWins + "/" + team.divLosses,
                         team.totPts.toFixed(0),
-                        playoffs[indx]);
+                        team.playoffs);
          }
       }
    }

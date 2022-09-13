@@ -3,9 +3,9 @@
 class Plots
 {
    // Reads scores from scores.js
-   PLOT_MIN_VALUE = 50.0;
-   PLOT_MAX_VALUE = 210.0;
-   PLOT_NUM_TICS = 8;
+   PLOT_MIN_VALUE = 80.0;
+   PLOT_MAX_VALUE = 180.0;
+   PLOT_NUM_TICS = 10;
 
    constructor()
    {
@@ -501,7 +501,7 @@ console.log("NUM WEEKS:" + numWeeks);
       if ( detailsTxt != null )
       {
          var txt = "Your combined recored if you played against all the other teams each week, " +
-                   "instead of lucking out against some team only scoring 53 points!! ";
+                   "instead of lucking out against some team only scoring 100 points!! ";
    
          detailsTxt.innerText = txt;     // IE
          detailsTxt.textContent = txt;   // Real browsers
@@ -1124,9 +1124,9 @@ console.log("NUM WEEKS:" + numWeeks);
       chart.addRefLine(season_avg.toFixed(2));
 
       //chart.setAutoScale(true);
-      chart.setNumTics(20); //this.PLOT_NUM_TICS);
-      chart.setYMax(240); //this.PLOT_MAX_VALUE);
-      chart.setYMin(40); //this.PLOT_MIN_VALUE);
+      chart.setNumTics(14); //this.PLOT_NUM_TICS);
+      chart.setYMax(200); //this.PLOT_MAX_VALUE);
+      chart.setYMin(60); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;

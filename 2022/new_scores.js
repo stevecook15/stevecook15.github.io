@@ -8,45 +8,49 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var preScores = [ 0.0 ];  // Predators
-var belScores = [ 0.0 ];  // Discount Belicheck
-var tenScores = [ 0.0 ];  // Tenacious Anus
-var cocScores = [ 0.0 ];  // Coco Browns
-var seaScores = [ 0.0 ];  // Seamen (Adam)
+var cocScores = [ 131.00 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55 ];  // Predators (Joe)
+var rolScores = [ 102.85 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35 ];  // Seamen (Adam)
 
-var iceScores = [ 0.0 ];  // Iceotopes
-var fatScores = [ 0.0 ];  // Phat Bastards
-var porScores = [ 0.0 ];  // Porkchops
-var rolScores = [ 0.0 ];  // Roll Tide
-var pepScores = [ 0.0 ];  // Jabronis Fuller 
+var iceScores = [ 113.75 ];  // Iceotopes (John)
+var jabScores = [ 142.85 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05 ];  // Porkchops (Noah)
+var tenScores = [ 142.90 ];  // Tenacious Anus (Jacob)
+
 
 // 0 - not in playoffs yet
 // 1 - clinched playoff spot
 // 2 - clinched division
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
-//TODO: Apparently this isn't sorted along with the tems...
-var playoffs = [
-        0,  //alien seamen
-        0,  //tenanus
-        0,  //predators
-        0,  //cocobrown
-        0,  //belicheck
-        
-        0,  //porkchops
-        0,  //iceotops
-        0,  //fatbastards
-        0,  //rolltide
-        0   //fullpepsi
-     ];
 
+var cocPlayoffs = 0;  // Coco Browns (Andy)
+var fatPlayoffs = 0;  // Phat Bastards (Steve)
+var prePlayoffs = 0;  // Predators (Joe)
+var rolPlayoffs = 0;  // Roll Tide (Daniel)
+var seaPlayoffs = 0;  // Seamen (Adam)
+
+var icePlayoffs = 0;  // Iceotopes (John)
+var jabPlayoffs = 0;  // Najee By Nature  (Matt)
+var belPlayoffs = 0;  // Discount Belicheck (Harrision)
+var porPlayoffs = 0;  // Porkchops (Noah)
+var tenPlayoffs = 0;  // Tenacious Anus (Jacob)
+
+
+// Weekly blah blah blah text...
 
 var week0_txt = "Welcome to the 2022 Phantom League.";
 
 var week1_txt = "Welcome once again to the exciting PFL league for the 2022 season.  While we know you're all looking forward " +
-                "to pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guarenteed " +
+                "to pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guaranteed " +
                 "lock on that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
-                "Good luck to you all in securing second place!";
+                "Good luck to you all in securing second place! <br><br>Najee, Predators amd Anus all scored in the 140's and had comfortable wins, " +
+		          "but the other two week 1 winners (Phat and Ice) had probably ended up pulling out (what remains of) their hair by the end of " +
+                "the Hawks/Broncos game (Go Hawks!) as the both pulled out close wins with the Bastards cussing the PPR rule the whole way... " +
+                "1 yard RB dumpoffs worth 1.1 pts??? Really?? Grumble, grumble, grumble...";
 
 var week2_txt = "";
 
