@@ -4,8 +4,8 @@ class Plots
 {
    // Reads scores from scores.js
    PLOT_MIN_VALUE = 80.0;
-   PLOT_MAX_VALUE = 180.0;
-   PLOT_NUM_TICS = 10;
+   PLOT_MAX_VALUE = 190.0;
+   PLOT_NUM_TICS = 11;
 
    constructor()
    {
@@ -679,9 +679,9 @@ console.log("NUM WEEKS:" + numWeeks);
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(7); //this.PLOT_NUM_TICS);
-      chart.setYMax(160); //this.PLOT_MAX_VALUE);
-      chart.setYMin(90); //this.PLOT_MIN_VALUE);
+      chart.setNumTics(12); //this.PLOT_NUM_TICS);
+      chart.setYMax(200); //this.PLOT_MAX_VALUE);
+      chart.setYMin(80); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
@@ -755,8 +755,8 @@ console.log("NUM WEEKS:" + numWeeks);
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(8);
-      chart.setYMax(40.0);
+      chart.setNumTics(10);
+      chart.setYMax(50.0);
       chart.setYMin(0.0);
 
       var canvasId = document.getElementById("plot_canvas");
@@ -907,9 +907,9 @@ console.log("NUM WEEKS:" + numWeeks);
       }
 
       //chart.setAutoScale(true);
-      chart.setNumTics(10); //this.PLOT_NUM_TICS);
-      chart.setYMax(180);  //this.PLOT_MAX_VALUE);
-      chart.setYMin(80);  //this.PLOT_MIN_VALUE);
+      chart.setNumTics(this.PLOT_NUM_TICS);
+      chart.setYMax(this.PLOT_MAX_VALUE);
+      chart.setYMin(this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
