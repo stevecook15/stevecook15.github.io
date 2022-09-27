@@ -70,7 +70,7 @@ var week3_txt = "Well, much lower scores this week as four teams fail to break 1
                 "though there's now some feeling that their team should be renamed to <i>Roll Lamar</i>... Lamars bye week is gonna be a killer!<br><br>In the other " +
                 "two matchups, the Preds got ho-hum efforts out of most of their players and a virtual goose egg out of their #1 WR to easily lose to the Phat's " +
                 "mostly mundane effort, and the Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks " +
-                " we're down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
+                "we're down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
 
 var week4_txt = "";
  
