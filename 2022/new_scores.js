@@ -72,17 +72,17 @@ var week3_txt = "Well, much lower scores this week as four teams fail to break 1
                 "mostly mundane effort, and the Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks " +
                 "we're down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
 
-var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! Our last " +
-                "undefeated team goes down! In the first one the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by the <b>Dinner Rolls</b> " +
-                "in the closest matchup of the week.<br><br>In the defeated arena, sadly the <b>Dry Lake Bed Men</b> remain so, after getting zero from Alvin the " +
-                "Chipmunk, allowing the <b>On Sale Bells</b> to ring up a win. If only they'd played their other RB! Oh wait, they'd have lost by 0.5 " +
-                "pts still...  never mind.<br><br>In the third lucky low affair, the <b>Slush Atoms</b> tanned (Copper Tone Brown #4) the <b>Coco Puffs</b> by " +
-                "almost 20 pts, pretty good when you're only scoring in the 120's yourself!<br><br>Now, in the land of Big Boy Football, two (sorta 3) teams " +
-                "actually put up manly efforts. The <b>not too Phat (why almost trim, practically svelte even) Bastards</b> karushed the <b>Cutlets</b>, more than " +
-                "doubling the porkers score, for the leagues largest blowout of the year (made easier mind you when your opponent only scores in the 80s)." +
-                "<br><br>In the final matchup the <b>Lackadasical Anus</b> put up the third highest score of the week.  So sad (insert sad emoji here) that " +
-                "it was only good enough to get blown (out the ya know what...) by the <b>Marauders</b> by 40 plus points, who now own the high league score " +
-                "for the year!";
+var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! In the first " + 
+                "matchup, the closest of the week, the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by the <b>Dinner Rolls</b>, thereby " +
+                "eliminating our last undefeated team (the Miami Dolphins can rest easy now).<br><br>In the second matchup, sadly the <b>Dry Lake Bed Men</b> remain " +
+                "defeated, after getting zero from Alvin the RB, allowing the <b>On Sale Bells</b> to ring up a win. If only they'd played their other RB! Oh wait, " +
+                "they'd have lost by 0.5 pts still... oops, never mind.<br><br>In the third sad low scoring affair, the <b>Slush Atoms</b> tanned (Copper Tone Brown " +
+                "#4) the <b>Coco Puffs</b> by almost 20 pts, pretty good when you're only scoring in the 120's yourself!<br><br>Now, in the land of Big Boy Football, "  +
+                "two (sorta 3) teams actually put up manly efforts. The <b>not too Phat (why almost trim, practically svelte even) Bastards</b> karushed the " +
+                "<b>Cutlets</b>, more than doubling the porkers score, for the leagues largest blowout of the year (made easier mind you when your opponent only " +
+                "scores in the 80s).<br><br>In the final matchup the <b>Lackadasical Anus</b> put up the third highest score of the week.  So sad (insert sad emoji " +
+                "here) that it was only good enough to get blown (out the ya know what...) by the <b>Marauders</b> by 40 plus points, who now own the high league " +
+                "score for the year!";
  
 var week5_txt = "Wait for it!!!!";
 
