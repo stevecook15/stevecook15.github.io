@@ -67,6 +67,10 @@ class Summaries
          }
       }
 
+      // If current date is past tuesday of the current week, enable the next week (week += 1)
+      if ( pflUtils.calcDay() > 2 )   // 2 would be tuesday
+         week += 1
+
       // Enable buttons up to current week
       for ( var indx=1; indx<=week; indx++ )
       {

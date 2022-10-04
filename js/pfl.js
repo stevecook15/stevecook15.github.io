@@ -51,19 +51,19 @@ $(document).ready(function()
 
  
    var summaries_dialog = $("#summaries_window");
-   summaries_dialog.dialog({ width: 160, height: 470, autoOpen: true });
+   summaries_dialog.dialog({ width: 160, height: 570, autoOpen: true });
    summaries_dialog.dialog( 'option', 'position', [10, 70] );
    summaries_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    summaries.setWeeks();
 
    var standings_dialog = jQuery("#standings_window");
-   standings_dialog.dialog({ width: 460, height: 470, autoOpen: true });
+   standings_dialog.dialog({ width: 460, height: 570, autoOpen: true });
    standings_dialog.dialog('option', 'position', [180, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    standings.show();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 550, height: 470, autoOpen: true });
+   currweek_dialog.dialog({ width: 550, height: 570, autoOpen: true, padding: 10, margin: 10 });
    currweek_dialog.dialog('option', 'position', [652, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
 

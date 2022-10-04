@@ -79,6 +79,8 @@ div.res5 {
 div.weeklyComments {
    z-index: 2;
    position: absolute;
+   padding: 10px;
+   margin: 10px;
    top: 280px;
    left: 20px;
    border-width: 0px;

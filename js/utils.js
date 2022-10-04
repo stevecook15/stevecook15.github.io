@@ -50,17 +50,23 @@ class PflUtils
          week++;
       }
 
-      if ( week == 0 )  // Always make first week available
+      if ( week < 1 )  // Always make first week available
          week = 1;
       else if ( week > 17 )  // Never go past last week
          week = 17;
 
-      if (year == 2023 )  // Last playoff game may be in next year
+      if ( year == 2023 )  // Last playoff game may be in next year
       {
           week = 17;
       }
 
       return week;
+   }
+
+   calcDay()
+   {
+      var currDate = new Date();
+      return currDate.getDay();
    }
 
    getDOY(checkDate)

@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -72,27 +72,37 @@ var week3_txt = "Well, much lower scores this week as four teams fail to break 1
                 "mostly mundane effort, and the Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks " +
                 "we're down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
 
-var week4_txt = "";
+var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! Our last " +
+                "undefeated team goes down! In the first one the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by the <b>Dinner Rolls</b> " +
+                "in the closest matchup of the week.<br><br>In the defeated arena, sadly the <b>Dry Lake Bed Men</b> remain so, after getting zero from Alvin the " +
+                "Chipmunk, allowing the <b>On Sale Bells</b> to ring up a win. If only they'd played their other RB! Oh wait, they'd have lost by 0.5 " +
+                "pts still...  never mind.<br><br>In the third lucky low affair, the <b>Slush Atoms</b> tanned (Copper Tone Brown #4) the <b>Coco Puffs</b> by " +
+                "almost 20 pts, pretty good when you're only scoring in the 120's yourself!<br><br>Now, in the land of Big Boy Football, two (sorta 3) teams " +
+                "actually put up manly efforts. The <b>not too Phat (why almost trim, practically svelte even) Bastards</b> karushed the <b>Cutlets</b>, more than " +
+                "doubling the porkers score, for the leagues largest blowout of the year (made easier mind you when your opponent only scores in the 80s)." +
+                "<br><br>In the final matchup the <b>Lackadasical Anus</b> put up the third highest score of the week.  So sad (insert sad emoji here) that " +
+                "it was only good enough to get blown (out the ya know what...) by the <b>Marauders</b> by 40 plus points, who now own the high league score " +
+                "for the year!";
  
-var week5_txt = "";
+var week5_txt = "Wait for it!!!!";
 
-var week6_txt = "";
+var week6_txt = "Wait for it!!!!";
 
-var week7_txt = "";
+var week7_txt = "Wait for it!!!!";
 
-var week8_txt = "";
+var week8_txt = "Wait for it!!!!";
 
-var week9_txt = "";
+var week9_txt = "Wait for it!!!!";
 
-var week10_txt = "";
+var week10_txt = "Wait for it!!!!";
 
-var week11_txt = "";
+var week11_txt = "Wait for it!!!!";
 
-var week12_txt = "";
+var week12_txt = "Wait for it!!!!";
 
-var week13_txt = "";
+var week13_txt = "Wait for it!!!!";
 
-var week14_txt = "";
+var week14_txt = "Wait for it!!!!";
 
-var week15_txt = "";
+var week15_txt = "Wait for it!!!!";
 

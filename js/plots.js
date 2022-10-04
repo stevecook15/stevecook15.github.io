@@ -1,11 +1,13 @@
 'use strict';
 
+//TODO: How to make plots bigger when window size gets bigger?
+
 class Plots
 {
    // Reads scores from scores.js
    PLOT_MIN_VALUE = 80.0;
-   PLOT_MAX_VALUE = 190.0;
-   PLOT_NUM_TICS = 11;
+   PLOT_MAX_VALUE = 200.0;
+   PLOT_NUM_TICS = 12;
 
    constructor()
    {
@@ -615,6 +617,11 @@ console.log("NUM WEEKS:" + numWeeks);
       var chart = new BizLineChart();
       chart.setPlotType(chart.YONLY_PLOT);
 
+      //chart.setAutoScale(true);
+      chart.setNumTics(12); //this.PLOT_NUM_TICS);
+      chart.setYMax(180); //this.PLOT_MAX_VALUE);
+      chart.setYMin(60); //this.PLOT_MIN_VALUE);
+
       chart.setXTitle(xaxisTitle);
       chart.setYTitle(yaxisTitle);
       chart.setPlotTitle(plotTitle);
@@ -677,11 +684,6 @@ console.log("NUM WEEKS:" + numWeeks);
             }
          }
       }
-
-      //chart.setAutoScale(true);
-      chart.setNumTics(12); //this.PLOT_NUM_TICS);
-      chart.setYMax(200); //this.PLOT_MAX_VALUE);
-      chart.setYMin(80); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
@@ -863,6 +865,11 @@ console.log("NUM WEEKS:" + numWeeks);
       var chart = new BizLineChart();
       chart.setPlotType(chart.YONLY_PLOT);
 
+      //chart.setAutoScale(true);
+      chart.setNumTics(9);  //this.PLOT_NUM_TICS);
+      chart.setYMax(170);  //this.PLOT_MAX_VALUE);
+      chart.setYMin(80);  //this.PLOT_MIN_VALUE);
+
       chart.setXTitle(xaxisTitle);
       chart.setYTitle(yaxisTitle);
       chart.setPlotTitle(plotTitle);
@@ -905,11 +912,6 @@ console.log("NUM WEEKS:" + numWeeks);
             jndx++;
          }
       }
-
-      //chart.setAutoScale(true);
-      chart.setNumTics(this.PLOT_NUM_TICS);
-      chart.setYMax(this.PLOT_MAX_VALUE);
-      chart.setYMin(this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
