@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -84,7 +84,13 @@ var week4_txt = "We had three teams win while only scoring in the 120's this wee
                 "here) that it was only good enough to get blown (out the ya know what...) by the <b>Marauders</b> by 40 plus points, who now own the high league " +
                 "score for the year!";
  
-var week5_txt = "Wait for it!!!!";
+var week5_txt = "Well, obviously the <b>Naturals</b> are the class of this league, blowing out the <b>PreDaters</b> by 60+ pts! " +
+                "And just as obviously the luckiest goes to the <b>Bass Turds</b> who under performed but had their <b>Anal</b> " +
+                "opponents show them how to really underperform! Well done, well done!<br><br>In the closest match of the week " +
+                "two 3-1 teams matched up for what, other than the close finish, was a points snoozefest as the <b>Bellboys</b> " +
+                "barely tidied up the <b>Rollers</b>, to keep pace with Najee and Phat at the top.<br><br>In the other two " +
+                "matchups the <b>Isographs</b> and the <b>Choclate Nibbs</b> both posted nice scores, and their opponents, " +
+                "<b>SeaGeezers</b> and <b>The Other White Meat</b>, respectively, didn't... Simple huh?";
 
 var week6_txt = "Wait for it!!!!";
 
