@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -44,13 +44,14 @@ var tenPlayoffs = 0;  // Tenacious Anus (Jacob)
 
 var week0_txt = "Welcome to the 2022 Phantom League.";
 
-var week1_txt = "Welcome once again to the exciting PFL league for the 2022 season.  While we know you're all looking forward " +
-                "to pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guaranteed " +
-                "lock on that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
+var week1_txt = "Welcome once again to the exciting PFL league for the 2022 season.  While we know you're all looking forward to " +
+                "pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guaranteed lock " +
+                "on that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
                 "Good luck to you all in securing second place! <br><br>Najee, Predators amd Anus all scored in the 140's and had comfortable wins, " +
 		          "but the other two week 1 winners (Phat and Ice) had probably ended up pulling out (what remains of) their hair by the end of " +
                 "the Hawks/Broncos game (Go Hawks!) as the both pulled out close wins with the Bastards cussing the PPR rule the whole way... " +
-                "1 yard RB dumpoffs worth 1.1 pts??? Really?? Grumble, grumble, grumble...";
+                "1 yard RB dumpoffs worth 1.1 pts??? Really?? Grumble, grumble, grumble... Oh yeah, if I didn't mention your team winning, guess what "
+                "the outcome was... I'll wait for it.";
 
 var week2_txt = "So apparently the secret to high scoring in the PFL is to not check your lineup and leave two open spots... and just Roll with " +
                 "it scoring 189 points? Bastards! The Phat beat their projected score by 25 and still lose by 36? Or another way of looking " +
@@ -92,7 +93,17 @@ var week5_txt = "Well, obviously the <b>Naturals</b> are the class of this leagu
                 "matchups the <b>Isographs</b> and the <b>Choclate Nibbs</b> both posted nice scores, and their opponents, " +
                 "<b>SeaGeezers</b> and <b>The Other White Meat</b>, respectively, didn't... Simple huh?";
 
-var week6_txt = "Wait for it!!!!";
+var week6_txt = "A low scoring affair this week, only two teams reaching their projected scores, and this weeks high score only matching the previous lowest weekly " +
+                "high score.  Good defense? Bad offense? Or the start of the dreaded Bye weeks? Aaaaaahhh!!!<br><br>" +
+                "I haven't actually seen it but I'm sure the <b>Chops</b> are thanking (at least mentally) the Phat " +
+                "for K Walker as they rode his 19 points to overcome the <b>Anus</b> and pick up their second win.  The Phat sure would have liked to have Walker " +
+                "still on their bench as his replacement roared to a 2.5 pt effort! Whoo! But wait, seems the <b>Phat</b> still won, as only one player for the " +
+                "<b>Topes</b> managed to meet/exceed their projections - a whole team effort there!<br><br>You know you're blessed by <b>Nature</b> when you can score " +
+                "your lowest total of the year and still beat the <b>Bellies</b> by almost 20. Both the <b>Predators</b> and the <b>Tide</b> also failed to reach their " +
+                "projected totals this week but the Preds managed to miss it by a larger amount to end up getting rolled...<br><br>And in the final matchup, the " +
+                "<b>Seamen</b> didn't help themselves playing an inactive WR but there was more off there than that as they lost to the <b>Brownies</b> by almost 40 " +
+                "pts to stay winless.  Not to fear though, in the Bizarro world for fantasy football, they're almost certainly likely to rise up next wwek to topple " +
+                "a first place team - that's how it works you know!";
 
 var week7_txt = "Wait for it!!!!";
 
