@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -93,8 +93,9 @@ var week5_txt = "Well, obviously the <b>Naturals</b> are the class of this leagu
                 "matchups the <b>Isographs</b> and the <b>Choclate Nibbs</b> both posted nice scores, and their opponents, " +
                 "<b>SeaGeezers</b> and <b>The Other White Meat</b>, respectively, didn't... Simple huh?";
 
-var week6_txt = "A low scoring affair this week, only two teams reaching their projected scores, and this weeks high score only matching the previous lowest weekly " +
-                "high score.  Good defense? Bad offense? Or the start of the dreaded Bye weeks? Aaaaaahhh!!!<br><br>" +
+var week6_txt = "A low scoring affair this week, only two teams reaching their projected scores, and this weeks high score only " +
+                "matching the previous lowest " +
+                "weekly high score.  Good defense? Bad offense? Or the start of the dreaded Bye weeks? Aaaaaahhh!!!<br><br>" +
                 "I haven't actually seen it but I'm sure the <b>Chops</b> are thanking (at least mentally) the Phat " +
                 "for K Walker as they rode his 19 points to overcome the <b>Anus</b> and pick up their second win.  The " +
                 "Phat sure would have liked to have Walker still on their bench as his replacement roared to a 2.5 pt " +
@@ -117,12 +118,29 @@ var week7_txt = "In the most exciting contest of the weekend, not over till the 
                 "whatever lucky team happens to be playing you that week.  Well, the <b>All Naturals</b> scored less points than  " +
                 "normal as expected but forgot to do the losing part as the <b>Icicles</b> lineup froze up in the spotlight.<br><br>" +
                 "Speaking of freezing up... apparently the <b>Tide</b> doesn't roll when frozen over either, chillingly losing to " +
-                "<b>Coco Nibbs</b> by almost 50! Whew, good effort there boy, can't even blame it on Bye weeks! <br><br>And in our final " +
-                "contest(?) the <b>Bell Boys</b> tied the Najee's for lowest winning score of the week (with low winning scores " +
+                "<b>Coco Nibbs</b> by almost 50! Whew, good effort there boy, can't even blame it on Bye weeks! <br><br>And in our " +
+                "final contest(?) the <b>Bell Boys</b> tied the Najee's for lowest winning score of the week (with low winning scores " +
                 "pretty much being their modus operandi all year, not having scored over 126 pts all year but still sitting at 5-2), " +
                 "taking down the <b>Loose Butt</b>. Make sure you're standing upwind of that stinker.";
 
-var week8_txt = "Wait for it!!!!";
+var week8_txt = "OK, who called this one, raise your hands... the 0-7 <b>Ocean Boys</b> became men, manly men with this " +
+                "weeks league high score, beating their previous best score by almost 60 pts (and breaking 100 " +
+                "for the first time in 3 weeks), taking down the <b>Pre-Daters</b> who had a good score but stll " +
+                "lost by 40.<br><br>On the other end of the standings spectrum both of the division leaders scored their " +
+                "lowest scores of the year, one of them surviving that result, and one not... the <b>Bass Masters</b> stayed " +
+                "phat, moving to 3 game lead in their division despite their meager effort (although still winning by " +
+                "46 pts) after the <b>Coco Nots</b> lineup was devasted by byes, injuries and some questionable " +
+                "roster choices.<br><br>The other division leader <b>Nachos " +
+                "By Natalie</b>, after their by far lowest score for the year, saw their division lead decrease to just " +
+                "tie-breakers as the <b>Clearance Rack</b> took them down by 60ish.<br><br>Notice the blowout " +
+                "trend? Well, we've got one more as the <b>Topes</b> iced the <b>Low Tide</b> by around 40 pts.<br><br>" +
+                "In the final matchup we finally got some suspense and an excuse to watch the dull MNF game instead of " +
+                "going out and getting a sugar buzz trick or treating, as the <b>Tight Butts</b> held it in and eeked out " +
+                "a close win over <b>Spare Ribs</b>.<br><br>" +
+                "Also of some note, but probably little interst, in four of the five matchups this week the team with the "
+                "better record going in lost to the team with a worse record (and in three of them the two teams ended up " +
+                "with the same records afterwards... in affect closing up the playoff race quite a bit, if you're even " +
+                "3-5 you're only one game out!";
 
 var week9_txt = "Wait for it!!!!";
 
