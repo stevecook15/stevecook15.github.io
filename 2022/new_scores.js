@@ -137,9 +137,9 @@ var week8_txt = "OK, who called this one, raise your hands... the 0-7 <b>Ocean B
                 "In the final matchup we finally got some suspense and an excuse to watch the dull MNF game instead of " +
                 "going out and getting a sugar buzz trick or treating, as the <b>Tight Butts</b> held it in and eeked out " +
                 "a close win over <b>Spare Ribs</b>.<br><br>" +
-                "Also of some note, but probably little interst, in four of the five matchups this week the team with the "
+                "Also of some note, but probably little interst, in four of the five matchups this week the team with the " +
                 "better record going in lost to the team with a worse record (and in three of them the two teams ended up " +
-                "with the same records afterwards... in affect closing up the playoff race quite a bit, if you're even " +
+                "with the same records afterwards...) in affect closing up the playoff race quite a bit, if you're even " +
                 "3-5 you're only one game out!";
 
 var week9_txt = "Wait for it!!!!";
