@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -142,7 +142,23 @@ var week8_txt = "OK, who called this one, raise your hands... the 0-7 <b>Ocean B
                 "with the same records afterwards...) in affect closing up the playoff race quite a bit, if you're even " +
                 "3-5 you're only one game out!";
 
-var week9_txt = "Wait for it!!!!";
+var week9_txt = "It was another week of 4 relatively easy wins and one nail biter, similar to last week, just the names " +
+                "changed, resulting in half the league ending up with identical 4-5 records, which leaves them all tied for " +
+                "that last playoff spot! And even the snake bit Predators at 3-6 are in it still as they're scoring a lot " +
+                "more points than all five of the 4-5 teams just ahead of them.<br><br>" +
+                "Alas, the miraculous resurgence of the <b>Seamen</b>, last weeks biggest surprise, proved to be somewhat " +
+                "short lived as the <b>Anus</b> pooped on their parade. The <b>Naturals</b> ended up with a comfortable " +
+                "win after K Drake scored 25 pts Monday night and the <b>Coco's</b> continued to have lineup issues.<br><br>" +
+                "The <b>Chops</b> continued with their good fortune of getting K. Walker from the Phat, providing all the " +
+                "margin they needed to take down the <b>Rollers</b> who managed to start two Out players... seems hard to " +
+                "win that way.<br><br>In the 'Can you top this' matchup, the <b>Tators</b> J Fields scored 44 pts, only to be out " +
+                "done by the <b>Topes</b> J Mixon scoring 55!  Too bad you have to play the rest of the rosters, as the rest " +
+                "of the Preds lineup was better than the Ice's, resulting in a 22 pt win.<br><br>In the final matchup, the " +
+                "<b>Turds</b>, despite posting their lowest score of the year, had a decent lead going into Sun evening but " +
+                "the <b>Blue Light Special on Aisle 5's</b> still had New Orleans Def and Derrick Henry.  After Henry had two " +
+                "TD's and 100 yds in the first half it all seemed over for the Phlat, but amazingly Henry was shut down in " +
+                "the second half and the Phlat pulled off the only close game of the week on Monday night when NO Def " +
+                "couldn't score the needed 7 pts.<br>";
 
 var week10_txt = "Wait for it!!!!";
 
