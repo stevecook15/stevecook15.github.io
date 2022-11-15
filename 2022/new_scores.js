@@ -168,10 +168,11 @@ var week10_txt = "Welcome to PFL Week 10 where 7 out of 10 teams are within plus
                  "only to somehow have the Phi D eek out enough points (in a losing effort) at the end of the game for the " +
                  "<b>SeaGuys</b> to retake the lead from the porkers and win by half a point! Exciting stuff!<br><br>" +
                  "In two other matches the <b>Topes</b> rolled the <b>Low Tide</b> and the <b>Taters</b> flattened the " +
-                 "<b>Bellies</b> when neither loser could break 100 pts.<br><br>In the final maatchup, the <b>Ochres</b> " +
+                 "<b>Bellies</b> when neither loser could break 100 pts and both winners did. That's how it works, folks!<br><br>" +
+                 "In the final maatchup, the <b>Carob Ochres</b> " +
                  "continuing roster choice selections (or lack there of) doomed them to a close loss to the <b>Anals</b>.<br><br>" +
                  "Here's an interesting datum: The highest scoring team in the league (Predators) and the lowest scoring team " +
-                 "in the league are both 4-6! Timing is everything I guess...<br><br>";
+                 "(Chops) in the league are both 4-6! Timing is everything I guess...<br><br>";
 
 var week11_txt = "Wait for it!!!!";
 
