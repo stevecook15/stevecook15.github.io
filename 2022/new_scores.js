@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -50,8 +50,8 @@ var week1_txt = "Welcome once again to the exciting PFL league for the 2022 seas
                 "Good luck to you all in securing second place! <br><br>Najee, Predators amd Anus all scored in the 140's and had comfortable wins, " +
 		          "but the other two week 1 winners (Phat and Ice) had probably ended up pulling out (what remains of) their hair by the end of " +
                 "the Hawks/Broncos game (Go Hawks!) as the both pulled out close wins with the Bastards cussing the PPR rule the whole way... " +
-                "1 yard RB dumpoffs worth 1.1 pts??? Really?? Grumble, grumble, grumble... Oh yeah, if I didn't mention your team winning, guess what "
-                "the outcome was... I'll wait for it.";
+                "1 yard RB dumpoffs worth 1.1 pts??? Really?? Grumble, grumble, grumble... Oh yeah, if I didn't mention your team winning, " +
+                "guess what the outcome was... No hurry, I'll wait for it.";
 
 var week2_txt = "So apparently the secret to high scoring in the PFL is to not check your lineup and leave two open spots... and just Roll with " +
                 "it scoring 189 points? Bastards! The Phat beat their projected score by 25 and still lose by 36? Or another way of looking " +
@@ -160,7 +160,18 @@ var week9_txt = "It was another week of 4 relatively easy wins and one nail bite
                 "the second half and the Phlat pulled off the only close game of the week on Monday night when NO Def " +
                 "couldn't score the needed 7 pts.<br>";
 
-var week10_txt = "Wait for it!!!!";
+var week10_txt = "Welcome to PFL Week 10 where 7 out of 10 teams are within plus/minus one game of being in the playoffs! Should " +
+                 "be an exciting road to the playoffs!<br><br>This week we saw a matchup between the top two teams and two of the bottom " +
+                 "teams. The top end matchup had the <b>Nachos</b> favored going in but the <b>Bass Pro Turds</b> receiving corps " +
+                 "64 pts doubled their counterparts effort leading to a comfortable win and high score for the week.<br><br>" +
+                 "In the other end matchup it was a cliff-hanger, after the <b>Loin Chops</b> forged into the lead late in MNF " +
+                 "only to somehow have the Phi D eek out enough points (in a losing effort) at the end of the game for the " +
+                 "<b>SeaGuys</b> to retake the lead from the porkers and win by half a point! Exciting stuff!<br><br>" +
+                 "In two other matches the <b>Topes</b> rolled the <b>Low Tide</b> and the <b>Taters</b> flattened the " +
+                 "<b>Bellies</b> when neither loser could break 100 pts.<br><br>In the final maatchup, the <b>Ochres</b> " +
+                 "continuing roster choice selections (or lack there of) doomed them to a close loss to the <b>Anals</b>.<br><br>" +
+                 "Here's an interesting datum: The highest scoring team in the league (Predators) and the lowest scoring team " +
+                 "in the league are both 4-6! Timing is everything I guess...<br><br>";
 
 var week11_txt = "Wait for it!!!!";
 
