@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -28,7 +28,7 @@ var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60
 // 4 - eliminated from playoffs
 
 var cocPlayoffs = 0;  // Coco Browns (Andy)
-var fatPlayoffs = 0;  // Phat Bastards (Steve)
+var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var prePlayoffs = 0;  // Predators (Joe)
 var rolPlayoffs = 0;  // Roll Tide (Daniel)
 var seaPlayoffs = 0;  // Seamen (Adam)
@@ -174,7 +174,17 @@ var week10_txt = "Welcome to PFL Week 10 where 7 out of 10 teams are within plus
                  "Here's an interesting datum: The highest scoring team in the league (Predators) and the lowest scoring team " +
                  "(Chops) in the league are both 4-6! Timing is everything I guess...<br><br>";
 
-var week11_txt = "Wait for it!!!!";
+var week11_txt = "Looks like Division 1 is wrapped up as the <b>Obese Illegitimates</b> take out the <b>Slow Ripple</b> to secure " +
+                 "a five game lead with four weeks to go. Not that they've been any great shakes the last couple of weeks but hey, " +
+                 "a win is a win!<br><br>In the Division 2 the two leaders both won to enhance their chances but it'll be a while " +
+                 "before the end result falls out.  The <b>Naturals</b> took down <b>the Other White Meat</b> and the <b>Belly " +
+                 "Flops</b> discounted the <b>Lagoon Kids</b>.<br><br>The <b>Slushies</b> also won in Division 2, lubricating the " +
+                 "<b>Stubborn Derriere</b>, to move into the last playoff spot as of the moment.  Can they keep it? With four weeks to " +
+                 "go, anyone team with seven or less losses is still in play at this moment (which is all but one team - Sorry " +
+                 "Seamen!).<br><br>And then there's the team everyone should be keeping an eye on - the <b>Post Taters</b>, who took out " +
+                 "the <b>Choco Nibbs</b>, winning their third in a row to move to 5-6 and they're the highest scoring team in the league. " +
+                 "Looks like some early season bad luck has moved on and they're killing it! But they've got the Bastards next week " +
+                 "who have won <b>nine</b> in a row - might be a tough matchup or maybe the Phat are overdue for a big L?";
 
 var week12_txt = "Wait for it!!!!";
 
