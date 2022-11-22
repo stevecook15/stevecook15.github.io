@@ -45,8 +45,8 @@ var tenPlayoffs = 0;  // Tenacious Anus (Jacob)
 var week0_txt = "Welcome to the 2022 Phantom League.";
 
 var week1_txt = "Welcome once again to the exciting PFL league for the 2022 season.  While we know you're all looking forward to " +
-                "pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guaranteed lock " +
-                "on that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
+                "pulling down the venerable PFL Championship this year, sadly none of you will, as the Phat have a guaranteed lock on" +
+                "that (at least on <i><b>this</b></i> web site. Don't care what that damn Yahoo site says..., what do they know anyway?) " +
                 "Good luck to you all in securing second place! <br><br>Najee, Predators amd Anus all scored in the 140's and had comfortable wins, " +
 		          "but the other two week 1 winners (Phat and Ice) had probably ended up pulling out (what remains of) their hair by the end of " +
                 "the Hawks/Broncos game (Go Hawks!) as the both pulled out close wins with the Bastards cussing the PPR rule the whole way... " +
@@ -64,14 +64,15 @@ var week2_txt = "So apparently the secret to high scoring in the PFL is to not c
 
 
 var week3_txt = "Well, much lower scores this week as four teams fail to break 100 and a fifth with their toes touching that line...  But congrats " +
-                "to the Chops as they still ekeed out a <i>'victory'</i> with their 94 point effort icing out the Topes. On the other hand, the Tens league low  " +
-                "score for the week didn't work so well matched up against the Naturals league high score for the week. It just kinda works that " +
-                "way I guess...<br><br>The Tide, in their ongoing groundbreaking and innovative lineup strategies, replaced an out for the week wide receiver for, " +
-                "you guessed it, another injured out for the week wide receiver! Pure Genious as it led to yet another win, this time over the Lakemen, " +
-                "though there's now some feeling that their team should be renamed to <i>Roll Lamar</i>... Lamars bye week is gonna be a killer!<br><br>In the other " +
-                "two matchups, the Preds got ho-hum efforts out of most of their players and a virtual goose egg out of their #1 WR to easily lose to the Phat's " +
-                "mostly mundane effort, and the Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks " +
-                "we're down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
+                "to the Chops as they still ekeed out a <i>'victory'</i> with their 94 point effort icing out the Topes. On the other hand, the " +
+                "Tens league low score for the week didn't work so well matched up against the Naturals league high score for the week. It just " +
+                "kinda works that way I guess...<br><br>The Tide, in their ongoing groundbreaking and innovative lineup strategies, replaced an " +
+                "out for the week wide receiver for, you guessed it, another injured out for the week wide receiver! Pure Genious as it led to " +
+                "yet another win, this time over the Lakemen, though there's now some feeling that their team should be renamed to <i>Roll " +
+                "Lamars</i>... Lamar's bye week is gonna be a killer!<br><br>In the other two matchups, the Preds got ho-hum efforts out of " +
+                "most of their players and a virtual goose egg out of their #1 WR to easily lose to the Phat's mostly mundane effort, and the " +
+                "Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks we're " +
+                "down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
 
 var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! In the first " + 
                 "matchup, the closest of the week, the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by the <b>Dinner Rolls</b>, thereby " +
@@ -184,7 +185,7 @@ var week11_txt = "Looks like Division 1 is wrapped up as the <b>Obese Illegitima
                  "Seamen!).<br><br>And then there's the team everyone should be keeping an eye on - the <b>Post Taters</b>, who took out " +
                  "the <b>Choco Nibbs</b>, winning their third in a row to move to 5-6 and they're the highest scoring team in the league. " +
                  "Looks like some early season bad luck has moved on and they're killing it! But they've got the Bastards next week " +
-                 "who have won <b>nine</b> in a row - might be a tough matchup or maybe the Phat are overdue for a big L?";
+                 "who have won <b>nine</b> in a row - might be a tough matchup or maybe the Phat are overdue for a big L?<br><br>";
 
 var week12_txt = "Wait for it!!!!";
 
