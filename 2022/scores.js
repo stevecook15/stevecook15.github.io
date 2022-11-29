@@ -75,7 +75,7 @@ class PflTeam {
 }
 
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);             cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let fatTeam = new PflTeam("Fat Bastards", "Steve", "fat", 1, fatOpps);           fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
+let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 1, fatOpps);          fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
 let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
 let rolTeam = new PflTeam("Roll Tide", "Daniel", "rol", 1, rolOpps);             rolTeam.setScores(rolScores); rolTeam.setPlayoffs(rolPlayoffs);
 let seaTeam = new PflTeam("Seamen", "Adam", "sea", 1, seaOpps);                  seaTeam.setScores(seaScores); seaTeam.setPlayoffs(seaPlayoffs);

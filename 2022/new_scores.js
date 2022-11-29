@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55, 114.70 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75, 133.80 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45, 130.30 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75, 131.50 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60, 106.65 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50, 124.35 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75, 150.45 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50, 115.40 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45,  98.00 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25, 149.05 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -31,7 +31,7 @@ var cocPlayoffs = 0;  // Coco Browns (Andy)
 var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var prePlayoffs = 0;  // Predators (Joe)
 var rolPlayoffs = 0;  // Roll Tide (Daniel)
-var seaPlayoffs = 0;  // Seamen (Adam)
+var seaPlayoffs = 4;  // Seamen (Adam)
 
 var icePlayoffs = 0;  // Iceotopes (John)
 var jabPlayoffs = 0;  // Najee By Nature  (Matt)
@@ -187,7 +187,18 @@ var week11_txt = "Looks like Division 1 is wrapped up as the <b>Obese Illegitima
                  "Looks like some early season bad luck has moved on and they're killing it! But they've got the Bastards next week " +
                  "who have won <b>nine</b> in a row - might be a tough matchup or maybe the Phat are overdue for a big L?<br><br>";
 
-var week12_txt = "Wait for it!!!!";
+var week12_txt = "<b>Bastards!</b> Those damn bastards did it again, down big after the Turkey day games they come back to eke out a win " +
+                 "over the <b>Predators</b> late Monday night after the Preds Sunday lineup laid an egg. Heartbreaking loss for the Preds " +
+                 "dropping them two games back in the race for the wild card spots.<br><br>Speaking of wild cards, the <b>Iceotopes</b> " +
+                 "are peaking (?) at the right time, winning their third in a row, taking down the undercooked <b>Porkchops</b> to move " +
+                 "into a virtual tie with the Bellies for the first wild card spot. The <b>Discounts</b> did their part in that equation " +
+                 "by getting blown out of the <b>Anus</b> who are now only one back in the wild card race.<br><br>In the same old, " +
+                 "same old section of the news, the <b>Tide</b> performed the now " +
+                 "seemingly ritualistic beatdown of the <b>Seamen</b>, rolling up a 25 point victory to stay alive in the wild card race " +
+                 "with the Predators.<br><br>And finally, the <b>Najee's</b> road a 48 pt performance from J Jacobs (and 34 from J Allen) " +
+                 "to overwhelm the <b>Coco's</b> who are probably feeling a bit blue (the Coco Blues?) about their playoff chances at this " +
+                 "point. With the win and high score for the week the Natures take over the total points scoring lead, obviously making them " +
+                 "the championship favorites, right??? Ignore that Phat guy behind the curtain. Nothing to see there.<br><br>";
 
 var week13_txt = "Wait for it!!!!";
 

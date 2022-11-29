@@ -1,6 +1,7 @@
 'use strict';
 
 //TODO: How to make plots bigger when window size gets bigger?
+//TODO: try adding multiple team avgs to begin/end of smoothed score raw data, then only draw real lines
 
 class Plots
 {
