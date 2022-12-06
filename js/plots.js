@@ -308,8 +308,8 @@ console.log("NUM WEEKS:" + numWeeks);
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(6);
-      chart.setYMax(60.0);
+      chart.setNumTics(5);
+      chart.setYMax(50.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);
