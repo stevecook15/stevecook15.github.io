@@ -222,10 +222,10 @@ var week13_txt = "Another week in the books, we added one more team to the playo
                  "That leaves one spot. The Tide and Anus need the Belly/Topes loser to lose out and they win out, then it'd come down " +
                  "to total pts, where the Anus are sitting pretty (pretty anus? hmmm...) at the moment, for the final spot.<br><br>";
 
-var week14_txt = "As the saying goes: on any given Sunday... well it was that Sunday! The last place <b>Seamen</b> throttled top dog <b>Phlat " +
-                 "Bastards</b>, ending their 11 week winning streak, and not to diminish the Seadogs accomplishment, but the Phlat would have " +
-                 "gotten throttled by any team they played this week seeing as how they had the low score (and the second lowest of the season) " +
-                 "for the week!  For reference: the Phlat's previous low score for a week was higher than the Sea-meany's season " +
+var week14_txt = "As the saying goes: on any given Sunday... well it was that Sunday! The last place <b>Seamen</b>, despite finishing with " +
+                 "their lowest score of the year (which says a lot for a 2-11 team), throttled top dog <b>Phlat Bastards</b> (also scoring " +
+                 "their lowest and a year long league wide second lowest) score of the year, ending their lucky 11 week winning streak. " +
+                 "For reference: the Phlat's previous low score for a week was higher than the Sea-meany's season " +
                  "average. Ah, when the stars align. The Phlat's hoping it was a one week blip but they're noted for choking in the " +
                  "playoffs so maybe they're just starting early.<br><br>In more important results one team clinched a playoff spot, one team " +
                  "was eliminated, and two teams remain in a final week battle for the last wild card spot. The <b>Iceotopes</b> continued their " +
