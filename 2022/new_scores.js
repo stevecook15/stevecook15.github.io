@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55, 114.70, 149.35 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75, 133.80, 161.20 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45, 130.30, 115.10 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75, 131.50, 129.15 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60, 106.65, 106.70 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55, 114.70, 149.35, 110.20 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75, 133.80, 161.20,  80.15 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45, 130.30, 115.10,  93.95 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75, 131.50, 129.15, 167.25 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60, 106.65, 106.70,  93.35 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50, 124.35, 126.70 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75, 150.45, 102.95 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50, 115.40, 112.75 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45,  98.00,  90.70 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25, 149.05, 143.35 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50, 124.35, 126.70, 150.15 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75, 150.45, 102.95, 109.45 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50, 115.40, 112.75, 120.85 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45,  98.00,  90.70, 130.95 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25, 149.05, 143.35, 107.35 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -33,11 +33,11 @@ var prePlayoffs = 4;  // Predators (Joe)
 var rolPlayoffs = 0;  // Roll Tide (Daniel)
 var seaPlayoffs = 4;  // Seamen (Adam)
 
-var icePlayoffs = 0;  // Iceotopes (John)
+var icePlayoffs = 1;  // Iceotopes (John)
 var jabPlayoffs = 1;  // Najee By Nature  (Matt)
 var belPlayoffs = 0;  // Discount Belicheck (Harrision)
 var porPlayoffs = 4;  // Porkchops (Noah)
-var tenPlayoffs = 0;  // Tenacious Anus (Jacob)
+var tenPlayoffs = 4;  // Tenacious Anus (Jacob)
 
 
 // Weekly blah blah blah text...
@@ -74,17 +74,18 @@ var week3_txt = "Well, much lower scores this week as four teams fail to break 1
                 "Clearance Coaches slipped by the Brownies (just not much to say about this one...).<br><br>So, after just three weeks we're " +
                 "down to one undefeated team, and one defeated team, the rest of us middling around the middle... long season still though!<br>";
 
-var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! In the first " + 
-                "matchup, the closest of the week, the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by the <b>Dinner Rolls</b>, thereby " +
-                "eliminating our last undefeated team (the Miami Dolphins can rest easy now).<br><br>In the second matchup, sadly the <b>Dry Lake Bed Men</b> remain " +
-                "defeated, after getting zero from Alvin the RB, allowing the <b>On Sale Bells</b> to ring up a win. If only they'd played their other RB! Oh wait, " +
-                "they'd have lost by 0.5 pts still... oops, never mind.<br><br>In the third sad low scoring affair, the <b>Slush Atoms</b> tanned (Copper Tone Brown " +
-                "#4) the <b>Coco Puffs</b> by almost 20 pts, pretty good when you're only scoring in the 120's yourself!<br><br>Now, in the land of Big Boy Football, "  +
-                "two (sorta 3) teams actually put up manly efforts. The <b>not too Phat (why almost trim, practically svelte even) Bastards</b> karushed the " +
-                "<b>Cutlets</b>, more than doubling the porkers score, for the leagues largest blowout of the year (made easier mind you when your opponent only " +
-                "scores in the 80s).<br><br>In the final matchup the <b>Lackadasical Anus</b> put up the third highest score of the week.  So sad (insert sad emoji " +
-                "here) that it was only good enough to get blown (out the ya know what...) by the <b>Marauders</b> by 40 plus points, who now own the high league " +
-                "score for the year!";
+var week4_txt = "We had three teams win while only scoring in the 120's this week. Guess we'll give the <i>'Lucky Team of the Week'</i> to all three! " +
+                "In the first matchup, the closest of the week, the <b>Notjee's</b>, with their low score of the year, got <i>Waddled</i> over by " +
+                "the <b>Dinner Rolls</b>, thereby eliminating our last undefeated team (the Miami Dolphins can rest easy now).<br><br>In the second " +
+                "matchup, sadly the <b>Dry Lake Bed Men</b> remain defeated, after getting zero from Alvin the RB, allowing the <b>On Sale Bells</b> " +
+                "to ring up a win. If only they'd played their other RB! Oh wait, they'd have lost by 0.5 pts still... oops, never mind.<br><br>In " +
+                "the third sad low scoring affair, the <b>Slush Atoms</b> tanned (Copper Tone Brown #4) the <b>Coco Puffs</b> by almost 20 pts, " +
+                "pretty good when you're only scoring in the 120's yourself!<br><br>Now, in the land of Big Boy Football, two (sorta 3) teams " +
+                "actually put up manly efforts. The <b>not too Phat (why almost trim, practically svelte even) Bastards</b> karushed the " +
+                "<b>Cutlets</b>, more than doubling the porkers score, for the leagues largest blowout of the year (made easier mind you when " +
+                "your opponent only scores in the 80s).<br><br>In the final matchup the <b>Lackadasical Anus</b> put up the third highest score " +
+                "of the week.  So sad (insert sad emoji here) that it was only good enough to get blown (out the ya know what...) by the " +
+                "<b>Marauders</b> by 40 plus points, who now own the high league score for the year!";
  
 var week5_txt = "Well, obviously the <b>Naturals</b> are the class of this league, blowing out the <b>PreDaters</b> by 60+ pts! " +
                 "And just as obviously the luckiest goes to the <b>Bass Turds</b> who under performed but had their <b>Anal</b> " +
@@ -221,7 +222,23 @@ var week13_txt = "Another week in the books, we added one more team to the playo
                  "That leaves one spot. The Tide and Anus need the Belly/Topes loser to lose out and they win out, then it'd come down " +
                  "to total pts, where the Anus are sitting pretty (pretty anus? hmmm...) at the moment, for the final spot.<br><br>";
 
-var week14_txt = "Wait for it!!!!";
+var week14_txt = "As the saying goes: on any given Sunday... well it was that Sunday! The last place <b>Seamen</b> throttled top dog <b>Phlat " +
+                 "Bastards</b>, ending their 11 week winning streak, and not to diminish the Seadogs accomplishment, but the Phlat would have " +
+                 "gotten throttled by any team they played this week seeing as how they had the low score (and the second lowest of the season) " +
+                 "for the week!  For reference: the Phlat's previous low score for a week was higher than the Sea-meany's season " +
+                 "average. Ah, when the stars align. The Phlat's hoping it was a one week blip but they're noted for choking in the " +
+                 "playoffs so maybe they're just starting early.<br><br>In more important results one team clinched a playoff spot, one team " +
+                 "was eliminated, and two teams remain in a final week battle for the last wild card spot. The <b>Iceotopes</b> continued their " +
+                 "late season run, easily winning their fifth in a row (some good fantasy management going on there) against the <b>Clearance Bells</b> " +
+                 "to clinch a playoff spot. The <b>Anus</b> tenaciously tried to hold it in but in the end lost a close one the the <b>Nacho " +
+                 "Naturals</b> resulting in the Anus being eliminated from the playoffs.<br><br>In another matchup with playoff implications, " +
+                 "the <b>Tide</b>, leaving no doubt with the high score for the week, " +
+                 "rolled over the <b>Browns</b> (wow, just like the real NFL Browns), leaving the Tide still in the running for the " +
+                 "last playoff spot. THe final matchup had no playoff implications as both teams had been already eliminated but resulted in the " +
+                 "<b>Pork</b> chopping down the <b>Predators</b>, continuing the Tators frustrating season.<br><br>So, with one week to go the Belly's " +
+                 "need to either take down those suddenly pathetic Bastards, or have the Tide lose, to take the final playoff spot.  The Tide on " +
+                 "other hand need 1) a win against the Chop Sueys, 2) have the Bellicheckers lose and 3) maintain their season total points lead " +
+                 "over the Discounted.  Should be fun!<br><br>"
 
 var week15_txt = "Wait for it!!!!";
 
