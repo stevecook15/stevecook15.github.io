@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55, 114.70, 149.35, 110.20 ];  // Coco Browns (Andy)
-var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75, 133.80, 161.20,  80.15 ];  // Phat Bastards (Steve)
-var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45, 130.30, 115.10,  93.95 ];  // Predators (Joe)
-var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75, 131.50, 129.15, 167.25 ];  // Roll Tide (Daniel)
-var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60, 106.65, 106.70,  93.35 ];  // Seamen (Adam)
+var cocScores = [ 131.00, 123.65, 122.50, 104.85, 134.30, 136.80, 134.45,  76.50, 124.60, 114.85, 118.55, 114.70, 149.35, 110.20, 154.10 ];  // Coco Browns (Andy)
+var fatScores = [ 132.40, 153.40, 132.85, 166.25, 122.05, 142.10, 136.05, 122.10, 106.20, 151.30, 123.75, 133.80, 161.20,  80.15, 132.50 ];  // Phat Bastards (Steve)
+var preScores = [ 148.55, 108.55,  94.70, 193.05, 118.50, 116.05, 143.85, 153.80, 154.65, 143.75, 125.45, 130.30, 115.10,  93.95, 168.00 ];  // Predators (Joe)
+var rolScores = [ 102.85, 189.50, 141.60, 127.20, 123.40, 129.40,  86.10, 113.70, 108.45,  92.20,  98.75, 131.50, 129.15, 167.25, 147.65 ];  // Roll Tide (Daniel)
+var seaScores = [ 100.35, 119.35, 100.30, 116.25, 126.00,  97.50,  98.70, 184.50, 105.55, 106.70, 112.60, 106.65, 106.70,  93.35,  91.30 ];  // Seamen (Adam)
 
-var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50, 124.35, 126.70, 150.15 ];  // Iceotopes (John)
-var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75, 150.45, 102.95, 109.45 ];  // Najee By Nature  (Matt)
-var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50, 115.40, 112.75, 120.85 ];  // Discount Belicheck (Harrision)
-var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45,  98.00,  90.70, 130.95 ];  // Porkchops (Noah)
-var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25, 149.05, 143.35, 107.35 ];  // Tenacious Anus (Jacob)
+var iceScores = [ 113.75, 128.15,  92.50, 123.70, 136.35,  92.85, 100.65, 151.45, 132.45, 121.30, 115.50, 124.35, 126.70, 150.15, 126.95 ];  // Iceotopes (John)
+var jabScores = [ 142.85, 157.45, 142.10, 120.15, 181.30, 113.55, 122.45,  95.00, 162.35, 127.30, 133.75, 150.45, 102.95, 109.45, 151.90 ];  // Najee By Nature  (Matt)
+var belScores = [ 110.85, 126.30, 126.65, 126.10, 125.00,  97.20, 122.45, 157.70, 103.05,  96.30, 128.50, 115.40, 112.75, 120.85, 120.95 ];  // Discount Belicheck (Harrision)
+var porScores = [ 134.05,  85.70,  94.75,  82.70,  88.80, 107.90, 148.10, 110.65, 124.65, 106.20, 100.45,  98.00,  90.70, 130.95, 126.65 ];  // Porkchops (Noah)
+var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60, 148.90, 125.85, 105.25, 149.05, 143.35, 107.35,  91.50 ];  // Tenacious Anus (Jacob)
 
 
 // 0 - not in playoffs yet
@@ -27,15 +27,15 @@ var tenScores = [ 142.90, 140.70,  90.55, 149.65, 106.15, 104.35, 105.70, 117.60
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 
-var cocPlayoffs = 4;  // Coco Browns (Andy)
 var fatPlayoffs = 2;  // Phat Bastards (Steve)
+var rolPlayoffs = 1;  // Roll Tide (Daniel)
+var cocPlayoffs = 4;  // Coco Browns (Andy)
 var prePlayoffs = 4;  // Predators (Joe)
-var rolPlayoffs = 0;  // Roll Tide (Daniel)
 var seaPlayoffs = 4;  // Seamen (Adam)
 
-var icePlayoffs = 1;  // Iceotopes (John)
 var jabPlayoffs = 1;  // Najee By Nature  (Matt)
-var belPlayoffs = 0;  // Discount Belicheck (Harrision)
+var icePlayoffs = 1;  // Iceotopes (John)
+var belPlayoffs = 4;  // Discount Belicheck (Harrision)
 var porPlayoffs = 4;  // Porkchops (Noah)
 var tenPlayoffs = 4;  // Tenacious Anus (Jacob)
 
@@ -240,5 +240,28 @@ var week14_txt = "As the saying goes: on any given Sunday... well it was that Su
                  "other hand need 1) a win against the Chop Sueys, 2) have the Bellicheckers lose and 3) maintain their season total points lead " +
                  "over the Discounted.  Should be fun!<br><br>"
 
-var week15_txt = "Wait for it!!!!";
+var week15_txt = "And so we have it, the final week is in the books and the last playoff spot is filled! The <b>Tide</b> needed a win over the " +
+                 "<b>Chops</b> and a loss by the <b>Discounted</b> to the <b>Phat</b> to secure a playoff spot over the Bellys. Well, the Tide got " +
+                 "their win, rolling over the porkers, but the Bellies and Phat were in a tight battle going into Sunday night. To the Bellies " +
+                 "dismay their 20 pt lead disappeared after a decent effort (for a change) Sunday night by the Phat RBs, resulting in the damn " +
+                 "bastards winning out. That left the Tide and Bellys tied with 7-7 records. But with the first tie breaker being season total " +
+                 "points the Belly Buttons were eliminated.<br><br>Amazingly, even with the second lowest season points total the Bellys were " +
+                 "somehow in the running till the last week and the Predators, with the second highest season point totals, were eliminated " +
+                 "several weeks ago - go figure!<br><br>In other playoff irrelevant matchups the <b>Seamen</b> suffered perhaps the perfect " +
+                 "ending to their cursed season when they were leading the <b>Anus</b> with less than 2 minutes left in MNF, then an Anus RB " +
+                 "has a 3 yd run at the end the game to defeat the Seamen by 0.2 pts, the <b>Predators</b> blew out the <b>Iceotopes</b> and " +
+                 "the <b>Cocos</b> snuck by the <b>Natures</b>. But the fight for season high average <i>was</i> on the line between the Phat, " +
+                 "Najee and Predators! A ho-hum score from the Phat, a good score from the Natures and a great score from the Preds resulted in " +
+                 "the Phat from going to first to third, and a very very close final total with the Najees beating out the Predators by 4 points " +
+                 "(or 0.267 pts a week), adding another layer of frustration to the Predators season!<br><br>But it's not all bad for the Preds " +
+                 "as they took home the Silver Cloud Lining award (AKA Most Points Against), nudging out the Seaboys (whose opponent let them " +
+                 "down, only scoring the bare minimum 91.5 points needed to beat them - slackers!). Gosh, the Predators came so close " +
+                 "to taking both the <i>most points for</i> and <i>most points against</i> awards - wouldn't that have been something?<br><br>" +
+                 "So the playoff semi-finals are now all set: the number one seed <i>(Phat Bastards)</i> will play the fourth seed <i>(Roll Tide)</i>, " +
+                 "who're currently the hottest team in the league - who are on a four game win streak just to make the playoffs. A wild card team on " +
+                 "a roll is always the most dangerous team in the playoffs, so the Phat are on upset alert already! The number two seed <i>(Najee By " +
+                 "Nature)</i> match up against the number three seed (<i>Iceotopes</i>) in the other spot. The Ice lost this week but were on a " +
+                 "five game win streak prior to that, now have to match up against the highest average team in the league so it'll be a battle."+
+                 "<br><br>Good luck to all the playoff teams (and better luck to the Phat), and well, its <i>we'll get them next year</i> for the " +
+                 "rest of you!<br><br>";
 
