@@ -33,7 +33,7 @@ var cocPlayoffs = 4;  // Coco Browns (Andy)
 var prePlayoffs = 4;  // Predators (Joe)
 var seaPlayoffs = 4;  // Seamen (Adam)
 
-var jabPlayoffs = 1;  // Najee By Nature  (Matt)
+var jabPlayoffs = 2;  // Najee By Nature  (Matt)
 var icePlayoffs = 1;  // Iceotopes (John)
 var belPlayoffs = 4;  // Discount Belicheck (Harrision)
 var porPlayoffs = 4;  // Porkchops (Noah)
