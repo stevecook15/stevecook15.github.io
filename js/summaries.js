@@ -12,7 +12,6 @@ class Summaries
       {
          var today = new Date();
          week = pflUtils.calcWeek(today);
-console.log("This week: " + week);
       }
 
       var weekStr;

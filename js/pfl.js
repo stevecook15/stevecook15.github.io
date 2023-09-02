@@ -57,14 +57,14 @@ $(document).ready(function()
    summaries.setWeeks();
 
    var standings_dialog = jQuery("#standings_window");
-   standings_dialog.dialog({ width: 460, height: 520, autoOpen: true });
+   standings_dialog.dialog({ width: 470, height: 520, autoOpen: true });
    standings_dialog.dialog('option', 'position', [180, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    standings.show();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 550, height: 520, autoOpen: true, padding: 10, margin: 10 });
-   currweek_dialog.dialog('option', 'position', [652, 70]);
+   currweek_dialog.dialog({ width: 590, height: 520, autoOpen: true, padding: 10, margin: 10 });
+   currweek_dialog.dialog('option', 'position', [664, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
 
    summaries.displayWeek(-1);
