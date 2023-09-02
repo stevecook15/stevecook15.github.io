@@ -12,15 +12,16 @@ class Summaries
       {
          var today = new Date();
          week = pflUtils.calcWeek(today);
+console.log("This week: " + week);
       }
 
       var weekStr;
       if ( week < 10 )
-         weekStr = "2022/Week0" + week + ".html";
+         weekStr = "2023/Week0" + week + ".html";
       else
-         weekStr = "2022/Week" + week + ".html";
+         weekStr = "2023/Week" + week + ".html";
 
-      if ( week > 15 ) // Playoffs...
+      if ( week > 14 ) // Playoffs...
       {
          $('#currweek_window').dialog("option", "title", "Week " + week).load(weekStr);
       }
@@ -68,8 +69,8 @@ class Summaries
       }
 
       // If current date is past tuesday of the current week, enable the next week (week += 1)
-      if ( pflUtils.calcDay() > 2 )   // 2 would be tuesday
-         week += 1
+//      if ( pflUtils.calcDay() > 2 )   // 2 would be tuesday
+//         week += 1
 
       // Enable buttons up to current week
       for ( var indx=1; indx<=week; indx++ )

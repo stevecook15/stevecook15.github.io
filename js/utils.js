@@ -55,7 +55,7 @@ class PflUtils
       else if ( week > 17 )  // Never go past last week
          week = 17;
 
-      if ( year == 2023 )  // Last playoff game may be in next year
+      if ( year == 2024 )  // Last playoff game may be in next year
       {
           week = 17;
       }

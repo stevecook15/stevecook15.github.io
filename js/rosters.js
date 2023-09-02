@@ -73,12 +73,15 @@ class Rosters
 
    addHdr(thdr, team)
    {
-      var row, cell, textNode, lf;
+      var row, cell, textNode, lf, tinfo;
 
       row = document.createElement("tr");
 
       cell = document.createElement("td");
-      textNode = document.createTextNode(" " + team + " ");
+
+      tinfo = team.split('/');
+
+      textNode = document.createTextNode(" " + tinfo[0] + "\n" + tinfo[1]);
       cell.colSpan = 4;
       cell.setAttribute("align", "center");
       cell.setAttribute("class", "rphead");
@@ -88,6 +91,7 @@ class Rosters
       thdr.appendChild(row);
    }
 
+//TODO: Add IR player indicator
    addRow(tbody, stbn, name, team, pos, onTeam)
    {
       var row, cell, textNode, lf;
