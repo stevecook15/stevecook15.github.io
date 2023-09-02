@@ -36,6 +36,7 @@ $(document).ready(function()
    {
       var rosters_dialog = $("#roster_window");
       rosters_dialog.css('background', 'url(Gifs/backgrnd.gif)');
+      rosters_dialog.dialog({ width: 1220, height: 720, autoOpen: true });
       rosters_dialog.dialog('option', 'position', [100, 80]);
       rosters_dialog.dialog("open");
       rosters.show();
