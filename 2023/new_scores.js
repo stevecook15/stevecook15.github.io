@@ -10,7 +10,7 @@
 
 var porScores = [ 0.0 ];  // Porkchops (Noah)
 var cocScores = [ 0.0 ];  // Coco Browns (Andy)
-var najScores = [ 0.0 ];  // Najee By Nature  (Matt)
+var mhcScores = [ 0.0 ];  // Mile High Chubb  (Matt)
 var preScores = [ 0.0 ];  // Predators (Joe)
 var steScores = [ 0.0 ];  // Superbowl DB Steve's Team (Steve)
 
@@ -29,7 +29,7 @@ var rekScores = [ 0.0 ];  // Reek's Standout Team (Reek)
 
 var porPlayoffs = 0;  // Porkchops (Noah)
 var cocPlayoffs = 0;  // Coco Browns (Andy)
-var najPlayoffs = 0;  // Najee By Nature  (Matt)
+var mhcPlayoffs = 0;  // Mile High Chub  (Matt)
 var prePlayoffs = 0;  // Predators (Joe)
 var stePlayoffs = 0;  // Steves Superbowl DB Team (Steve)
 
