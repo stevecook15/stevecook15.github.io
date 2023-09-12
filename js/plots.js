@@ -1167,12 +1167,14 @@ class Plots
    {
       var highTeam = new Array()
       var lowTeam = new Array()
+      var smallLossTeam = new Array()
 
       var numWeeks = this.getNumWeeks();
       var teams = getOrderedTeams();
       var team;
       var opps;
       var oppnt;
+      var xx;
 
       for ( var indx=0; indx<teams.length; indx++ )
       {
@@ -1184,13 +1186,16 @@ class Plots
             oppnt = getTeamByAbrv(opps[jndx]);
             if ( team.scores[jndx] > oppnt.scores[jndx] )  // Team won
             {
-               var xx = new TInfo(team.name, team.scores[jndx]);
+               xx = new TInfo(team.name, (jndx+1), team.scores[jndx]);
                highTeam.push(xx)
             }
             else   // team lost
             {
-               var xx = new TInfo(team.name, team.scores[jndx]);
+               xx = new TInfo(team.name, (jndx+1), team.scores[jndx]);
                lowTeam.push(xx)
+
+               xx = new TInfo(team.name, (jndx+1), (oppnt.scores[jndx] - team.scores[jndx]));
+               smallLossTeam.push(xx)
             }
          }
 
@@ -1200,6 +1205,10 @@ class Plots
 
          lowTeam.sort((a, b) => {
             return b.score - a.score;
+         });
+
+         smallLossTeam.sort((a, b) => {
+            return a.score - b.score;
          });
       }
 
@@ -1227,7 +1236,7 @@ class Plots
 
       highTeam.length = 5;
       highTeam.forEach((e) => {
-         str = e.team + " " + e.score;
+         str = e.team + ", Week " + e.week + ", " + e.score.toFixed(2);
          ctx.drawText(10, 10, 28, ypos, str);
          ypos += 20;
       });
@@ -1238,16 +1247,28 @@ class Plots
 
       lowTeam.length = 5;
       lowTeam.forEach((e) => {
-         str = e.team + " " + e.score;
+         str = e.team + ", Week " + e.week + ", " + e.score.toFixed(2);
+         ctx.drawText(10, 10, 28, ypos, str);
+         ypos += 20;
+      });
+
+      ypos += 20;
+      ctx.drawText(11, 12, 20, ypos, "Smallest margins of defeat: ");
+      ypos += 20;
+
+      smallLossTeam.length = 5;
+      smallLossTeam.forEach((e) => {
+         str = e.team + ", Week " + e.week + ", " + e.score.toFixed(2);
          ctx.drawText(10, 10, 28, ypos, str);
          ypos += 20;
       });
    }
 }
 
-function TInfo(team, score)
+function TInfo(team, week, score)
 {
    this.team = team;
+   this.week = week;
    this.score = score;
 }
 
