@@ -139,7 +139,6 @@ class Plots
       chart.setYTitle(yaxisTitle);
       chart.setHorzGrid(true);
 
-      var swins, slosses;
       var avg, oppAvg;
       var team, oppnt;
 
@@ -272,8 +271,6 @@ class Plots
             nwins = 0; nlosses = 0;
             swins = 0.0; slosses = 0.0;
 
-console.log("NUM WEEKS:" + numWeeks);
-
             for ( var jndx=0; jndx<numWeeks; jndx++ )
             {
                oppnt = getTeamByAbrv(opps[jndx]);
@@ -308,8 +305,8 @@ console.log("NUM WEEKS:" + numWeeks);
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(5);
-      chart.setYMax(50.0);
+      chart.setNumTics(8);
+      chart.setYMax(80.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);
@@ -1163,5 +1160,90 @@ console.log("NUM WEEKS:" + numWeeks);
          detailsTxt.textContent = txt;   // Real browsers
       }
    }
+
+
+   lucky_bastards()
+   {
+      var highTeam = new Array()
+      var lowTeam = new Array()
+
+      var numWeeks = this.getNumWeeks();
+      var teams = getOrderedTeams();
+      var team;
+      var opps;
+      var oppnt;
+
+      for ( var indx=0; indx<teams.length; indx++ )
+      {
+         team = teams[indx];
+         opps = team.getOpponents();
+
+         for ( var jndx=0; jndx<numWeeks; jndx++ )
+         {
+            oppnt = getTeamByAbrv(opps[jndx]);
+            if ( team.scores[jndx] > oppnt.scores[jndx] )  // Team won
+            {
+               var xx = new TInfo(team.name, team.scores[jndx]);
+               highTeam.push(xx)
+            }
+            else   // team lost
+            {
+               var xx = new TInfo(team.name, team.scores[jndx]);
+               lowTeam.push(xx)
+            }
+         }
+
+         highTeam.sort((a, b) => {
+            return a.score - b.score;
+         });
+
+         lowTeam.sort((a, b) => {
+            return b.score - a.score;
+         });
+      }
+
+      var canvas = document.getElementById("plot_canvas");
+      if ( canvas.getContext == null )
+         G_vmlCanvasManager.initElement(canvas);
+
+      if ( canvas.getContext == null )
+      {
+         alert("legend still no context");
+         return;
+      }
+
+      var ctx = canvas.getContext('2d');
+      // this adds the text functions to the ctx
+      CanvasTextFunctions.enable(ctx);
+
+      var str;
+      var ypos = 20;
+      ctx.drawText(12, 12, 20, ypos, "Lowest scores to win: ");
+      ypos += 20;
+
+      highTeam.length = 5;
+      highTeam.forEach((e) => {
+         str = e.team + " " + e.score;
+         ctx.drawText(10, 10, 28, ypos, str);
+         ypos += 20;
+      });
+     
+      ypos += 20;
+      ctx.drawText(11, 12, 20, ypos, "Highest scores to lose: ");
+      ypos += 20;
+
+      lowTeam.length = 5;
+      lowTeam.forEach((e) => {
+         str = e.team + " " + e.score;
+         ctx.drawText(10, 10, 28, ypos, str);
+         ypos += 20;
+      });
+   }
+}
+
+function TInfo(team, score)
+{
+   this.team = team;
+   this.score = score;
 }
 

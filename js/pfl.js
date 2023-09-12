@@ -17,6 +17,8 @@ $(document).ready(function()
    $('#plots_button').button();
    $('#currweek_button').button();
 
+   $('#test_button').button();
+
    $("#summaries_button").button().click(function()
    {
       $("#summaries_window").dialog("open");
@@ -50,21 +52,25 @@ $(document).ready(function()
       plots_dialog.dialog("open");
    });
 
+   $("#test_button").button().click(function()
+   {
+      plots.lucky_bastards();
+   });
  
    var summaries_dialog = $("#summaries_window");
-   summaries_dialog.dialog({ width: 160, height: 520, autoOpen: true });
+   summaries_dialog.dialog({ width: 160, height: 540, autoOpen: true });
    summaries_dialog.dialog( 'option', 'position', [10, 70] );
    summaries_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    summaries.setWeeks();
 
    var standings_dialog = jQuery("#standings_window");
-   standings_dialog.dialog({ width: 470, height: 520, autoOpen: true });
+   standings_dialog.dialog({ width: 470, height: 540, autoOpen: true });
    standings_dialog.dialog('option', 'position', [180, 70]);
    standings_dialog.css('background', 'url(Gifs/backgrnd.gif)');
    standings.show();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 590, height: 520, autoOpen: true, padding: 10, margin: 10 });
+   currweek_dialog.dialog({ width: 660, height: 540, autoOpen: true, padding: 10, margin: 10 });
    currweek_dialog.dialog('option', 'position', [664, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
 

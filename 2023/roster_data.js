@@ -168,7 +168,7 @@ var team8 = [ "Weapons of Bass Destruction / Daniel",
    "BN,Mike Evans,TAM,WR,0"
 ];
 
-var team9 = [ "Reek's Standout Team / Reek",  
+var team9 = [ "The Brotha's/ Reek/Ross",  
    "ST,Jalen Hurts,PHI,QB,0",
    "ST,Travis Etienne Jr,JAC,RB,0",
    "ST,Kenneth Walker III,SEA,RB,0",
