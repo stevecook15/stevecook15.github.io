@@ -47,7 +47,7 @@ var week0_txt = "Welcome to the 2023 Phantom League.";
 var week1_txt = "And we're off. The cream rises quickly to the top as the draft king Chop's porked out on the Chocolates <i>(this early leader for largest " +
                 "margin of victory prize, retail prize value: $0.00, could be hard to beat)</i>. If cream rises then something must settle to " +
                 "the bottom of that churn too, as evidenced by several teams spoiled, nay, even rancid efforts.<br><br>Mile High Chubb's QB and " +
-				    "defense scored nearly as many points as some teams totals (but, Coco and WBD, be ensured we're not naming anyone in case you're worried), " +
+				    "defense scored nearly as many points as some teams totals (Coco and WBD, be reassured, we're not naming any names here, just pointing things out), " +
 				    "much to the Bastards chagrin, who suffered that always favorite thing: highest score of the week to lose.<br><br>New comer SDBST surprised the Tators " +
 				    "in a relatively high(???) affair, well in comparison to the another newcomers Brothers victory, with that awesome just barely 100 pts score, " +
                 "over the Weapons of Mass Deflation.<br><br>And in the last, well yeah, okay, kinda dull here, move along, move along, matchup the Ice restocked the " +

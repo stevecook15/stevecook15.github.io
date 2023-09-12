@@ -7,8 +7,8 @@ class Plots
 {
    // Reads scores from scores.js
    PLOT_MIN_VALUE = 80.0;
-   PLOT_MAX_VALUE = 200.0;
-   PLOT_NUM_TICS = 12;
+   PLOT_MAX_VALUE = 180.0;
+   PLOT_NUM_TICS = 10;
 
    constructor()
    {
@@ -97,6 +97,7 @@ class Plots
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
       var cheight = canvasId.height;
+
       chart.draw("plot_canvas", cwidth, cheight);
 
       var legend = new BizLegend();
@@ -1215,6 +1216,9 @@ class Plots
       var ctx = canvas.getContext('2d');
       // this adds the text functions to the ctx
       CanvasTextFunctions.enable(ctx);
+
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       var str;
       var ypos = 20;

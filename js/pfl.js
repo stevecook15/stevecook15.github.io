@@ -48,7 +48,7 @@ $(document).ready(function()
    {
       var plots_dialog = $("#plots_window");
       plots_dialog.css('background', 'url(Gifs/backgrnd.gif)');
-      plots_dialog.dialog('option', 'position', [160, 100]);
+      plots_dialog.dialog('option', 'position', [180, 100]);
       plots_dialog.dialog("open");
    });
 
@@ -70,7 +70,7 @@ $(document).ready(function()
    standings.show();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 660, height: 540, autoOpen: true, padding: 10, margin: 10 });
+   currweek_dialog.dialog({ width: 690, height: 540, autoOpen: true, padding: 10, margin: 10 });
    currweek_dialog.dialog('option', 'position', [664, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
 
@@ -78,7 +78,7 @@ $(document).ready(function()
 
    $("#roster_window").dialog({ width: 1210, height: 530, autoOpen: false });
 
-   $("#plots_window").dialog({ width: 980, height: 500, autoOpen: false });
+   $("#plots_window").dialog({ width: 980, height: 560, autoOpen: false });
 
    setFilter("plot_options", getTeamNames());
 });

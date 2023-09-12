@@ -36,7 +36,7 @@ div.res2 {
    z-index: 2;
    position: absolute;
    top: 72px;
-   left: 330px;
+   left: 350px;
    border-width: 0px;
    border-color: #000000;
    border-style: none;
@@ -58,7 +58,7 @@ div.res4 {
    z-index: 2;
    position: absolute;
    top: 144px;
-   left: 330px;
+   left: 350px;
    border-width: 0px;
    border-color: #000000;
    border-style: none;
@@ -69,7 +69,7 @@ div.res5 {
    z-index: 2;
    position: absolute;
    top: 214px;
-   left: 140px;
+   left: 180px;
    border-width: 0px;
    border-color: #000000;
    border-style: none;
@@ -94,9 +94,8 @@ td.scName {
    font-size: 10pt;
    font-weight: bold;
    color: #000000;
-   min-width: 156px;
-   width: auto;
-   _width: 156px;
+   min-width: 230px;
+   width: 230px;
 }
 
 td.scValue {
@@ -106,8 +105,7 @@ td.scValue {
    text-align: center;
    color: #000000;
    min-width: 70px;
-   width: auto;
-   _width: 70px;
+   width: 70px;
 }
 
 td.scoringName {
