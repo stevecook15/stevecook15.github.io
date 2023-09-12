@@ -1165,6 +1165,16 @@ class Plots
 
    lucky_bastards()
    {
+      var detailsTxt = document.getElementById("detailsText");
+      if ( detailsTxt != null )
+      {
+         var txt  = "Are you throwing down pints after another close win or throwing pints at the TV after " +
+                    "another close loss? Just how luckly/unlucky have you been then season?";
+  
+         detailsTxt.innerText = txt;     // IE
+         detailsTxt.textContent = txt;   // Real browsers
+      }
+
       var highTeam = new Array()
       var lowTeam = new Array()
       var smallLossTeam = new Array()
@@ -1228,6 +1238,8 @@ class Plots
 
       ctx.fillStyle = "#ffffff";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		ctx.strokeStyle = "#000000";
 
       var str;
       var ypos = 20;
