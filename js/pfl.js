@@ -70,7 +70,7 @@ $(document).ready(function()
    standings.show();
 
    var currweek_dialog = $("#currweek_window");
-   currweek_dialog.dialog({ width: 690, height: 540, autoOpen: true, padding: 10, margin: 10 });
+   currweek_dialog.dialog({ width: 705, height: 540, autoOpen: true, padding: 10, margin: 10 });
    currweek_dialog.dialog('option', 'position', [664, 70]);
    currweek_dialog.css('background', 'url(Gifs/backgrnd.gif)');
 
