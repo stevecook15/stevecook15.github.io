@@ -76,7 +76,7 @@ class PflTeam {
 }
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let mhcTeam = new PflTeam("Mile High Chubb", "Matt", "mhc", 1, mhcOpps); 		          mhcTeam.setScores(mhcScores); mhcTeam.setPlayoffs(mhcPlayoffs);
+let mhcTeam = new PflTeam("The Age of APukalypse", "Matt", "mhc", 1, mhcOpps);          mhcTeam.setScores(mhcScores); mhcTeam.setPlayoffs(mhcPlayoffs);
 let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                       preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
 let steTeam = new PflTeam("SuperBowl DB Steve's Team", "Steve", "ste", 1, steOpps);     steTeam.setScores(steScores); steTeam.setPlayoffs(stePlayoffs);
 

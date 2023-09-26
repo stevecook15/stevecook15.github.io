@@ -37,7 +37,7 @@ var team1 = [ "Coco Browns / Andy",
    "BN,Christian Watson,GNB,WR,0"
 ];
 
-var team2 = [ "Mile High Chubb / Matt",  
+var team2 = [ "The Age of APukalypse / Matt",  
    "ST,Tua Tagovailoa,MIA,QB,0",
    "ST,Nick Chubb,CLE,RB,0",
    "ST,Jahmyr Gibbs,DET,RB,0",

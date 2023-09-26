@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95 ];  // Mile High Chubb  (Matt)
-var preScores = [ 101.90, 113.15 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55 ];  // Mile High Chubb  (Matt)  The Age of APukalypse
+var preScores = [ 101.90, 113.15,  84.45 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -29,7 +29,7 @@ var rekScores = [ 100.80, 102.95 ];  // The Brotha's (Reek/Ross)
 
 var porPlayoffs = 0;  // Porkchops (Noah)
 var cocPlayoffs = 0;  // Coco Browns (Andy)
-var mhcPlayoffs = 0;  // Mile High Chub  (Matt)
+var mhcPlayoffs = 0;  // Mile High Chub  (Matt) Age Of APukalypse
 var prePlayoffs = 0;  // Predators (Joe)
 var stePlayoffs = 0;  // Steves Superbowl DB Team (Steve)
 
@@ -64,7 +64,19 @@ var week2_txt = "So, who among you called this one:  the two teams with the (way
                 "going out... marking the first time this year the Fats opponents defense didn't score 35 points! Whats that you say? It's only " +
                 "week two? Well, then, never mind... <i>but still true</i> :-)<br>";
 
-var week3_txt = "";
+var week3_txt = "So, apparently there are two paths to a 3-0 record: 1) by being good - the <b>Pork Chops</b> have had one of the three highest scores each week, " +
+                "and lead the league in scoring, this week taking out the <b>APukalytes</b>, and 2) by knowing when to schedule an opponent - the <b>Super " +
+                "Dupers</b> have only one scoring week in the top five for that week and are averaging less than the league average score, and their three wins " +
+                "are three of the lowest five winning scores of the year! This week their mastery of scheduling resulted in another low scoring win, this time " +
+                "over the <b>Coco Not So Browns</b>. Maybe the start of one of those magical seasons?<br><br>On the other end of the luckometer are the 0-3 " +
+                "<b>Belicheks</b> and the 1-2 <b>Bastards</b>. <i>We won't mention the currently under-achieving 0-3 Predators at this time</i>. The Belly's " +
+                "have the second and fifth highest scores to lose a game this year, losing to the <b>Weapons</b> league season high output this week. Tough to beat " +
+                "that! Not to be out done in the 'Why Me?' category are the Fat - they are proud owners of the highest and fourth highest scores to lose this year, " +
+                "have had the fourth highest score in the league every single week (wow, what consistency!) and the second highest season point total. They lost to " +
+                "the <b>Brotha's</b> this week - a team that hadn't scored more than 102 pts the first two weeks and pulls out a 170 point effort (where'd that come " +
+                "from?) against the Phat. Do we even need to mention who that one Phat win was against? Why yes, it WAS the Belichecks. Go figure. Guess the Bellys and the " +
+                "Phat are both on their way to a <i>'So, its gonna be that kind of a year, huh?'</i> year.<br><br>And lastly, in a nothing to see here, move along, move along " +
+                "matchup, the <b>Ice</b> chilled out those not aforementioned <b>Predators</b> to remain in ho hum, middle of the pack, when do the playoffs start mode.<br><br>"
 
 var week4_txt = "";
  
