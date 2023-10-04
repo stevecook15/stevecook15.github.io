@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55 ];  // Mile High Chubb  (Matt)  The Age of APukalypse
-var preScores = [ 101.90, 113.15,  84.45 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40 ];  // Mile High Chubb  (Matt)  The Age of APukalypse
+var preScores = [ 101.90, 113.15,  84.45, 156.20 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -78,7 +78,19 @@ var week3_txt = "So, apparently there are two paths to a 3-0 record: 1) by being
                 "Phat are both on their way to a <i>'So, its gonna be that kind of a year, huh?'</i> year.<br><br>And lastly, in a nothing to see here, move along, move along " +
                 "matchup, the <b>Ice</b> chilled out those not aforementioned <b>Predators</b> to remain in ho hum, middle of the pack, when do the playoffs start mode.<br><br>"
 
-var week4_txt = "";
+var week4_txt = "After just four weeks we're down to just one undefeated team.  Which team is that you might ask - the league high averaging <b>Porkchops</b>, who in an off week " +
+                "still scored 123 pts or the more modest scoring <b>Super DB Steve</b>, whose total this week was south of 90 points. Why of course, it the still undefeated " +
+                "<font color='#ff0000'><s>Pork</s></font>, oops, I meant the Super Dupers who are now the sole 4-0 team. Congrats I guess. The SDST took advantage of an " +
+                "even weeker effort out of the <b>Weapons of Bass Amusement</b> (didn't they score 178 points last week?)  The Chops on the other hand got a season high point " +
+                "out of the <b>Icecubes</b> freezing out their hopes on remaining unbeaten. The Holics slide their way into first place in their division with the win.<br><br>" +
+                "The <b>APukeopolis</b> broke out of their doldrums scoring the highest league point total this year blowing out the hapless <b>Siblings</b> who had their " + 
+                "lowest score of the year (though not by much over two of their other efforts - another team that somehow scored 170 pts last week. Much Bastard hate there).<br><br>" +
+                "On the other end of the spectrum two 0-3 teams met up so someone had to win (weren't you just hoping for a tie here????). Well in a matchup where both teams had " +
+                "their highest scores of the year that someone was the <b>PreDateds</b> to eek out the <b>Bellyaches</b> in the closest matchup of the week.<br><br>In the final " +
+                "matchup the <b>Flat Bass Turds</b> comfortably beat the <b>No No Browns</b> when the Cokes couldn't muster even 90 points.<br><br>So, one undefeated team, one " +
+                "winless team and all the rest hanging out in the middle. Will the Bastards take dowwn Super Steve and can the Discounters feast on Pork this next week? The " +
+                "beginning of Bye Weeks could shake things up. I would guess the fantasy world waits with (less than) baited breath...";
+
  
 var week5_txt = "";
 
