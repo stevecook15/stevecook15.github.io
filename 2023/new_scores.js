@@ -92,15 +92,15 @@ var week4_txt = "After just four weeks we're down to just one undefeated team.  
                 "beginning of Bye Weeks could shake things up. I would guess the fantasy world waits with (less than) baited breath...";
 
  
-var week5_txt = "In a relatively unusual Monday, MNF has no chance to alter any of the outcomes, only just how badly would the <b>Da Brotha's</b> crush the <b>Coconaughts</b> on their way to " +
+var week5_txt = "In a relatively unusual Monday, the MNF game had no chance to alter any of the outcomes, only just how badly would the <b>Da Brotha's</b> crush the <b>Coconaughts</b> on their way to " +
                 "the high score of the week against the Cokes low score of the week. That'd be very badly I'd say. Hardly seems fair...<br><br>On another note we lost both the last unbeaten " +
                 "team and the last winless team just five weeks into the season.  On the winless side, in a meeting of brothers (no, not Da Brotha's) the <b>Belly's</b> discounted the " +
                 "<b>Chops</b> win hopes by saving their highest score of the year just for the Porkys to chalk up their first win.<br><br>And in a battle of the Steve's, the Fantasy gods of " +
                 "fate must have gotten confused as to which Steve to bestow their lucky blessings on as the <b>Phat Steves</b> took down the undefeated (though hardly scary) <b>Super Steves</b> " +
-                "in a close battle that was decided very late Sunday night thanks to the Dallas Cowboys ineptiude.<br><br>In an even closer matchup, it looked like the <b>Ice</b> were going to " +
+                "in a close battle that wasn't decided till very late Sunday night thanks to the Dallas Cowboys ineptiude.<br><br>In an even closer matchup, it looked like the <b>Ice</b> were going to " +
                 "be frozen out by the <b>APukesters</b> in a low scoring affair.  But, again thanks to the Cowbooys ineptitude, the Holics tight end, who had <b>zero</b> touchdowns coming in, " +
                 "ends up with three TD's to overcome the Age of Aqaurius.  Not sure who hates the Cowboys more at this point, your humble author (on general principle) or the Apukies on losing " +
-                "them their match.<br><br>And Oh, yeah, in the final matchup (seems like there's always some final one ho hum matchp) the <b>Bass Haters</b> easily took out the (not very) " +
+                "them their match.<br><br>And oh, yeah, in the final matchup (seems like there's always some final one ho hum matchp) the <b>Bass Haters</b> easily took out the (not very) " +
                 "<b>Predacious</b> (Author: look it up)<br><br>And did anyone notice the Division 2 Wannabes wiped up with the Division 1 Dreamers, going 5-0 this week against them?<br><br>";
 
 var week6_txt = "";
