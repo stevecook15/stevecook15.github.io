@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40 ];  // Mile High Chubb  (Matt)  The Age of APukalypse
-var preScores = [ 101.90, 113.15,  84.45, 156.20 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -92,7 +92,16 @@ var week4_txt = "After just four weeks we're down to just one undefeated team.  
                 "beginning of Bye Weeks could shake things up. I would guess the fantasy world waits with (less than) baited breath...";
 
  
-var week5_txt = "";
+var week5_txt = "In a relatively unusual Monday, MNF has no chance to alter any of the outcomes, only just how badly would the <b>Da Brotha's</b> crush the <b>Coconaughts</b> on their way to " +
+                "the high score of the week against the Cokes low score of the week. That'd be very badly I'd say. Hardly seems fair...<br><br>On another note we lost both the last unbeaten " +
+                "team and the last winless team just five weeks into the season.  On the winless side, in a meeting of brothers (no, not Da Brotha's) the <b>Belly's</b> discounted the " +
+                "<b>Chops</b> win hopes by saving their highest score of the year just for the Porkys to chalk up their first win.<br><br>And in a battle of the Steve's, the Fantasy gods of " +
+                "fate must have gotten confused as to which Steve to bestow their lucky blessings on as the <b>Phat Steves</b> took down the undefeated (though hardly scary) <b>Super Steves</b> " +
+                "in a close battle that was decided very late Sunday night thanks to the Dallas Cowboys ineptiude.<br><br>In an even closer matchup, it looked like the <b>Ice</b> were going to " +
+                "be frozen out by the <b>APukesters</b> in a low scoring affair.  But, again thanks to the Cowbooys ineptitude, the Holics tight end, who had <b>zero</b> touchdowns coming in, " +
+                "ends up with three TD's to overcome the Age of Aqaurius.  Not sure who hates the Cowboys more at this point, your humble author (on general principle) or the Apukies on losing " +
+                "them their match.<br><br>And Oh, yeah, in the final matchup (seems like there's always some final one ho hum matchp) the <b>Bass Haters</b> easily took out the (not very) " +
+                "<b>Predacious</b> (Author: look it up)<br><br>And did anyone notice the Division 2 Wannabes wiped up with the Division 1 Dreamers, going 5-0 this week against them?<br><br>";
 
 var week6_txt = "";
 
