@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -103,7 +103,16 @@ var week5_txt = "In a relatively unusual Monday, the MNF game had no chance to a
                 "them their match.<br><br>And oh, yeah, in the final matchup (seems like there's always some final one ho hum matchp) the <b>Bass Haters</b> easily took out the (not very) " +
                 "<b>Predacious</b> (Author: look it up)<br><br>And did anyone notice the Division 2 Wannabes wiped up with the Division 1 Dreamers, going 5-0 this week against them?<br><br>";
 
-var week6_txt = "";
+var week6_txt = "In another amazing display of playing whats in front of you, the <b>SuperDuper SteverTeamer's</b> once again found a way for their opponent to score even less points than " +
+                "they did, as the <b>Belichecks</b> continue to emulate their real life NFL namesake's season (ie losing). The SDST now has four of the five lowest winning scores in the " +
+                "league this year, including this weeks 112 point fest!<br><br>To show how these things normally go, every other team that scored less than 115 points this week lost, with the " +
+                "<b>PorkFlops</b> 72.6 point effort (is that the right word) leading the way and ending up with an 85 pt blowout to the surging <b>Predators</b> (150 pts plus in two of the " +
+                "last three weeks).<br><br>The <b>Apukalypse's</b> namesake also was not great (6.6 pts, time for a name change?) but they still scored enough to beat out the <b>Coco Chanels</b> who " +
+                "now have scored even less points than the SDSTs! (<i>That can't be good</i>). Lets hope that turns around as it'd be great if the SDSTs had the best record AND the lowest average! " +
+                "And speaking of surging, the <b>Bro's</b> scored big for the third time in four weeks to melt the <b>Ices</b> hopes of a win, to move into virtual tie for 2nd most points " +
+                "score with the Porkers and first place in their division (via tiebreakers).<br><br>And in the last matchup the <b>Chubby Illegitimates</b> got 60 points out of their 3 Sunday and " +
+                "Monday night players to overtake the <b>Weapons of Minimal Destruction</b> late Monday, and take the overall lead in points scored (though that seems to be more of a consistency " +
+                "thing than a high scoring thing).";
 
 var week7_txt = "";
 
