@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -114,7 +114,16 @@ var week6_txt = "In another amazing display of playing whats in front of you, th
                 "Monday night players to overtake the <b>Weapons of Minimal Destruction</b> late Monday, and take the overall lead in points scored (though that seems to be more of a consistency " +
                 "thing than a high scoring thing).";
 
-var week7_txt = "";
+var week7_txt = "Wow, the closest match of the year ended with <b>Fish Destroyers</b> eeking out a win over the <b>Oh No Browns</b> by 0.3 points, leaving the Cokes to wonder why just one of " +
+                "their players couldn't get just 3 more yards or one more reception or one more sack or... yep, that's practically the dictionary definition of 'That Sucks'.<br><br>Speaking " +
+                "of 0.3 points, thats the exact amount the <b>Flat Turds</b> got out of their lead running back this week after he had a headache just before game time, of course leading to " +
+                "a close loss to the <b>Slushtopes</b>. That would be a synonym for 'That Sucks'.   Maybe the Phat should have just donated the 0.3 points to the Browns?<br><br>In another close " +
+                "match, though one actually involving teams scoring high, <b>Da Brothas</b> are looking like the class of the leaque, taking down the snakebit <b>Belly Boys</b> and taking " +
+                "over first place in Division 2 and the high average. Good week for them I guess.<br><br>And in an ongoing magic show the <b>Super Steve's</b> once again conned their " +
+                "opponent (the once might <b>Choppers</b> into having the lowest score of the week to win despite having the third lowest score of the week.  Did you know that their " +
+                "opponents have scored 300 points less than the Bellichecks opponents? Wow! That's some powerful magic!<br><br>And in the token ho hum match, nothing much exciting here, " +
+                "move along, move along the <b>APukasaurus's</b> took down the <b>Preda-SeeYaLaterDude</b>.";
+
 
 var week8_txt = "";
 
