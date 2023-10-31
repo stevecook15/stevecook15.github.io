@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -125,7 +125,16 @@ var week7_txt = "Wow, the closest match of the year ended with <b>Fish Destroyer
                 "move along, move along the <b>APukasaurus's</b> took down the <b>Preda-SeeYaLaterDude</b>.";
 
 
-var week8_txt = "";
+var week8_txt = "It was the best of times, it was the worst of times... that sounds vaguely familiar somehow.  Anyway, for the <b>Bellys</b> it was the worst of times as they had their " +
+                "highest score of the season and still lost to the <b>Aging Apuks</b> after J. Gibbs goes for 30 on MNF. That's gotta hurt! In another entry on the 'worst of times' side of " +
+                "the ledger, and scoreboard, the <b>Coco Puffs</b> had the low score for the week to drop into dead last in record and points scored, losing to <b>PorkLoins</b> who had their " +
+                "best score since week 3 of the season.<br><br>In the both least and most shocking matchup of the week the <b>Stupor Steve's</b> failed to break 130 pts (least shocking - " +
+                "haven't hit that mark this year) and lost (most shocking given their luck the first seven weeks) as the <b>Predators</b> forgot to read the Hollywood script and accidently " +
+                "scored more points than the SDSTs. The " +
+                "SDSTs still are in first place in their division but that sees as tenuous as the Seattle Seahawks division lead.<br><br>In the big boys battle for the division lead in " +
+                "Division 2 the <b>Broz On Ice</b> took out the <b>Other Brozs</b> to grab hold of the number one seed (if the season ended today - really, is it too early for that?)<br><br>" +
+                "And in the traditional <i>what does it all matter bowl</i> the <b>Weapons of Bastard Destruction</b> easily held on Monday night after the <b>Phlats</b> QB failed to pass " +
+                "for 500 yards and 5 TDs and the WBDs defense failed to lay a zero point egg...<br><br>";
 
 var week9_txt = "";
 
