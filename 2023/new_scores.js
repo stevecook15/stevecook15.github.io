@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -136,7 +136,16 @@ var week8_txt = "It was the best of times, it was the worst of times... that sou
                 "And in the traditional <i>what does it all matter bowl</i> the <b>Weapons of Bastard Destruction</b> easily held on Monday night after the <b>Phlats</b> QB failed to pass " +
                 "for 500 yards and 5 TDs and the WBDs defense failed to lay a zero point egg...<br><br>";
 
-var week9_txt = "";
+var week9_txt = "In a strange scheduling quirk four of the five matchups featured teams with identical records so lots of position joggling was bound to ensue. In a battle of the top teams " +
+                "in each division, each 6-2, the <b>Stupor DBs</b> had their high score of the season, breaking a 130 points for the first time (whooo, what lofty heights we're dealing with here) " +
+                "taking down the <b>Slushies</b>.<br><br>In a matchup of two 5-3 teams, the <b>Weaponators</b> won for the third stright week, karushing the <b>TAOP</b>, by having the league " +
+                " high score for the week (tough to " +
+                "lose when that happens) movng into first place in the South division by 3.5 total points.<br><br>The 4-4 matchup had the <b>Tubby Fish Poops</b> come out a little ahead of " +
+                "<b>The Other White Meats</b> when the NY Jets left their offense in the locker room Monday night.<br><br>Then there was the matchup of two 1-7 teams, guaranteeing one of them would " +
+                "double their win total over the weekend!  That team would be the <b>15% Off Till Midnight on Bellies</b> who took out the <b>Coco Free Brownies</b> in a predictably low " +
+                "scoring affair, although to be fair, the Bellies are mostly just snake bit - they have the third highest total points for the year which apparently is just good enough for a 2-8 " +
+                "record. Think they aren't jealous of the Super Steves?<br><br>And finally in the weekly 'Oh yeah, theres two other teams playing this week' bowl the <b>Pre-Daters</b> (who " +
+                "are quietly moving up the ranks) weren't very brotherly to the <b>Siblings</b> dropping them down to third in the South.<br><br>";
 
 var week10_txt = "";
 
@@ -147,3 +156,5 @@ var week12_txt = "";
 var week13_txt = "";
 
 var week14_txt = "";
+
+var week15_txt = "";
