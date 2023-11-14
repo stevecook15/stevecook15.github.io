@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -120,7 +120,7 @@ var week7_txt = "Wow, the closest match of the year ended with <b>Fish Destroyer
                 "a close loss to the <b>Slushtopes</b>. That would be a synonym for 'That Sucks'.   Maybe the Phat should have just donated the 0.3 points to the Browns?<br><br>In another close " +
                 "match, though one actually involving teams scoring high, <b>Da Brothas</b> are looking like the class of the leaque, taking down the snakebit <b>Belly Boys</b> and taking " +
                 "over first place in Division 2 and the high average. Good week for them I guess.<br><br>And in an ongoing magic show the <b>Super Steve's</b> once again conned their " +
-                "opponent (the once might <b>Choppers</b> into having the lowest score of the week to win despite having the third lowest score of the week.  Did you know that their " +
+                "opponent (the once mighty <b>Choppers</b>) into having the lowest score of the week, winnnig despite having the third lowest score of the week.  Did you know that their " +
                 "opponents have scored 300 points less than the Bellichecks opponents? Wow! That's some powerful magic!<br><br>And in the token ho hum match, nothing much exciting here, " +
                 "move along, move along the <b>APukasaurus's</b> took down the <b>Preda-SeeYaLaterDude</b>.";
 
@@ -147,7 +147,17 @@ var week9_txt = "In a strange scheduling quirk four of the five matchups feature
                 "record. Think they aren't jealous of the Super Steves?<br><br>And finally in the weekly 'Oh yeah, theres two other teams playing this week' bowl the <b>Pre-Daters</b> (who " +
                 "are quietly moving up the ranks) weren't very brotherly to the <b>Siblings</b> dropping them down to third in the South.<br><br>";
 
-var week10_txt = "";
+var week10_txt = "Probably the highest scoring week of the year with four teams scoring over 145 points and a new league high point total for the year. The owner of that sparkling new high score " +
+                 "is the oncoming <b>Predators</b>, winners of three in a row and moving into second in their division. Every single player on their team exceeded their projections except for " +
+                 "their kicker who missed his projected score by 0.89 points - what a loser!   Their opponent, the <b>Not so fat, why maybe even svelte Bastards</b>, had the fourth " +
+                 "highest score of the week (for like the 5th time this year, three in losses) and their second highest point total of the year which of course just meant they lost again " +
+                 "for the third time in four weeks as they're headed for the bottom faster than a submarine with the doors open.<br><br>The second and third higest scores of the week, <b>Weap " +
+                 "Bass Des</b> and <b>Cold Atoms</b> resulted in outputs that doubled their poor oppenents scores, the <b>PorkFlops</b> and <b>NoGo Browns</b> respectively. The Phat have just " +
+                 "got to be shaking their head! Speaking of sinking, the Porks are 1-6 since a 3-0 start and the Coco's have been rusting on the ocean floor since the start.<br><br>In the tighest " +
+                 "matchup of the week the <b>Bellyaching</b> weren't, as they for once had good fortune and won a low scoring close match against <b>Post-Apocalypse</b> two weeks after losing a " +
+                 "high scoring close match against them by about the same margin. Guess that evens those two up...<br><br>And speaking of things evening up <i>(and I was, wasn't I?  Oh, I'm just " +
+                 "so clever)</i> the <b>Stupor Team's</b> magical run may be finally running out of steam as they posted their usual low score but this time their opponent <b>Da Broz Brothers</b> " +
+                 "said the heck with that, and blew the DBs out. Amazingly the SDST still have a two game lead in ther division despite still sporting the second lowest total points in league!<br><br>";
 
 var week11_txt = "";
 

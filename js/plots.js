@@ -7,8 +7,8 @@ class Plots
 {
    // Reads scores from scores.js
    PLOT_MIN_VALUE = 80.0;
-   PLOT_MAX_VALUE = 180.0;
-   PLOT_NUM_TICS = 10;
+   PLOT_MAX_VALUE = 200.0;
+   PLOT_NUM_TICS = 12;
 
    constructor()
    {
@@ -617,9 +617,9 @@ class Plots
       chart.setPlotType(chart.YONLY_PLOT);
 
       //chart.setAutoScale(true);
-      chart.setNumTics(12); //this.PLOT_NUM_TICS);
+      chart.setNumTics(10); //this.PLOT_NUM_TICS);
       chart.setYMax(180); //this.PLOT_MAX_VALUE);
-      chart.setYMin(60); //this.PLOT_MIN_VALUE);
+      chart.setYMin(80); //this.PLOT_MIN_VALUE);
 
       chart.setXTitle(xaxisTitle);
       chart.setYTitle(yaxisTitle);
@@ -1125,9 +1125,9 @@ class Plots
       chart.addRefLine(season_avg.toFixed(2));
 
       //chart.setAutoScale(true);
-      chart.setNumTics(14); //this.PLOT_NUM_TICS);
-      chart.setYMax(200); //this.PLOT_MAX_VALUE);
-      chart.setYMin(60); //this.PLOT_MIN_VALUE);
+      chart.setNumTics(13); //this.PLOT_NUM_TICS);
+      chart.setYMax(260); //this.PLOT_MAX_VALUE);
+      chart.setYMin(0); //this.PLOT_MIN_VALUE);
 
       var canvasId = document.getElementById("plot_canvas");
       var cwidth = canvasId.width;
