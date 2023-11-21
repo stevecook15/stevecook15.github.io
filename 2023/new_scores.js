@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20, 150.85 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95, 114.85 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65, 117.75 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40,  93.15 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65, 170.40 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65, 133.30 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55, 172.10 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25, 112.95 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75,  94.00 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50, 127.70 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -29,15 +29,15 @@ var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35
 
 var porPlayoffs = 0;  // Porkchops (Noah)
 var cocPlayoffs = 0;  // Coco Browns (Andy)
-var mhcPlayoffs = 0;  // Mile High Chub  (Matt) Age Of APukalypse
+var mhcPlayoffs = 0;  // Age Of APukalypse  (Matt) (Old: Mile High Chubb)
 var prePlayoffs = 0;  // Predators (Joe)
-var stePlayoffs = 0;  // Steves Superbowl DB Team (Steve)
+var stePlayoffs = 1;  // Steves Superbowl DB Team (Steve)
 
 var fatPlayoffs = 0;  // Phat Bastards (Steve)
-var icePlayoffs = 0;  // Iceotopes (John)
+var icePlayoffs = 1;  // Iceotopes (John)
 var belPlayoffs = 0;  // Discount Belicheck (Harrision)
-var wbdPlayoffs = 0;  // Weapons of Bass Destruction (Daniel)
-var rekPlayoffs = 0;  // The Brotha's (Reek/Ross)
+var wbdPlayoffs = 1;  // Weapons of Bass Destruction (Daniel)
+var rekPlayoffs = 1;  // The Brotha's (Reek/Ross)
 
 
 // Weekly blah blah blah text...
@@ -159,7 +159,16 @@ var week10_txt = "Probably the highest scoring week of the year with four teams 
                  "so clever)</i> the <b>Stupor Team's</b> magical run may be finally running out of steam as they posted their usual low score but this time their opponent <b>Da Broz Brothers</b> " +
                  "said the heck with that, and blew the DBs out. Amazingly the SDST still have a two game lead in ther division despite still sporting the second lowest total points in league!<br><br>";
 
-var week11_txt = "";
+var week11_txt = "Looks like the <b>Super Steves</b> caved in and decided to play the old fashioned way - score a bunch of points, way more than the <b>Age of Aqarious</b>, did. Just rubbing " +
+                 "salt into the wound I guess, piling it on till they'd beaten their previous high by 40 points.<br><br>The <b>PorkChopettes</b> thought that sounded like a good idea too and " +
+                 "had their highest score in eight weeks but gol darn it apparently the <b>Iceotoparies</b> decided to do that too and produced their high score of the season to beat the Chops " +
+                 "and now hold the top seed in the league.<br><br>Boy, what a" +
+                 "difference a week makes. Last week the <b>PredGators</b> broke the 200 pt barrier and this week couldn't break 100 and lose to the <b>1-9 SoSo Browns</b>????  <br><br>Thanks for " +
+                 "that say the <b>Bastards</b>,  who in an it all evens out eventually match (given a very large sample size apparently) beat out the the <b>Reduced Bellyfat</b> despite a middling " +
+                 "kind of score.<br><br>And finally, in this weeks oh yeah the <b>WBD</b> and <b>Broz</b> also played this week match, the Brodudes whooped up on the Weapons (another team that " +
+                 "scored big last week and couldn't break 100 this week!), ending the WBD's four game winning streak. That moved both teams to 7-4 records just one game behind the Ice and " +
+                 "Super Steve.<br><br>And given an eight team playoff format it seems the <i>Ice, Supers, Brothas and WBD</i> (despite losing) all clinched a playoff spot with at worst 8-6 and " +
+                 "7-7 records as there are already two of the ten teams that can't reach that mark. So rest your starters if you play the Phat the next three weeks OK?<br><br>";
 
 var week12_txt = "";
 
