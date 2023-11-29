@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20, 150.85 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95, 114.85 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65, 117.75 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40,  93.15 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65, 170.40 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20, 150.85, 127.05  ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95, 114.85, 113.80 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65, 117.75,  81.05 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40,  93.15, 165.55 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65, 170.40, 120.65 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65, 133.30 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55, 172.10 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25, 112.95 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75,  94.00 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50, 127.70 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65, 133.30, 178.10 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55, 172.10, 137.25 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25, 112.95, 134.35 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75,  94.00, 160.30 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50, 127.70, 138.60 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -170,7 +170,7 @@ var week11_txt = "Looks like the <b>Super Steves</b> caved in and decided to pla
                  "Super Steve.<br><br>And given an eight team playoff format it seems the <i>Ice, Supers, Brothas and WBD</i> (despite losing) all clinched a playoff spot with at worst 8-6 and " +
                  "7-7 records as there are already two of the ten teams that can't reach that mark. So rest your starters if you play the Phat the next three weeks OK?<br><br>";
 
-var week12_txt = "";
+var week12_txt = "Some teams won, some teams lost. You figure it  out...";
 
 var week13_txt = "";
 
