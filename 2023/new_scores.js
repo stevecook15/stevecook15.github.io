@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20, 150.85, 127.05, 139.65 ];  // Porkchops (Noah)
-var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95, 114.85, 113.80, 108.20 ];  // Coco Browns (Andy)
-var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65, 117.75,  81.05, 173.80 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
-var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40,  93.15, 165.55, 131.75 ];  // Predators (Joe)
-var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65, 170.40, 120.65, 136.10 ];  // Superbowl DB Steve's Team (Steve)
+var porScores = [ 151.00, 146.05, 161.15, 123.25, 136.90,  76.20,  80.95, 131.80, 111.80,  86.20, 150.85, 127.05, 139.65, 142.55 ];  // Porkchops (Noah)
+var cocScores = [  81.60, 161.95, 117.50,  85.75, 101.05, 115.00, 121.40,  99.15,  98.65,  90.95, 114.85, 113.80, 108.20, 132.05 ];  // Coco Browns (Andy)
+var mhcScores = [ 141.80, 107.95, 107.55, 178.40, 113.40, 123.60, 135.80, 163.80, 106.75, 101.65, 117.75,  81.05, 173.80, 105.40 ];  // The Age of APukalypse (Matt) Orig: Mile High Chubb
+var preScores = [ 101.90, 113.15,  84.45, 156.20, 116.50, 157.20, 116.65, 138.40, 132.00, 200.40,  93.15, 165.55, 131.75, 101.55 ];  // Predators (Joe)
+var steScores = [ 116.25, 114.55, 129.80,  89.50, 116.50, 112.55, 112.95, 126.65, 130.05,  96.65, 170.40, 120.65, 136.10, 132.40 ];  // Superbowl DB Steve's Team (Steve)
 
-var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65, 133.30, 178.10, 140.70 ];  // Phat Bastards (Steve C)
-var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55, 172.10, 137.25, 112.90 ];  // Iceotopes (John)
-var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25, 112.95, 134.35, 118.85 ];  // Discount Belicheck (Harrision)
-var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75,  94.00, 160.30, 132.35 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50, 127.70, 138.60, 101.10 ];  // The Brotha's (Reek/Ross)
+var fatScores = [ 124.05, 134.90, 160.10, 123.45, 124.50, 131.65, 110.50, 107.20, 124.35, 147.65, 133.30, 178.10, 140.70, 122.25 ];  // Phat Bastards (Steve C)
+var iceScores = [ 133.60, 133.05, 117.95, 151.65, 117.75, 108.95, 115.25, 145.70, 108.90, 163.55, 172.10, 137.25, 112.90, 102.30 ];  // Iceotopes (John)
+var belScores = [  96.50, 118.00, 137.10, 147.40, 149.75,  95.65, 148.75, 156.70, 113.70, 105.25, 112.95, 134.35, 118.85, 134.35 ];  // Discount Belicheck (Harrision)
+var wbdScores = [  84.60, 142.00, 175.85,  75.45, 145.60, 116.25, 121.70, 132.20, 142.70, 172.75,  94.00, 160.30, 132.35,  94.75 ];  // Weapons of Bass Destruction (Daniel)
+var rekScores = [ 100.80, 102.95, 170.55,  98.75, 161.25, 157.20, 152.95, 133.35, 124.65, 130.50, 127.70, 138.60, 101.10,  95.15 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -31,9 +31,9 @@ var porPlayoffs = 1;  // Porkchops (Noah)
 var cocPlayoffs = 4;  // Coco Browns (Andy)
 var mhcPlayoffs = 1;  // Age Of APukalypse  (Matt) (Old: Mile High Chubb)
 var prePlayoffs = 1;  // Predators (Joe)
-var stePlayoffs = 1;  // Steves Superbowl DB Team (Steve)
+var stePlayoffs = 2;  // Steves Superbowl DB Team (Steve)
 
-var fatPlayoffs = 1;  // Phat Bastards (Steve)
+var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var icePlayoffs = 1;  // Iceotopes (John)
 var belPlayoffs = 4;  // Discount Belicheck (Harrision)
 var wbdPlayoffs = 1;  // Weapons of Bass Destruction (Daniel)
@@ -182,6 +182,19 @@ var week13_txt = "In the penultimate regular season week we filled in all the pl
                  "title up for grab and the highest points total with five teams still in the running to win that with a couple of good weeks...<br><br>"
 
 
-var week14_txt = "";
+var week14_txt = "We've come to end of the regular season so now the real fun starts!  In an interesting twist the lower ranked team took four out of five " +
+                 "matchups this week - they're all going <i>where was that in previous weeks</i>?  The lone exception was the <b>Aubrey Fan Boys</b> (also known " +
+                 "as the Fat Bastards) kicking the <b>Brodoze</b> on their way to winning their division, securing the number one seed and cementing the " +
+                 "high points prize. Makes for a nice weekend, but better enjoy it because despite being the number one seed, somehow their eighth seeded " +
+                 "opponent in playoffs next week has the third highest scoring average in the league! Upset Alert!<br><br>The <b>PorkChops</b> bookended their "+
+                 "regular season by having the highest score in week 1 and the highest score in week 14 to take down the <b>Super Steves</b>. We'll just not " +
+                 "talk about the other weeks. The SDSTs hung onto the second seed and won their division (ka-ching) so no ones crying to much for them I " +
+                 "would guess.<br><br>The <b>Coco Cans</b> blew away their projected total by 30 points while their opponent, the <b>Weapons of Little " +
+                 "Destruction, just a bit of untidying really</b>, missed theirs by 30, preventing the WBDs from winning their division. Nice way to go " +
+                 "out! The other unexpected result had the eliminated <b>Belly Laughs</b> warming up to defrost the <b>Ice Machine</b> to end up one game out of " +
+                 "the playoffs, mostly due to their unfortunate league leading points against status.<br><br>And in the obligatory forgettable match of the week " +
+                 "the <b>Apukalyptics</b> eeked out a close win in a low scoring affair against the <b>Pre-Taters</b>, helping shuffle about the bottom of the " +
+                 "playoffs seeding brackets.<br><br>Good luck to the teams in the playoffs, congrats to the eventual winner and better luck next year to the " +
+                 "rest.<br<br>";
 
 var week15_txt = "";
