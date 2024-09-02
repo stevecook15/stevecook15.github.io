@@ -1,17 +1,17 @@
 "use strict";
 
-//               1*     2*     3*     4*     5*     6*     7*     8*     9*    10*    11*    12*    13*    14*  
-var porOpps = ["coc", "rek", "mhc", "ice", "bel", "pre", "ste", "coc", "fat", "wbd", "ice", "mhc", "pre", "ste" ];
-var cocOpps = ["por", "pre", "ste", "fat", "rek", "mhc", "wbd", "por", "bel", "ice", "pre", "ste", "mhc", "wbd" ];
-var mhcOpps = ["fat", "ste", "por", "rek", "ice", "coc", "pre", "bel", "wbd", "bel", "ste", "por", "coc", "pre" ];
-var preOpps = ["ste", "coc", "ice", "bel", "wbd", "por", "mhc", "ste", "rek", "fat", "coc", "rek", "por", "mhc" ];
-var steOpps = ["pre", "mhc", "coc", "wbd", "fat", "bel", "por", "pre", "ice", "rek", "mhc", "coc", "fat", "por" ];
+//               1*     2*     3*     4*     5      6      7      8      9     10     11     12     13     14   
+var iceOpps = ["pre", "aoa", "por", "fat", "aoa", "bro", "fat", "bro", "nix", "coc", "por", "fat", "wbd", "bel" ];
+var belOpps = ["bro", "pre", "fat", "nix", "por", "nix", "bro", "aoa", "coc", "aoa", "fat", "wbd", "bro", "ice" ];
+var porOpps = ["wbd", "bro", "ice", "aoa", "bel", "pre", "nix", "coc", "fat", "wbd", "ice", "aoa", "pre", "nix" ];
+var preOpps = ["ice", "bel", "bro", "wbd", "wbd", "por", "aoa", "nix", "bro", "fat", "coc", "bro", "por", "aoa" ];
+var broOpps = ["bel", "por", "pre", "coc", "coc", "ice", "bel", "ice", "pre", "nix", "wbd", "pre", "bel", "fat" ];
 
-var fatOpps = ["mhc", "bel", "rek", "coc", "ste", "wbd", "ice", "wbd", "por", "pre", "bel", "ice", "ste", "rek" ];
-var iceOpps = ["bel", "wbd", "pre", "por", "mhc", "rek", "fat", "rek", "ste", "coc", "por", "fat", "wbd", "bel" ];
-var belOpps = ["ice", "fat", "wbd", "pre", "por", "ste", "rek", "mhc", "coc", "mhc", "fat", "wbd", "rek", "ice" ];
-var wbdOpps = ["rek", "ice", "bel", "ste", "pre", "fat", "coc", "fat", "mhc", "por", "rek", "bel", "ice", "coc" ];
-var rekOpps = ["wbd", "por", "fat", "mhc", "coc", "ice", "bel", "ice", "pre", "ste", "wbd", "pre", "bel", "fat" ];
+var cocOpps = ["aoa", "fat", "nix", "bro", "bro", "aoa", "wbd", "por", "bel", "ice", "pre", "nix", "aoa", "wbd" ];
+var fatOpps = ["nix", "coc", "bel", "ice", "nix", "wbd", "ice", "wbd", "por", "pre", "bel", "ice", "nix", "bro" ];
+var nixOpps = ["fat", "wbd", "coc", "bel", "fat", "bel", "por", "pre", "ice", "bro", "aoa", "coc", "fat", "por" ];
+var aoaOpps = ["coc", "ice", "wbd", "por", "ice", "coc", "pre", "bel", "wbd", "bel", "nix", "por", "coc", "pre" ];
+var wbdOpps = ["por", "nix", "aoa", "pre", "pre", "fat", "coc", "fat", "aoa", "por", "bro", "bel", "ice", "coc" ];
 
 
 // Playoffs
@@ -74,30 +74,31 @@ class PflTeam {
      return this.playoffs;
   }
 }
-let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
-let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let mhcTeam = new PflTeam("The Age of APukalypse", "Matt", "mhc", 1, mhcOpps);          mhcTeam.setScores(mhcScores); mhcTeam.setPlayoffs(mhcPlayoffs);
-let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                       preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
-let steTeam = new PflTeam("SuperBowl DB Steve's Team", "Steve", "ste", 1, steOpps);     steTeam.setScores(steScores); steTeam.setPlayoffs(stePlayoffs);
 
+let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
+let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);         belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
+let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
+let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                       preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
+let broTeam = new PflTeam("The Brotha's", "Reek", "bro", 1, broOpps);                   broTeam.setScores(broScores); broTeam.setPlayoffs(broPlayoffs);
+
+let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
-let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
-let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 2, belOpps);         belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
+let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 2, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
+let aoaTeam = new PflTeam("The Age of APukalypse", "Matt", "aoa", 2, aoaOpps);          aoaTeam.setScores(aoaScores); aoaTeam.setPlayoffs(aoaPlayoffs);
 let wbdTeam = new PflTeam("Weapons of Bass Destruction", "Daniel", "wbd", 2, wbdOpps);  wbdTeam.setScores(wbdScores); wbdTeam.setPlayoffs(wbdPlayoffs);
-let rekTeam = new PflTeam("The Brotha's", "Reek", "rek", 2, rekOpps);                   rekTeam.setScores(rekScores); rekTeam.setPlayoffs(rekPlayoffs);
 
 var pflTeams =  [
-   porTeam,
-   cocTeam,
-   mhcTeam,
-   preTeam,
-   steTeam,
-
-   fatTeam,  
    iceTeam,  
    belTeam,
-   wbdTeam,
-   rekTeam
+   porTeam,
+   preTeam,
+   broTeam,
+
+   cocTeam,
+   fatTeam,  
+   nixTeam,
+   aoaTeam,
+   wbdTeam
 ];
 
 

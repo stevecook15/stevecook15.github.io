@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var porScores = [ 0.00 ];  // Porkchops (Noah)
-var cocScores = [ 0.00 ];  // Coco Browns (Andy)
-var mhcScores = [ 0.00 ];  // The Age of APukalypse (Matt)
-var preScores = [ 0.00 ];  // Predators (Joe)
-var steScores = [ 0.00 ];  // Superbowl DB Steve's Team (Steve)
-
-var fatScores = [ 0.00 ];  // Phat Bastards (Steve C)
 var iceScores = [ 0.00 ];  // Iceotopes (John)
 var belScores = [ 0.00 ];  // Discount Belicheck (Harrision)
+var porScores = [ 0.00 ];  // Porkchops (Noah)
+var preScores = [ 0.00 ];  // Predators (Joe)
+var broScores = [ 0.00 ];  // The Brotha's (Reek/Ross)
+
+var cocScores = [ 0.00 ];  // Coco Browns (Andy)
+var fatScores = [ 0.00 ];  // Phat Bastards (Steve C)
+var nixScores = [ 0.00 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 0.00 ];  // The Age of APukalypse (Matt)
 var wbdScores = [ 0.00 ];  // Weapons of Bass Destruction (Daniel)
-var rekScores = [ 0.00 ];  // The Brotha's (Reek/Ross)
 
 
 // 0 - not in playoffs yet
@@ -28,16 +28,16 @@ var rekScores = [ 0.00 ];  // The Brotha's (Reek/Ross)
 // 4 - eliminated from playoffs
 
 var icePlayoffs = 0;  // Iceotopes (John)
-var porPlayoffs = 0;  // Porkchops (Noah)
-var cocPlayoffs = 0;  // Coco Browns (Andy)
-var mhcPlayoffs = 0;  // Age Of APukalypse  (Matt)
-var prePlayoffs = 0;  // Predators (Joe)
-
-var stePlayoffs = 0;  // Steves Superbowl DB Team (Steve)
-var fatPlayoffs = 0;  // Phat Bastards (Steve)
 var belPlayoffs = 0;  // Discount Belicheck (Harrision)
+var porPlayoffs = 0;  // Porkchops (Noah)
+var prePlayoffs = 0;  // Predators (Joe)
+var broPlayoffs = 0;  // The Brotha's (Reek/Ross)
+
+var cocPlayoffs = 0;  // Coco Browns (Andy)
+var fatPlayoffs = 0;  // Phat Bastards (Steve)
+var nixPlayoffs = 0;  // Nix UR Hopes (Steve)
+var aoaPlayoffs = 0;  // Age Of APukalypse  (Matt)
 var wbdPlayoffs = 0;  // Weapons of Bass Destruction (Daniel)
-var rekPlayoffs = 0;  // The Brotha's (Reek/Ross)
 
 
 // Weekly blah blah blah text...
