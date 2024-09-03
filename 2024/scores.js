@@ -1,17 +1,17 @@
 "use strict";
 
-//               1*     2*     3*     4*     5      6      7      8      9     10     11     12     13     14   
-var iceOpps = ["pre", "aoa", "por", "fat", "aoa", "bro", "fat", "bro", "nix", "coc", "por", "fat", "wbd", "bel" ];
-var belOpps = ["bro", "pre", "fat", "nix", "por", "nix", "bro", "aoa", "coc", "aoa", "fat", "wbd", "bro", "ice" ];
-var porOpps = ["wbd", "bro", "ice", "aoa", "bel", "pre", "nix", "coc", "fat", "wbd", "ice", "aoa", "pre", "nix" ];
-var preOpps = ["ice", "bel", "bro", "wbd", "wbd", "por", "aoa", "nix", "bro", "fat", "coc", "bro", "por", "aoa" ];
-var broOpps = ["bel", "por", "pre", "coc", "coc", "ice", "bel", "ice", "pre", "nix", "wbd", "pre", "bel", "fat" ];
+//               1*     2*     3*     4*     5*     6*     7*     8*     9*    10*    11*    12*    13*    14*  
+var iceOpps = ["pre", "aoa", "por", "fat", "nix", "bel", "bro", "pre", "wbd", "coc", "fat", "por", "bel", "bro" ];
+var belOpps = ["bro", "pre", "fat", "nix", "coc", "ice", "por", "bro", "aoa", "wbd", "pre", "aoa", "ice", "por" ];
+var porOpps = ["wbd", "bro", "ice", "aoa", "fat", "pre", "bel", "nix", "coc", "nix", "bro", "ice", "pre", "bel" ];
+var preOpps = ["ice", "bel", "bro", "wbd", "aoa", "por", "coc", "ice", "nix", "fat", "bel", "bro", "por", "coc" ];
+var broOpps = ["bel", "por", "pre", "coc", "wbd", "nix", "ice", "bel", "fat", "aoa", "por", "pre", "wbd", "ice" ];
 
-var cocOpps = ["aoa", "fat", "nix", "bro", "bro", "aoa", "wbd", "por", "bel", "ice", "pre", "nix", "aoa", "wbd" ];
-var fatOpps = ["nix", "coc", "bel", "ice", "nix", "wbd", "ice", "wbd", "por", "pre", "bel", "ice", "nix", "bro" ];
-var nixOpps = ["fat", "wbd", "coc", "bel", "fat", "bel", "por", "pre", "ice", "bro", "aoa", "coc", "fat", "por" ];
-var aoaOpps = ["coc", "ice", "wbd", "por", "ice", "coc", "pre", "bel", "wbd", "bel", "nix", "por", "coc", "pre" ];
-var wbdOpps = ["por", "nix", "aoa", "pre", "pre", "fat", "coc", "fat", "aoa", "por", "bro", "bel", "ice", "coc" ];
+var cocOpps = ["aoa", "fat", "nix", "bro", "bel", "wbd", "pre", "wbd", "por", "ice", "aoa", "nix", "fat", "pre" ];
+var fatOpps = ["nix", "coc", "bel", "ice", "por", "aoa", "wbd", "aoa", "bro", "pre", "ice", "wbd", "coc", "nix" ];
+var nixOpps = ["fat", "wbd", "coc", "bel", "ice", "bro", "aoa", "por", "pre", "por", "wbd", "coc", "aoa", "fat" ];
+var aoaOpps = ["coc", "ice", "wbd", "por", "pre", "fat", "nix", "fat", "bel", "bro", "coc", "bel", "nix", "wbd" ];
+var wbdOpps = ["por", "nix", "aoa", "pre", "bro", "coc", "fat", "coc", "ice", "bel", "nix", "fat", "bro", "aoa" ];
 
 
 // Playoffs
@@ -349,11 +349,11 @@ function AddUnique(weekList, name)
    return true;
 }
 
-var weekly_dates = [ "Thursday, September 7th",  "Thursday, September 14th", "Thursday, September 21st",
-                     "Thursday, September 28th", "Thursday, October 5th",    "Thursday, October 12th", 
-                     "Thursday, October 19th",   "Thursday, October 26th",   "Thursday, November 2nd", 
-                     "Thursday, November 9th",   "Thursday, November 16th",  "Thursday, November 23th", 
-                     "Thursday, November 30th",  "Thursday, December 7th"];
+var weekly_dates = [ "Thursday, September 5th",  "Thursday, September 12th", "Thursday, September 19th",
+                     "Thursday, September 26th", "Thursday, October 3rd",    "Thursday, October 10th", 
+                     "Thursday, October 17th",   "Thursday, October 24th",   "Thursday, October 31st", 
+                     "Thursday, November 7th",   "Thursday, November 14th",  "Thursday, November 21st", 
+                     "Thursday, November 28th",  "Thursday, December 5th"];
 
 var weekly_text = [
       week1_txt,   week2_txt,   week3_txt,   week4_txt,
