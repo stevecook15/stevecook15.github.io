@@ -76,7 +76,7 @@ class PflTeam {
 }
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
-let belTeam = new PflTeam("Discount Belicheck", "Harrison", "bel", 1, belOpps);         belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
+let belTeam = new PflTeam("Thats What Shaheed Said", "Harrison", "bel", 1, belOpps);    belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
 let preTeam = new PflTeam("Predators", "Joe", "pre", 1, preOpps);                       preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
 let broTeam = new PflTeam("The Brotha's", "Reek", "bro", 1, broOpps);                   broTeam.setScores(broScores); broTeam.setPlayoffs(broPlayoffs);
