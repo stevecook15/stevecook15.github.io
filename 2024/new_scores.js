@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00 ];  // Predators (Joe) Arrested Development
-var broScores = [ 105.30, 117.90, 143.05, 144.15 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30 ];  // Predators (Joe) Arrested Development
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85 ];  // The Brotha's (Reek/Ross)
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -63,8 +63,8 @@ var week2_txt = "Ya know, some weeks the matchups/results just don't create comp
 var week3_txt = "Well the Ice wasn't messing around this week, putting the undefeated Porkchops into the freezer " +
                 "while roaring to the high score for the year, which also leads to the Ice to now owning the league " +
                 "high average.  Good week for the Topes all in all. Another team having a pretty good week was the " +
-                "Phat, being the bastards that they are, using the weeks second highest score to take out the undefeated " +
-                "SheSaid, leaving the Phat as the last remaining undefeated team.<br><br>" +
+                "Phat, being the bastards that they are, using the weeks second highest score to take out the " +
+                "undefeated SheSaid, leaving the Phat as the last remaining undefeated team.<br><br>" +
                 "On the other end of the spectrum two of the winless teams also had a good week, with the Bro's " +
                 "stomping the ArrDevs, and in a battle where one of them was going to win, the Pukes left no " +
                 "doubts, destroying the Weaponless Bath Construction, who now are the only winless team. Good " +
@@ -80,7 +80,22 @@ var week4_txt = "And then there were none. The last winless team finally pulled 
                 "Sheheed Shells, nixing the their hopes.<br><br>And in the final matchup the Male Siblings " +
                 "of the same mother stomped the brown out of the Cocos, now just the White Chocos...<br>"; 
 
-var week5_txt = "";
+var week5_txt = "In the highest scoring matchup of the week it sure looked like the Pork was gonna chop "+
+                "some fat off the Bastards, with D London scoring 33, Min Def 17 and Joe Flacco (Joe " +
+                "Flacco?????) 32 in the early games. Little did the Chops know that the Phat had " +
+                "barely begun to sizzle, getting 43 out of Chase, matching Porks defense with 17 and " +
+                "23 out of their Tight End. And poof, before you knew it the Bastards had the high score " +
+                "for the year (much to Topes chagrin)!<br><br>In an unexpected high scoring affair the " +
+                "Popguns of Bass Destitution stormed out to the second highest score of the week, beating " +
+                "their average by over 50 pts, which of course was way to much for the BroBros to deal " +
+                "with.<br><br>And lets have a short moment of sympathy might be due to the Cokes as they " +
+                "score their highest total of the season only to go down in inglorious defeat Monday night " +
+                "to What She Said by the smallest of margins. Ok, thats long enough.<br><br>Seems like " +
+                "Developers planned to try to beat Apu's Lisp by arresting their own scoring in the " +
+                "double digits, which needless to say didn't work.<br><br>And in the final, oh yeah, " +
+                "there are 10 teams, matchup the (previously) league leading SlushTops posted a low score " +
+                "leaving themselves open to upset, but not to worry, the Nixxers had no hope of that as " +
+                "they posted the lowest score of the week.<br><br>";
 
 var week6_txt = "";
 
@@ -99,5 +114,4 @@ var week12_txt = "";
 var week13_txt = "";
 
 var week14_txt = "";
-
 var week15_txt = "";
