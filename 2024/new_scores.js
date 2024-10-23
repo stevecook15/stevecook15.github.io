@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95 ];  // Predators (Joe) Arrested Development
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20 ];  // Arrested Development Predators (Joe) 
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10 ];  // The Brotha's (Reek/Ross)
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -112,7 +112,17 @@ var week6_txt = "Well that certainly what SheShed was talking about! In a battle
                 "bottomed) the Arrestees effort with an even lower score resulting in the Brotha's by the Same Mother " +
                 "collecting the win over the Nixs!<br><br>";
 
-var week7_txt = "";
+var week7_txt = "Busy week for your humble web page manager so quick notes:<br><br>With a three way tie for first at " +
+                "the start the week in Division One there was bound to be some movements in the ranks. Well, the Porks " +
+                "chopped the She-Sheds and the Topes got bothered by the Brothas, leading to the Chops " +
+                "sitting atop the heap which of course led to a three way tie for second between the rest of the " +
+                "that bunch (more standings movement next week!).<br><br>The last (literally) remaining team in " +
+                "the  division, still showing no signs of developments got Coco Brown'd leavin them in dead last " +
+                "in the league (although only one game out of a playoff spot still).<br><br>" +
+                "In division two matchups, the Nixes showed that yes, hope is better than a plan, taking out the " +
+                "Aging Apothecarys, and the Bastards stayed Phat (even with D Smiths 1 catch for minus two yards stat " +
+                "line) with the high score for the week leaving the Bass Destructors weaponless despite their QBs Monday " +
+                "night heroic 40 point effort (sigh, if only Mike Evans hadn't got hurt!).<br><br>"
 
 var week8_txt = "";
 
@@ -127,4 +137,5 @@ var week12_txt = "";
 var week13_txt = "";
 
 var week14_txt = "";
+
 var week15_txt = "";
