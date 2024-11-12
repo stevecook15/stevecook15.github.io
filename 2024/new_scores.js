@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65 ];  // Arrested Development Predators (Joe) 
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00 ];  // Arrested Development Predators (Joe) 
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90 ];  // The Brotha's (Reek/Ross)
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -140,7 +140,16 @@ var week9_txt = "Wow! Shaheed said a lot this week, setting the high score for t
                 "match the BassTurds won yet again, clinching a playoff spot, despite Baker Mayfields and Cade " +
                 "Ottons (Cade Otton??? Who? Career night?) best efforts.<br><br>";
 
-var week10_txt = "";
+var week10_txt = "We started the week with four 6-3 teams jockeying for the probable second seed. With one head to " +
+                 "matchup that number was sure to go down to at most three, with the Pork Bellys eeking out a " +
+                 "narrow win over Lost R Hopes. The other two 6-3 teams both matched up against 3-6 teams (don't " +
+                 "you love symmetry!) so it looked good for both going in, but alas only one team managed to earn " +
+                 "victory - the SheSheds easily kicked Weapon Preservations (B)ass. Sadly the Iceotoners melted " +
+                 "beneath the Hot Cocos. And that left just two chasing the Phat - but there's still many (ok, " +
+                 "several, well, more like a few) weeks to go.<br><br>" +
+                 "In other matches the Bro Bros added a few more gray hairs to the Aged Apocalypse in really close " +
+                 "victory, and the Phat did what an 8-1 team should do to a 1-8 team (despite Yahoo projecting a " +
+                 "win for the Lack of Development).<br><br>";
 
 var week11_txt = "";
 
