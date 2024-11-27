@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134,85 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35 ];  // Arrested Development Predators (Joe) 
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134.85, 109.95 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25 ];  // Arrested Development Predators (Joe) 
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80 ];  // The Brotha's (Reek/Ross)
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95, 118.95 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60, 130.85 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25, 120.95 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -27,14 +27,14 @@ var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 
-var icePlayoffs = 0;  // Iceotopes (John)
+var icePlayoffs = 1;  // Iceotopes (John)
 var belPlayoffs = 1;  // Discount Belicheck (Harrision) TWSS
 var porPlayoffs = 1;  // Porkchops (Noah)
 var prePlayoffs = 0;  // Predators (Joe) Arrested Development
 var broPlayoffs = 0;  // The Brotha's (Reek/Ross)
 
 var cocPlayoffs = 0;  // Coco Browns (Andy)
-var fatPlayoffs = 1;  // Phat Bastards (Steve)
+var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var nixPlayoffs = 1;  // Nix UR Hopes (Steve)
 var aoaPlayoffs = 0;  // Age Of APukalypse  (Matt)
 var wbdPlayoffs = 0;  // Weapons of Bass Destruction (Daniel)
@@ -162,7 +162,18 @@ var week11_txt = "Apparently the <i>Development</i> was on on parole this week a
                  "in the last contest the <i>Brotha's</i> went vegetarian and said no to any (b)eating <i>Pork Chops</i>, " +
                  "moving the Chops to the top of their division.<br><br>";
 
-var week12_txt = "";
+var week12_txt = "Well it's starting to get a bit more interesting, with two weeks to go both the top of the standings, " +
+                 "with 3 teams still vying for the regular season crown, and the bottom with three teams duking it out " +
+                 "for the last two spots! Even the 6th and 7th place teams could finish at the bottom or near the top.<br>" +
+                 "<br>Let's start off with the elephant in the room, the Bass Weapons destroying the Bass Turds! Course " +
+                 "anybody and their brother (well, maybe not the Brothas) would have taken down the Phlat this week. But " +
+                 "still, nicely done! That means with the Porkchops oh so barely (I mean like last play of game to win " +
+                 "by a quarter of a point) beating the Iceotopes, the Chops move within a game of the league lead.<br><br>" +
+                 "The SheSheds also notched up a win, beating the Apukalyptics, allowing them to also keep hopes of " +
+                 "PFL glory alive. Sadly the Coco Buddies nixed the hopes of the Ur Nixers slim chance of winning their " +
+                 "division, but solidified the Browns chances of making the playoffs. And the Developers continued their " +
+                 "climb into playoff contention at the expense of Da Bro's. Don't sleep on the Arr Devs yet - they " +
+                 "pulled off this same act last year late in the season to surprise us all!<br><br>";
 
 var week13_txt = "";
 
