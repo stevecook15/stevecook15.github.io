@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134.85, 109.95 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25 ];  // Arrested Development Predators (Joe) 
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134.85, 109.95, 134.65 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40, 169.65 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20,  98.65 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25, 153.20 ];  // Arrested Development Predators (Joe) 
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80, 110.95 ];  // The Brotha's (Reek/Ross)
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95, 118.95 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60, 130.85 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25, 120.95 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15,  95.80 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35, 162.30 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95, 118.95, 102.50 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60, 130.85, 114.75 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25, 120.95, 139.75 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -175,7 +175,16 @@ var week12_txt = "Well it's starting to get a bit more interesting, with two wee
                  "climb into playoff contention at the expense of Da Bro's. Don't sleep on the Arr Devs yet - they " +
                  "pulled off this same act last year late in the season to surprise us all!<br><br>";
 
-var week13_txt = "";
+var week13_txt = "Looks like the top of the league is pretty settled but the bottom of the league is getting very exciting! " +
+                 "The two 3-9 teams both won but couldn't gain ground on the 4-8 team because they also won, but " +
+                 "the three of them all took out teams above them including the two 5-7 teams to create a five team race for " +
+                 "the last three spots with one week to go (and no team has been eliminated! Amazing!). It's possibly going " +
+                 "come down to total season points for the last spots!.<br><br>In the less exciting spots the Pork were " +
+                 "chopless this week, ending their hopes for best regular season record (and #1 seed) as they lost and " +
+                 "Phat were riled about about last week and crushed their opponent to lock up the best record. Shaheed Says " +
+                 "What won, posting the high score for the week (and moved in their division lead and #2 seed while they " +
+                 "were a it) improving their chances for the season highest point total award as they're now less than " +
+                 "40 points down to the Bastards at this point - and bigger margins have been overcome before.<br><br>";
 
 var week14_txt = "";
 
