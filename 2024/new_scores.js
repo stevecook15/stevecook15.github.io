@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134.85, 109.95, 134.65 ];  // Iceotopes (John)
-var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40, 169.65 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
-var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20,  98.65 ];  // Porkchops (Noah)
-var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25, 153.20 ];  // Arrested Development Predators (Joe) 
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80, 110.95 ];  // The Brotha's (Reek/Ross)
+var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20, 123.70, 109.25, 134.85, 109.95, 134.65, 118.95 ];  // Iceotopes (John)
+var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40, 169.65, 130.25 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
+var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20,  98.65, 149.85 ];  // Porkchops (Noah)
+var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25, 153.20, 146.45 ];  // Arrested Development Predators (Joe) 
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80, 110.95, 141.05 ];  // The Brotha's (Reek/Ross) Comebacks
 
-var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15,  95.80 ];  // Coco Browns (Andy)
-var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35, 162.30 ];  // Phat Bastards (Steve C)
-var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95, 118.95, 102.50 ];  // Nix UR Hopes (Steve)
-var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60, 130.85, 114.75 ];  // The Age of APukalypse (Matt)
-var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25, 120.95, 139.75 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15,  95.80, 168.30 ];  // Coco Browns (Andy)
+var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35, 162.30, 166.10 ];  // Phat Bastards (Steve C)
+var nixScores = [  86.85, 124.45, 122.75, 122.00,  95.05,  91.30, 109.90, 138.10, 141.45, 118.10, 158.95, 118.95, 102.50,  79.20 ];  // Nix UR Hopes (Steve)
+var aoaScores = [ 112.25,  87.55, 142.25, 101.65, 119.80, 123.30,  99.45, 119.65,  85.85, 110.25, 120.60, 130.85, 114.75, 137.95 ];  // The Age of APukalypse (Matt)
+var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95, 115.70, 110.90, 111.25, 120.95, 139.75, 155.10 ];  // Weapons of Bass Destruction (Daniel)
 
 
 // 0 - not in playoffs yet
@@ -29,15 +29,15 @@ var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95
 
 var icePlayoffs = 1;  // Iceotopes (John)
 var belPlayoffs = 1;  // Discount Belicheck (Harrision) TWSS
-var porPlayoffs = 1;  // Porkchops (Noah)
+var porPlayoffs = 2;  // Porkchops (Noah)
 var prePlayoffs = 0;  // Predators (Joe) Arrested Development
-var broPlayoffs = 0;  // The Brotha's (Reek/Ross)
+var broPlayoffs = 1;  // The Brotha's (Reek/Ross)
 
-var cocPlayoffs = 0;  // Coco Browns (Andy)
+var cocPlayoffs = 1;  // Coco Browns (Andy)
 var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var nixPlayoffs = 1;  // Nix UR Hopes (Steve)
 var aoaPlayoffs = 0;  // Age Of APukalypse  (Matt)
-var wbdPlayoffs = 0;  // Weapons of Bass Destruction (Daniel)
+var wbdPlayoffs = 1;  // Weapons of Bass Destruction (Daniel)
 
 
 // Weekly blah blah blah text...
@@ -186,6 +186,24 @@ var week13_txt = "Looks like the top of the league is pretty settled but the bot
                  "were a it) improving their chances for the season highest point total award as they're now less than " +
                  "40 points down to the Bastards at this point - and bigger margins have been overcome before.<br><br>";
 
-var week14_txt = "";
+var week14_txt = "Quite the battle this week for the Division 1 title as the 2 brothers were tied for 1st place, and as " +
+                 "luck would have it squared off against each other to see who would take their Division's crown.  And in " + 
+                 "a tough exciting matchup, the Pork chopped Whatever Shaheed Said to claim the Division 1 crown! No " +
+                 "excitement at all in Division 2 as the Basturds locked up that lame Divisions title quite some time " +
+                 "ago.  So congrats to Steve and Noah as they are the Division winners, and the #1 and #2 seeds " + 
+                 "respectively heading into the playoffs.<br><br>Congrats also to Steve as the Most Points For winner (along " +
+                 "with least points against, Grrrr), and Harrison on the High Score for the Season winner.  And in a " +
+                 "tight battle between good friends Coco and Dan, sorta congrats to Dan who barely won Most Points " +
+                 "Against (Unluckiest), edging out Coco by a slim 4pts. Special unlucky shoutout to the Topes who had two " +
+                 "of the top four highest losing scores and two of the top three smallest margins of defeat.<br><br>And " +
+                 "finally, at this point we must bid " +
+                 "farewell to our champions from the last 2 years, Joe, last years champ, and Matt, champ from 2 years " +
+                 "ago, as they failed to make the playoffs.  So a strange coincidence for sure, and maybe a bad omen for " +
+                 "this years winner?  And funny that the 5th thru 8th seeds all ended up with identical 6-8 records, so " +
+                 "their seedings were based on total points.<br><br><br>1st round Playoff Matchups:<br>" +
+                 "Phat Bastards(1) vs Coco Browns(8)<br>" +
+                 "Porkchops(2) vs The Comeback Miracle(7)<br>" +
+                 "Thats What Shaheed Said(3) vs Weapons of Bass Destruction(6)<br>" +
+                 "Nix UR Hopes(4) vs Isotopes(5)<br><br>";
 
 var week15_txt = "";
