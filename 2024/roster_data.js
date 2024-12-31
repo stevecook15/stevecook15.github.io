@@ -73,7 +73,7 @@ var team3 = [ "Predators / Joe",
    "BN,Keon Coleman,BUF,WR,0"
 ];
 
-var team4 = [ "The Brotha's/ Reek/Ross",  
+var team4 = [ "The Comeback Miracle / Reek/Ross",  
    "ST,C.J. Stroud,HOU,QB,0",
    "ST,Jonathan Taylor,IND,RB,0",
    "ST,Isiah Pacheco,KAN,RB,0",

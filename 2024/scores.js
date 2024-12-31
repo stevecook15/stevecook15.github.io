@@ -79,7 +79,7 @@ let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);              
 let belTeam = new PflTeam("Thats What Shaheed Said", "Harrison", "bel", 1, belOpps);    belTeam.setScores(belScores); belTeam.setPlayoffs(belPlayoffs);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 1, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
 let preTeam = new PflTeam("Arrested Development", "Joe", "pre", 1, preOpps);            preTeam.setScores(preScores); preTeam.setPlayoffs(prePlayoffs);
-let broTeam = new PflTeam("The Brotha's", "Reek", "bro", 1, broOpps);                   broTeam.setScores(broScores); broTeam.setPlayoffs(broPlayoffs);
+let broTeam = new PflTeam("The Comeback Miracle's", "Reek", "bro", 1, broOpps);         broTeam.setScores(broScores); broTeam.setPlayoffs(broPlayoffs);
 
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);

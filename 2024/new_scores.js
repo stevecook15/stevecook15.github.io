@@ -12,7 +12,7 @@ var iceScores = [ 103.25, 149.85, 173.30, 131.50, 108.00, 159.95, 139.10, 165.20
 var belScores = [ 132.60, 131.30, 129.65, 108.90, 137.70, 161.10, 114.25, 124.60, 194.55, 150.10, 126.00, 141.40, 169.65, 130.25 ];  // Thats What Shaheed Said (Harrision) Discount Belicheck
 var porScores = [ 160.70, 121.90, 108.35, 154.85, 150.45, 104.85, 122.85, 125.30, 137.30, 119.45, 134.25, 110.20,  98.65, 149.85 ];  // Porkchops (Noah)
 var preScores = [ 113.10, 126.60, 102.95, 102.00,  97.30,  97.95,  95.20, 133.55, 102.65, 103.00, 150.35, 143.25, 153.20, 146.45 ];  // Arrested Development Predators (Joe) 
-var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80, 110.95, 141.05 ];  // The Brotha's (Reek/Ross) Comebacks
+var broScores = [ 105.30, 117.90, 143.05, 144.15, 130.85, 128.85, 149.10, 120.20, 129.10, 110.90, 113.65,  88.80, 110.95, 141.05 ];  // The Brotha's (Reek/Ross) Comeback Miracle
 
 var cocScores = [ 118.40,  94.15, 102.35,  81.00, 134.35, 134.55, 124.40, 113.45, 127.45, 118.30, 117.70, 123.15,  95.80, 168.30 ];  // Coco Browns (Andy)
 var fatScores = [ 117.30, 154.15, 146.25, 130.00, 173.60, 147.50, 153.60, 124.50, 140.10, 158.50, 156.35,  97.35, 162.30, 166.10 ];  // Phat Bastards (Steve C)
@@ -28,15 +28,15 @@ var wbdScores = [ 133.05, 111.95,  88.70, 126.30, 166.80, 128.15, 127.95, 150.95
 // 4 - eliminated from playoffs
 
 var icePlayoffs = 1;  // Iceotopes (John)
-var belPlayoffs = 1;  // Discount Belicheck (Harrision) TWSS
+var belPlayoffs = 1;  // Discount Belicheck (Harrision) TWSSaid
 var porPlayoffs = 2;  // Porkchops (Noah)
-var prePlayoffs = 0;  // Predators (Joe) Arrested Development
-var broPlayoffs = 1;  // The Brotha's (Reek/Ross)
+var prePlayoffs = 4;  // Predators (Joe) Arrested Development
+var broPlayoffs = 1;  // The Brotha's (Reek/Ross)  Comeback Miracle
 
 var cocPlayoffs = 1;  // Coco Browns (Andy)
 var fatPlayoffs = 2;  // Phat Bastards (Steve)
 var nixPlayoffs = 1;  // Nix UR Hopes (Steve)
-var aoaPlayoffs = 0;  // Age Of APukalypse  (Matt)
+var aoaPlayoffs = 4;  // Age Of APukalypse  (Matt)
 var wbdPlayoffs = 1;  // Weapons of Bass Destruction (Daniel)
 
 
@@ -109,12 +109,12 @@ var week6_txt = "Well that certainly what SheShed was talking about! In a battle
                 "winning by scoring under 100 points for the second week in a row for their fifth consecutive " +
                 "loss, allowing the Porksters to chop their way to a cheap win, joining Shaheed and Ice atop " +
                 "their division.<br><br>Speaking of scoring less than 100 points in a row - the Urgh Hopes topped (or " +
-                "bottomed) the Arrestees effort with an even lower score resulting in the Brotha's by the Same Mother " +
+                "bottomed) the Arrestees effort with an even lower score resulting in the comeback's by the Same Mother " +
                 "collecting the win over the Nixs!<br><br>";
 
 var week7_txt = "Busy week for your humble web page manager so quick notes:<br><br>With a three way tie for first at " +
                 "the start the week in Division One there was bound to be some movements in the ranks. Well, the Porks " +
-                "chopped the She-Sheds and the Topes got bothered by the Brothas, leading to the Chops " +
+                "chopped the She-Sheds and the Topes got bothered by the Comebacks, leading to the Chops " +
                 "sitting atop the heap which of course led to a three way tie for second between the rest of the " +
                 "that bunch (more standings movement next week!).<br><br>The last (literally) remaining team in " +
                 "the  division, still showing no signs of developments got Coco Brown'd leavin them in dead last " +
@@ -126,7 +126,7 @@ var week7_txt = "Busy week for your humble web page manager so quick notes:<br><
 
 var week8_txt = "It's the mid point of the season and much jockeying for playoff positions is afoot. The Nix UR Hopes " +
                 "took out the Porkchops to even both of their records at 5-3, the Wep Bass Des beat the Coconauts to " +
-                "even both of their records at 3-5, and the She Sheds went to 5-3 by beating the Brothas who fall to " +
+                "even both of their records at 3-5, and the She Sheds went to 5-3 by beating the Comebacks who fall to " +
                 "4-4. Whew, lots of 3's and 5's there!<br><br>Wait, there's more: the Iceotopes froze the Arrested's " +
                 "development to move to, you guessed it - 5-3.   But no, the Arr Devs didn't fit in, moving to 1-7. " +
                 "In the last matchup, the Age of Apuk had a chance to join the 3-5 party but sadly fell just short to " +
@@ -159,14 +159,14 @@ var week11_txt = "Apparently the <i>Development</i> was on on parole this week a
                  "hopes of winning their division.  That of course seems unlikey as the <i>Phat</i> thawed out the " +
                  "<i>Icicles</i>, avenging their only loss of the season. Bastards! All sorts of miracles would be required for " +
                  "the Bass to overtake the Turds, but hope springs eternal. Well at least till its nixxed out.<br><br>And " + 
-                 "in the last contest the <i>Brotha's</i> went vegetarian and said no to any (b)eating <i>Pork Chops</i>, " +
+                 "in the last contest the <i>Comebacks's</i> went vegetarian and said no to any (b)eating <i>Pork Chops</i>, " +
                  "moving the Chops to the top of their division.<br><br>";
 
 var week12_txt = "Well it's starting to get a bit more interesting, with two weeks to go both the top of the standings, " +
                  "with 3 teams still vying for the regular season crown, and the bottom with three teams duking it out " +
                  "for the last two spots! Even the 6th and 7th place teams could finish at the bottom or near the top.<br>" +
                  "<br>Let's start off with the elephant in the room, the Bass Weapons destroying the Bass Turds! Course " +
-                 "anybody and their brother (well, maybe not the Brothas) would have taken down the Phlat this week. But " +
+                 "anybody and their brother (well, maybe not the Comebacks) would have taken down the Phlat this week. But " +
                  "still, nicely done! That means with the Porkchops oh so barely (I mean like last play of game to win " +
                  "by a quarter of a point) beating the Iceotopes, the Chops move within a game of the league lead.<br><br>" +
                  "The SheSheds also notched up a win, beating the Apukalyptics, allowing them to also keep hopes of " +
