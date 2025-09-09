@@ -14,11 +14,12 @@ class Summaries
          week = pflUtils.calcWeek(today);
       }
 
+//TODO: Get year automagically
       var weekStr;
       if ( week < 10 )
-         weekStr = "2024/Week0" + week + ".html";
+         weekStr = "2025/Week0" + week + ".html";
       else
-         weekStr = "2024/Week" + week + ".html";
+         weekStr = "2025/Week" + week + ".html";
 
       if ( week > 14 ) // Playoffs...
       {

@@ -8,7 +8,7 @@ class PflUtils
       this.dDays = new Array();
 
       var d = new Date(year, month-1, day, 12, 0, 0, 0); 
-      console.log("Today: " + d);
+      //console.log("xxxToday: " + d);
       var dd, mm;
 
       for ( var week=1; week<=17; week++ )
@@ -18,7 +18,7 @@ class PflUtils
          mm = d.getMonth() + 1;
          this.dMons.push(mm); 
          this.dDays.push(dd);
-         console.log("Week " + week + " Month " + mm + " Day " + dd);
+         //console.log("Week " + week + " Month " + mm + " Day " + dd);
       }
    }
 
@@ -43,7 +43,6 @@ class PflUtils
          var d = new Date();
          var year = d.getFullYear();
          tuesday = new Date(year, (this.dMons[indx]-1), this.dDays[indx]);
-         console.log("Tuesday: " + d);
          tuesnum = this.getDOY(tuesday); 
 
          if ( daynum <= tuesnum )
@@ -57,7 +56,8 @@ class PflUtils
       else if ( week > 17 )  // Never go past last week
          week = 17;
 
-      if ( year == 2025 )  // Last playoff game may be in next year
+      //  NOTE: THis needs to be next year for last weeks of playoffs
+      if ( year == 2026 )  // Last playoff game may be in next year
       {
           week = 17;
       }

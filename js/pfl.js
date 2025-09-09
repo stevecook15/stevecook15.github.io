@@ -1,6 +1,6 @@
 "use strict";
 
-let pflUtils = new PflUtils(2024, 9, 5);   // TODO: Pass first wednesday before league start each year
+let pflUtils = new PflUtils(2025, 9, 6);   // TODO: Pass first wednesday before league start each year
 let standings = new Standings();
 let summaries = new Summaries();
 let rosters = new Rosters();
