@@ -80,7 +80,7 @@ class PflTeam {
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
 let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 1, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let djaTeam = new PflTeam("Django Achane'd", "Matt", "dja", 1, djaOpps);                djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
-let jkrTeam = new PflTeam("John's Kryptonite", "Reek", "jkr", 1, jkrOpps);              jkrTeam.setScores(jkrScores); jkrTeam.setPlayoffs(jkrPlayoffs);
+let jkrTeam = new PflTeam("The Bye Week", "Reek", "jkr", 1, jkrOpps);                   jkrTeam.setScores(jkrScores); jkrTeam.setPlayoffs(jkrPlayoffs);
 let pmbTeam = new PflTeam("Pass me a Brewski", "Ross", "pmb", 1, pmbOpps);              pmbTeam.setScores(pmbScores); pmbTeam.setPlayoffs(pmbPlayoffs);
 
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);

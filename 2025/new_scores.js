@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05 ];  // Iceotopes (John)
-var nixScores = [ 130.40 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05 ];  // Django Achane'd (Matt)   aoa
-var jkrScores = [ 120.80 ];  // John's Kryptonite (Reek)
-var pmbScores = [ 105.95 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95 ];  // Django Achane'd (Matt)   aoa
+var jkrScores = [ 120.80, 103.90 ];  // John's Kryptonite (Reek)
+var pmbScores = [ 105.95, 114.50 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55 ];  // Porkchops (Noah)
-var cdzScores = [  93.45 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -54,7 +54,12 @@ var week1_txt = "Well, week 1 is in the books.  Offenses looked a little shaky w
                 "(maybe no one passed them one?). The final matchup was the only one still in question Monday night and " +
                 "looked tense after JJ scored a TD for the Destructos, but the Phlat managed to hang on and win a close one.";
 
-var week2_txt = "";
+var week2_txt = "Wow, a tie!!! Haven't seen that in several years - thats gonna mess up playoff seedings. Well at least the " +
+                "Hopes and Brews didn't lose. :-) The Django on the other hand had a bye week, ooops, meant they <i>played</i> " +
+                "The Bye Week, needlessly pouring it on with the high score for the week. However " +
+                "there was one team that couldn't have even beaten a bye as the Flat Turds were roasted by the Browns, " + 
+                "scoring the low for the week.<br><br>And in the other move along, move along, nothing to see here games " +
+                "Nuts and Chops both easily topped the Ice and the Bass, respectively.<br>";
 
 var week3_txt = "";
 
