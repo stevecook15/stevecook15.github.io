@@ -1,19 +1,19 @@
 "use strict";
 
-//NOTE: Weeks 1 and 2 done...
+//NOTE: Weeks 1, 2 and 3 are done...
 
 //               1*     2*     3*     4*     5*     6*     7*     8*     9*    10*    11*    12*    13*    14*  
-var iceOpps = ["dja", "cdz", "por", "fat", "nix", "cdz", "jkr", "pmb", "wbd", "coc", "fat", "por", "cdz", "jkr" ];
-var nixOpps = ["jkr", "pmb", "coc", "cdz", "ice", "jkr", "dja", "por", "pmb", "por", "wbd", "coc", "dja", "fat" ];
-var djaOpps = ["ice", "jkr", "wbd", "por", "pmb", "fat", "nix", "fat", "cdz", "jkr", "coc", "cdz", "nix", "wbd" ];
-var jkrOpps = ["nix", "dja", "pmb", "coc", "wbd", "nix", "ice", "cdz", "fat", "dja", "por", "pmb", "wbd", "ice" ];
-var pmbOpps = ["coc", "nix", "jkr", "wbd", "dja", "por", "coc", "ice", "nix", "fat", "cdz", "jkr", "por", "coc" ];
+var iceOpps = ["dja", "cdz", "pmb", "fat", "nix", "cdz", "jkr", "pmb", "wbd", "coc", "fat", "por", "cdz", "jkr" ];
+var nixOpps = ["jkr", "pmb", "dja", "cdz", "ice", "jkr", "dja", "por", "pmb", "por", "wbd", "coc", "dja", "fat" ];
+var djaOpps = ["ice", "jkr", "nix", "por", "pmb", "fat", "nix", "fat", "cdz", "jkr", "coc", "cdz", "nix", "wbd" ];
+var jkrOpps = ["nix", "dja", "wbd", "coc", "wbd", "nix", "ice", "cdz", "fat", "dja", "por", "pmb", "wbd", "ice" ];
+var pmbOpps = ["coc", "nix", "ice", "wbd", "dja", "por", "coc", "ice", "nix", "fat", "cdz", "jkr", "por", "coc" ];
 
-var cocOpps = ["pmb", "fat", "nix", "jkr", "cdz", "wbd", "pmb", "wbd", "por", "ice", "dja", "nix", "fat", "pmb" ];
-var fatOpps = ["wbd", "coc", "cdz", "ice", "por", "dja", "wbd", "dja", "jkr", "pmb", "ice", "wbd", "coc", "nix" ];
-var porOpps = ["cdz", "wbd", "ice", "dja", "fat", "pmb", "cdz", "nix", "coc", "nix", "jkr", "ice", "pmb", "cdz" ];
-var cdzOpps = ["por", "ice", "fat", "nix", "coc", "ice", "por", "jkr", "dja", "wbd", "pmb", "dja", "ice", "por" ];
-var wbdOpps = ["fat", "por", "dja", "pmb", "jkr", "coc", "fat", "coc", "ice", "cdz", "nix", "fat", "jkr", "dja" ];
+var cocOpps = ["pmb", "fat", "cdz", "jkr", "cdz", "wbd", "pmb", "wbd", "por", "ice", "dja", "nix", "fat", "pmb" ];
+var fatOpps = ["wbd", "coc", "por", "ice", "por", "dja", "wbd", "dja", "jkr", "pmb", "ice", "wbd", "coc", "nix" ];
+var porOpps = ["cdz", "wbd", "fat", "dja", "fat", "pmb", "cdz", "nix", "coc", "nix", "jkr", "ice", "pmb", "cdz" ];
+var cdzOpps = ["por", "ice", "coc", "nix", "coc", "ice", "por", "jkr", "dja", "wbd", "pmb", "dja", "ice", "por" ];
+var wbdOpps = ["fat", "por", "jkr", "pmb", "jkr", "coc", "fat", "coc", "ice", "cdz", "nix", "fat", "jkr", "dja" ];
 
 
 // Playoffs

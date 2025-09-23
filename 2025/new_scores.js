@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95 ];  // Django Achane'd (Matt)   aoa
-var jkrScores = [ 120.80, 103.90 ];  // John's Kryptonite (Reek)
-var pmbScores = [ 105.95, 114.50 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85 ];  // Django Achane'd (Matt)   aoa
+var jkrScores = [ 120.80, 103.90, 126.95 ];  // Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15, 140.90 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -31,8 +31,8 @@ var wbdScores = [ 111.55, 116.85 ];  // Weapons of Bass Destruction (Daniel)
 var icePlayoffs = 0;  // Iceotopes (John)
 var nixPlayoffs = 0;  // Nix UR Hopes (Steve)
 var djaPlayoffs = 0;  // Django Achane'd (Matt)
-var jkrPlayoffs = 0;  // The Brotha's (Reek/Ross)  Comeback Miracle
-var pmbPlayoffs = 0;  // Predators (Joe) Arrested Development
+var jkrPlayoffs = 0;  // Your Bye Week (Reek)
+var pmbPlayoffs = 0;  // Pass Me a Brewski (Ross)
 
 var cocPlayoffs = 0;  // Coco Browns (Andy)
 var fatPlayoffs = 0;  // Phat Bastards (Steve)
@@ -61,7 +61,19 @@ var week2_txt = "Wow, a tie!!! Haven't seen that in several years - thats gonna 
                 "scoring the low for the week.<br><br>And in the other move along, move along, nothing to see here games " +
                 "Nuts and Chops both easily topped the Ice and the Bass, respectively.<br>";
 
-var week3_txt = "";
+var week3_txt = "The wheat is beginning to separate from the chaff already. The wheat consists of the Coco, " +
+                "Pork and Nuts (sounds like a horrible breakfast cereal) and the Brews, Bastards and Bass being the " +
+                "chaff (Hmmmm, they all start with B)! And the rest, well " +
+                "they're just glad there's eight teams in the playoffs.<br><br>Speaking of the Coco - Nuts, in the " +
+                "highest scoring matchup of the year (spoiler alert: gonna be an unhappy loser here) the Nutz " +
+                "held off the Browns.<br><br>In what might be the luckiest win (or unluckiest loss depending on your " +
+                "view point) the Bye Week was leading by 0.5 points with 30 seconds to go Monday night. Baltimore " +
+                "scored with 29 seconds to go and all the Bass Weapons needed was the extra point to win - but no!!! " +
+                "The Ravens go for two and the Bass were destructed! After the first two weeks the Bye probably " +
+                "deserved a break but wow, way to get the heart racing!<br><br>Lastly, congrats to the Porksters, " +
+                "who are now the sole remaining undefeated team, and had a semi-bye week themselves against the " +
+                "Flat Bastards (gonna be a long year for them it seems).<br>";
+
 
 var week4_txt = "";
 
