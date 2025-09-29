@@ -1,19 +1,19 @@
 "use strict";
 
-//NOTE: Weeks 1, 2 and 3 are done...
+//NOTE: Weeks 1 through 14 are done...
 
-//               1*     2*     3*     4*     5*     6*     7*     8*     9*    10*    11*    12*    13*    14*  
-var iceOpps = ["dja", "cdz", "pmb", "fat", "nix", "cdz", "jkr", "pmb", "wbd", "coc", "fat", "por", "cdz", "jkr" ];
-var nixOpps = ["jkr", "pmb", "dja", "cdz", "ice", "jkr", "dja", "por", "pmb", "por", "wbd", "coc", "dja", "fat" ];
-var djaOpps = ["ice", "jkr", "nix", "por", "pmb", "fat", "nix", "fat", "cdz", "jkr", "coc", "cdz", "nix", "wbd" ];
-var jkrOpps = ["nix", "dja", "wbd", "coc", "wbd", "nix", "ice", "cdz", "fat", "dja", "por", "pmb", "wbd", "ice" ];
-var pmbOpps = ["coc", "nix", "ice", "wbd", "dja", "por", "coc", "ice", "nix", "fat", "cdz", "jkr", "por", "coc" ];
+//               1      2      3      4      5      6     7      8      9      10     11     12     13     14   
+var iceOpps = ["dja", "cdz", "pmb", "wbd", "fat", "ybw", "nix", "dja", "coc", "por", "wbd", "pmb", "ybw", "nix" ];
+var nixOpps = ["ybw", "pmb", "dja", "por", "coc", "fat", "ice", "ybw", "wbd", "cdz", "pmb", "dja", "coc", "ice" ];
+var djaOpps = ["ice", "ybw", "nix", "coc", "cdz", "pmb", "por", "ice", "fat", "wbd", "ybw", "nix", "pmb", "por" ];
+var ybwOpps = ["nix", "dja", "wbd", "fat", "por", "ice", "pmb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pmb" ];
+var pmbOpps = ["coc", "nix", "ice", "cdz", "wbd", "dja", "ybw", "fat", "por", "fat", "nix", "ice", "dja", "ybw" ];
 
-var cocOpps = ["pmb", "fat", "cdz", "jkr", "cdz", "wbd", "pmb", "wbd", "por", "ice", "dja", "nix", "fat", "pmb" ];
-var fatOpps = ["wbd", "coc", "por", "ice", "por", "dja", "wbd", "dja", "jkr", "pmb", "ice", "wbd", "coc", "nix" ];
-var porOpps = ["cdz", "wbd", "fat", "dja", "fat", "pmb", "cdz", "nix", "coc", "nix", "jkr", "ice", "pmb", "cdz" ];
-var cdzOpps = ["por", "ice", "coc", "nix", "coc", "ice", "por", "jkr", "dja", "wbd", "pmb", "dja", "ice", "por" ];
-var wbdOpps = ["fat", "por", "jkr", "pmb", "jkr", "coc", "fat", "coc", "ice", "cdz", "nix", "fat", "jkr", "dja" ];
+var cocOpps = ["pmb", "fat", "cdz", "dja", "nix", "por", "wbd", "por", "ice", "ybw", "fat", "wbd", "nix", "cdz" ];
+var fatOpps = ["wbd", "coc", "por", "ybw", "ice", "nix", "cdz", "pmb", "dja", "pmb", "coc", "por", "cdz", "wbd" ];
+var porOpps = ["cdz", "wbd", "fat", "nix", "ybw", "coc", "dja", "coc", "pmb", "ice", "cdz", "fat", "wbd", "dja" ];
+var cdzOpps = ["por", "ice", "coc", "pmb", "dja", "wbd", "fat", "wbd", "ybw", "nix", "por", "ybw", "fat", "coc" ];
+var wbdOpps = ["fat", "por", "ybw", "ice", "pmb", "cdz", "coc", "cdz", "nix", "dja", "ice", "coc", "por", "fat" ];
 
 
 // Playoffs
@@ -80,20 +80,20 @@ class PflTeam {
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
 let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 1, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let djaTeam = new PflTeam("Django Achane'd", "Matt", "dja", 1, djaOpps);                djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
-let jkrTeam = new PflTeam("The Bye Week", "Reek", "jkr", 1, jkrOpps);                   jkrTeam.setScores(jkrScores); jkrTeam.setPlayoffs(jkrPlayoffs);
+let ybwTeam = new PflTeam("Your Bye Week", "Reek", "ybw", 1, ybwOpps);                  ybwTeam.setScores(ybwScores); ybwTeam.setPlayoffs(ybwPlayoffs);
 let pmbTeam = new PflTeam("Pass me a Brewski", "Ross", "pmb", 1, pmbOpps);              pmbTeam.setScores(pmbScores); pmbTeam.setPlayoffs(pmbPlayoffs);
 
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 2, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
-let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 2, cdzOpps);    cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
+let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 2, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
 let wbdTeam = new PflTeam("Weapons of Bass Destruction", "Daniel", "wbd", 2, wbdOpps);  wbdTeam.setScores(wbdScores); wbdTeam.setPlayoffs(wbdPlayoffs);
 
 var pflTeams =  [
    iceTeam,  
    nixTeam,
    djaTeam,
-   jkrTeam,
+   ybwTeam,
    pmbTeam,
 
    cocTeam,
@@ -117,8 +117,10 @@ function initTeams()
 
       pflTeams[i].wins = 0;
       pflTeams[i].losses = 0;
+      pflTeams[i].ties = 0;
       pflTeams[i].divWins = 0;
       pflTeams[i].divLosses = 0;
+      pflTeams[i].divTies = 0;
       pflTeams[i].totPts = 0;
       pflTeams[i].oppPts = 0;
 
@@ -154,19 +156,25 @@ function initTeams()
                    if ( team.division == opp.division )
                       pflTeams[i].divWins++;
                }
-               else
+               else if ( team.scores[week] < opp.scores[week] )
                {
                   pflTeams[i].losses++;
                   if ( team.division == opp.division )
                      pflTeams[i].divLosses++;
+               }
+               else
+               {
+                  pflTeams[i].ties++;
+                  if ( team.division == opp.division )
+                     pflTeams[i].divTies++;
                }
             }
          }
       }
 
       //console.log(team.name + " record: " +
-      //               pflTeams[i].wins + "W " +  pflTeams[i].losses + "L " +
-      //               pflTeams[i].divWins + "W " +  pflTeams[i].divLosses + "L " +
+      //               pflTeams[i].wins + "W " + pflTeams[i].losses + "L " + pflTeams[i].ties + "T " +
+      //               pflTeams[i].divWins + "W " + pflTeams[i].divLosses + "L " + pflTeams[i].divTies + "T ");
       //               pflTeams[i].totPts);
    }
 
@@ -230,6 +238,8 @@ function compareRecords(b, a)
 {
    var bwins = b.wins;
    var awins = a.wins;
+   var blosses = b.losses;
+   var alosses = a.losses;
    var bdivWins = b.divWins;
    var adivWins = a.divWins;
    var bPts = b.totPts;
@@ -256,8 +266,20 @@ function compareRecords(b, a)
    {
       return -1;
    }
-   else
+   else  // Same number of wins, check losses, then division record
    {
+      if ( alosses < blosses )
+      {
+         return 1;
+      }
+      if ( blosses < alosses )
+      {
+         return -1;
+      }
+
+      //TODO: Can we have different number of ties at this point?
+
+      // OK, check on division record
       if ( adivWins > bdivWins )
       {
          return 1;
@@ -266,7 +288,7 @@ function compareRecords(b, a)
       {
          return -1;
       }
-      else
+      else   // Division wins is the same, check total points
       {
          if ( aPts > bPts )
          {

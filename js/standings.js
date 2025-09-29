@@ -23,13 +23,16 @@ class Standings
       {
          pflUtils.clearTable(table1Body);
 
-         this.addRow(table1Hdr, "Team", "Owner", "All W/L", "Div W/L", "Tot Pts", 0);
+//TODO: If theres Ties, show W/L/T else show W/L
+//if (checkTies)
+
+         this.addRow(table1Hdr, "Team", "Owner", "All W/L/T", "Div W/L/T", "Tot Pts", 0);
          for ( var indx=0; indx<5; indx++ )
          {
             team = pteams[indx];
             this.addRow(table1Body, team.name, team.owner,
-                        "" + team.wins + "/" + team.losses,
-                        "" + team.divWins + "/" + team.divLosses,
+                        "" + team.wins + "/" + team.losses + "/" + team.ties,
+                        "" + team.divWins + "/" + team.divLosses + "/" + team.divTies,
                         team.totPts.toFixed(0),
                         team.playoffs);
          }
@@ -44,13 +47,13 @@ class Standings
       {
          pflUtils.clearTable(table2Body);
 
-         this.addRow(table2Hdr, "Team", "Owner", "All W/L", "Div W/L", "Tot Pts", 0);
+         this.addRow(table2Hdr, "Team", "Owner", "All W/L/T", "Div W/L/T", "Tot Pts", 0);
          for ( var indx=5; indx<10; indx++ )
          {
             team = pteams[indx];
             this.addRow(table2Body, team.name, team.owner,
-                        "" + team.wins + "/" + team.losses,
-                        "" + team.divWins + "/" + team.divLosses,
+                        "" + team.wins + "/" + team.losses + "/" + team.ties,
+                        "" + team.divWins + "/" + team.divLosses + "/" + team.divTies,
                         team.totPts.toFixed(0),
                         team.playoffs);
          }
