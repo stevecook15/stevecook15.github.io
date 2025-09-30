@@ -9,16 +9,16 @@
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
 var iceScores = [ 105.05, 107.20, 119.90, 169.25 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 81.0 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 81.0 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 80.0 ];  // Your Bye Week (Reek)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85 ];  // Your Bye Week (Reek)
 var pmbScores = [ 105.95, 114.50,  91.20, 121.90 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90, 80.0 ];  // Coco Browns (Andy)
+var cocScores = [ 118.20, 151.15, 140.90,  99.20 ];  // Coco Browns (Andy)
 var fatScores = [ 116.90, 101.85, 100.50, 173.70 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 80.0 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 80.0 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 80.0 ];  // Weapons of Bass Destruction (Daniel)
+var porScores = [ 129.55, 135.65, 141.80, 137.75 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -74,16 +74,16 @@ var week3_txt = "The wheat is beginning to separate from the chaff already. The 
                 "who are now the sole remaining undefeated team, and had a semi-bye week themselves against the " +
                 "Flat Bastards (gonna be a long year for them it seems).<br>";
 
-
 var week4_txt = "After four weeks we're down to one unbeaten (though not untied) team as Nix UR Pork took out the " +
                 "previous undefeated Chops. On the other end of the spectrum we're also down to one winless / beaten " +
                 "team as the Brewskis (strangely, the other team with a tie) manage to crack the Nutz for their " +
                 "first 'win'.<br><br>As to that last still winless team, the Toy Bass Weapons, they were iced by " +
                 "the Topes who scored the new league season high to just rub it in...<br><br>Oops, wait a moment, " +
-                "scratch that. The new leaqgue season high was set late Sunday night (overtime on the east coast, " +
-                "yay!) by the previously hapless Bastards having a Bye Week and scoring 60+ more than their previous " +
-                "high score.  Wow, who gets a Bye Week next week?<br><br>And oh yeah, the Djanjo held off the Cocos " +
-                "to muddy up the middle of the standings at 2-2 each.<br>";
+                "scratch that. The Nix scored big Monday night to eek by the Ice for the new best score!  Oops again, " +
+                "the new leaqgue season high was actually set late Sunday night (overtime time on the east coast for " +
+                "the Fat, oh yay!) by the previously hapless Bastards having a Bye Week and scoring 60+ more than their " +
+                "previous high score.  Wow, who gets a Bye Week next week?<br><br>And oh yeah, the Djanjo held off the " +
+                "Cocos in very low scoring affair to muddy up the middle of the standings at 2-2 each.<br>";
 
 var week5_txt = "";
 
