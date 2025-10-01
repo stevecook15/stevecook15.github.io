@@ -85,7 +85,7 @@ var week4_txt = "After four weeks we're down to one unbeaten (though not untied)
                 "previous high score.  Wow, who gets a Bye Week next week?<br><br>And oh yeah, the Djanjo held off the " +
                 "Cocos in very low scoring affair to muddy up the middle of the standings at 2-2 each.<br>";
 
-var week5_txt = "";
+var week5_txt = "Well hello there";
 
 var week6_txt = "";
 
