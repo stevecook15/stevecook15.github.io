@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85 ];  // Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85 ];  // Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -85,7 +85,23 @@ var week4_txt = "After four weeks we're down to one unbeaten (though not untied)
                 "previous high score.  Wow, who gets a Bye Week next week?<br><br>And oh yeah, the Djanjo held off the " +
                 "Cocos in very low scoring affair to muddy up the middle of the standings at 2-2 each.<br>";
 
-var week5_txt = "Well hello there";
+var week5_txt = "Alas the last undefeated team and last winless are no more! Not much drama left for the rest of the " +
+	        "year I guess. Oh, other than seemingly having the whole rest of the league (well, except for two teams " +
+	        "we'll get to later) being one week away, one win away from being in first!<br><br>Bye weeks are kicking in " +
+	        "now so there'll be some scoring impacts, though you wouldn't know it from the big boy football matchup " +
+	        "the Djbanjo and Nutz put up, with the Acnes taking out the Seedies (who lost despite putting up the " +
+	        "second highest score of the week - don't you just hate that, at least when it happens to you).<br><br> But " +
+	        "bye weeks surely must be the explanation for the CocoNots eeking out  a win over the previously undefeated Nixons, " +
+                "at least they're both hoping thats the reason for the low scores. And Your Bye Week managed to take down " +
+	        "the Porkribs even though the Chops didn't have any players on a bye (that may be ominous for the Porks " +
+	        "chances over the next 10 weeks or so... The Phat (five players injured or on bye) vs the Topes " +
+	        "(three players injured or on bye) strangely ended with the Bastards easily taking out the Ice. Go " +
+                "figure.<br><br>And lastly (approprately so) the 9th and 10th place teams matched up (someone's got " +
+	        "win right - gosh wouldn't a tie been great), with a low scoring affair. Silver lining time: they both " +
+	        "beat their projected scores and would have both beat Coco, Hopes and the Ice. Sadly, though the " +
+	        "Bass won, they still find them selves in last place.  Well the season is still young and they only " +
+	        "need to move up two places to be in the playoffs!.<br><br>";
+         
 
 var week6_txt = "";
 
