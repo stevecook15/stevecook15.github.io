@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85 ];  // Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80 ];  // Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -102,8 +102,20 @@ var week5_txt = "Alas the last undefeated team and last winless are no more! Not
 	        "Bass won, they still find them selves in last place.  Well the season is still young and they only " +
 	        "need to move up two places to be in the playoffs!.<br><br>";
          
-
-var week6_txt = "";
+	    
+var week6_txt = "Well, one nail biter and four not so close matchups. The coconuts were all finished headed into MNF " +
+                "with only the Chops TE left. But as the Monday night game went on the Porkies kept closing the gap, " +
+                "squeaking by the Cocos at the last minute...  Nah, scratch that! Having Ertz hurtz - he needed one " +
+                "more catch! THe Chops end up oh so short, just 0.9 points away from PFL glory! The Cocos on the other " +
+                "hand take over first place from the Chops in the division.<br><br>On the not so close end of " +
+                "the spectrum, the Seedless Nuts only score a middling 124 points but still won by the weeks " +
+                "largest margin (57 points) - that must mean, yes you guessed it, the Weapons of their Own Destruction " +
+                "posted the (possibly historically so) low score for the year (67 pts! wow!). <br><br>This weeks high " +
+                "score goes to the Ice who had Their Bye Week, moving them to the top of their division. The Acne easily " +
+                "chugged down the Brewski, keeping pace with the Ice at the top of their division.<br><br>In the last " +
+                "matchup on the slate the Bastards nixxed the UR So Hopeless to move to 4-2 (weren't they 1-2 three " +
+                "weeks ago?) <br>";
+ 
 
 var week7_txt = "";
 
