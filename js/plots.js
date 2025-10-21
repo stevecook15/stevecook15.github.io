@@ -193,7 +193,7 @@ class Plots
 
       //chart.setAutoScale(true);
       chart.setNumTics(10); //this.PLOT_NUM_TICS);
-      chart.setYMax(175.0); //this.PLOT_MAX_VALUE);
+      chart.setYMax(150.0); //this.PLOT_MAX_VALUE);
       chart.setYMin(this.PLOT_MIN_VALUE);
 
       chart.setThreeD(true);
@@ -306,8 +306,8 @@ class Plots
       //chart.setXLabels(pfl_labels);
       chart.setXLabels(plabels);
       //chart.setAutoScale(true);
-      chart.setNumTics(8);
-      chart.setYMax(80.0);
+      chart.setNumTics(6);
+      chart.setYMax(60.0);
       chart.setYMin(0.0);
 
       chart.setThreeD(true);

@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80 ];  // Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55 ];  // Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60 ];  // Weapons of Bass Destruction (Daniel)
 
 
 
@@ -117,7 +117,16 @@ var week6_txt = "Well, one nail biter and four not so close matchups. The coconu
                 "weeks ago?) <br>";
  
 
-var week7_txt = "";
+var week7_txt = "After an exciting week 7 we have new leaders in the lowest score to win and highest score to " +
+                "lose and the high leaque score sweepstakes! The leaque's highest scoring team continues to take " +
+	        "it on the short chop side with the Porksters posting 154 points and still losing by 20 to the " +
+	        "new high score holder DJ's Acne.<br><br>On the (very) far other end of the spectrum the Coco Nots " +
+	        "managed a <i>comfortable</i> win over the Weapons of Not Working despite not breaking 100 pts! " +
+	        "In an only marginally better effort Brewsters had their Bye Week despite barely breaking 100 pts. The " +
+                "Ice put up a decent score to Nix the UR Hopes hopes to remain in first.<br><br>And lastly we have the " +
+	        "CeeDees who were so confident of a victory over the Phlat they didn't even bother starting a QB or a " +
+	        "TE.  You can do that whem your two RBs score 73 pts between them. Heck, their RBs and WRs alone would " +
+	        "have beaten five other PFL teams.";
 
 var week8_txt = "";
 
