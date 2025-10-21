@@ -126,7 +126,7 @@ var week7_txt = "After an exciting week 7 we have new leaders in the lowest scor
                 "Ice put up a decent score to Nix the UR Hopes hopes to remain in first.<br><br>And lastly we have the " +
 	        "CeeDees who were so confident of a victory over the Phlat they didn't even bother starting a QB or a " +
 	        "TE.  You can do that whem your two RBs score 73 pts between them. Heck, their RBs and WRs alone would " +
-	        "have beaten five other PFL teams.";
+	        "have beaten five other PFL teams. Even their kicker scored 17 points. Sheesh";
 
 var week8_txt = "";
 
