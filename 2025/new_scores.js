@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55 ];  // Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75 ];  // Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60 ];  // Weapons of Bass Destruction (Daniel)
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60 ];  // Bring out your dead
 
 
 
@@ -128,7 +128,13 @@ var week7_txt = "After an exciting week 7 we have new leaders in the lowest scor
 	        "TE.  You can do that whem your two RBs score 73 pts between them. Heck, their RBs and WRs alone would " +
 	        "have beaten five other PFL teams. Even their kicker scored 17 points. Sheesh";
 
-var week8_txt = "";
+var week8_txt = "Well the biggest bye week of the year didn't seem to affect most teams. Even the Phlat Turds horrible " +
+	        "effort wasn't directly attributable to the byes - their team just stinks, loosing big to the Brewz Crew. " +
+	        "The Archanes won out in the battle for Division 1 lead over the Slushtopes, posting any even bigger " +
+	        "margin of victory.<br><br>Looks like a name change brought out the dead as they ambushed the seedy " +
+	        "legumes for their second win of the year (only a game out of the playoffs now!). The Brownies solidified " +
+	        "their hold on the Division 2 lead taking down the fading Porkflops. Lastly, the Nixxers had their 'Bye " +
+	        "Week' pre-ordained win.";
 
 var week9_txt = "";
 
