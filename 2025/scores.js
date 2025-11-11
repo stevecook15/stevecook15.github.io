@@ -80,14 +80,14 @@ class PflTeam {
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
 let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 1, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let djaTeam = new PflTeam("Django Achane'd", "Matt", "dja", 1, djaOpps);                djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
-let ybwTeam = new PflTeam("Your Bye Week", "Reek", "ybw", 1, ybwOpps);                  ybwTeam.setScores(ybwScores); ybwTeam.setPlayoffs(ybwPlayoffs);
+let ybwTeam = new PflTeam("Comeback Miracle", "Reek", "ybw", 1, ybwOpps);               ybwTeam.setScores(ybwScores); ybwTeam.setPlayoffs(ybwPlayoffs);
 let pmbTeam = new PflTeam("Pass me a Brewski", "Ross", "pmb", 1, pmbOpps);              pmbTeam.setScores(pmbScores); pmbTeam.setPlayoffs(pmbPlayoffs);
 
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
 let porTeam = new PflTeam("Porkchops", "Noah", "por", 2, porOpps);                      porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
 let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 2, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
-let wbdTeam = new PflTeam("Weapons of Bass Destruction", "Daniel", "wbd", 2, wbdOpps);  wbdTeam.setScores(wbdScores); wbdTeam.setPlayoffs(wbdPlayoffs);
+let wbdTeam = new PflTeam("Bring Out Your Dead", "Daniel", "wbd", 2, wbdOpps);          wbdTeam.setScores(wbdScores); wbdTeam.setPlayoffs(wbdPlayoffs);
 
 var pflTeams =  [
    iceTeam,  

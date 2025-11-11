@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75 ];  // Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20 ];  // Comeback Miracle Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60 ];  // Bring out your dead
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50 ];  // Bring out your dead
 
 
 
@@ -31,14 +31,14 @@ var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60
 var icePlayoffs = 0;  // Iceotopes (John)
 var nixPlayoffs = 0;  // Nix UR Hopes (Steve)
 var djaPlayoffs = 0;  // Django Achane'd (Matt)
-var ybwPlayoffs = 0;  // Your Bye Week (Reek)
+var ybwPlayoffs = 0;  // Comeback Miracle Your Bye Week (Reek)
 var pmbPlayoffs = 0;  // Pass Me a Brewski (Ross)
 
 var cocPlayoffs = 0;  // Coco Browns (Andy)
 var fatPlayoffs = 0;  // Phat Bastards (Steve)
 var porPlayoffs = 0;  // Porkchops (Noah)
 var cdzPlayoffs = 0;  // CeeDeez Nutz (Harrision) TWSSaid
-var wbdPlayoffs = 0;  // Weapons of Bass Destruction (Daniel)
+var wbdPlayoffs = 0;  // Bring out your dead Weapons of Bass Destruction (Daniel)
 
 
 // Weekly blah blah blah text...
@@ -136,9 +136,24 @@ var week8_txt = "Well the biggest bye week of the year didn't seem to affect mos
 	        "their hold on the Division 2 lead taking down the fading Porkflops. Lastly, the Nixxers had their 'Bye " +
 	        "Week' pre-ordained win.";
 
-var week9_txt = "";
+var week9_txt = "Every always loves it when the top teams lose (well, maybe the top teams don't, but hey)! We had both " +
+                "division leaders go down this week, the #2 Cocos losing to the #3 Ice in a mild upset, and the #1 (and " +
+                "hottest team) Acnes going down in a big upset to the eminently beatable #6 Bastards. That closes up the " +
+	        "the gap to first place quite a bit.<br><br>Apparentl any Comeback Miracles will have to wait amother " +
+	        "week as the Nutz easily won. But bringing out your dead apparently does wonders for a team as they've " +
+	        "tripled their season win total in the last two weeks, beating the Hopeless in a nailbiter.<br><br>And " +
+	        "lastly, the other white meat took the passed brewski and guzzled it all the way down to needed victory.<br>";
 
-var week10_txt = "";
+var week10_txt = "We'll start with the best matchup of the week - the Porkchops showed their opponent who's their (god) " +
+                 "daddy in the closest and highest scoring matchup, icing the Topes. Now we'll go with the biggest " +
+	         "blowout of the week showing us that your hopes are nixxed when you miss your projected score by 47 (wow) " +
+	         "points and your nutty opponent has the seeds to beat their projection by 20 leading to a 67 point loss!" +
+	         "<br><br>As for the other matchups, the Phlat passed one too many alcoholic beverages to their opponent " +
+	         "resulting in a loss to the Brewmeisters. There apparently weren't enough dead left as the couldn't " +
+	         "bring out enough of them to compete with Djboutie Archane.<br><br>And in the last match, the league " +
+	         "better watch out as the comeback miracle has begun! They stomped on the division leading Coco Nots " +
+	         "to move into ninth place (sorry Dead...)";
+
 
 var week11_txt = "";
 
