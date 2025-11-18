@@ -1283,4 +1283,5 @@ function TInfo(team, week, score)
    this.week = week;
    this.score = score;
 }
+ 
 
