@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65 ];  // Comeback Miracle Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40,  97.95 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65, 133.05 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25, 119.30 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65, 124.75 ];  // Comeback Miracle Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25, 133.10 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45 ];  // Bring out your dead
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85, 136.75 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70, 140.20 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65, 155.85 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80, 116.15 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45,  90.65 ];  // Bring out your dead
 
 
 
@@ -159,14 +159,24 @@ var week11_txt = "Just a couple of weeks ago one figured the Dead and the Brew w
 	         "already clenched the playoffs. Two weeks later both teams find themselves just a half game out of " +
 	         "the playoffs and no team has clenched anything! The Zombie Topes were brought out by the dead and " +
 	         "thrown on top of the cart. And then it seemed like Yahoo had a software bug and swapped the Miracles " +
-	         "and the Djbangos scores - surely that whas the Acnes with 170 pts and not just the 82 points that " +
+	         "and the Djbangos scores - surely that was the Acnes with 170 pts and not just the 82 points that " +
 	         "the Comebacks usually score?<br><br>And then we had a matchup of the two teams with a tie from their " +
                  "last meeting and both with 4/5/1 records. And fittingly it was another close match with the Brews " +
 	         "crushing the Nix Urs hopes by 2.5 points. In the family/brotherly love category the CeeDees out " +
 	         "nutted the Porkchops and moved into first in their division.<br><br>And finally in a contest to " +
 	         "see who could underperform more the Cocos succeeded - losing to the Phats also poor effort.<br>";
 
-var week12_txt = "";
+var week12_txt = "The good news is that both the division leaders lost so things are still very much alive - except of " +
+                 "course for the Dead, who are still in the playoff hunt but can't win their division any longer. The " +
+	         "Seedless Legumes were on the wrong end of another Comeback Miracle and the DJ Acmes had ur hopes " +
+	         "nixxed. And the Dead rolled over and played possum for the Coco Tans (Shade 7) who moved into the " +
+	         "lead for Division 2.<br><br>The Porkers are still working on that drawing board - their league " +
+	         "leading points against took another turn for the worse.  But despite that they managed to win by " +
+	         "Gibbing their way over the Turd Bowls (damn 60 yd TD in overtime anyway,,,) The Phat managed to " +
+	         "lose despite having the second highest score of the week (second time this season mind you). But " +
+	         "the Phat are jockeying for that 8th seed anyway as, based on past experience, thats a sure fire way " +
+	         "to win the league playoffs!<br><br>And lastly, seems like the Ice were passed one too many brewskis " +
+	         "as they spiral their way down to fight it out for that coveted 8th seed!<br>";
 
 var week13_txt = "";
 
