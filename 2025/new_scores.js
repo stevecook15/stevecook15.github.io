@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40,  97.95 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65, 133.05 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25, 119.30 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65, 124.75 ];  // Comeback Miracle Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25, 133.10 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40,  97.95, 123.15 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65, 133.05, 116.85 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25, 119.30, 105.40 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65, 124.75, 130.35 ];  // Comeback Miracle Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25, 133.10, 133.10 ];  // Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85, 136.75 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70, 140.20 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65, 155.85 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80, 116.15 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45,  90.65 ];  // Bring out your dead
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85, 136.75, 115.70 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70, 140.20, 130.35 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65, 155.85,  90.80 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80, 116.15, 147.00 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45,  90.65,  88.25 ];  // Bring out your dead
 
 
 
@@ -32,13 +32,13 @@ var icePlayoffs = 0;  // Iceotopes (John)
 var nixPlayoffs = 0;  // Nix UR Hopes (Steve)
 var djaPlayoffs = 0;  // Django Achane'd (Matt)
 var ybwPlayoffs = 0;  // Comeback Miracle Your Bye Week (Reek)
-var pmbPlayoffs = 0;  // Pass Me a Brewski (Ross)
+var pmbPlayoffs = 1;  // Pass Me a Brewski (Ross)
 
 var cocPlayoffs = 0;  // Coco Browns (Andy)
 var fatPlayoffs = 0;  // Phat Bastards (Steve)
 var porPlayoffs = 0;  // Porkchops (Noah)
-var cdzPlayoffs = 0;  // CeeDeez Nutz (Harrision) TWSSaid
-var wbdPlayoffs = 0;  // Bring out your dead Weapons of Bass Destruction (Daniel)
+var cdzPlayoffs = 1;  // CeeDeez Nutz (Harrision) TWSSaid
+var wbdPlayoffs = 4;  // Bring out your dead Weapons of Bass Destruction (Daniel)
 
 
 // Weekly blah blah blah text...
@@ -173,12 +173,24 @@ var week12_txt = "The good news is that both the division leaders lost so things
 	         "lead for Division 2.<br><br>The Porkers are still working on that drawing board - their league " +
 	         "leading points against took another turn for the worse.  But despite that they managed to win by " +
 	         "Gibbing their way over the Turd Bowls (damn 60 yd TD in overtime anyway,,,) The Phat managed to " +
-	         "lose despite having the second highest score of the week (second time this season mind you). But " +
+	         "lose despite having the second highest score of the week (third time this season mind you). But " +
 	         "the Phat are jockeying for that 8th seed anyway as, based on past experience, thats a sure fire way " +
 	         "to win the league playoffs!<br><br>And lastly, seems like the Ice were passed one too many brewskis " +
 	         "as they spiral their way down to fight it out for that coveted 8th seed!<br>";
 
-var week13_txt = "";
+var week13_txt = "What a year it's been! Never seen it this crazy close going into the final week. Only two teams have " +
+                 "clinched a spot and only one team has been eliminated. If the chips fall in the right way we could " +
+	         "five teams tied for the last four playoff spots and then it becomes a 'points' game of which the projected " +
+	         "last three teams are all currently within 10 points of each other!<br><br>Anyway, congrats to the Storts, taking " +
+	         "down the DJangle and the Nutz for phlattening the Bastards to lock up the first two playoff spots. Silver lining " +
+	         "time finds the Bastards in the coveted 8th seed at the moment - can a league championship be far behind?" +
+	         "<br><br>The Miracles keep coming and the Ices downward spiral keeps spiraling. Interestingly both " +
+	         "could make the playoffs even if they both lose next week (and include the Phlat in that too) - there are " +
+	         "no teams with a 'lose and you are out' scenario. It'd still come down to total points.<br><br>In one of " +
+	         "closest results of the year the Nixons hoped their way to a squeaker win over the Brownies to greatly " +
+	         "improve their playoff chances. And in last sad matchup the Dead didn't bring enough out to beat the Boards, " +
+	         "resulting in the BDBs setting the season's lowest winning total (although thats gotta hurt their chances " +
+	         "of winning the 'Most Points Against' award!)<br>";
 
 var week14_txt = "";
 
