@@ -6,8 +6,8 @@
 class Plots
 {
    // Reads scores from scores.js
-   PLOT_MIN_VALUE = 80.0;
-   PLOT_MAX_VALUE = 200.0;
+   PLOT_MIN_VALUE = 60.0;
+   PLOT_MAX_VALUE = 180.0;
    PLOT_NUM_TICS = 12;
 
    constructor()
@@ -192,9 +192,9 @@ class Plots
       chart.setXLabels(plabels);
 
       //chart.setAutoScale(true);
-      chart.setNumTics(10); //this.PLOT_NUM_TICS);
+      chart.setNumTics(7); //this.PLOT_NUM_TICS);
       chart.setYMax(150.0); //this.PLOT_MAX_VALUE);
-      chart.setYMin(this.PLOT_MIN_VALUE);
+      chart.setYMin(80.0);
 
       chart.setThreeD(true);
       chart.setThreeDAxes(true);

@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40,  97.95, 123.15 ];  // Iceotopes (John)
-var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65, 133.05, 116.85 ];  // Nix UR Hopes (Steve M)
-var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25, 119.30, 105.40 ];  // Django Achane'd (Matt)   aoa
-var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65, 124.75, 130.35 ];  // Comeback Miracle Your Bye Week (Reek)
-var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25, 133.10, 133.10 ];  // Pass me a Brewski (Ross)
+var iceScores = [ 105.05, 107.20, 119.90, 169.25, 109.35, 153.15, 139.95, 100.80, 146.00, 148.65, 120.40,  97.95, 123.15, 137.85 ];  // Iceotopes (John)
+var nixScores = [ 130.40, 114.50, 121.55, 170.80, 110.60, 103.30, 112.95, 148.15, 132.15,  82.20, 119.65, 133.05, 116.85, 148.25 ];  // Nix UR Hopes (Steve M)
+var djaScores = [ 103.05, 155.95,  91.85, 103.15, 158.15, 137.15, 175.00, 147.80, 110.30, 143.70,  89.25, 119.30, 105.40, 121.40 ];  // Django Achane'd (Matt)   aoa
+var ybwScores = [ 120.80, 103.90, 126.95, 115.85, 144.85, 127.80,  99.55, 123.75, 113.95, 126.20, 170.65, 124.75, 130.35, 176.25 ];  // Comeback Miracle Your Bye Week (Reek)
+var pmbScores = [ 105.95, 114.50,  91.20, 121.90, 114.45,  93.10, 106.20, 130.10, 112.85, 134.00, 122.25, 133.10, 133.10,  94.45 ];  // Cinderella / Pass me a Brewski (Ross)
 
-var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85, 136.75, 115.70 ];  // Coco Browns (Andy)
-var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70, 140.20, 130.35 ];  // Phat Bastards (Steve C)
-var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65, 155.85,  90.80 ];  // Porkchops (Noah)
-var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80, 116.15, 147.00 ];  // CeeDeez Nutz (Harrision) bel
-var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45,  90.65,  88.25 ];  // Bring out your dead
+var cocScores = [ 118.20, 151.15, 140.90,  99.20, 113.50, 127.15,  95.50, 146.25, 123.65, 113.75, 105.85, 136.75, 115.70, 131.20 ];  // Coco Browns (Andy)
+var fatScores = [ 116.90, 101.85, 100.50, 173.70, 137.30, 140.65, 125.50,  92.25, 135.30, 120.70, 117.70, 140.20, 130.35,  61.80 ];  // Phat Bastards (Steve C)
+var porScores = [ 129.55, 135.65, 141.80, 137.75, 125.80, 126.25, 154.60, 112.20, 121.60, 156.90, 115.65, 155.85,  90.80, 178.15 ];  // Porkchops (Noah)
+var cdzScores = [  93.45, 139.05, 159.50, 101.35, 152.30, 123.60, 152.20, 114.45, 134.55, 149.90, 125.80, 116.15, 147.00, 113.10 ];  // CeeDeez Nutz (Harrision) bel
+var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60, 134.50,  92.50, 133.45,  90.65,  88.25, 106.35 ];  // Bring out your dead
 
 
 
@@ -28,15 +28,15 @@ var wbdScores = [ 111.55, 116.85, 126.45, 121.90, 118.00,  67.00,  85.60, 128.60
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 
-var icePlayoffs = 0;  // Iceotopes (John)
-var nixPlayoffs = 0;  // Nix UR Hopes (Steve)
-var djaPlayoffs = 0;  // Django Achane'd (Matt)
-var ybwPlayoffs = 0;  // Comeback Miracle Your Bye Week (Reek)
+var icePlayoffs = 1;  // Iceotopes (John)
+var nixPlayoffs = 2;  // Nix UR Hopes (Steve)
+var djaPlayoffs = 1;  // Django Achane'd (Matt)
+var ybwPlayoffs = 1;  // Comeback Miracle Your Bye Week (Reek)
 var pmbPlayoffs = 1;  // Pass Me a Brewski (Ross)
 
-var cocPlayoffs = 0;  // Coco Browns (Andy)
-var fatPlayoffs = 0;  // Phat Bastards (Steve)
-var porPlayoffs = 0;  // Porkchops (Noah)
+var cocPlayoffs = 2;  // Coco Browns (Andy)
+var fatPlayoffs = 4;  // Phat Bastards (Steve)
+var porPlayoffs = 1;  // Porkchops (Noah)
 var cdzPlayoffs = 1;  // CeeDeez Nutz (Harrision) TWSSaid
 var wbdPlayoffs = 4;  // Bring out your dead Weapons of Bass Destruction (Daniel)
 
@@ -192,7 +192,20 @@ var week13_txt = "What a year it's been! Never seen it this crazy close going in
 	         "resulting in the BDBs setting the season's lowest winning total (although thats gotta hurt their chances " +
 	         "of winning the 'Most Points Against' award!)<br>";
 
-var week14_txt = "";
+var week14_txt = "Ahh, the end to another PFL regular season - most likely the closest ever, with the lowest division winning " +
+	         "records in at least 12 years (and possibly 30)! All that was really at stake in the final " +
+                 "week was the battle for the division crowns and which one team wasn't going to make the playoffs. In the " +
+	         "Sofa Squad division we ended up with three (3!) teams tied with 8-6 records so it came down to division record " + 
+	         "whick allowed the Coco Browns to slip into that spot (and number one seed).  In the Weekend (or is that Weakend) " +
+	         "division the Nix UR Hopes slipped by the Cinderella Story (tied at 7-6-1 fittingly) by that same division " +
+	         "record tie-breaker.<br><br>On the other end of the bracket the Bastards needed to win or outpoint the Ice " +
+	         "and that sure didn't happen as they picked the wrong time to set the leagues low score for the year (against " +
+	         "the only elimated team at that)! That ensured the Miracles and the Iceotopes to secure the last two spots.<br><br>" +
+	         "The Drawing Board locked up high average and high opponent average and may be the team to beat. The Cinderella " +
+	         "story however somehow made the playoff despite being the second lowest scoring team (over 100 points less than " +
+	         "the next lowest scoring team in the playoffs) - they may just be happy to be here or the logical choice to win " +
+	         "it all :-)<br>";
+
 
 var week15_txt = "";
 
