@@ -1,0 +1,190 @@
+
+// Division 1,
+
+var team0 = [ "Iceotopes / John F",  
+   "ST,Joe Burrow,CIN,QB,0",
+   "ST,Josh Jacobs,GNB,RB,0",
+   "ST,David Montgomery,DET,RB,0",
+   "ST,Trey McBride,ARI,TE,0",
+   "ST,Drake London,ATL,WR,0",
+   "ST,Jerry Jeudy,CLE,WR,0",
+   "ST,Deebo Samuel,WAS,WR,0",
+   "ST,Cameron Dicker,LAC,KR,0",
+   "ST,Philadelphia,PHI,DEF,0",
+   "BN,RJ Harvey,DEN,RB,0",
+   "BN,Jameson Williams,DET,WR,0",
+   "BN,Quinshon Judkins,CLE,RB,0",
+   "BN,Jordan Addison,MIN,WR,0",
+   "BN,Jayden Higgins,HOU,WR,0",
+   "BN,Cedric Tillman,CLE,WR,0"
+];
+
+var team1 = [ "Nix UR Hopes / Steve M",  
+   "ST,Bo Nix,DEN,QB,0",
+   "ST,Saquon Barkley,PHI,RB,0",
+   "ST,Bucky Irving,TAM,RB,0",
+   "ST,Brock Bowers,LVG,TE,0",
+   "ST,Garrett Wilson,NYJ,WR,0",
+   "ST,George Pickens,DAL,WR,0",
+   "ST,Courtland Sutton,DEN,WR,0",
+   "ST,Jake Bates,DET,KR,0",
+   "ST,Denver,DEN,DEF,0",
+   "BN,DK Metcalf,PIT,WR,0",
+   "BN,J.K. Dobbins,DEN,RB,0",
+   "BN,Travis Etienne Jr,JAC,RB,0",
+   "BN,Keenan Allen,LAC,WR,0",
+   "BN,Trey Bensonr,ARI,RB,0",
+   "BN,Josh Downs,IND,WR,0"
+];
+
+
+var team2 = [ "Djanjo Achane'd / Matt",  
+   "ST,Drake Maye,NWE,QB,0",
+   "ST,De'Von Achane,MIA,RB,0",
+   "ST,James Conner,ARI,RB,0",
+   "ST,Sam LaPorta,DET,TE,0",
+   "ST,Ja'Marr Chase,CIN,WR,0",
+   "ST,Ladd McConkey,LAC,WR,0",
+   "ST,DeVonta Smith,PHI,WR,0",
+   "ST,Ka'imi Fairbairn,HOU,KR,0",
+   "ST,Baltimore,BAL,DEF,0",
+   "BN,Zay Flowers,BAL,WR,0",
+   "BN,Dak Prescott,DAL,QB,0",
+   "BN,Jordan Mason,MIN,RB,0",
+   "BN,Bhayshul Tuten,JAC,RB,0",
+   "BN,Rhamondre Stevenson,NWE,RB,0",
+   "BN,Tucker Kraft,GNB,TE,0"
+];
+
+
+var team3 = [ "John's Kryptonite / Reek",  
+   "ST,Josh Allen,BUF,QB,0",
+   "ST,Chase Brown,CIN,RB,0",
+   "ST,Kyren Williams,LAR,RB,0",
+   "ST,Brenton Strange,JAC,TE,0",
+   "ST,Nico Collins,HOU,WR,0",
+   "ST,Tetairoa McMillan,CAR,WR,0",
+   "ST,Tony Pollard,TEN,RB,0",
+   "ST,Brandon Aubrey,DAL,KR,0",
+   "ST,Pittsburgh,PIT,DEF,0",
+   "BN,Isiah Pacheco,KAN,RB,0",
+   "BN,Stefon Diggs,NWE,WR,0",
+   "BN,Jacory Croskey-Merritt,WAS,RB,0",
+   "BN,Chris Olave,NOR,WR,0",
+   "BN,Ollie Gordon II,MIA,RB,0",
+   "BN,Jaydon Blue,DAL,RB,0"
+];
+
+var team4 = [ "Pass me a Brewski / Ross",  
+   "ST,Jayden Daniels,WAS,QB,0",
+   "ST,Chuba Hubbard,CAR,RB,0",
+   "ST,Alvin Kamara,NOR,RB,0",
+   "ST,Travis Kelce,KAN,TE,0",
+   "ST,Brian Thomas Jr,JAC,WR,0",
+   "ST,Davante Adams,LAR,WR,0",
+   "ST,Omarion Hampton,LAC,RB,0",
+   "ST,Chase McLaughlin,TAM,KR,0",
+   "ST,Houston,HOU,DEF,0",
+   "BN,Rome Odunze,CHI,WR,0",
+   "BN,Rashee Rice,KAN,WR,0",
+   "BN,Colston Loveland,CHI,TE,0",
+   "BN,Kaleb Johnson,PIT,RB,0",
+   "BN,Nick Chubb,HOU,RB,0",
+   "BN,Kyler Murray,ARI,QB,0",
+   "IR,Chris Godwin Jr,TAM,WR,0"
+];
+
+// Division Two
+
+var team5 = [ "Coco Browns / Andy",  
+   "ST,Jalen Hurts,PHI,QB,0",
+   "ST,Derrick Henry,BAL,RB,0",
+   "ST,TreVeyon Henderson,NWE,RB,0",
+   "ST,T.J. Hockenson,MIN,TE,0",
+   "ST,Amon-Ra St. Brown,DET,WR,0",
+   "ST,Malik Nabers,NYG,WR,0",
+   "ST,Jaylen Waddle,MIA,WR,0",
+   "ST,Harrison Butker,KAN,KR,0",
+   "ST,Seattle,SEA,DEF,0",
+   "BN,Jaylen Warren,PIT,RB,0",
+   "BN,Travis Hunter,JAC,WR,0",
+   "BN,Austin Ekeler,WAS,RB,0",
+   "BN,Michael Pittman Jr,IND,WR,0",
+   "BN,Tua Tagovailoa,MIA,QB,0",
+   "BN,Dallas Goedert,PHI,TE,0"
+];
+
+var team6 = [ "Phat Bastards / Steve C",  
+   "ST,Patrick Mahomes,KAN,QB,0",
+   "ST,Bijan Robinson,ATL,RB,0",
+   "ST,Ashton Jeanty,LVG,RB,0",
+   "ST,Mark Andrews,BAL,TE,0",
+   "ST,Terry McLaurin,WAS,WR,0",
+   "ST,Marvin Harrison Jr,ARI,WR,0",
+   "ST,DJ Moore,CHI,WR,0",
+   "ST,Wil Lutz,DEN,KR,0",
+   "ST,San Francisco,SFO,DEF,0",
+   "BN,Emeka Egbuka,TAM,WR,0",
+   "BN,Ricky Pearsall,SFO,WR,0",
+   "BN,Zach Charbonnet,SEA,RB,0",
+   "BN,Khalil Shakir,BUF,WR,0",
+   "BN,Jordan Love,GNB,QB,0",
+   "BN,Tyler Warren,IND,TE,0"
+];
+
+
+var team7 = [ "Porkchops / Noah",
+   "ST,Lamar Jackson,BAL,QB,0",
+   "ST,Jahmyr Gibbs,DET,RB,0",
+   "ST,Breece Hall,NYJ,RB,0",
+   "ST,Evan Engram,DEN,TE,0",
+   "ST,Jaxon Smith-Njigba,SEA,WR,0",
+   "ST,Puka Nacua,LAR,WR,0",
+   "ST,Tyreek Hill,MIA,WR,0",
+   "ST,Jake Elliott,PHI,KR,0",
+   "ST,Detroit,DET,DEF,0",
+   "BN,Tyrone Tracy Jr,NYG,RB,0",
+   "BN,Jakobi Meyers,LVG,WR,0",
+   "BN,Cooper Kupp,SEA,WR,0",
+   "BN,Keon Coleman,BUF,WR,0",
+   "BN,Najee Harris,LAC,RB,0",
+   "BN,Dylan Sampson,CLE,RB,0",
+   "IR,Darnell Mooney,ATL,WR,0"
+];
+
+var team8 = [ "CeeDeez Nutz / Harrison",
+   "ST,Brock Purdy,SFO,QB,0",
+   "ST,Christian McCaffrey,SFO,RB,0",
+   "ST,Jonathan Taylor,IND,RB,0",
+   "ST,David Njoku,CLE,TE,0",
+   "ST,Calvin Ridley,TEN,WR,0",
+   "ST,Xavier Worthy,KAN,WR,0",
+   "ST,D'Andre Swift,CHI,RB,0",
+   "ST,Evan McPherson,CIN,KR,0",
+   "ST,Minnesota,MIN,DEF,0",
+   "BN,CeeDee Lamb,DAL,WR,0",
+   "BN,A.J. Brown,PHI,WR,0",
+   "BN,Cam Skattebo,NYG,RB,0",
+   "BN,Tank Bigsby,JAC,RB,0",
+   "BN,Jayden Reed,GNB,WR,0",
+   "BN,Caleb Williams,CHI,QB,0"
+];
+
+var team9 = [ "Weapons of Bass Destruction / Daniel",  
+   "ST,Baker Mayfield,TAM,QB,0",
+   "ST,Kenneth Walker III,SEA,RB,0",
+   "ST,James Cook,BUF,RB,0",
+   "ST,George Kittle,SFO,TE,0",
+   "ST,Justin Jefferson,MIN,WR,0",
+   "ST,Tee Higgins,CIN,WR,0",
+   "ST,Mike Evans,TAM,WR,0",
+   "ST,Tyler Loop,BAL,KR,0",
+   "ST,Buffalo,BUF,DEF,0",
+   "BN,Justin Herbert,LAC,QB,0",
+   "BN,Aaron Jones Sr,MIN,RB,0",
+   "BN,Matthew Golden,GNB,WR,0",
+   "BN,Javonte Williams,DAL,RB,0",
+   "BN,Jauan Jennings,SFO,WR,0",
+   "BN,Brian Robinson Jr,SFO,RB,0"
+];
+
