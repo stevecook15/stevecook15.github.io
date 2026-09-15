@@ -8,18 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
+var cdzScores = [  93.70 ];  // CeeDeez Nutz (Harrision) bel
+var pdbScores = [ 158.40 ];  // Please Don't be a Burden (Ross)
+var cocScores = [ 157.30 ];  // Coco Browns (Andy)
+var sodScores = [ 127.55 ];  // Steve-on Diggs (Reek)
+var djaScores = [ 147.55 ];  // You got a Purdy Mouth (Matt) aka Django Achane'd 
 
-var cdzScores = [ ];  // CeeDeez Nutz (Harrision) bel
-var pdbScores = [ ];  // Please Don't be a Burden (Ross)
-var cocScores = [ ];  // Coco Browns (Andy)
-var cmrScores = [ ];  // Comeback Miracle (Reek)
-var djaScores = [ ];  // Django Achane'd (Matt)  
-
-var iceScores = [ ];  // Iceotopes (John)
-var bdbScores = [ ];  // Back the Drawing Board (Noah)
-var nixScores = [ ];  // Nix UR Hopes (Steve M)
-var bydScores = [ ];  // Bring out your dead (Daniel)
-var fatScores = [ ];  // Phat Bastards (Steve C)
+var iceScores = [ 178.85 ];  // Iceotopes (John)
+var bdbScores = [ 123.80 ];  // Back the Drawing Board (Noah)
+var nixScores = [  78.00 ];  // Nix UR Hopes (Steve M)
+var bydScores = [  84.45 ];  // Bring out your dead (Daniel)
+var fatScores = [ 156.70 ];  // Phat Bastards (Steve C)
 
 
 // 0 - not in playoffs yet
@@ -31,8 +30,8 @@ var fatScores = [ ];  // Phat Bastards (Steve C)
 var cdzPlayoffs = 1;  // CeeDeez Nutz (Harrision)
 var pdbPlayoffs = 1;  // Please Don't be a Burden (Ross)
 var cocPlayoffs = 2;  // Coco Browns (Andy)
-var cmrPlayoffs = 1;  // Comeback Miracle (Reek)
-var djaPlayoffs = 1;  // Django Achane'd (Matt)
+var sodPlayoffs = 1;  // Comeback Miracle (Reek)
+var djaPlayoffs = 1;  // You Got a Purdy Mouth (Matt)
 
 var icePlayoffs = 1;  // Iceotopes (John)
 var bdbPlayoffs = 1;  // Back the Drawing Board (Noah)
@@ -44,7 +43,19 @@ var fatPlayoffs = 4;  // Phat Bastards (Steve C)
 
 var week0_txt = "Welcome to the 2026 Phantom League.";
 
-var week1_txt = "";
+var week1_txt = "And we're off on another exciting season of the PFL league. Was a pretty high scoring week, " +
+                "well at least for most of us. Perhaps the most surprising good score was for the Phat " +
+                "Bastards, fresh off that stellar 'F' draft grade. But don't despair about that, as according " +
+                "to Yahoo, the Phat are now predicted to go winless the rest of the way, having got their one " +
+                "win, ending the hopes of the Nix for a perfect season, of a predicted 1-13 season under " +
+                "their belt.<br><br>Noahs use of a designiated drafter has the going back to the drawing board " +
+                "as they failed to melt the ice leading to a comfortable Topes win. Also, apparently there's " +
+                "a shortage of dead people and seedy nuts as the two played to the weeks lowest two scores, " +
+                "which allowed the Ceedeez to crack their way past the Dead.>br><br>Seems like a Burden was " +
+                "dropped on the Diggies (is steve-on diggs something like press-on nails, pretty on the " +
+                "outside, but prone to break?).<br><br>The last matchup brought us big-boy fantasy ball, with " +
+                "the highest scoring game of the week, but with Coco showing his opponent that you need more "  +
+                "than just a pretty mouth!<br><br>";
 
 var week2_txt = "";
 

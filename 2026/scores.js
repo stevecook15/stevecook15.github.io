@@ -1,19 +1,19 @@
 "use strict";
 
 //NOTE: DOne weeks marked by star
-//Done           *      *
+//Done           *      *      *      *      *      *
 //               1      2      3      4      5      6     7      8      9      10     11     12     13     14   
-var cdzOpps = ["bdb", "pdb", "coc", "pdb", "dja", "byd", "fat", "byd", "cmr", "nix", "bdb", "cmr", "fat", "coc" ];
-var pdbOpps = ["coc", "cdz", "ice", "cdz", "byd", "dja", "cmr", "fat", "bdb", "fat", "nix", "ice", "dja", "cmr" ];
-var cocOpps = ["pdb", "nix", "cdz", "dja", "nix", "bdb", "byd", "bdb", "ice", "cmr", "fat", "byd", "nix", "cdz" ];
-var cmrOpps = ["nix", "cmr", "byd", "fat", "bdb", "ice", "pdb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pdb" ];
-var djaOpps = ["ice", "dja", "nix", "coc", "cdz", "pdb", "bdb", "ice", "fat", "byd", "cmr", "nix", "pdb", "bdb" ];
+var cdzOpps = ["bdb", "pdb", "coc", "nix", "bdb", "dja", "fat", "byd", "sod", "nix", "bdb", "sod", "fat", "coc" ];
+var pdbOpps = ["coc", "cdz", "dja", "fat", "byd", "ice", "sod", "fat", "bdb", "fat", "nix", "ice", "dja", "sod" ];
+var cocOpps = ["pdb", "nix", "cdz", "bdb", "ice", "sod", "byd", "bdb", "ice", "sod", "fat", "byd", "nix", "cdz" ];
+var sodOpps = ["nix", "sod", "bdb", "ice", "fat", "coc", "pdb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pdb" ];
+var djaOpps = ["ice", "dja", "pdb", "BYD", "nix", "cdz", "bdb", "ice", "fat", "byd", "sod", "nix", "pdb", "bdb" ];
 
-var iceOpps = ["bdb", "byd", "pdb", "byd", "fat", "cmr", "nix", "dja", "coc", "bdb", "byd", "pdb", "cmr", "nix" ];
-var bdbOpps = ["ice", "fat", "fat", "nix", "cmr", "coc", "dja", "coc", "pdb", "ice", "cdz", "fat", "byd", "dja" ];
-var nixOpps = ["fat", "coc", "dja", "bdb", "coc", "fat", "ice", "cmr", "byd", "cdz", "pdb", "dja", "coc", "ice" ];
-var bydOpps = ["cdz", "ice", "cmr", "ice", "pdb", "cdz", "coc", "cdz", "nix", "dja", "ice", "coc", "bdb", "fat" ];
-var fatOpps = ["nix", "bdb", "bdb", "cmr", "ice", "nix", "cdz", "pdb", "dja", "pdb", "coc", "bdb", "cdz", "byd" ];
+var iceOpps = ["bdb", "byd", "fat", "sod", "coc", "pdb", "nix", "dja", "coc", "bdb", "byd", "pdb", "sod", "nix" ];
+var bdbOpps = ["ice", "fat", "sod", "coc", "byd", "nix", "dja", "coc", "pdb", "ice", "cdz", "fat", "byd", "dja" ];
+var nixOpps = ["fat", "coc", "byd", "cdz", "dja", "bdb", "ice", "sod", "byd", "cdz", "pdb", "dja", "coc", "ice" ];
+var bydOpps = ["cdz", "ice", "nix", "dja", "pdb", "fat", "coc", "cdz", "nix", "dja", "ice", "coc", "bdb", "fat" ];
+var fatOpps = ["nix", "bdb", "ice", "pdb", "sod", "byd", "cdz", "pdb", "dja", "pdb", "coc", "bdb", "cdz", "byd" ];
 
 // Playoffs
 // 0 - not in playoffs yet
@@ -79,8 +79,8 @@ class PflTeam {
 let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 2, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
 let pdbTeam = new PflTeam("Please don't be a Burden", "Ross", "pdb", 1, pdbOpps);       pdbTeam.setScores(pdbScores); pdbTeam.setPlayoffs(pdbPlayoffs);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let cmrTeam = new PflTeam("Comeback Miracle", "Reek", "cmr", 1, cmrOpps);               cmrTeam.setScores(cmrScores); cmrTeam.setPlayoffs(cmrPlayoffs);
-let djaTeam = new PflTeam("Django Achane'd", "Matt", "dja", 1, djaOpps);                djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
+let sodTeam = new PflTeam("Comeback Miracle", "Reek", "sod", 1, sodOpps);               sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
+let djaTeam = new PflTeam("You Got a Purdy Mouth", "Matt", "dja", 1, djaOpps);          djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
 let bdbTeam = new PflTeam("Back the Drawing Board", "Noah", "bdb", 2, bdbOpps);         bdbTeam.setScores(bdbScores); bdbTeam.setPlayoffs(bdbPlayoffs);
@@ -92,7 +92,7 @@ var pflTeams =  [
    cdzTeam,
    pdbTeam,
    cocTeam,
-   cmrTeam,
+   sodTeam,
    djaTeam,
 
    iceTeam,  
