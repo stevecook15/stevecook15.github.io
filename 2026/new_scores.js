@@ -12,10 +12,10 @@ var cdzScores = [  93.70 ];  // CeeDeez Nutz (Harrision) bel
 var pdbScores = [ 158.40 ];  // Please Don't be a Burden (Ross)
 var cocScores = [ 157.30 ];  // Coco Browns (Andy)
 var sodScores = [ 127.55 ];  // Steve-on Diggs (Reek)
-var djaScores = [ 147.55 ];  // You got a Purdy Mouth (Matt) aka Django Achane'd 
+var pymScores = [ 147.55 ];  // You got a Purdy Mouth (Matt) aka Django Achane'd 
 
 var iceScores = [ 178.85 ];  // Iceotopes (John)
-var bdbScores = [ 123.80 ];  // Back the Drawing Board (Noah)
+var porScores = [ 123.80 ];  // Back the Drawing Board  / I blame devin (Noah)
 var nixScores = [  78.00 ];  // Nix UR Hopes (Steve M)
 var bydScores = [  84.45 ];  // Bring out your dead (Daniel)
 var fatScores = [ 156.70 ];  // Phat Bastards (Steve C)
@@ -31,10 +31,10 @@ var cdzPlayoffs = 0;  // CeeDeez Nutz (Harrision)
 var pdbPlayoffs = 0;  // Please Don't be a Burden (Ross)
 var cocPlayoffs = 0;  // Coco Browns (Andy)
 var sodPlayoffs = 0;  // Steve-on Diggs (Reek)
-var djaPlayoffs = 0;  // You Got a Purdy Mouth (Matt)
+var pymPlayoffs = 0;  // You Got a Purdy Mouth (Matt)
 
 var icePlayoffs = 0;  // Iceotopes (John)
-var bdbPlayoffs = 0;  // Back the Drawing Board (Noah)
+var porPlayoffs = 0;  // Back the Drawing Board / I Blame Devin / Porkchops (Noah)
 var nixPlayoffs = 0;  // Nix UR Hopes (Steve M)
 var bydPlayoffs = 0;  // Bring Out Your Dead (Daniel)
 var fatPlayoffs = 0;  // Phat Bastards (Steve C)

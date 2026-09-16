@@ -3,17 +3,17 @@
 //NOTE: DOne weeks marked by star
 //Done           *      *      *      *      *      *
 //               1      2      3      4      5      6     7      8      9      10     11     12     13     14   
-var cdzOpps = ["byd", "pdb", "coc", "nix", "bdb", "dja", "fat", "byd", "sod", "nix", "bdb", "sod", "fat", "coc" ];
-var pdbOpps = ["sod", "cdz", "dja", "fat", "byd", "ice", "sod", "fat", "bdb", "fat", "nix", "ice", "dja", "sod" ];
-var cocOpps = ["dja", "nix", "cdz", "bdb", "ice", "sod", "byd", "bdb", "ice", "sod", "fat", "byd", "nix", "cdz" ];
-var sodOpps = ["pdb", "sod", "bdb", "ice", "fat", "coc", "pdb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pdb" ];
-var djaOpps = ["coc", "dja", "pdb", "BYD", "nix", "cdz", "bdb", "ice", "fat", "byd", "sod", "nix", "pdb", "bdb" ];
+var cdzOpps = ["byd", "pdb", "coc", "nix", "por", "pym", "fat", "byd", "sod", "nix", "por", "sod", "fat", "coc" ];
+var pdbOpps = ["sod", "cdz", "pym", "fat", "byd", "ice", "sod", "fat", "por", "fat", "nix", "ice", "pym", "sod" ];
+var cocOpps = ["pym", "nix", "cdz", "por", "ice", "sod", "byd", "por", "ice", "sod", "fat", "byd", "nix", "cdz" ];
+var sodOpps = ["pdb", "pym", "por", "ice", "fat", "coc", "pdb", "nix", "cdz", "coc", "pym", "cdz", "ice", "pdb" ];
+var pymOpps = ["coc", "sod", "pdb", "BYD", "nix", "cdz", "por", "ice", "fat", "byd", "sod", "nix", "pdb", "por" ];
 
-var iceOpps = ["bdb", "byd", "fat", "sod", "coc", "pdb", "nix", "dja", "coc", "bdb", "byd", "pdb", "sod", "nix" ];
-var bdbOpps = ["ice", "fat", "sod", "coc", "byd", "nix", "dja", "coc", "pdb", "ice", "cdz", "fat", "byd", "dja" ];
-var nixOpps = ["fat", "coc", "byd", "cdz", "dja", "bdb", "ice", "sod", "byd", "cdz", "pdb", "dja", "coc", "ice" ];
-var bydOpps = ["cdz", "ice", "nix", "dja", "pdb", "fat", "coc", "cdz", "nix", "dja", "ice", "coc", "bdb", "fat" ];
-var fatOpps = ["nix", "bdb", "ice", "pdb", "sod", "byd", "cdz", "pdb", "dja", "pdb", "coc", "bdb", "cdz", "byd" ];
+var iceOpps = ["por", "byd", "fat", "sod", "coc", "pdb", "nix", "pym", "coc", "por", "byd", "pdb", "sod", "nix" ];
+var porOpps = ["ice", "fat", "sod", "coc", "byd", "nix", "pym", "coc", "pdb", "ice", "cdz", "fat", "byd", "pym" ];
+var nixOpps = ["fat", "coc", "byd", "cdz", "pym", "por", "ice", "sod", "byd", "cdz", "pdb", "pym", "coc", "ice" ];
+var bydOpps = ["cdz", "ice", "nix", "pym", "pdb", "fat", "coc", "cdz", "nix", "pym", "ice", "coc", "por", "fat" ];
+var fatOpps = ["nix", "por", "ice", "pdb", "sod", "byd", "cdz", "pdb", "pym", "pdb", "coc", "por", "cdz", "byd" ];
 
 // Playoffs
 // 0 - not in playoffs yet
@@ -80,10 +80,10 @@ let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 1, cdzOpps);       
 let pdbTeam = new PflTeam("Please don't be a Burden", "Ross", "pdb", 1, pdbOpps);       pdbTeam.setScores(pdbScores); pdbTeam.setPlayoffs(pdbPlayoffs);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let sodTeam = new PflTeam("Steve-on Diggs", "Reek", "sod", 1, sodOpps);                 sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
-let djaTeam = new PflTeam("You Got a Purdy Mouth", "Matt", "dja", 1, djaOpps);          djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
+let pymTeam = new PflTeam("You Got a Purdy Mouth", "Matt", "pym", 1, pymOpps);          pymTeam.setScores(pymScores); pymTeam.setPlayoffs(pymPlayoffs);
 
 let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
-let bdbTeam = new PflTeam("I Blame Devin For This", "Noah", "bdb", 2, bdbOpps);         bdbTeam.setScores(bdbScores); bdbTeam.setPlayoffs(bdbPlayoffs);
+let porTeam = new PflTeam("I Blame Devin For This", "Noah", "por", 2, porOpps);         porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
 let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 2, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let bydTeam = new PflTeam("Bring Out Your Dead", "Daniel", "byd", 2, bydOpps);          bydTeam.setScores(bydScores); bydTeam.setPlayoffs(bydPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
@@ -93,10 +93,10 @@ var pflTeams =  [
    pdbTeam,
    cocTeam,
    sodTeam,
-   djaTeam,
+   pymTeam,
 
    iceTeam,  
-   bdbTeam,
+   porTeam,
    nixTeam,
    bydTeam,
    fatTeam
