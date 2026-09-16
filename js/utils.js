@@ -57,7 +57,7 @@ class PflUtils
          week = 17;
 
       //  NOTE: THis needs to be next year for last weeks of playoffs
-      if ( year == 2026 )  // Last playoff game may be in next year
+      if ( year == 2027 )  // Last playoff game may be in next year
       {
           week = 17;
       }
