@@ -3,11 +3,11 @@
 //NOTE: DOne weeks marked by star
 //Done           *      *      *      *      *      *
 //               1      2      3      4      5      6     7      8      9      10     11     12     13     14   
-var cdzOpps = ["bdb", "pdb", "coc", "nix", "bdb", "dja", "fat", "byd", "sod", "nix", "bdb", "sod", "fat", "coc" ];
-var pdbOpps = ["coc", "cdz", "dja", "fat", "byd", "ice", "sod", "fat", "bdb", "fat", "nix", "ice", "dja", "sod" ];
-var cocOpps = ["pdb", "nix", "cdz", "bdb", "ice", "sod", "byd", "bdb", "ice", "sod", "fat", "byd", "nix", "cdz" ];
-var sodOpps = ["nix", "sod", "bdb", "ice", "fat", "coc", "pdb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pdb" ];
-var djaOpps = ["ice", "dja", "pdb", "BYD", "nix", "cdz", "bdb", "ice", "fat", "byd", "sod", "nix", "pdb", "bdb" ];
+var cdzOpps = ["byd", "pdb", "coc", "nix", "bdb", "dja", "fat", "byd", "sod", "nix", "bdb", "sod", "fat", "coc" ];
+var pdbOpps = ["sod", "cdz", "dja", "fat", "byd", "ice", "sod", "fat", "bdb", "fat", "nix", "ice", "dja", "sod" ];
+var cocOpps = ["dja", "nix", "cdz", "bdb", "ice", "sod", "byd", "bdb", "ice", "sod", "fat", "byd", "nix", "cdz" ];
+var sodOpps = ["pdb", "sod", "bdb", "ice", "fat", "coc", "pdb", "nix", "cdz", "coc", "dja", "cdz", "ice", "pdb" ];
+var djaOpps = ["coc", "dja", "pdb", "BYD", "nix", "cdz", "bdb", "ice", "fat", "byd", "sod", "nix", "pdb", "bdb" ];
 
 var iceOpps = ["bdb", "byd", "fat", "sod", "coc", "pdb", "nix", "dja", "coc", "bdb", "byd", "pdb", "sod", "nix" ];
 var bdbOpps = ["ice", "fat", "sod", "coc", "byd", "nix", "dja", "coc", "pdb", "ice", "cdz", "fat", "byd", "dja" ];
@@ -76,15 +76,15 @@ class PflTeam {
   }
 }
 
-let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 2, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
+let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 1, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
 let pdbTeam = new PflTeam("Please don't be a Burden", "Ross", "pdb", 1, pdbOpps);       pdbTeam.setScores(pdbScores); pdbTeam.setPlayoffs(pdbPlayoffs);
-let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 2, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let sodTeam = new PflTeam("Comeback Miracle", "Reek", "sod", 1, sodOpps);               sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
+let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
+let sodTeam = new PflTeam("Steve-on Diggs", "Reek", "sod", 1, sodOpps);                 sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
 let djaTeam = new PflTeam("You Got a Purdy Mouth", "Matt", "dja", 1, djaOpps);          djaTeam.setScores(djaScores); djaTeam.setPlayoffs(djaPlayoffs);
 
-let iceTeam = new PflTeam("Iceotopes", "John", "ice", 1, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
-let bdbTeam = new PflTeam("Back the Drawing Board", "Noah", "bdb", 2, bdbOpps);         bdbTeam.setScores(bdbScores); bdbTeam.setPlayoffs(bdbPlayoffs);
-let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 1, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
+let iceTeam = new PflTeam("Iceotopes", "John", "ice", 2, iceOpps);                      iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
+let bdbTeam = new PflTeam("I Blame Devin For This", "Noah", "bdb", 2, bdbOpps);         bdbTeam.setScores(bdbScores); bdbTeam.setPlayoffs(bdbPlayoffs);
+let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 2, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let bydTeam = new PflTeam("Bring Out Your Dead", "Daniel", "byd", 2, bydOpps);          bydTeam.setScores(bydScores); bydTeam.setPlayoffs(bydPlayoffs);
 let fatTeam = new PflTeam("Phat Bastards", "Steve", "fat", 2, fatOpps);                 fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
 

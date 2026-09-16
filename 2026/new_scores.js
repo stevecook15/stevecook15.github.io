@@ -27,17 +27,17 @@ var fatScores = [ 156.70 ];  // Phat Bastards (Steve C)
 // 3 - clinched first round bye
 // 4 - eliminated from playoffs
 
-var cdzPlayoffs = 1;  // CeeDeez Nutz (Harrision)
-var pdbPlayoffs = 1;  // Please Don't be a Burden (Ross)
-var cocPlayoffs = 2;  // Coco Browns (Andy)
-var sodPlayoffs = 1;  // Comeback Miracle (Reek)
-var djaPlayoffs = 1;  // You Got a Purdy Mouth (Matt)
+var cdzPlayoffs = 0;  // CeeDeez Nutz (Harrision)
+var pdbPlayoffs = 0;  // Please Don't be a Burden (Ross)
+var cocPlayoffs = 0;  // Coco Browns (Andy)
+var sodPlayoffs = 0;  // Steve-on Diggs (Reek)
+var djaPlayoffs = 0;  // You Got a Purdy Mouth (Matt)
 
-var icePlayoffs = 1;  // Iceotopes (John)
-var bdbPlayoffs = 1;  // Back the Drawing Board (Noah)
-var nixPlayoffs = 2;  // Nix UR Hopes (Steve M)
-var bydPlayoffs = 4;  // Bring out your dead (Daniel)
-var fatPlayoffs = 4;  // Phat Bastards (Steve C)
+var icePlayoffs = 0;  // Iceotopes (John)
+var bdbPlayoffs = 0;  // Back the Drawing Board (Noah)
+var nixPlayoffs = 0;  // Nix UR Hopes (Steve M)
+var bydPlayoffs = 0;  // Bring Out Your Dead (Daniel)
+var fatPlayoffs = 0;  // Phat Bastards (Steve C)
 
 // Weekly blah blah blah text...
 
@@ -48,12 +48,12 @@ var week1_txt = "And we're off on another exciting season of the PFL league. Was
                 "Bastards, fresh off that stellar 'F' draft grade. But don't despair about that, as according " +
                 "to Yahoo, the Phat are now predicted to go winless the rest of the way, having got their one " +
                 "win, ending the hopes of the Nix for a perfect season, of a predicted 1-13 season under " +
-                "their belt.<br><br>Noahs use of a designiated drafter has the going back to the drawing board " +
+                "their belt.<br><br>Noahs use of a designiated drafter has them blaming Devin and going back to the drawing board " +
                 "as they failed to melt the ice leading to a comfortable Topes win. Also, apparently there's " +
                 "a shortage of dead people and seedy nuts as the two played to the weeks lowest two scores, " +
-                "which allowed the Ceedeez to crack their way past the Dead.>br><br>Seems like a Burden was " +
+                "which allowed the Ceedeez to crack their way past the Dead.<br><br>Seems like a Burden was " +
                 "dropped on the Diggies (is steve-on diggs something like press-on nails, pretty on the " +
-                "outside, but prone to break?).<br><br>The last matchup brought us big-boy fantasy ball, with " +
+                "outside, but prone to break?).The last matchup brought us big-boy fantasy ball, with " +
                 "the highest scoring game of the week, but with Coco showing his opponent that you need more "  +
                 "than just a pretty mouth!<br><br>";
 
