@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05 ];  // CeeDeez Nutz (Harrision) 
-var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20 ];  // Please Don't be a Burden (Ross)
-var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00 ];  // Coco Browns (Andy)
-var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80 ];  // Steve-on Diggs (Reek) / Oh this is hard
-var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10 ];  // You got a Purdy Mouth (Matt) / Lean Green
+var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05, 114,65 ];  // CeeDeez Nutz (Harrision) 
+var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20, 134.05 ];  // Please Don't be a Burden (Ross)
+var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00, 100.70 ];  // Coco Browns (Andy)
+var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80, 149.00 ];  // Steve-on Diggs (Reek) / Oh this is hard
+var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35 ];  // You got a Purdy Mouth (Matt) / Lean Green
 
-var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25 ];  // Iceotopes (John) / Its even harder
-var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35 ];  // Pork  / I blame devin (Noah)
-var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50 ];  // Nix UR Hopes (Steve M)
-var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
-var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45 ];  // Phat Bastards (Steve C) / Down goes Frazier
+var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65 ];  // Iceotopes (John) / Its even harder
+var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35 ];  // Pork  / I blame devin (Noah)
+var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80 ];  // Nix UR Hopes (Steve M)
+var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
+var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
 
 
 // 0 - not in playoffs yet
@@ -71,7 +71,13 @@ var week7_txt = "Well it took the high score of the week (that and the Fats two 
                 "they had the day off) to do it but down goes Frazier (aka Bastards)! " +
                 "That narrows down the standings a bit as the top 3 teams all went down!<br><br> ";
 
-var week8_txt = "";
+var week8_txt = "Things are tightening up! Steve's worst nightmare (the Phat) apparently doesn't seem to be scaring them anymore " +
+                "(wasn't that in Monsters Inc somewhere?) as they took down the deck hands easily. That would allow the Nutz to " +
+                "move into a tie for first if their kicker can get a single point in the last 2.5 quarters monday night! Oops, no " +
+                "such outcome as they ended up tied with the Even Harder leaving them in 2nd, atop their division.<br><br>" +
+                "Blame Devin nixxed their opponent and Gibbs You shredded the Coconuts to move within a game of first place. And " +
+                "then there's the Its a hard Burden matchup of that wasn't that hard as the Hard's oppenent wasn't any kind " +
+                "of burden at all.<br><br>";
 
 var week9_txt = "";
 
