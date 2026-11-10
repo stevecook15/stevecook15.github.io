@@ -1,19 +1,19 @@
 "use strict";
 
 //NOTE: DOne weeks marked by star
-//Done           *      *      *      *      *      *     *      *      *
+//Done           *      *      *      *      *      *     *      *      *      *
 //               1      2      3      4      5      6     7      8      9      10     11     12     13     14   
-var cdzOpps = ["byd", "pdb", "coc", "nix", "por", "pym", "sod", "ice", "fat", "nix", "por", "sod", "fat", "coc" ]; // CeeDeez Nutz (Harrision)
-var pdbOpps = ["sod", "cdz", "pym", "fat", "byd", "ice", "coc", "sod", "por", "fat", "nix", "ice", "pym", "sod" ]; // Please Don't be a Burden (Ross)
-var cocOpps = ["pym", "nix", "cdz", "por", "ice", "sod", "pdb", "pym", "byd", "sod", "fat", "byd", "nix", "cdz" ]; // Coco Browns (Andy)
-var sodOpps = ["pdb", "pym", "por", "ice", "fat", "coc", "cdz", "pdb", "nix", "coc", "pym", "cdz", "ice", "pdb" ]; // Oh this is hard (Reek)
-var pymOpps = ["coc", "sod", "pdb", "byd", "nix", "cdz", "fat", "coc", "ice", "byd", "sod", "nix", "pdb", "por" ]; // Never Gonna Gibbs (Matt)
+var cdzOpps = ["byd", "pdb", "coc", "nix", "por", "pym", "sod", "ice", "fat", "ice", "por", "sod", "fat", "coc" ]; // CeeDeez Nutz (Harrision)
+var pdbOpps = ["sod", "cdz", "pym", "fat", "byd", "ice", "coc", "sod", "por", "nix", "nix", "ice", "pym", "sod" ]; // Please Don't be a Burden (Ross)
+var cocOpps = ["pym", "nix", "cdz", "por", "ice", "sod", "pdb", "pym", "byd", "fat", "fat", "byd", "nix", "cdz" ]; // Coco Browns (Andy)
+var sodOpps = ["pdb", "pym", "por", "ice", "fat", "coc", "cdz", "pdb", "nix", "byd", "pym", "cdz", "ice", "pdb" ]; // Oh this is hard (Reek)
+var pymOpps = ["coc", "sod", "pdb", "byd", "nix", "cdz", "fat", "coc", "ice", "por", "sod", "nix", "pdb", "por" ]; // Never Gonna Gibbs (Matt)
 
-var iceOpps = ["por", "byd", "fat", "sod", "coc", "pdb", "nix", "cdz", "pym", "por", "byd", "pdb", "sod", "nix" ]; // Its even Harder (John)
-var porOpps = ["ice", "fat", "sod", "coc", "cdz", "nix", "byd", "nix", "pdb", "ice", "cdz", "fat", "byd", "pym" ]; // Blame Devin (Noah)
-var nixOpps = ["fat", "coc", "byd", "cdz", "pym", "por", "ice", "por", "sod", "cdz", "pdb", "pym", "coc", "ice" ]; // Nix Ur Hopes (Steve M)
-var bydOpps = ["cdz", "ice", "nix", "pym", "pdb", "fat", "por", "fat", "coc", "pym", "ice", "coc", "por", "fat" ]; // Steve Worst nightmare (Daniel) 
-var fatOpps = ["nix", "por", "ice", "pdb", "sod", "byd", "pym", "byd", "cdz", "pdb", "coc", "por", "cdz", "byd" ]; // Deck Chairs (Steve C)
+var iceOpps = ["por", "byd", "fat", "sod", "coc", "pdb", "nix", "cdz", "pym", "cdz", "byd", "pdb", "sod", "nix" ]; // Its even Harder (John)
+var porOpps = ["ice", "fat", "sod", "coc", "cdz", "nix", "byd", "nix", "pdb", "pym", "cdz", "fat", "byd", "pym" ]; // Blame Devin (Noah)
+var nixOpps = ["fat", "coc", "byd", "cdz", "pym", "por", "ice", "por", "sod", "pdb", "pdb", "pym", "coc", "ice" ]; // Nix Ur Hopes (Steve M)
+var bydOpps = ["cdz", "ice", "nix", "pym", "pdb", "fat", "por", "fat", "coc", "sod", "ice", "coc", "por", "fat" ]; // Steve Worst nightmare (Daniel) 
+var fatOpps = ["nix", "por", "ice", "pdb", "sod", "byd", "pym", "byd", "cdz", "coc", "coc", "por", "cdz", "byd" ]; // Deck Chairs (Steve C)
 
 // Playoffs
 // 0 - not in playoffs yet
@@ -80,13 +80,13 @@ let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 1, cdzOpps);       
 let pdbTeam = new PflTeam("Please don't be a Burden", "Ross", "pdb", 1, pdbOpps);       pdbTeam.setScores(pdbScores); pdbTeam.setPlayoffs(pdbPlayoffs);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
 let sodTeam = new PflTeam("Oh.. it's this hard", "Reek", "sod", 1, sodOpps);            sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
-let pymTeam = new PflTeam("Never gonna Gibbs you up", "Matt", "pym", 1, pymOpps); pymTeam.setScores(pymScores); pymTeam.setPlayoffs(pymPlayoffs);
+let pymTeam = new PflTeam("Never gonna Gibbs you up", "Matt", "pym", 1, pymOpps);       pymTeam.setScores(pymScores); pymTeam.setPlayoffs(pymPlayoffs);
 
-let iceTeam = new PflTeam("It's even harder", "John", "ice", 2, iceOpps);               iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
+let iceTeam = new PflTeam("Give Devin Credit", "John", "ice", 2, iceOpps);              iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);
 let porTeam = new PflTeam("I Blame Devin For This", "Noah", "por", 2, porOpps);         porTeam.setScores(porScores); porTeam.setPlayoffs(porPlayoffs);
-let nixTeam = new PflTeam("Nix UR Hopes", "Steve", "nix", 2, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
+let nixTeam = new PflTeam("Nix UR Hopes", "Steve M", "nix", 2, nixOpps);                  nixTeam.setScores(nixScores); nixTeam.setPlayoffs(nixPlayoffs);
 let bydTeam = new PflTeam("Steve is my Worst Nightmare", "Daniel", "byd", 2, bydOpps);  bydTeam.setScores(bydScores); bydTeam.setPlayoffs(bydPlayoffs);
-let fatTeam = new PflTeam("Rearranging Deck Chairs", "Steve", "fat", 2, fatOpps);       fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
+let fatTeam = new PflTeam("Circling the Drain", "Steve C", "fat", 2, fatOpps);            fatTeam.setScores(fatScores); fatTeam.setPlayoffs(fatPlayoffs);
 
 var pflTeams =  [
    cdzTeam,
