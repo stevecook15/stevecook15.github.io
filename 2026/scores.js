@@ -79,7 +79,7 @@ class PflTeam {
 let cdzTeam = new PflTeam("CeeDeez Nutz", "Harrison", "cdz", 1, cdzOpps);               cdzTeam.setScores(cdzScores); cdzTeam.setPlayoffs(cdzPlayoffs);
 let pdbTeam = new PflTeam("Please don't be a Burden", "Ross", "pdb", 1, pdbOpps);       pdbTeam.setScores(pdbScores); pdbTeam.setPlayoffs(pdbPlayoffs);
 let cocTeam = new PflTeam("Coco Browns", "Andy", "coc", 1, cocOpps);                    cocTeam.setScores(cocScores); cocTeam.setPlayoffs(cocPlayoffs);
-let sodTeam = new PflTeam("Oh.. it's this hard", "Reek", "sod", 1, sodOpps);            sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
+let sodTeam = new PflTeam("Face sitting is hard", "Reek", "sod", 1, sodOpps);            sodTeam.setScores(sodScores); sodTeam.setPlayoffs(sodPlayoffs);
 let pymTeam = new PflTeam("Never gonna Gibbs you up", "Matt", "pym", 1, pymOpps);       pymTeam.setScores(pymScores); pymTeam.setPlayoffs(pymPlayoffs);
 
 let iceTeam = new PflTeam("Give Devin Credit", "John", "ice", 2, iceOpps);              iceTeam.setScores(iceScores); iceTeam.setPlayoffs(icePlayoffs);

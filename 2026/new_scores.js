@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05, 114.65, 133.50 ];  // CeeDeez Nutz (Harrision) 
-var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20, 134.05, 128.50 ];  // Please Don't be a Burden (Ross)
-var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00, 100.70, 124.55 ];  // Coco Browns (Andy)
-var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80, 149.00, 125.00 ];  // Steve-on Diggs (Reek) / Oh this is hard
-var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35, 104.30 ];  // You got a Purdy Mouth (Matt) / Gibbs you up
+var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05, 114.65, 133.50, 145.45 ];  // CeeDeez Nutz (Harrision) 
+var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20, 134.05, 128.50, 131.00 ];  // Please Don't be a Burden (Ross)
+var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00, 100.70, 124.55, 123.05 ];  // Coco Browns (Andy)
+var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80, 149.00, 125.00, 137.55 ];  // Face Sitting SoDiggs (Reek) / Oh this is hard
+var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35, 104.30, 151.05 ];  // You got a Purdy Mouth (Matt) / Gibbs you up
 
-var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65, 130.85 ];  // Iceotopes (John) / Its even harder
-var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35, 154.30 ];  // Pork  / I blame devin (Noah)
-var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80, 127.75 ];  // Nix UR Hopes (Steve M)
-var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
-var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25, 121.75 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
+var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65, 130.85, 159.65 ];  // Iceotopes (John) / Its even harder
+var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35, 154.30, 132.20 ];  // Pork  / I blame devin (Noah)
+var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80, 127.75, 159.35 ];  // Nix UR Hopes (Steve M)
+var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80,  92.75 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
+var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25, 121.75, 120.30 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
 
 
 // 0 - not in playoffs yet
@@ -88,7 +88,13 @@ var week9_txt = "The phat king is dead. Long live the seedy King. In the battle 
                 "five teams within a game of the new first place CeeDee Nutz and five teams within a game of last. Wow! And the previously " +
                 "lordy Phat are left wondering if a 6-8 record will make the playoffs.<br><br>"
 
-var week10_txt = "";
+var week10_txt = "With only one matchup undecided Monday night the nations eyes turned to the epic matchup between the Coco Nots " +
+                 "and the Unglorious Bastards who have been circling the drain for 4 weeks now. The Cocos trailed by 16 points " +
+                 "but had one of the finest NFL running backs ever in the mighty D Henry against the 0-8 winless LA Chargers. " +
+                 "Outcome not in doubt right? Yep, no problem, 10 yds rushing, 10 yds receiving and two TDs later the Coco " +
+                 "completely flush the Fat down the drain.<br><br>In other news, " +
+                 "three out of the four 3-6 teams won (limited by the fact two of the 3-6 teams played each other) and all the top " +
+                 "teams lost, closing up the standings even further! Could be a craxy finish! <br><br>";
 
 var week11_txt = "";
 
