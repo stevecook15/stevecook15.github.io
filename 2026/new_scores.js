@@ -8,17 +8,17 @@
 // Create map with team and array each weeks opponent:  key fat, array ice, roll, etc...
 // Create map with team and each weeks score (name based on the same name as in the map (eg roll))
 
-var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05, 114.65, 133.50, 145.45 ];  // CeeDeez Nutz (Harrision) 
-var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20, 134.05, 128.50, 131.00 ];  // Please Don't be a Burden (Ross)
-var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00, 100.70, 124.55, 123.05 ];  // Coco Browns (Andy)
-var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80, 149.00, 125.00, 137.55 ];  // Face Sitting SoDiggs (Reek) / Oh this is hard
-var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35, 104.30, 151.05 ];  // You got a Purdy Mouth (Matt) / Gibbs you up
+var cdzScores = [  93.70, 114.20, 147.15, 111.40, 170.05, 115.50, 101.05, 114.65, 133.50, 145.45,  87.05 ];  // CeeDeez Nutz (Harrision) 
+var pdbScores = [ 158.40, 137.30, 116.70, 114.95, 113.40, 105.45, 125.20, 134.05, 128.50, 131.00, 132.20 ];  // Please Don't be a Burden (Ross)
+var cocScores = [ 157.30, 109.35, 144.20, 136.60, 147.85,  77.35, 123.00, 100.70, 124.55, 123.05, 113.30 ];  // Coco Browns (Andy)
+var sodScores = [ 127.55,  86.90, 101.75, 100.45, 148.85, 110.10, 128.80, 149.00, 125.00, 137.55,  94.20 ];  // Face Sitting SoDiggs (Reek) / Oh this is hard
+var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35, 104.30, 151.05, 141.35 ];  // You got a Purdy Mouth (Matt) / Gibbs you up
 
-var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65, 130.85, 159.65 ];  // Iceotopes (John) / Its even harder
-var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35, 154.30, 132.20 ];  // Pork  / I blame devin (Noah)
-var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80, 127.75, 159.35 ];  // Nix UR Hopes (Steve M)
-var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80,  92.75 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
-var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25, 121.75, 120.30 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
+var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65, 130.85, 159.65, 158.85 ];  // Iceotopes (John) / Its even harder, Justin
+var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35, 154.30, 132.20, 155.10 ];  // Pork  / I blame devin (Noah)
+var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80, 127.75, 159.35, 120.60 ];  // Nix UR Hopes (Steve M)
+var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80,  92.75.  88.95 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
+var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25, 121.75, 120.30, 105.15 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
 
 
 // 0 - not in playoffs yet
@@ -96,7 +96,16 @@ var week10_txt = "With only one matchup undecided Monday night the nations eyes 
                  "three out of the four 3-6 teams won (limited by the fact two of the 3-6 teams played each other) and all the top " +
                  "teams lost, closing up the standings even further! Could be a craxy finish! <br><br>";
 
-var week11_txt = "";
+var week11_txt = "Strangely, for the second week in a row by the time MNF rolled around the only matchup still to be decided once " +
+                 "again involved the Bastards. Not that they weren't continuing to circle the drain but watching to see how far " +
+				 "into Mondays game would it take for the Nix to end the Batards hope.  Last week the Bastards lasted till the " +
+				 "fourth quarter.  This week the pain and suffering settled in early in the second quarter allowing the Fat to " +
+				 "head to bed early.   Quick Note: the bastards now have the longest winning streak of the year and tied for the " +
+				 "for longest losing streak of the year (which they'll beat next week to concoct a perfect 6 win, 6 loss streak!).<br<br>" +
+				 "As for the rest of the Yahoos, Blame Devin and Justin QB both won (over Coco and Dead respectively) to pass the " +
+				 "fat into first and second place in the Sofa Squad div.  In the Brew Crew div, the Nutz's penchant for low scoring finally " +
+				 "seems to be catching up to them, losing their seciond game in a row (to the Burdens this week) to drop out first, " +
+				 "allowing the Gibbons to move into first after the trounced the Facers.<br><br>";
 
 var week12_txt = "";
 
