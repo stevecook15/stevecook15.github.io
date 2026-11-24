@@ -17,7 +17,7 @@ var pymScores = [ 147.55, 146.95, 147.75, 119.90, 137.45, 103.80, 147.10, 148.35
 var iceScores = [ 178.85, 118.75, 111.80, 125.25, 114.70, 137.30, 106.25, 114.65, 130.85, 159.65, 158.85 ];  // Iceotopes (John) / Its even harder, Justin
 var porScores = [ 123.80, 120.50, 138.10, 148.95, 109.15,  95.65, 126.35, 148.35, 154.30, 132.20, 155.10 ];  // Pork  / I blame devin (Noah)
 var nixScores = [  78.00, 111.75, 117.10,  88.70, 110.50,  83.00, 137.50,  90.80, 127.75, 159.35, 120.60 ];  // Nix UR Hopes (Steve M)
-var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80,  92.75.  88.95 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
+var bydScores = [  84.45, 127.45, 122.00, 181.25, 172.15, 106.50, 107.75, 134.65, 122.80,  92.75,  88.95 ];  // Bring out your dead (Daniel) / Steve is my worst nightmare
 var fatScores = [ 156.70, 131.20, 127.75, 129.60, 156.10, 151.95, 132.45, 109.25, 121.75, 120.30, 105.15 ];  // Phat Bastards (Steve C) / Rearraning deck chairs
 
 
