@@ -101,11 +101,11 @@ var week11_txt = "Strangely, for the second week in a row by the time MNF rolled
 				 "into Mondays game would it take for the Nix to end the Batards hope.  Last week the Bastards lasted till the " +
 				 "fourth quarter.  This week the pain and suffering settled in early in the second quarter allowing the Fat to " +
 				 "head to bed early.   Quick Note: the bastards now have the longest winning streak of the year and tied for the " +
-				 "for longest losing streak of the year (which they'll beat next week to concoct a perfect 6 win, 6 loss streak!).<br<br>" +
+				 "for longest losing streak of the year (which they'll beat next week to concoct a perfect 6 win, 6 loss streak!).<br><br>" +
 				 "As for the rest of the Yahoos, Blame Devin and Justin QB both won (over Coco and Dead respectively) to pass the " +
 				 "fat into first and second place in the Sofa Squad div.  In the Brew Crew div, the Nutz's penchant for low scoring finally " +
 				 "seems to be catching up to them, losing their seciond game in a row (to the Burdens this week) to drop out first, " +
-				 "allowing the Gibbons to move into first after the trounced the Facers.<br><br>";
+				 "allowing the Gibbons to move into first after they trounced the Facers.<br><br>";
 
 var week12_txt = "";
 
